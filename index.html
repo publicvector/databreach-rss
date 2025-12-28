@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Breach RSS Feed</title>
+    <meta name="description" content="Real-time data breach and ransomware notifications aggregated from state registries, federal sources, and threat intelligence feeds.">
+    <meta property="og:title" content="Data Breach RSS Feed">
+    <meta property="og:description" content="Stay informed on the latest data breaches and ransomware attacks. Aggregated from 11+ authoritative sources.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://publicvector.github.io/databreach-rss/">
+    <link rel="alternate" type="application/rss+xml" title="Data Breach RSS Feed" href="breaches.xml">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #e4e4e7;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #f97316, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: #a1a1aa;
+            font-size: 1.1rem;
+        }
+        .subscribe-section {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .feed-url {
+            background: rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 15px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin: 15px 0;
+            word-break: break-all;
+            color: #f97316;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(90deg, #f97316, #ef4444);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(249, 115, 22, 0.4);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .sources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .source-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .source-card h3 {
+            font-size: 0.9rem;
+            color: #f97316;
+            margin-bottom: 5px;
+        }
+        .source-card p {
+            font-size: 0.8rem;
+            color: #a1a1aa;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f97316;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #a1a1aa;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #71717a;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #f97316;
+        }
+        .copy-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .copy-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Data Breach RSS Feed</h1>
+            <p class="subtitle">Real-time breach notifications from authoritative sources</p>
+        </header>
+
+        <div class="subscribe-section">
+            <h2>Subscribe to the Feed</h2>
+            <div class="feed-url" id="feedUrl">https://publicvector.github.io/databreach-rss/breaches.xml</div>
+            <button class="copy-btn" onclick="copyUrl()">Copy URL</button>
+            <div style="margin-top: 20px;">
+                <a href="breaches.xml" class="btn">View RSS Feed</a>
+                <a href="https://github.com/publicvector/databreach-rss" class="btn btn-secondary">GitHub</a>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">11+</div>
+                <div class="stat-label">Data Sources</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">300+</div>
+                <div class="stat-label">Breach Entries</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">Daily</div>
+                <div class="stat-label">Updates</div>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 15px;">Data Sources</h2>
+        <div class="sources">
+            <div class="source-card">
+                <h3>Ransomware.live</h3>
+                <p>Real-time ransomware victim tracking</p>
+            </div>
+            <div class="source-card">
+                <h3>HHS OCR Portal</h3>
+                <p>Federal HIPAA breach reports</p>
+            </div>
+            <div class="source-card">
+                <h3>California AG</h3>
+                <p>State breach registry</p>
+            </div>
+            <div class="source-card">
+                <h3>DataBreaches.net</h3>
+                <p>Breach news and analysis</p>
+            </div>
+            <div class="source-card">
+                <h3>HIPAA Journal</h3>
+                <p>Healthcare breach coverage</p>
+            </div>
+            <div class="source-card">
+                <h3>BleepingComputer</h3>
+                <p>Security news</p>
+            </div>
+            <div class="source-card">
+                <h3>BreachSense</h3>
+                <p>Ransomware tracking</p>
+            </div>
+            <div class="source-card">
+                <h3>State Registries</h3>
+                <p>TX, ME, WA, HI AGs</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built for security professionals and researchers</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/publicvector/databreach-rss">View on GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function copyUrl() {
+            const url = document.getElementById('feedUrl').textContent;
+            navigator.clipboard.writeText(url).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = 'Copy URL', 2000);
+            });
+        }
+    </script>
+</body>
+</html>
