@@ -661,11 +661,18 @@ class BreachDataCollector:
             df = pd.read_html(driver.page_source)[0]
             
             for _, row in df.head(limit).iterrows():
+                # Validate URL - use fallback if invalid
+                raw_url = str(row.get('Link to Letter', ''))
+                if raw_url.startswith('http'):
+                    entry_url = raw_url
+                else:
+                    entry_url = 'https://cca.hawaii.gov/ocp/notices/security-breach/'
+
                 entries.append(BreachEntry(
                     company_name=str(row.get('Breached Entity Name', 'Unknown')),
                     date_reported=str(row.get('Date Notified', '')),
                     source='Hawaii DCCA',
-                    url=str(row.get('Link to Letter', 'https://cca.hawaii.gov/ocp/notices/security-breach/')),
+                    url=entry_url,
                     state_records_affected=str(row.get('Hawaii Residents Impacted', 'N/A')),
                     location='Hawaii',
                     breach_type='State Registry'
@@ -776,7 +783,10 @@ class RSSFeedGenerator:
             fe = self.fg.add_entry()
             fe.id(entry.unique_id)
             fe.title(entry.company_name)
-            fe.link(href=entry.url)
+
+            # Validate URL - must start with http
+            url = entry.url if entry.url.startswith('http') else f"https://www.google.com/search?q={entry.company_name.replace(' ', '+')}+data+breach"
+            fe.link(href=url)
             
             # Build description with better formatting
             desc_parts = []
