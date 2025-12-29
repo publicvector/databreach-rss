@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Breach Feed | Live Updates</title>
+    <meta name="description" content="Live data breach notifications from state registries, federal sources, and ransomware trackers.">
+    <meta property="og:title" content="Data Breach Feed | Live Updates">
+    <meta property="og:description" content="Real-time breach notifications aggregated from 11+ authoritative sources.">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="breaches.xml">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f14;
+            min-height: 100vh;
+            color: #e4e4e7;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #f97316, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: #71717a;
+            font-size: 0.95rem;
+        }
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+        }
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f97316;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: #71717a;
+        }
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            color: #a1a1aa;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: rgba(249, 115, 22, 0.2);
+            border-color: #f97316;
+            color: #f97316;
+        }
+        .breach-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .breach-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+        .breach-card:hover {
+            border-color: rgba(249, 115, 22, 0.3);
+            background: rgba(255,255,255,0.05);
+        }
+        .breach-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 15px;
+        }
+        .breach-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .breach-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .breach-title a:hover {
+            color: #f97316;
+        }
+        .breach-date {
+            font-size: 0.8rem;
+            color: #71717a;
+            white-space: nowrap;
+        }
+        .breach-description {
+            color: #a1a1aa;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .breach-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .tag-source {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+        .tag-type {
+            background: rgba(249, 115, 22, 0.2);
+            color: #fb923c;
+        }
+        .tag-records {
+            background: rgba(34, 197, 94, 0.2);
+            color: #4ade80;
+        }
+        .tag-location {
+            background: rgba(168, 85, 247, 0.2);
+            color: #c084fc;
+        }
+        .tag-actor {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #71717a;
+        }
+        .spinner {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(249, 115, 22, 0.3);
+            border-top-color: #f97316;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #52525b;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #f97316;
+            text-decoration: none;
+        }
+        .subscribe-banner {
+            background: linear-gradient(90deg, rgba(249, 115, 22, 0.1), rgba(239, 68, 68, 0.1));
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .subscribe-banner span {
+            color: #a1a1aa;
+            font-size: 0.9rem;
+        }
+        .subscribe-btn {
+            padding: 8px 20px;
+            background: linear-gradient(90deg, #f97316, #ef4444);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        .subscribe-btn:hover {
+            opacity: 0.9;
+        }
+        @media (max-width: 600px) {
+            .breach-header {
+                flex-direction: column;
+            }
+            .stats-bar {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Data Breach Feed</h1>
+            <p class="subtitle">Real-time notifications from 11+ authoritative sources</p>
+        </header>
+
+        <div class="subscribe-banner">
+            <span>Get these updates in your RSS reader</span>
+            <a href="https://feedly.com/i/subscription/feed/https://publicvector.github.io/databreach-rss/breaches.xml" target="_blank" class="subscribe-btn">Subscribe Free</a>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-number" id="totalCount">-</div>
+                <div class="stat-label">Total Breaches</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="ransomwareCount">-</div>
+                <div class="stat-label">Ransomware</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="healthcareCount">-</div>
+                <div class="stat-label">Healthcare</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="lastUpdate">-</div>
+                <div class="stat-label">Last Update</div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Ransomware">Ransomware</button>
+            <button class="filter-btn" data-filter="Hacking">Hacking</button>
+            <button class="filter-btn" data-filter="Healthcare">Healthcare</button>
+            <button class="filter-btn" data-filter="Data Breach">Data Breach</button>
+        </div>
+
+        <div id="breachList" class="breach-list">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p style="margin-top: 15px;">Loading breach data...</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Data aggregated from HHS OCR, State AGs, Ransomware.live, and more</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html">About</a> ·
+                <a href="breaches.xml">Raw RSS</a> ·
+                <a href="https://github.com/publicvector/databreach-rss">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        let allBreaches = [];
+
+        async function loadFeed() {
+            try {
+                const response = await fetch('breaches.xml');
+                const text = await response.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(text, 'text/xml');
+
+                const items = xml.querySelectorAll('item');
+                allBreaches = Array.from(items).map(item => ({
+                    title: item.querySelector('title')?.textContent || 'Unknown',
+                    link: item.querySelector('link')?.textContent || '#',
+                    description: item.querySelector('description')?.textContent || '',
+                    pubDate: item.querySelector('pubDate')?.textContent || '',
+                    categories: Array.from(item.querySelectorAll('category')).map(c => c.textContent)
+                }));
+
+                updateStats();
+                renderBreaches(allBreaches);
+                setupFilters();
+            } catch (error) {
+                document.getElementById('breachList').innerHTML =
+                    '<p style="text-align:center;color:#ef4444;">Failed to load feed. Please try again.</p>';
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('totalCount').textContent = allBreaches.length;
+            document.getElementById('ransomwareCount').textContent =
+                allBreaches.filter(b => b.categories.some(c => c.toLowerCase().includes('ransomware'))).length;
+            document.getElementById('healthcareCount').textContent =
+                allBreaches.filter(b => b.categories.some(c => c.toLowerCase().includes('healthcare') || c.toLowerCase().includes('hhs'))).length;
+
+            if (allBreaches.length > 0 && allBreaches[0].pubDate) {
+                const date = new Date(allBreaches[0].pubDate);
+                document.getElementById('lastUpdate').textContent = date.toLocaleDateString();
+            }
+        }
+
+        function renderBreaches(breaches) {
+            const list = document.getElementById('breachList');
+
+            if (breaches.length === 0) {
+                list.innerHTML = '<p style="text-align:center;color:#71717a;padding:40px;">No breaches found for this filter.</p>';
+                return;
+            }
+
+            list.innerHTML = breaches.map(breach => {
+                const desc = breach.description.split('\n')[0]; // First line only
+                const meta = extractMeta(breach.description);
+
+                return `
+                    <div class="breach-card" data-categories="${breach.categories.join(',')}">
+                        <div class="breach-header">
+                            <h3 class="breach-title"><a href="${breach.link}" target="_blank">${breach.title}</a></h3>
+                            <span class="breach-date">${formatDate(breach.pubDate)}</span>
+                        </div>
+                        <p class="breach-description">${desc}</p>
+                        <div class="breach-meta">
+                            ${meta.source ? `<span class="tag tag-source">${meta.source}</span>` : ''}
+                            ${meta.type ? `<span class="tag tag-type">${meta.type}</span>` : ''}
+                            ${meta.records ? `<span class="tag tag-records">${meta.records} records</span>` : ''}
+                            ${meta.location ? `<span class="tag tag-location">${meta.location}</span>` : ''}
+                            ${meta.actor ? `<span class="tag tag-actor">${meta.actor}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function extractMeta(description) {
+            const meta = {};
+            const sourceMatch = description.match(/Source:\s*([^\n|]+)/i);
+            const typeMatch = description.match(/Type:\s*([^\n|]+)/i);
+            const recordsMatch = description.match(/Records Affected:\s*([^\n|]+)/i);
+            const locationMatch = description.match(/Location:\s*([^\n|]+)/i);
+            const actorMatch = description.match(/Threat Actor:\s*([^\n|]+)/i);
+
+            if (sourceMatch) meta.source = sourceMatch[1].trim();
+            if (typeMatch) meta.type = typeMatch[1].trim();
+            if (recordsMatch) meta.records = recordsMatch[1].trim();
+            if (locationMatch) meta.location = locationMatch[1].trim();
+            if (actorMatch) meta.actor = actorMatch[1].trim();
+
+            return meta;
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+
+        function setupFilters() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+                    if (filter === 'all') {
+                        renderBreaches(allBreaches);
+                    } else {
+                        const filtered = allBreaches.filter(b =>
+                            b.categories.some(c => c.toLowerCase().includes(filter.toLowerCase())) ||
+                            b.description.toLowerCase().includes(filter.toLowerCase())
+                        );
+                        renderBreaches(filtered);
+                    }
+                });
+            });
+        }
+
+        loadFeed();
+    </script>
+</body>
+</html>
