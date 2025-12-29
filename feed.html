@@ -303,6 +303,9 @@
                     categories: Array.from(item.querySelectorAll('category')).map(c => c.textContent)
                 }));
 
+                // Sort by date descending (newest first)
+                allBreaches.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
                 updateStats();
                 renderBreaches(allBreaches);
                 setupFilters();
