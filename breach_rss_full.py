@@ -2,26 +2,30 @@
 """
 Data Breach RSS Feed Generator - Full Version
 
-Aggregates data breach notifications from:
+Aggregates data breach notifications from 30+ sources:
 
 STATE REGISTRIES (require Selenium):
-- Maine AG
-- Texas AG  
-- Washington AG
-- California AG
+- Maine AG, Texas AG, Washington AG, California AG
 
 FEDERAL SOURCES:
 - HHS OCR (HIPAA breaches)
 
 RANSOMWARE TRACKERS:
-- ransomware.live API
-- breachsense.com
-- Red Packet Security
+- ransomware.live API, breachsense.com, Red Packet Security
 
 NEWS SOURCES (RSS):
-- databreaches.net
-- HIPAA Journal
-- BleepingComputer
+- databreaches.net, HIPAA Journal, BleepingComputer
+- Krebs on Security, The Record, The Hacker News
+- SecurityWeek, Dark Reading, CyberScoop, SC Media
+- Security Affairs, HackRead, WeLiveSecurity
+- Graham Cluley, Tripwire
+
+HEALTHCARE/FINANCE:
+- DataBreachToday, BankInfoSecurity
+
+THREAT INTEL (Vendor Blogs):
+- Cyble, Sophos, Kaspersky Securelist
+- SentinelOne Labs, Malwarebytes
 
 Outputs: RSS, Atom, JSON, CSV
 """
@@ -504,9 +508,85 @@ class BreachDataCollector:
         return entries
 
     # =========================================================================
+    # SECURITY NEWS RSS FEEDS
+    # =========================================================================
+
+    # Configurable list of security news RSS feeds
+    NEWS_FEEDS = [
+        # Cybersecurity News
+        ('Krebs on Security', 'https://krebsonsecurity.com/feed/', 'News'),
+        ('The Record', 'https://therecord.media/feed/', 'News'),
+        ('The Hacker News', 'https://feeds.feedburner.com/TheHackernews', 'News'),
+        ('SecurityWeek', 'https://feeds.feedburner.com/securityweek', 'News'),
+        ('Dark Reading', 'https://www.darkreading.com/rss.xml', 'News'),
+        ('CyberScoop', 'https://www.cyberscoop.com/feed', 'News'),
+        ('SC Media', 'https://www.scworld.com/feed', 'News'),
+        ('Security Affairs', 'https://securityaffairs.com/feed', 'News'),
+        ('HackRead', 'https://hackread.com/feed/', 'News'),
+        ('Cyble', 'https://cyble.com/feed/', 'Threat Intel'),
+        ('WeLiveSecurity', 'https://www.welivesecurity.com/en/feed/', 'News'),
+        ('Graham Cluley', 'https://grahamcluley.com/feed/', 'News'),
+        ('Tripwire', 'https://www.tripwire.com/state-of-security/feed', 'News'),
+        # Healthcare/Finance
+        ('DataBreachToday', 'https://www.databreachtoday.com/rssFeeds.php', 'Healthcare'),
+        ('BankInfoSecurity', 'https://www.bankinfosecurity.com/rss-feeds', 'Finance'),
+        # Vendor/Research
+        ('Sophos News', 'https://news.sophos.com/en-us/feed/', 'Threat Intel'),
+        ('Kaspersky Securelist', 'https://securelist.com/feed/', 'Threat Intel'),
+        ('SentinelOne Labs', 'https://www.sentinelone.com/feed/', 'Threat Intel'),
+        ('Malwarebytes Blog', 'https://www.malwarebytes.com/blog/feed', 'Threat Intel'),
+    ]
+
+    def fetch_security_news_feed(self, source_name: str, feed_url: str,
+                                  category: str, limit: int = 20) -> List[BreachEntry]:
+        """Generic fetcher for security news RSS feeds"""
+        entries = []
+
+        try:
+            feed = feedparser.parse(feed_url)
+            for item in feed.entries[:limit]:
+                title = item.get('title', '').lower()
+
+                # Filter for breach/security related content
+                keywords = ['breach', 'ransomware', 'hack', 'leak', 'attack', 'data',
+                           'malware', 'phishing', 'vulnerability', 'exploit', 'threat',
+                           'cyber', 'security', 'compromise', 'stolen', 'exposed']
+
+                if any(kw in title for kw in keywords):
+                    description = ''
+                    if hasattr(item, 'summary'):
+                        soup = BeautifulSoup(item.summary, 'html.parser')
+                        description = soup.get_text()[:500]
+
+                    entries.append(BreachEntry(
+                        company_name=item.get('title', 'Unknown'),
+                        date_reported=item.get('published', item.get('updated', '')),
+                        source=source_name,
+                        url=item.get('link', ''),
+                        description=description,
+                        breach_type=category
+                    ))
+        except Exception as e:
+            logger.warning(f"Failed to fetch {source_name}: {e}")
+
+        return entries
+
+    def fetch_all_news_feeds(self, limit_per_feed: int = 20) -> List[BreachEntry]:
+        """Fetch from all configured security news RSS feeds"""
+        all_entries = []
+
+        for source_name, feed_url, category in self.NEWS_FEEDS:
+            logger.info(f"Fetching from {source_name}...")
+            entries = self.fetch_security_news_feed(source_name, feed_url, category, limit_per_feed)
+            all_entries.extend(entries)
+            logger.info(f"Fetched {len(entries)} entries from {source_name}")
+
+        return all_entries
+
+    # =========================================================================
     # STATE REGISTRIES (SELENIUM REQUIRED)
     # =========================================================================
-    
+
     def fetch_maine_ag(self, limit: int = 20) -> List[BreachEntry]:
         """Fetch from Maine AG (requires Selenium)"""
         if not self.use_selenium:
@@ -706,6 +786,7 @@ class BreachDataCollector:
             ('California AG', self.fetch_california_ag),
             ('BleepingComputer', self.fetch_bleeping_computer),
             ('Red Packet Security', self.fetch_red_packet_security),
+            ('Security News Feeds', self.fetch_all_news_feeds),
         ]
         
         # Selenium sources (run sequentially to avoid browser conflicts)

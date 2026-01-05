@@ -6,7 +6,7 @@
     <title>Data Breach Feed | Live Updates</title>
     <meta name="description" content="Live data breach notifications from state registries, federal sources, and ransomware trackers.">
     <meta property="og:title" content="Data Breach Feed | Live Updates">
-    <meta property="og:description" content="Real-time breach notifications aggregated from 11+ authoritative sources.">
+    <meta property="og:description" content="Real-time breach notifications aggregated from 30+ authoritative sources.">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="breaches.xml">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -317,7 +317,7 @@
     <div class="container">
         <header>
             <h1>Data Breach Feed</h1>
-            <p class="subtitle">Real-time notifications from 11+ authoritative sources</p>
+            <p class="subtitle">Real-time notifications from 30+ authoritative sources</p>
         </header>
 
         <div class="subscribe-banner">
@@ -401,17 +401,41 @@
 
         // Source types mapping
         const SOURCE_TYPES = {
+            // Registries
             'HHS OCR': 'Registry',
             'California AG': 'Registry',
             'Maine AG': 'Registry',
             'Texas AG': 'Registry',
             'Washington AG': 'Registry',
+            // Ransomware Trackers
             'Ransomware.live': 'Ransomware Report',
             'Red Packet Security': 'Ransomware Report',
             'BreachSense': 'Ransomware Report',
+            // News
             'DataBreaches.net': 'News',
             'HIPAA Journal': 'News',
-            'BleepingComputer': 'News'
+            'BleepingComputer': 'News',
+            'Krebs on Security': 'News',
+            'The Record': 'News',
+            'The Hacker News': 'News',
+            'SecurityWeek': 'News',
+            'Dark Reading': 'News',
+            'CyberScoop': 'News',
+            'SC Media': 'News',
+            'Security Affairs': 'News',
+            'HackRead': 'News',
+            'WeLiveSecurity': 'News',
+            'Graham Cluley': 'News',
+            'Tripwire': 'News',
+            // Healthcare/Finance
+            'DataBreachToday': 'Healthcare',
+            'BankInfoSecurity': 'Finance',
+            // Threat Intel
+            'Cyble': 'Threat Intel',
+            'Sophos News': 'Threat Intel',
+            'Kaspersky Securelist': 'Threat Intel',
+            'SentinelOne Labs': 'Threat Intel',
+            'Malwarebytes Blog': 'Threat Intel'
         };
 
         async function loadFeed() {
