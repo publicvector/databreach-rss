@@ -8,7 +8,6 @@ STATE REGISTRIES (require Selenium):
 - Maine AG
 - Texas AG  
 - Washington AG
-- Hawaii DCCA
 - California AG
 
 FEDERAL SOURCES:
@@ -689,54 +688,6 @@ class BreachDataCollector:
         
         return entries
 
-    def fetch_hawaii_dcca(self, limit: int = 50) -> List[BreachEntry]:
-        """Fetch from Hawaii DCCA (requires Selenium)"""
-        if not self.use_selenium:
-            logger.info("Skipping Hawaii DCCA (Selenium disabled)")
-            return []
-        
-        entries = []
-        driver = None
-        
-        try:
-            driver = create_chrome_driver()
-            if not driver:
-                return entries
-            
-            logger.info("Fetching from Hawaii DCCA (Selenium)...")
-            driver.get("https://cca.hawaii.gov/ocp/notices/security-breach/")
-            time.sleep(3)
-            
-            df = pd.read_html(driver.page_source)[0]
-            
-            for _, row in df.head(limit).iterrows():
-                # Validate URL - use fallback if invalid
-                raw_url = str(row.get('Link to Letter', ''))
-                if raw_url.startswith('http'):
-                    entry_url = raw_url
-                else:
-                    entry_url = 'https://cca.hawaii.gov/ocp/notices/security-breach/'
-
-                entries.append(BreachEntry(
-                    company_name=str(row.get('Breached Entity Name', 'Unknown')),
-                    date_reported=str(row.get('Date Notified', '')),
-                    source='Hawaii DCCA',
-                    url=entry_url,
-                    state_records_affected=str(row.get('Hawaii Residents Impacted', 'N/A')),
-                    location='Hawaii',
-                    breach_type='State Registry'
-                ))
-            
-            logger.info(f"Fetched {len(entries)} entries from Hawaii DCCA")
-            
-        except Exception as e:
-            logger.error(f"Failed to fetch Hawaii DCCA: {e}")
-        finally:
-            if driver:
-                driver.quit()
-        
-        return entries
-
     # =========================================================================
     # MAIN COLLECTION
     # =========================================================================
@@ -762,7 +713,6 @@ class BreachDataCollector:
             ('Maine AG', self.fetch_maine_ag),
             ('Texas AG', self.fetch_texas_ag),
             ('Washington AG', self.fetch_washington_ag),
-            ('Hawaii DCCA', self.fetch_hawaii_dcca),
         ]
         
         # Fetch basic sources (can be parallel)
