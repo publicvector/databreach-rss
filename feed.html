@@ -83,6 +83,91 @@
             border-color: #f97316;
             color: #f97316;
         }
+        .filter-dropdowns {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .filter-group label {
+            font-size: 0.75rem;
+            color: #71717a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .filter-select {
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            color: #e4e4e7;
+            font-size: 0.85rem;
+            min-width: 150px;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23a1a1aa' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding-right: 30px;
+        }
+        .filter-select:hover, .filter-select:focus {
+            border-color: #f97316;
+            outline: none;
+        }
+        .filter-select option {
+            background: #1a1a2e;
+            color: #e4e4e7;
+        }
+        .clear-filters {
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            color: #f87171;
+            cursor: pointer;
+            font-size: 0.85rem;
+            align-self: flex-end;
+            transition: all 0.2s;
+        }
+        .clear-filters:hover {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: #ef4444;
+        }
+        .active-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .active-filter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            background: rgba(249, 115, 22, 0.2);
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #fb923c;
+        }
+        .active-filter-tag button {
+            background: none;
+            border: none;
+            color: #fb923c;
+            cursor: pointer;
+            padding: 0;
+            font-size: 1rem;
+            line-height: 1;
+        }
+        .results-count {
+            color: #71717a;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
         .breach-list {
             display: flex;
             flex-direction: column;
@@ -259,13 +344,36 @@
             </div>
         </div>
 
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="Ransomware">Ransomware</button>
-            <button class="filter-btn" data-filter="Hacking">Hacking</button>
-            <button class="filter-btn" data-filter="Healthcare">Healthcare</button>
-            <button class="filter-btn" data-filter="Data Breach">Data Breach</button>
+        <div class="filter-dropdowns">
+            <div class="filter-group">
+                <label>Type</label>
+                <select class="filter-select" id="filterType">
+                    <option value="">All Types</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Source</label>
+                <select class="filter-select" id="filterSource">
+                    <option value="">All Sources</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Country</label>
+                <select class="filter-select" id="filterCountry">
+                    <option value="">All Countries</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>State</label>
+                <select class="filter-select" id="filterState">
+                    <option value="">All States</option>
+                </select>
+            </div>
+            <button class="clear-filters" id="clearFilters" style="display:none;">Clear Filters</button>
         </div>
+
+        <div class="active-filters" id="activeFilters"></div>
+        <div class="results-count" id="resultsCount"></div>
 
         <div id="breachList" class="breach-list">
             <div class="loading">
@@ -286,6 +394,26 @@
 
     <script>
         let allBreaches = [];
+        let filterOptions = { types: new Set(), sources: new Set(), countries: new Set(), states: new Set() };
+
+        // US states for detection
+        const US_STATES = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming','DC','District of Columbia'];
+
+        // Source types mapping
+        const SOURCE_TYPES = {
+            'HHS OCR': 'Registry',
+            'California AG': 'Registry',
+            'Maine AG': 'Registry',
+            'Texas AG': 'Registry',
+            'Washington AG': 'Registry',
+            'Hawaii DCCA': 'Registry',
+            'Ransomware.live': 'Ransomware Report',
+            'Red Packet Security': 'Ransomware Report',
+            'BreachSense': 'Ransomware Report',
+            'DataBreaches.net': 'News',
+            'HIPAA Journal': 'News',
+            'BleepingComputer': 'News'
+        };
 
         async function loadFeed() {
             try {
@@ -295,17 +423,53 @@
                 const xml = parser.parseFromString(text, 'text/xml');
 
                 const items = xml.querySelectorAll('item');
-                allBreaches = Array.from(items).map(item => ({
-                    title: item.querySelector('title')?.textContent || 'Unknown',
-                    link: item.querySelector('link')?.textContent || '#',
-                    description: item.querySelector('description')?.textContent || '',
-                    pubDate: item.querySelector('pubDate')?.textContent || '',
-                    categories: Array.from(item.querySelectorAll('category')).map(c => c.textContent)
-                }));
+                allBreaches = Array.from(items).map(item => {
+                    const description = item.querySelector('description')?.textContent || '';
+                    const meta = extractMeta(description);
+                    const categories = Array.from(item.querySelectorAll('category')).map(c => c.textContent);
+
+                    // Determine source type
+                    const sourceType = SOURCE_TYPES[meta.source] || 'Other';
+
+                    // Parse location into country and state
+                    let country = meta.location || '';
+                    let state = '';
+
+                    // Check if location is a US state
+                    if (US_STATES.some(s => meta.location?.toLowerCase() === s.toLowerCase())) {
+                        state = meta.location;
+                        country = 'United States';
+                    } else if (meta.location?.includes(',')) {
+                        const parts = meta.location.split(',').map(p => p.trim());
+                        if (parts.length >= 2) {
+                            state = parts[0];
+                            country = parts[parts.length - 1];
+                        }
+                    }
+
+                    // Collect filter options
+                    if (sourceType) filterOptions.types.add(sourceType);
+                    if (meta.source) filterOptions.sources.add(meta.source);
+                    if (country) filterOptions.countries.add(country);
+                    if (state) filterOptions.states.add(state);
+
+                    return {
+                        title: item.querySelector('title')?.textContent || 'Unknown',
+                        link: item.querySelector('link')?.textContent || '#',
+                        description,
+                        pubDate: item.querySelector('pubDate')?.textContent || '',
+                        categories,
+                        meta,
+                        sourceType,
+                        country,
+                        state
+                    };
+                });
 
                 // Sort by date descending (newest first)
                 allBreaches.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
+                populateFilterDropdowns();
                 updateStats();
                 renderBreaches(allBreaches);
                 setupFilters();
@@ -313,6 +477,33 @@
                 document.getElementById('breachList').innerHTML =
                     '<p style="text-align:center;color:#ef4444;">Failed to load feed. Please try again.</p>';
             }
+        }
+
+        function populateFilterDropdowns() {
+            const typeSelect = document.getElementById('filterType');
+            const sourceSelect = document.getElementById('filterSource');
+            const countrySelect = document.getElementById('filterCountry');
+            const stateSelect = document.getElementById('filterState');
+
+            // Sort and populate types
+            [...filterOptions.types].sort().forEach(type => {
+                typeSelect.innerHTML += `<option value="${type}">${type}</option>`;
+            });
+
+            // Sort and populate sources
+            [...filterOptions.sources].sort().forEach(source => {
+                sourceSelect.innerHTML += `<option value="${source}">${source}</option>`;
+            });
+
+            // Sort and populate countries
+            [...filterOptions.countries].sort().forEach(country => {
+                countrySelect.innerHTML += `<option value="${country}">${country}</option>`;
+            });
+
+            // Sort and populate states
+            [...filterOptions.states].sort().forEach(state => {
+                stateSelect.innerHTML += `<option value="${state}">${state}</option>`;
+            });
         }
 
         function updateStats() {
@@ -328,20 +519,85 @@
             }
         }
 
+        function getActiveFilters() {
+            return {
+                type: document.getElementById('filterType').value,
+                source: document.getElementById('filterSource').value,
+                country: document.getElementById('filterCountry').value,
+                state: document.getElementById('filterState').value
+            };
+        }
+
+        function applyFilters() {
+            const filters = getActiveFilters();
+            const hasFilters = Object.values(filters).some(v => v);
+
+            document.getElementById('clearFilters').style.display = hasFilters ? 'block' : 'none';
+
+            // Update active filters display
+            const activeFiltersEl = document.getElementById('activeFilters');
+            activeFiltersEl.innerHTML = '';
+
+            if (filters.type) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">Type: ${filters.type} <button onclick="clearFilter('filterType')">&times;</button></span>`;
+            }
+            if (filters.source) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">Source: ${filters.source} <button onclick="clearFilter('filterSource')">&times;</button></span>`;
+            }
+            if (filters.country) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">Country: ${filters.country} <button onclick="clearFilter('filterCountry')">&times;</button></span>`;
+            }
+            if (filters.state) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">State: ${filters.state} <button onclick="clearFilter('filterState')">&times;</button></span>`;
+            }
+
+            // Filter breaches
+            const filtered = allBreaches.filter(breach => {
+                if (filters.type && breach.sourceType !== filters.type) return false;
+                if (filters.source && breach.meta.source !== filters.source) return false;
+                if (filters.country && breach.country !== filters.country) return false;
+                if (filters.state && breach.state !== filters.state) return false;
+                return true;
+            });
+
+            // Update results count
+            const resultsEl = document.getElementById('resultsCount');
+            if (hasFilters) {
+                resultsEl.textContent = `Showing ${filtered.length} of ${allBreaches.length} breaches`;
+            } else {
+                resultsEl.textContent = '';
+            }
+
+            renderBreaches(filtered);
+        }
+
+        function clearFilter(filterId) {
+            document.getElementById(filterId).value = '';
+            applyFilters();
+        }
+
+        function clearAllFilters() {
+            document.getElementById('filterType').value = '';
+            document.getElementById('filterSource').value = '';
+            document.getElementById('filterCountry').value = '';
+            document.getElementById('filterState').value = '';
+            applyFilters();
+        }
+
         function renderBreaches(breaches) {
             const list = document.getElementById('breachList');
 
             if (breaches.length === 0) {
-                list.innerHTML = '<p style="text-align:center;color:#71717a;padding:40px;">No breaches found for this filter.</p>';
+                list.innerHTML = '<p style="text-align:center;color:#71717a;padding:40px;">No breaches found matching your filters.</p>';
                 return;
             }
 
             list.innerHTML = breaches.map(breach => {
-                const desc = breach.description.split('\n')[0]; // First line only
-                const meta = extractMeta(breach.description);
+                const desc = breach.description.split('\n')[0];
+                const meta = breach.meta;
 
                 return `
-                    <div class="breach-card" data-categories="${breach.categories.join(',')}">
+                    <div class="breach-card">
                         <div class="breach-header">
                             <h3 class="breach-title"><a href="${breach.link}" target="_blank">${breach.title}</a></h3>
                             <span class="breach-date">${formatDate(breach.pubDate)}</span>
@@ -349,9 +605,9 @@
                         <p class="breach-description">${desc}</p>
                         <div class="breach-meta">
                             ${meta.source ? `<span class="tag tag-source">${meta.source}</span>` : ''}
-                            ${meta.type ? `<span class="tag tag-type">${meta.type}</span>` : ''}
+                            ${breach.sourceType ? `<span class="tag tag-type">${breach.sourceType}</span>` : ''}
                             ${meta.records ? `<span class="tag tag-records">${meta.records} records</span>` : ''}
-                            ${meta.location ? `<span class="tag tag-location">${meta.location}</span>` : ''}
+                            ${breach.country ? `<span class="tag tag-location">${breach.state ? breach.state + ', ' : ''}${breach.country}</span>` : ''}
                             ${meta.actor ? `<span class="tag tag-actor">${meta.actor}</span>` : ''}
                         </div>
                     </div>
@@ -383,23 +639,13 @@
         }
 
         function setupFilters() {
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-
-                    const filter = btn.dataset.filter;
-                    if (filter === 'all') {
-                        renderBreaches(allBreaches);
-                    } else {
-                        const filtered = allBreaches.filter(b =>
-                            b.categories.some(c => c.toLowerCase().includes(filter.toLowerCase())) ||
-                            b.description.toLowerCase().includes(filter.toLowerCase())
-                        );
-                        renderBreaches(filtered);
-                    }
-                });
+            // Dropdown filters
+            ['filterType', 'filterSource', 'filterCountry', 'filterState'].forEach(id => {
+                document.getElementById(id).addEventListener('change', applyFilters);
             });
+
+            // Clear all button
+            document.getElementById('clearFilters').addEventListener('click', clearAllFilters);
         }
 
         loadFeed();
