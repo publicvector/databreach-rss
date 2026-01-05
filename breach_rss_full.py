@@ -17,6 +17,7 @@ FEDERAL SOURCES:
 RANSOMWARE TRACKERS:
 - ransomware.live API
 - breachsense.com
+- Red Packet Security
 
 NEWS SOURCES (RSS):
 - databreaches.net
@@ -174,7 +175,7 @@ class BreachDataCollector:
                     company_name=victim.get('victim', 'Unknown'),
                     date_reported=victim.get('published', victim.get('discovered', '')),
                     source='Ransomware.live',
-                    url=f"https://www.ransomware.live/search?query={victim.get('victim', '')}",
+                    url=victim.get('url', f"https://www.ransomware.live/search?query={victim.get('victim', '')}"),
                     description=victim.get('activity', victim.get('description', ''))[:500],
                     location=victim.get('country', ''),
                     threat_actor=group_name,
@@ -452,7 +453,55 @@ class BreachDataCollector:
             logger.info(f"Fetched {len(entries)} entries from BleepingComputer")
         except Exception as e:
             logger.warning(f"Failed to fetch BleepingComputer: {e}")
-        
+
+        return entries
+
+    # =========================================================================
+    # RED PACKET SECURITY RSS
+    # =========================================================================
+    def fetch_red_packet_security(self, limit: int = 50) -> List[BreachEntry]:
+        """Fetch ransomware victim data from Red Packet Security RSS"""
+        entries = []
+        url = "https://www.redpacketsecurity.com/category/ransomware/feed/"
+
+        logger.info("Fetching from Red Packet Security RSS...")
+
+        try:
+            feed = feedparser.parse(url)
+            for item in feed.entries[:limit]:
+                title = item.get('title', '')
+
+                # Parse title format: "[GROUP] – Ransomware Victim: Company Name"
+                threat_actor = ''
+                company_name = title
+
+                if title.startswith('[') and ']' in title:
+                    bracket_end = title.index(']')
+                    threat_actor = title[1:bracket_end].strip()
+                    # Extract company name after "Ransomware Victim:"
+                    if 'Ransomware Victim:' in title:
+                        company_name = title.split('Ransomware Victim:')[-1].strip()
+                    elif '–' in title:
+                        company_name = title.split('–')[-1].strip()
+
+                description = ''
+                if hasattr(item, 'summary'):
+                    soup = BeautifulSoup(item.summary, 'html.parser')
+                    description = soup.get_text()[:500]
+
+                entries.append(BreachEntry(
+                    company_name=company_name,
+                    date_reported=item.get('published', ''),
+                    source='Red Packet Security',
+                    url=item.get('link', ''),
+                    description=description,
+                    threat_actor=threat_actor,
+                    breach_type='Ransomware'
+                ))
+            logger.info(f"Fetched {len(entries)} entries from Red Packet Security")
+        except Exception as e:
+            logger.warning(f"Failed to fetch Red Packet Security: {e}")
+
         return entries
 
     # =========================================================================
@@ -705,6 +754,7 @@ class BreachDataCollector:
             ('HHS OCR', self.fetch_hhs_ocr),
             ('California AG', self.fetch_california_ag),
             ('BleepingComputer', self.fetch_bleeping_computer),
+            ('Red Packet Security', self.fetch_red_packet_security),
         ]
         
         # Selenium sources (run sequentially to avoid browser conflicts)
