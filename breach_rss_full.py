@@ -769,13 +769,86 @@ class BreachDataCollector:
         return entries
 
     # =========================================================================
+    # RESCANA BLOG (SELENIUM REQUIRED - Wix site)
+    # =========================================================================
+    def fetch_rescana_blog(self, limit: int = 20) -> List[BreachEntry]:
+        """Fetch from Rescana blog (requires Selenium - Wix site)"""
+        if not self.use_selenium:
+            logger.info("Skipping Rescana blog (Selenium disabled)")
+            return []
+
+        entries = []
+        driver = None
+
+        try:
+            driver = create_chrome_driver()
+            if not driver:
+                return entries
+
+            logger.info("Fetching from Rescana blog (Selenium)...")
+            driver.get("https://www.rescana.com/blog")
+            time.sleep(5)  # Wait for Wix dynamic content to load
+
+            # Scroll to load more content
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(2)
+
+            # Find blog post elements - Wix typically uses data-testid or specific class patterns
+            posts = driver.find_elements(By.CSS_SELECTOR, '[data-testid="richTextElement"], .blog-post-title, h2 a, [data-hook="post-title"]')
+
+            if not posts:
+                # Try alternative selectors for Wix blogs
+                posts = driver.find_elements(By.XPATH, '//a[contains(@href, "/post/")]')
+
+            seen_urls = set()
+            for post in posts[:limit * 2]:  # Get more to filter duplicates
+                try:
+                    href = post.get_attribute('href')
+                    if not href or '/post/' not in href or href in seen_urls:
+                        continue
+                    seen_urls.add(href)
+
+                    title = post.text.strip() or post.get_attribute('title') or ''
+                    if not title:
+                        title = href.split('/post/')[-1].replace('-', ' ').title()
+
+                    # Filter for security-related content
+                    title_lower = title.lower()
+                    keywords = ['breach', 'ransomware', 'hack', 'cyber', 'attack', 'security',
+                               'threat', 'vulnerability', 'malware', 'data', 'incident']
+                    if any(kw in title_lower for kw in keywords):
+                        entries.append(BreachEntry(
+                            company_name=title,
+                            date_reported=datetime.now().strftime('%Y-%m-%d'),
+                            source='Rescana',
+                            url=href,
+                            description='',
+                            breach_type='Threat Intel'
+                        ))
+
+                    if len(entries) >= limit:
+                        break
+                except Exception:
+                    continue
+
+            logger.info(f"Fetched {len(entries)} entries from Rescana blog")
+
+        except Exception as e:
+            logger.error(f"Failed to fetch Rescana blog: {e}")
+        finally:
+            if driver:
+                driver.quit()
+
+        return entries
+
+    # =========================================================================
     # MAIN COLLECTION
     # =========================================================================
-    
+
     def collect_all(self, parallel: bool = True, include_selenium: bool = True) -> List[BreachEntry]:
         """Collect from all sources"""
         all_entries = []
-        
+
         # API and RSS sources (no Selenium needed)
         basic_sources = [
             ('ransomware.live', self.fetch_ransomware_live),
@@ -794,6 +867,7 @@ class BreachDataCollector:
             ('Maine AG', self.fetch_maine_ag),
             ('Texas AG', self.fetch_texas_ag),
             ('Washington AG', self.fetch_washington_ag),
+            ('Rescana', self.fetch_rescana_blog),
         ]
         
         # Fetch basic sources (can be parallel)
