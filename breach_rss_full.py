@@ -42,6 +42,7 @@ import hashlib
 from typing import List, Dict, Optional, Callable
 from dataclasses import dataclass, field, asdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from io import StringIO
 import feedparser
 import logging
 import argparse
@@ -155,7 +156,7 @@ class BreachDataCollector:
     # =========================================================================
     # RANSOMWARE.LIVE API
     # =========================================================================
-    def fetch_ransomware_live(self, limit: int = 100) -> List[BreachEntry]:
+    def fetch_ransomware_live(self, limit: int = 30) -> List[BreachEntry]:
         """Fetch recent victims from ransomware.live API (free, no auth)"""
         entries = []
         url = "https://api.ransomware.live/v2/recentvictims"
@@ -174,9 +175,15 @@ class BreachDataCollector:
                 if not group_name and 'group' in victim:
                     group_name = victim['group'] if isinstance(victim['group'], str) else victim['group'].get('name', '')
                 
+                # Use attackdate (when posted) or discovered as fallback
+                # Truncate microseconds for cleaner parsing
+                raw_date = victim.get('attackdate', victim.get('discovered', ''))
+                if raw_date and '.' in raw_date:
+                    raw_date = raw_date.split('.')[0]  # Remove microseconds
+
                 entries.append(BreachEntry(
                     company_name=victim.get('victim', 'Unknown'),
-                    date_reported=victim.get('published', victim.get('discovered', '')),
+                    date_reported=raw_date,
                     source='Ransomware.live',
                     url=victim.get('url', f"https://www.ransomware.live/search?query={victim.get('victim', '')}"),
                     description=victim.get('activity', victim.get('description', ''))[:500],
@@ -262,11 +269,11 @@ class BreachDataCollector:
                 # Look for threat actor in parent container
                 parent = link.find_parent(['article', 'div', 'section'])
                 threat_actor = ''
-                date_str = datetime.now().strftime('%Y-%m-%d')
-                
+                date_str = ''  # Don't default to today - let _parse_date handle it
+
                 if parent:
                     text = parent.get_text()
-                    
+
                     # Extract threat actor
                     actor_patterns = [
                         r'Threat Actor[:\s]+(\w+)',
@@ -278,14 +285,19 @@ class BreachDataCollector:
                         if match:
                             threat_actor = match.group(1)
                             break
-                    
-                    # Extract date
-                    date_match = re.search(
-                        r'((?:Dec|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov)\s+\d{1,2},?\s*\d{4})',
-                        text
-                    )
-                    if date_match:
-                        date_str = date_match.group(1)
+
+                    # Extract date - try multiple patterns
+                    date_patterns = [
+                        r'((?:Dec|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov)[a-z]*\s+\d{1,2},?\s*\d{4})',
+                        r'(\d{1,2}/\d{1,2}/\d{2,4})',
+                        r'(\d{4}-\d{2}-\d{2})',
+                        r'(\d{1,2}\s+(?:Dec|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov)[a-z]*\s+\d{4})',
+                    ]
+                    for pattern in date_patterns:
+                        date_match = re.search(pattern, text, re.IGNORECASE)
+                        if date_match:
+                            date_str = date_match.group(1)
+                            break
                 
                 full_url = f"{base_url}{href}" if href.startswith('/') else href
                 
@@ -362,31 +374,49 @@ class BreachDataCollector:
         """Fetch from HHS OCR Breach Portal (HIPAA breaches)"""
         entries = []
         url = "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf"
-        
+
         logger.info("Fetching from HHS OCR...")
         response = self._safe_request(url)
-        
+
         if not response:
             return entries
-        
+
         try:
-            tables = pd.read_html(response.text)
+            # Use StringIO for pandas compatibility with newer versions
+            tables = pd.read_html(StringIO(response.text))
             if len(tables) > 1:
                 df = tables[1]  # Main breach table is usually index 1
+
+                # The table may have an "Expand All" column with JS cruft - find the right columns
+                # Map expected column names to potential variations
+                col_map = {}
+                for col in df.columns:
+                    col_lower = str(col).lower()
+                    if 'name of covered entity' in col_lower:
+                        col_map['company'] = col
+                    elif 'breach submission date' in col_lower:
+                        col_map['date'] = col
+                    elif 'individuals affected' in col_lower:
+                        col_map['records'] = col
+                    elif col_lower == 'state':
+                        col_map['state'] = col
+                    elif 'type of breach' in col_lower:
+                        col_map['type'] = col
+
                 for _, row in df.head(limit).iterrows():
                     entries.append(BreachEntry(
-                        company_name=str(row.get('Name of Covered Entity', 'Unknown')),
-                        date_reported=str(row.get('Breach Submission Date', '')),
+                        company_name=str(row.get(col_map.get('company', 'Name of Covered Entity'), 'Unknown')),
+                        date_reported=str(row.get(col_map.get('date', 'Breach Submission Date'), '')),
                         source='HHS OCR',
                         url=url,
-                        records_affected=str(row.get('Individuals Affected', 'Unknown')),
-                        location=str(row.get('State', '')),
-                        breach_type=str(row.get('Type of Breach', 'Healthcare Breach'))
+                        records_affected=str(row.get(col_map.get('records', 'Individuals Affected'), 'Unknown')),
+                        location=str(row.get(col_map.get('state', 'State'), '')),
+                        breach_type=str(row.get(col_map.get('type', 'Type of Breach'), 'Healthcare Breach'))
                     ))
             logger.info(f"Fetched {len(entries)} entries from HHS OCR")
         except Exception as e:
             logger.error(f"Failed to fetch HHS OCR: {e}")
-        
+
         return entries
 
     # =========================================================================
@@ -396,15 +426,16 @@ class BreachDataCollector:
         """Fetch from California AG breach list"""
         entries = []
         url = "https://oag.ca.gov/privacy/databreach/list"
-        
+
         logger.info("Fetching from California AG...")
         response = self._safe_request(url)
-        
+
         if not response:
             return entries
-        
+
         try:
-            tables = pd.read_html(response.text)
+            # Use StringIO for pandas compatibility with newer versions
+            tables = pd.read_html(StringIO(response.text))
             if tables:
                 df = tables[0]
                 for _, row in df.head(limit).iterrows():
@@ -419,7 +450,7 @@ class BreachDataCollector:
             logger.info(f"Fetched {len(entries)} entries from California AG")
         except Exception as e:
             logger.error(f"Failed to fetch California AG: {e}")
-        
+
         return entries
 
     # =========================================================================
@@ -508,6 +539,144 @@ class BreachDataCollector:
         return entries
 
     # =========================================================================
+    # HENDRY ADRIAN RANSOM MONITOR
+    # =========================================================================
+    def fetch_hendry_adrian(self, limit: int = 50) -> List[BreachEntry]:
+        """Fetch from hendryadrian.com ransom monitor (WordPress)"""
+        entries = []
+        url = "https://www.hendryadrian.com/ransom-monitor/"
+
+        logger.info("Fetching from Hendry Adrian Ransom Monitor...")
+        response = self._safe_request(url)
+
+        if not response:
+            return entries
+
+        try:
+            soup = BeautifulSoup(response.text, 'html.parser')
+
+            # Find WordPress block post items
+            post_titles = soup.find_all('h2', class_='wp-block-post-title')
+
+            for title_el in post_titles[:limit]:
+                # Get the link and title
+                link = title_el.find('a')
+                if not link:
+                    continue
+
+                full_title = link.get_text(strip=True)
+                href = link.get('href', '')
+
+                # Strip "Ransom! " prefix from title
+                company_name = full_title
+                if full_title.startswith('Ransom!'):
+                    company_name = full_title.replace('Ransom!', '').strip()
+
+                # Find associated date (usually in a sibling div)
+                date_str = ''
+                parent = title_el.find_parent(class_='wp-block-post')
+                if parent:
+                    time_el = parent.find('time')
+                    if time_el:
+                        date_str = time_el.get('datetime', time_el.get_text(strip=True))
+
+                if company_name:
+                    entries.append(BreachEntry(
+                        company_name=company_name,
+                        date_reported=date_str,
+                        source='Hendry Adrian',
+                        url=href if href else url,
+                        breach_type='Ransomware'
+                    ))
+
+            logger.info(f"Fetched {len(entries)} entries from Hendry Adrian")
+        except Exception as e:
+            logger.warning(f"Failed to fetch Hendry Adrian: {e}")
+
+        return entries
+
+    # =========================================================================
+    # DEXPOSE INTEL FEEDS
+    # =========================================================================
+    def fetch_dexpose(self, limit: int = 50) -> List[BreachEntry]:
+        """Fetch from dexpose.io intel feeds"""
+        entries = []
+        url = "https://www.dexpose.io/intel-feeds/"
+
+        logger.info("Fetching from DeXpose Intel Feeds...")
+        response = self._safe_request(url)
+
+        if not response:
+            return entries
+
+        try:
+            soup = BeautifulSoup(response.text, 'html.parser')
+
+            # Known threat actor tags to look for
+            known_actors = [
+                'qilin', 'akira', 'lockbit', 'blackcat', 'alphv', 'clop', 'play',
+                'bianlian', 'medusa', 'rhysida', 'hunters', 'ransomhub', '8base',
+                'cactus', 'blackbasta', 'royal', 'vice', 'snatch', 'ragnar',
+                'payoutsking', 'conti', 'hive', 'revil', 'darkside', 'avaddon'
+            ]
+
+            # Find grid items with post class
+            grid_items = soup.find_all(class_=lambda x: x and 'w-grid-item' in str(x) and 'post' in str(x))
+
+            for item in grid_items[:limit]:
+                classes = item.get('class', [])
+
+                # Extract threat actor from CSS classes (tags)
+                threat_actor = ''
+                for cls in classes:
+                    if cls.startswith('tag-'):
+                        tag = cls.replace('tag-', '').lower()
+                        if tag in known_actors:
+                            threat_actor = tag.title()
+                            break
+
+                # Get title and link
+                title_el = item.find(class_='w-post-elm-title')
+                if not title_el:
+                    title_el = item.find(['h2', 'h3', 'h4'])
+
+                if not title_el:
+                    continue
+
+                link = title_el.find('a')
+                title = (link.get_text(strip=True) if link else title_el.get_text(strip=True))
+                href = link.get('href', '') if link else ''
+
+                # Get date
+                date_str = ''
+                time_el = item.find('time')
+                if time_el:
+                    date_str = time_el.get('datetime', time_el.get_text(strip=True))
+
+                # Get excerpt/description
+                description = ''
+                excerpt_el = item.find(class_='w-post-elm-content')
+                if excerpt_el:
+                    description = excerpt_el.get_text(strip=True)[:500]
+
+                if title:
+                    entries.append(BreachEntry(
+                        company_name=title,
+                        date_reported=date_str,
+                        source='DeXpose',
+                        url=href if href else url,
+                        description=description,
+                        threat_actor=threat_actor,
+                        breach_type='Ransomware'
+                    ))
+
+            logger.info(f"Fetched {len(entries)} entries from DeXpose")
+        except Exception as e:
+            logger.warning(f"Failed to fetch DeXpose: {e}")
+
+        return entries
+
+    # =========================================================================
     # SECURITY NEWS RSS FEEDS
     # =========================================================================
 
@@ -592,24 +761,32 @@ class BreachDataCollector:
         if not self.use_selenium:
             logger.info("Skipping Maine AG (Selenium disabled)")
             return []
-        
+
         entries = []
         driver = None
-        
+        base_url = 'https://www.maine.gov/agviewer/content/ag/985235c7-cb95-4be2-8792-a1252b4f8318/'
+        uuid_pattern = re.compile(r'^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\.s?html$')
+
         try:
             driver = create_chrome_driver()
             if not driver:
                 return entries
-            
+
             logger.info("Fetching from Maine AG (Selenium)...")
-            driver.get('https://www.maine.gov/agviewer/content/ag/985235c7-cb95-4be2-8792-a1252b4f8318/list.html')
+            driver.get(base_url + 'list.html')
             time.sleep(3)
-            
-            # Gather URLs
+
+            # Gather URLs - look for links with UUID pattern (site now uses relative URLs)
             urls = []
             for link in driver.find_elements(By.TAG_NAME, 'a'):
                 href = link.get_attribute("href")
-                if href and len(str(href)) > 100:
+                if not href:
+                    continue
+                # Check for full URL with UUID or relative UUID path
+                if uuid_pattern.search(href.split('/')[-1] if '/' in href else href):
+                    # Ensure we have the full URL
+                    if not href.startswith('http'):
+                        href = base_url + href
                     urls.append(href)
             
             # Visit each URL
@@ -665,47 +842,84 @@ class BreachDataCollector:
         if not self.use_selenium:
             logger.info("Skipping Texas AG (Selenium disabled)")
             return []
-        
+
         entries = []
         driver = None
-        
+
         try:
             driver = create_chrome_driver()
             if not driver:
                 return entries
-            
+
             logger.info("Fetching from Texas AG (Selenium)...")
             driver.get('https://oag.my.site.com/datasecuritybreachreport/apex/DataSecurityReportsPage')
-            
-            # Wait and click last page to get recent entries
-            wait = WebDriverWait(driver, 10)
-            last_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="mycdrs_last"]')))
-            last_button.click()
-            time.sleep(2)
-            
-            df = pd.read_html(driver.page_source)[0]
-            
+
+            # Wait for the DataTable to be initialized and data to load via Visualforce remoting
+            wait = WebDriverWait(driver, 20)
+
+            # Wait for the table body to have data rows (Visualforce loads data async)
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#mycdrs tbody tr td')))
+            time.sleep(2)  # Additional wait for full data population
+
+            # Click the date column header to sort descending (newest first)
+            # The date column is index 9 (0-based), find it in the header
+            try:
+                date_header = wait.until(EC.element_to_be_clickable(
+                    (By.XPATH, '//table[@id="mycdrs"]//th[contains(text(),"Date Published")]')
+                ))
+                # Click twice to sort descending (default is ascending)
+                date_header.click()
+                time.sleep(1)
+                date_header.click()
+                time.sleep(1)
+            except TimeoutException:
+                # Fallback: try clicking last page if header click fails
+                try:
+                    last_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#mycdrs_last')))
+                    last_button.click()
+                    time.sleep(2)
+                except Exception:
+                    logger.warning("Could not navigate to recent entries in Texas AG")
+
+            # Parse the table using pandas
+            tables = pd.read_html(StringIO(driver.page_source))
+            if not tables:
+                logger.warning("No tables found in Texas AG page")
+                return entries
+
+            # Find the table with the expected columns
+            df = None
+            for table in tables:
+                if 'Entity or Individual Name' in table.columns or len(table.columns) >= 9:
+                    df = table
+                    break
+
+            if df is None:
+                df = tables[0]
+
             for _, row in df.head(limit).iterrows():
-                location = f"{row.get('Entity or Individual City', '')}, {row.get('Entity or Individual State', '')}".strip(', ')
-                
+                city = row.get('Entity or Individual City', '')
+                state = row.get('Entity or Individual State', '')
+                location = f"{city}, {state}".strip(', ') if city or state else 'Texas'
+
                 entries.append(BreachEntry(
                     company_name=str(row.get('Entity or Individual Name', 'Unknown')),
                     date_reported=str(row.get('Date Published at OAG Website', '')),
                     source='Texas AG',
                     url='https://oag.my.site.com/datasecuritybreachreport/apex/DataSecurityReportsPage',
                     state_records_affected=str(row.get('Number of Texans Affected', 'N/A')),
-                    location=location or 'Texas',
+                    location=location,
                     breach_type='State Registry'
                 ))
-            
+
             logger.info(f"Fetched {len(entries)} entries from Texas AG")
-            
+
         except Exception as e:
             logger.error(f"Failed to fetch Texas AG: {e}")
         finally:
             if driver:
                 driver.quit()
-        
+
         return entries
 
     def fetch_washington_ag(self, limit: int = 50) -> List[BreachEntry]:
@@ -726,8 +940,8 @@ class BreachDataCollector:
             driver.get("https://www.atg.wa.gov/data-breach-notifications")
             time.sleep(3)
             
-            df = pd.read_html(driver.page_source)[0]
-            
+            df = pd.read_html(StringIO(driver.page_source))[0]
+
             for _, row in df.head(limit).iterrows():
                 try:
                     first_col = str(row[0]) if 0 in row.index else str(row.iloc[0])
@@ -817,9 +1031,28 @@ class BreachDataCollector:
                     keywords = ['breach', 'ransomware', 'hack', 'cyber', 'attack', 'security',
                                'threat', 'vulnerability', 'malware', 'data', 'incident']
                     if any(kw in title_lower for kw in keywords):
+                        # Try to get date from post page or parent element
+                        post_date = ''
+                        try:
+                            parent = post.find_element(By.XPATH, './ancestor::article | ./ancestor::div[contains(@class, "post")]')
+                            parent_text = parent.text
+                            # Look for common date patterns
+                            date_patterns = [
+                                r'(\d{1,2}/\d{1,2}/\d{2,4})',
+                                r'(\w+ \d{1,2},? \d{4})',
+                                r'(\d{4}-\d{2}-\d{2})',
+                            ]
+                            for pattern in date_patterns:
+                                match = re.search(pattern, parent_text)
+                                if match:
+                                    post_date = match.group(1)
+                                    break
+                        except Exception:
+                            pass
+
                         entries.append(BreachEntry(
                             company_name=title,
-                            date_reported=datetime.now().strftime('%Y-%m-%d'),
+                            date_reported=post_date,  # Empty string if not found - will be handled by _parse_date
                             source='Rescana',
                             url=href,
                             description='',
@@ -845,8 +1078,15 @@ class BreachDataCollector:
     # MAIN COLLECTION
     # =========================================================================
 
-    def collect_all(self, parallel: bool = True, include_selenium: bool = True) -> List[BreachEntry]:
-        """Collect from all sources"""
+    def collect_all(self, parallel: bool = True, include_selenium: bool = True,
+                     max_per_source: int = 25) -> List[BreachEntry]:
+        """Collect from all sources
+
+        Args:
+            parallel: Run basic sources in parallel
+            include_selenium: Include Selenium-based sources
+            max_per_source: Maximum entries per source to ensure balanced feed (0 = no limit)
+        """
         all_entries = []
 
         # API and RSS sources (no Selenium needed)
@@ -859,9 +1099,11 @@ class BreachDataCollector:
             ('California AG', self.fetch_california_ag),
             ('BleepingComputer', self.fetch_bleeping_computer),
             ('Red Packet Security', self.fetch_red_packet_security),
+            ('Hendry Adrian', self.fetch_hendry_adrian),
+            ('DeXpose', self.fetch_dexpose),
             ('Security News Feeds', self.fetch_all_news_feeds),
         ]
-        
+
         # Selenium sources (run sequentially to avoid browser conflicts)
         selenium_sources = [
             ('Maine AG', self.fetch_maine_ag),
@@ -869,7 +1111,14 @@ class BreachDataCollector:
             ('Washington AG', self.fetch_washington_ag),
             ('Rescana', self.fetch_rescana_blog),
         ]
-        
+
+        def cap_entries(entries: List[BreachEntry], source: str) -> List[BreachEntry]:
+            """Apply per-source cap if configured"""
+            if max_per_source > 0 and len(entries) > max_per_source:
+                logger.info(f"  Capping {source} from {len(entries)} to {max_per_source} entries")
+                return entries[:max_per_source]
+            return entries
+
         # Fetch basic sources (can be parallel)
         if parallel:
             with ThreadPoolExecutor(max_workers=5) as executor:
@@ -878,6 +1127,7 @@ class BreachDataCollector:
                     source_name = futures[future]
                     try:
                         entries = future.result()
+                        entries = cap_entries(entries, source_name)
                         all_entries.extend(entries)
                         logger.info(f"✓ {source_name}: {len(entries)} entries")
                     except Exception as e:
@@ -886,21 +1136,23 @@ class BreachDataCollector:
             for name, func in basic_sources:
                 try:
                     entries = func()
+                    entries = cap_entries(entries, name)
                     all_entries.extend(entries)
                     logger.info(f"✓ {name}: {len(entries)} entries")
                 except Exception as e:
                     logger.error(f"✗ {name} failed: {e}")
-        
+
         # Fetch Selenium sources sequentially
         if include_selenium and self.use_selenium:
             for name, func in selenium_sources:
                 try:
                     entries = func()
+                    entries = cap_entries(entries, name)
                     all_entries.extend(entries)
                     logger.info(f"✓ {name}: {len(entries)} entries")
                 except Exception as e:
                     logger.error(f"✗ {name} failed: {e}")
-        
+
         # Deduplicate
         seen_ids = set()
         unique_entries = []
@@ -990,29 +1242,56 @@ class RSSFeedGenerator:
     def _parse_date(self, date_str: str) -> datetime:
         """Parse date string to datetime with timezone"""
         if not date_str:
+            logger.debug("Empty date string, using current time")
             return datetime.now(timezone.utc)
-        
+
+        # Clean up the date string
+        clean_date = date_str.strip()
+        # Remove microseconds if present (common in API responses)
+        if '.' in clean_date and len(clean_date.split('.')[-1]) > 4:
+            clean_date = clean_date.split('.')[0]
+
         formats = [
+            '%Y-%m-%d %H:%M:%S.%f',  # With microseconds
+            '%Y-%m-%d %H:%M:%S',
+            '%Y-%m-%dT%H:%M:%S.%f',  # ISO with microseconds
+            '%Y-%m-%dT%H:%M:%S',
+            '%Y-%m-%dT%H:%M:%SZ',
+            '%Y-%m-%dT%H:%M:%S%z',
+            '%a, %d %b %Y %H:%M:%S %z',
+            '%a, %d %b %Y %H:%M:%S %Z',
+            '%a, %d %b %Y %H:%M:%S GMT',
             '%Y-%m-%d',
             '%m/%d/%Y',
             '%m/%d/%y',
             '%B %d, %Y',
             '%b %d, %Y',
-            '%Y-%m-%dT%H:%M:%S',
-            '%a, %d %b %Y %H:%M:%S %z',
-            '%a, %d %b %Y %H:%M:%S %Z',
-            '%Y-%m-%d %H:%M:%S',
+            '%b %d %Y',
+            '%b %d, %Y',  # Jan 5, 2024
+            '%d %b %Y',   # 5 Jan 2024
+            '%d %B %Y',   # 5 January 2024
         ]
-        
+
         for fmt in formats:
             try:
-                parsed = datetime.strptime(date_str.strip(), fmt)
+                parsed = datetime.strptime(clean_date, fmt)
                 if parsed.tzinfo is None:
                     parsed = parsed.replace(tzinfo=timezone.utc)
                 return parsed
             except ValueError:
                 continue
-        
+
+        # Try parsing with dateutil as a fallback
+        try:
+            from dateutil import parser as dateutil_parser
+            parsed = dateutil_parser.parse(clean_date)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=timezone.utc)
+            return parsed
+        except Exception:
+            pass
+
+        logger.warning(f"Could not parse date '{date_str}', using current time")
         return datetime.now(timezone.utc)
     
     def generate_rss(self) -> str:
@@ -1130,6 +1409,7 @@ Examples:
     parser.add_argument('--csv', '-c', help='Also save as CSV')
     parser.add_argument('--no-parallel', action='store_true', help='Disable parallel fetching')
     parser.add_argument('--no-selenium', action='store_true', help='Skip Selenium-based sources')
+    parser.add_argument('--max-per-source', type=int, default=25, help='Max entries per source for balanced feed (0=unlimited)')
     parser.add_argument('--serve', action='store_true', help='Run as Flask web server')
     parser.add_argument('--port', type=int, default=5000, help='Port for Flask server')
     args = parser.parse_args()
@@ -1151,7 +1431,8 @@ Examples:
     # Collect data
     entries = collector.collect_all(
         parallel=not args.no_parallel,
-        include_selenium=not args.no_selenium
+        include_selenium=not args.no_selenium,
+        max_per_source=args.max_per_source
     )
     
     # Sort by date (newest first)
