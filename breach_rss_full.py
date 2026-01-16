@@ -156,25 +156,35 @@ class BreachDataCollector:
     # =========================================================================
     # RANSOMWARE.LIVE API
     # =========================================================================
-    def fetch_ransomware_live(self, limit: int = 30) -> List[BreachEntry]:
-        """Fetch recent victims from ransomware.live API (free, no auth)"""
+    def fetch_ransomware_live(self, limit: int = 30, us_only: bool = True) -> List[BreachEntry]:
+        """Fetch recent victims from ransomware.live API (free, no auth)
+
+        Args:
+            limit: Maximum entries to return
+            us_only: If True, only include US-based victims
+        """
         entries = []
         url = "https://api.ransomware.live/v2/recentvictims"
-        
+
         logger.info("Fetching from ransomware.live API...")
         response = self._safe_request(url)
-        
+
         if not response:
             return entries
-        
+
         try:
             data = response.json()
-            for victim in data[:limit]:
+            for victim in data:
+                # Filter to US only if enabled
+                country = victim.get('country', '').upper()
+                if us_only and country not in ('US', 'USA', 'UNITED STATES'):
+                    continue
+
                 # Handle nested group info
                 group_name = victim.get('group_name', '')
                 if not group_name and 'group' in victim:
                     group_name = victim['group'] if isinstance(victim['group'], str) else victim['group'].get('name', '')
-                
+
                 # Use attackdate (when posted) or discovered as fallback
                 # Truncate microseconds for cleaner parsing
                 raw_date = victim.get('attackdate', victim.get('discovered', ''))
@@ -191,10 +201,14 @@ class BreachDataCollector:
                     threat_actor=group_name,
                     breach_type='Ransomware'
                 ))
-            logger.info(f"Fetched {len(entries)} entries from ransomware.live")
+
+                if len(entries) >= limit:
+                    break
+
+            logger.info(f"Fetched {len(entries)} US entries from ransomware.live")
         except (json.JSONDecodeError, KeyError) as e:
             logger.error(f"Failed to parse ransomware.live response: {e}")
-        
+
         return entries
 
     # =========================================================================
