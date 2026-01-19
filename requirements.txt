@@ -1,0 +1,15 @@
+# Core dependencies for generating the RSS feed
+requests>=2.31.0
+pandas>=2.0.0
+beautifulsoup4>=4.12.0
+feedgen>=1.0.0
+feedparser>=6.0.0
+lxml>=4.9.0
+python-dateutil>=2.8.0
+
+# Web server
+flask>=3.0.0
+
+# Selenium for state registry scraping
+selenium>=4.15.0
+webdriver-manager>=4.0.0

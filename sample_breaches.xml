@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Breach &amp; Ransomware Aggregator</title>
+    <link>https://example.com/breach-feed</link>
+    <description>Real-time data breach notifications from state registries, federal sources, and ransomware trackers</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Dec 2024 01:30:00 +0000</lastBuildDate>
+    <generator>Breach RSS Generator</generator>
+    <atom:link href="https://example.com/breach-feed/rss" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Clarinda Regional Health Center</title>
+      <link>https://www.ransomware.live/search?query=Clarinda%20Regional%20Health%20Center</link>
+      <description>Healthcare organization hit by ransomware attack.
+Threat Actor: LockBit
+Location: US
+Source: Ransomware.live
+Type: Ransomware</description>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">a1b2c3d4e5f6</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: LockBit</category>
+    </item>
+    
+    <item>
+      <title>Allen Printing Data Breach</title>
+      <link>https://www.breachsense.com/breaches/allen-printing-data-breach/</link>
+      <description>Printing company data exposed in ransomware attack.
+Threat Actor: TridenLocker
+Source: BreachSense
+Type: Ransomware</description>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">b2c3d4e5f6g7</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: TridenLocker</category>
+    </item>
+    
+    <item>
+      <title>Ukrainian National Pleads Guilty to Conspiracy to Use Nefilim Ransomware</title>
+      <link>https://databreaches.net/2024/12/20/ukrainian-national-pleads-guilty/</link>
+      <description>A Ukrainian national pleaded guilty to conspiracy to commit computer fraud for his role in ransomware attacks against US companies.
+Source: DataBreaches.net
+Type: Data Breach</description>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">c3d4e5f6g7h8</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+    </item>
+    
+    <item>
+      <title>FTC Issues Proposed Order Against Illusory Systems</title>
+      <link>https://databreaches.net/2024/12/19/ftc-issues-proposed-order/</link>
+      <description>FTC takes action against Illusory Systems for failing to implement adequate data security measures, leading to $186 million consumer theft.
+Source: DataBreaches.net
+Type: Data Breach</description>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">d4e5f6g7h8i9</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+    </item>
+    
+    <item>
+      <title>Regional Medical Center</title>
+      <link>https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf</link>
+      <description>HIPAA breach notification filed with HHS OCR.
+Records Affected: 125,000
+Location: California
+Source: HHS OCR
+Type: Healthcare Breach</description>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">e5f6g7h8i9j0</guid>
+      <category>Healthcare Breach</category>
+      <category>HHS OCR</category>
+    </item>
+    
+    <item>
+      <title>Acme Healthcare Services</title>
+      <link>https://www.maine.gov/ag/breach/12345</link>
+      <description>Data breach affecting consumer records.
+Records Affected: 50,000
+State Records: 2,500 Maine residents
+Location: Portland, ME
+Source: Maine AG
+Type: State Registry</description>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">f6g7h8i9j0k1</guid>
+      <category>State Registry</category>
+      <category>Maine AG</category>
+    </item>
+    
+    <item>
+      <title>Tech Solutions Inc</title>
+      <link>https://oag.my.site.com/datasecuritybreachreport/</link>
+      <description>Data security breach reported to Texas AG.
+State Records: 15,000 Texans
+Location: Austin, TX
+Source: Texas AG
+Type: State Registry</description>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">g7h8i9j0k1l2</guid>
+      <category>State Registry</category>
+      <category>Texas AG</category>
+    </item>
+    
+    <item>
+      <title>Healthcare Provider Reports 400K Patient Records Exposed</title>
+      <link>https://www.hipaajournal.com/healthcare-breach-400k/</link>
+      <description>Major healthcare provider discloses breach affecting patient records including PHI.
+Source: HIPAA Journal
+Type: Healthcare Breach</description>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">h8i9j0k1l2m3</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+    </item>
+    
+  </channel>
+</rss>

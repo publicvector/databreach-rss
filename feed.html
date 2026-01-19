@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Breach Feed | Live Updates</title>
+    <meta name="description" content="Live data breach notifications from state registries, federal sources, and ransomware trackers.">
+    <meta property="og:title" content="Data Breach Feed | Live Updates">
+    <meta property="og:description" content="Real-time breach notifications aggregated from 30+ authoritative sources.">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="breaches.xml">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f14;
+            min-height: 100vh;
+            color: #e4e4e7;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #f97316, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: #71717a;
+            font-size: 0.95rem;
+        }
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+        }
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f97316;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: #71717a;
+        }
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            color: #a1a1aa;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: rgba(249, 115, 22, 0.2);
+            border-color: #f97316;
+            color: #f97316;
+        }
+        .filter-dropdowns {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .filter-group label {
+            font-size: 0.75rem;
+            color: #71717a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .filter-select {
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            color: #e4e4e7;
+            font-size: 0.85rem;
+            min-width: 150px;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23a1a1aa' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding-right: 30px;
+        }
+        .filter-select:hover, .filter-select:focus {
+            border-color: #f97316;
+            outline: none;
+        }
+        .filter-select option {
+            background: #1a1a2e;
+            color: #e4e4e7;
+        }
+        .clear-filters {
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            color: #f87171;
+            cursor: pointer;
+            font-size: 0.85rem;
+            align-self: flex-end;
+            transition: all 0.2s;
+        }
+        .clear-filters:hover {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: #ef4444;
+        }
+        .active-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .active-filter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            background: rgba(249, 115, 22, 0.2);
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #fb923c;
+        }
+        .active-filter-tag button {
+            background: none;
+            border: none;
+            color: #fb923c;
+            cursor: pointer;
+            padding: 0;
+            font-size: 1rem;
+            line-height: 1;
+        }
+        .results-count {
+            color: #71717a;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+        .breach-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .breach-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+        .breach-card:hover {
+            border-color: rgba(249, 115, 22, 0.3);
+            background: rgba(255,255,255,0.05);
+        }
+        .breach-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 15px;
+        }
+        .breach-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .breach-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .breach-title a:hover {
+            color: #f97316;
+        }
+        .breach-date {
+            font-size: 0.8rem;
+            color: #71717a;
+            white-space: nowrap;
+        }
+        .breach-description {
+            color: #a1a1aa;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .breach-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .tag-source {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+        .tag-type {
+            background: rgba(249, 115, 22, 0.2);
+            color: #fb923c;
+        }
+        .tag-records {
+            background: rgba(34, 197, 94, 0.2);
+            color: #4ade80;
+        }
+        .tag-location {
+            background: rgba(168, 85, 247, 0.2);
+            color: #c084fc;
+        }
+        .tag-actor {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #71717a;
+        }
+        .spinner {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(249, 115, 22, 0.3);
+            border-top-color: #f97316;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #52525b;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #f97316;
+            text-decoration: none;
+        }
+        .subscribe-banner {
+            background: linear-gradient(90deg, rgba(249, 115, 22, 0.1), rgba(239, 68, 68, 0.1));
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .subscribe-banner span {
+            color: #a1a1aa;
+            font-size: 0.9rem;
+        }
+        .subscribe-btn {
+            padding: 8px 20px;
+            background: linear-gradient(90deg, #f97316, #ef4444);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        .subscribe-btn:hover {
+            opacity: 0.9;
+        }
+        @media (max-width: 600px) {
+            .breach-header {
+                flex-direction: column;
+            }
+            .stats-bar {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Data Breach Feed</h1>
+            <p class="subtitle">Real-time notifications from 30+ authoritative sources</p>
+        </header>
+
+        <div class="subscribe-banner">
+            <span>Get these updates in your RSS reader</span>
+            <a href="https://feedly.com/i/subscription/feed/https://publicvector.github.io/databreach-rss/breaches.xml" target="_blank" class="subscribe-btn">Subscribe Free</a>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-number" id="totalCount">-</div>
+                <div class="stat-label">Total Breaches</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="ransomwareCount">-</div>
+                <div class="stat-label">Ransomware</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="healthcareCount">-</div>
+                <div class="stat-label">Healthcare</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="lastUpdate">-</div>
+                <div class="stat-label">Last Update</div>
+            </div>
+        </div>
+
+        <div class="filter-dropdowns">
+            <div class="filter-group">
+                <label>Type</label>
+                <select class="filter-select" id="filterType">
+                    <option value="">All Types</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Source</label>
+                <select class="filter-select" id="filterSource">
+                    <option value="">All Sources</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Country</label>
+                <select class="filter-select" id="filterCountry">
+                    <option value="">All Countries</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>State</label>
+                <select class="filter-select" id="filterState">
+                    <option value="">All States</option>
+                </select>
+            </div>
+            <button class="clear-filters" id="clearFilters" style="display:none;">Clear Filters</button>
+        </div>
+
+        <div class="active-filters" id="activeFilters"></div>
+        <div class="results-count" id="resultsCount"></div>
+
+        <div id="breachList" class="breach-list">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p style="margin-top: 15px;">Loading breach data...</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Data aggregated from HHS OCR, State AGs, Ransomware.live, and more</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html">About</a> ·
+                <a href="breaches.xml">Raw RSS</a> ·
+                <a href="https://github.com/publicvector/databreach-rss">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        let allBreaches = [];
+        let filterOptions = { types: new Set(), sources: new Set(), countries: new Set(), states: new Set() };
+
+        // US states for detection
+        const US_STATES = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming','DC','District of Columbia'];
+
+        // Source types mapping
+        const SOURCE_TYPES = {
+            // Registries
+            'HHS OCR': 'Registry',
+            'California AG': 'Registry',
+            'Maine AG': 'Registry',
+            'Texas AG': 'Registry',
+            'Washington AG': 'Registry',
+            // Ransomware Trackers
+            'Ransomware.live': 'Ransomware Report',
+            'Red Packet Security': 'Ransomware Report',
+            'BreachSense': 'Ransomware Report',
+            // News
+            'DataBreaches.net': 'News',
+            'HIPAA Journal': 'News',
+            'BleepingComputer': 'News',
+            'Krebs on Security': 'News',
+            'The Record': 'News',
+            'The Hacker News': 'News',
+            'SecurityWeek': 'News',
+            'Dark Reading': 'News',
+            'CyberScoop': 'News',
+            'SC Media': 'News',
+            'Security Affairs': 'News',
+            'HackRead': 'News',
+            'WeLiveSecurity': 'News',
+            'Graham Cluley': 'News',
+            'Tripwire': 'News',
+            // Healthcare/Finance
+            'DataBreachToday': 'Healthcare',
+            'BankInfoSecurity': 'Finance',
+            // Threat Intel
+            'Cyble': 'Threat Intel',
+            'Sophos News': 'Threat Intel',
+            'Kaspersky Securelist': 'Threat Intel',
+            'SentinelOne Labs': 'Threat Intel',
+            'Malwarebytes Blog': 'Threat Intel',
+            'Rescana': 'Threat Intel'
+        };
+
+        async function loadFeed() {
+            try {
+                const response = await fetch('breaches.xml');
+                const text = await response.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(text, 'text/xml');
+
+                const items = xml.querySelectorAll('item');
+                allBreaches = Array.from(items).map(item => {
+                    const description = item.querySelector('description')?.textContent || '';
+                    const meta = extractMeta(description);
+                    const categories = Array.from(item.querySelectorAll('category')).map(c => c.textContent);
+
+                    // Determine source type
+                    const sourceType = SOURCE_TYPES[meta.source] || 'Other';
+
+                    // Parse location into country and state
+                    let country = meta.location || '';
+                    let state = '';
+
+                    // Check if location is a US state
+                    if (US_STATES.some(s => meta.location?.toLowerCase() === s.toLowerCase())) {
+                        state = meta.location;
+                        country = 'United States';
+                    } else if (meta.location?.includes(',')) {
+                        const parts = meta.location.split(',').map(p => p.trim());
+                        if (parts.length >= 2) {
+                            state = parts[0];
+                            country = parts[parts.length - 1];
+                        }
+                    }
+
+                    // Collect filter options
+                    if (sourceType) filterOptions.types.add(sourceType);
+                    if (meta.source) filterOptions.sources.add(meta.source);
+                    if (country) filterOptions.countries.add(country);
+                    if (state) filterOptions.states.add(state);
+
+                    return {
+                        title: item.querySelector('title')?.textContent || 'Unknown',
+                        link: item.querySelector('link')?.textContent || '#',
+                        description,
+                        pubDate: item.querySelector('pubDate')?.textContent || '',
+                        categories,
+                        meta,
+                        sourceType,
+                        country,
+                        state
+                    };
+                });
+
+                // Sort by date descending (newest first)
+                allBreaches.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
+                populateFilterDropdowns();
+                updateStats();
+                renderBreaches(allBreaches);
+                setupFilters();
+            } catch (error) {
+                document.getElementById('breachList').innerHTML =
+                    '<p style="text-align:center;color:#ef4444;">Failed to load feed. Please try again.</p>';
+            }
+        }
+
+        function populateFilterDropdowns() {
+            const typeSelect = document.getElementById('filterType');
+            const sourceSelect = document.getElementById('filterSource');
+            const countrySelect = document.getElementById('filterCountry');
+            const stateSelect = document.getElementById('filterState');
+
+            // Sort and populate types
+            [...filterOptions.types].sort().forEach(type => {
+                typeSelect.innerHTML += `<option value="${type}">${type}</option>`;
+            });
+
+            // Sort and populate sources
+            [...filterOptions.sources].sort().forEach(source => {
+                sourceSelect.innerHTML += `<option value="${source}">${source}</option>`;
+            });
+
+            // Sort and populate countries
+            [...filterOptions.countries].sort().forEach(country => {
+                countrySelect.innerHTML += `<option value="${country}">${country}</option>`;
+            });
+
+            // Sort and populate states
+            [...filterOptions.states].sort().forEach(state => {
+                stateSelect.innerHTML += `<option value="${state}">${state}</option>`;
+            });
+        }
+
+        function updateStats() {
+            document.getElementById('totalCount').textContent = allBreaches.length;
+            document.getElementById('ransomwareCount').textContent =
+                allBreaches.filter(b => b.categories.some(c => c.toLowerCase().includes('ransomware'))).length;
+            document.getElementById('healthcareCount').textContent =
+                allBreaches.filter(b => b.categories.some(c => c.toLowerCase().includes('healthcare') || c.toLowerCase().includes('hhs'))).length;
+
+            if (allBreaches.length > 0 && allBreaches[0].pubDate) {
+                const date = new Date(allBreaches[0].pubDate);
+                document.getElementById('lastUpdate').textContent = date.toLocaleDateString();
+            }
+        }
+
+        function getActiveFilters() {
+            return {
+                type: document.getElementById('filterType').value,
+                source: document.getElementById('filterSource').value,
+                country: document.getElementById('filterCountry').value,
+                state: document.getElementById('filterState').value
+            };
+        }
+
+        function applyFilters() {
+            const filters = getActiveFilters();
+            const hasFilters = Object.values(filters).some(v => v);
+
+            document.getElementById('clearFilters').style.display = hasFilters ? 'block' : 'none';
+
+            // Update active filters display
+            const activeFiltersEl = document.getElementById('activeFilters');
+            activeFiltersEl.innerHTML = '';
+
+            if (filters.type) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">Type: ${filters.type} <button onclick="clearFilter('filterType')">&times;</button></span>`;
+            }
+            if (filters.source) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">Source: ${filters.source} <button onclick="clearFilter('filterSource')">&times;</button></span>`;
+            }
+            if (filters.country) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">Country: ${filters.country} <button onclick="clearFilter('filterCountry')">&times;</button></span>`;
+            }
+            if (filters.state) {
+                activeFiltersEl.innerHTML += `<span class="active-filter-tag">State: ${filters.state} <button onclick="clearFilter('filterState')">&times;</button></span>`;
+            }
+
+            // Filter breaches
+            const filtered = allBreaches.filter(breach => {
+                if (filters.type && breach.sourceType !== filters.type) return false;
+                if (filters.source && breach.meta.source !== filters.source) return false;
+                if (filters.country && breach.country !== filters.country) return false;
+                if (filters.state && breach.state !== filters.state) return false;
+                return true;
+            });
+
+            // Update results count
+            const resultsEl = document.getElementById('resultsCount');
+            if (hasFilters) {
+                resultsEl.textContent = `Showing ${filtered.length} of ${allBreaches.length} breaches`;
+            } else {
+                resultsEl.textContent = '';
+            }
+
+            renderBreaches(filtered);
+        }
+
+        function clearFilter(filterId) {
+            document.getElementById(filterId).value = '';
+            applyFilters();
+        }
+
+        function clearAllFilters() {
+            document.getElementById('filterType').value = '';
+            document.getElementById('filterSource').value = '';
+            document.getElementById('filterCountry').value = '';
+            document.getElementById('filterState').value = '';
+            applyFilters();
+        }
+
+        function renderBreaches(breaches) {
+            const list = document.getElementById('breachList');
+
+            if (breaches.length === 0) {
+                list.innerHTML = '<p style="text-align:center;color:#71717a;padding:40px;">No breaches found matching your filters.</p>';
+                return;
+            }
+
+            list.innerHTML = breaches.map(breach => {
+                const desc = breach.description.split('\n')[0];
+                const meta = breach.meta;
+
+                return `
+                    <div class="breach-card">
+                        <div class="breach-header">
+                            <h3 class="breach-title"><a href="${breach.link}" target="_blank">${breach.title}</a></h3>
+                            <span class="breach-date">${formatDate(breach.pubDate)}</span>
+                        </div>
+                        <p class="breach-description">${desc}</p>
+                        <div class="breach-meta">
+                            ${meta.source ? `<span class="tag tag-source">${meta.source}</span>` : ''}
+                            ${breach.sourceType ? `<span class="tag tag-type">${breach.sourceType}</span>` : ''}
+                            ${meta.records ? `<span class="tag tag-records">${meta.records} records</span>` : ''}
+                            ${breach.country ? `<span class="tag tag-location">${breach.state ? breach.state + ', ' : ''}${breach.country}</span>` : ''}
+                            ${meta.actor ? `<span class="tag tag-actor">${meta.actor}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function extractMeta(description) {
+            const meta = {};
+            const sourceMatch = description.match(/Source:\s*([^\n|]+)/i);
+            const typeMatch = description.match(/Type:\s*([^\n|]+)/i);
+            const recordsMatch = description.match(/Records Affected:\s*([^\n|]+)/i);
+            const locationMatch = description.match(/Location:\s*([^\n|]+)/i);
+            const actorMatch = description.match(/Threat Actor:\s*([^\n|]+)/i);
+
+            if (sourceMatch) meta.source = sourceMatch[1].trim();
+            if (typeMatch) meta.type = typeMatch[1].trim();
+            if (recordsMatch) meta.records = recordsMatch[1].trim();
+            if (locationMatch) meta.location = locationMatch[1].trim();
+            if (actorMatch) meta.actor = actorMatch[1].trim();
+
+            return meta;
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+
+        function setupFilters() {
+            // Dropdown filters
+            ['filterType', 'filterSource', 'filterCountry', 'filterState'].forEach(id => {
+                document.getElementById(id).addEventListener('change', applyFilters);
+            });
+
+            // Clear all button
+            document.getElementById('clearFilters').addEventListener('click', clearAllFilters);
+        }
+
+        loadFeed();
+    </script>
+</body>
+</html>
