@@ -92,10 +92,37 @@ class BreachEntry:
     
     @property
     def unique_id(self) -> str:
-        """Generate unique ID for deduplication"""
+        """Generate unique ID for deduplication based on source (legacy)"""
         # Normalize company name for better deduplication
         normalized_name = re.sub(r'[^\w\s]', '', self.company_name.lower())
         content = f"{normalized_name}{self.date_reported[:10] if len(self.date_reported) > 10 else self.date_reported}{self.source}"
+        return hashlib.md5(content.encode()).hexdigest()
+
+    @property
+    def case_id(self) -> str:
+        """Generate case ID for cross-source deduplication (one entry per breach case)"""
+        # Normalize company name - remove punctuation, lowercase, strip common suffixes
+        normalized_name = re.sub(r'[^\w\s]', '', self.company_name.lower())
+        # Remove common corporate suffixes for better matching
+        for suffix in [' inc', ' llc', ' ltd', ' corp', ' corporation', ' company', ' co']:
+            if normalized_name.endswith(suffix):
+                normalized_name = normalized_name[:-len(suffix)]
+        normalized_name = normalized_name.strip()
+
+        # Extract just the date portion (YYYY-MM or YYYY-MM-DD) for matching
+        date_part = ''
+        if self.date_reported:
+            # Try to extract YYYY-MM from various date formats
+            date_match = re.search(r'(\d{4})-(\d{2})', self.date_reported)
+            if date_match:
+                date_part = f"{date_match.group(1)}-{date_match.group(2)}"
+            else:
+                # Try MM/YYYY or MM/DD/YYYY format
+                date_match = re.search(r'(\d{1,2})/\d{1,2}/(\d{4})', self.date_reported)
+                if date_match:
+                    date_part = f"{date_match.group(2)}-{date_match.group(1).zfill(2)}"
+
+        content = f"{normalized_name}{date_part}"
         return hashlib.md5(content.encode()).hexdigest()
 
 
@@ -1268,15 +1295,33 @@ class BreachDataCollector:
                 except Exception as e:
                     logger.error(f"✗ {name} failed: {e}")
 
-        # Deduplicate
-        seen_ids = set()
-        unique_entries = []
+        # Deduplicate by case_id (one entry per breach case across all sources)
+        case_entries: Dict[str, BreachEntry] = {}
         for entry in all_entries:
-            if entry.unique_id not in seen_ids:
-                seen_ids.add(entry.unique_id)
-                unique_entries.append(entry)
-        
-        logger.info(f"Total unique entries: {len(unique_entries)}")
+            case_key = entry.case_id
+            if case_key not in case_entries:
+                case_entries[case_key] = entry
+            else:
+                # Merge information from duplicate entries
+                existing = case_entries[case_key]
+
+                # Merge sources (comma-separated list of unique sources)
+                existing_sources = set(s.strip() for s in existing.source.split(','))
+                existing_sources.add(entry.source)
+                existing.source = ', '.join(sorted(existing_sources))
+
+                # Prefer non-empty values for optional fields
+                if not existing.threat_actor and entry.threat_actor:
+                    existing.threat_actor = entry.threat_actor
+                if not existing.description and entry.description:
+                    existing.description = entry.description
+                if existing.records_affected in ['Unknown', 'N/A', ''] and entry.records_affected not in ['Unknown', 'N/A', '']:
+                    existing.records_affected = entry.records_affected
+                if not existing.location and entry.location:
+                    existing.location = entry.location
+
+        unique_entries = list(case_entries.values())
+        logger.info(f"Total unique cases: {len(unique_entries)} (from {len(all_entries)} raw entries)")
         return unique_entries
 
 
