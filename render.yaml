@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: databreach-rss
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python breach_rss_full.py --serve --enable-blogs --no-selenium --port $PORT
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11"
