@@ -218,3 +218,4 @@ def generate_index_html(entries, blog_result):
 if __name__ == "__main__":
     max_blogs = int(os.environ.get("MAX_BLOGS", 50))
     generate_static_site(max_blogs=max_blogs)
+
