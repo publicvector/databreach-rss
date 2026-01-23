@@ -36,10 +36,10 @@ except ImportError:
     READABILITY_AVAILABLE = False
 
 try:
-    from openai import OpenAI
-    OPENAI_AVAILABLE = True
+    import anthropic
+    ANTHROPIC_AVAILABLE = True
 except ImportError:
-    OPENAI_AVAILABLE = False
+    ANTHROPIC_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
 
@@ -368,9 +368,9 @@ class BlogCache:
 # =============================================================================
 
 class BlogGenerator:
-    """Generate blog posts from breach entries using OpenAI API"""
+    """Generate blog posts from breach entries using Claude API"""
 
-    DEFAULT_MODEL = "gpt-4o-mini"
+    DEFAULT_MODEL = "claude-sonnet-4-20250514"
 
     DEFAULT_CONTACT_BOILERPLATE = """If you believe your information may have been affected by this data breach,
 you may be entitled to compensation. Contact our experienced data breach attorneys for a free,
@@ -383,7 +383,7 @@ confidential consultation. We can help you understand your rights and options.""
         contact_boilerplate: Optional[str] = None,
         cache_dir: str = "./blog_cache"
     ):
-        self.api_key = api_key or os.environ.get('OPENAI_API_KEY')
+        self.api_key = api_key or os.environ.get('ANTHROPIC_API_KEY')
         self.model = model or os.environ.get('BLOG_MODEL', self.DEFAULT_MODEL)
         self.contact_boilerplate = (
             contact_boilerplate or
@@ -397,12 +397,12 @@ confidential consultation. We can help you understand your rights and options.""
         self.rate_limiter = RateLimiter(requests_per_minute=20)
 
         self.client = None
-        if self.api_key and OPENAI_AVAILABLE:
-            self.client = OpenAI(api_key=self.api_key)
-        elif not OPENAI_AVAILABLE:
-            logger.warning("OpenAI library not installed. Blog generation disabled.")
+        if self.api_key and ANTHROPIC_AVAILABLE:
+            self.client = anthropic.Anthropic(api_key=self.api_key)
+        elif not ANTHROPIC_AVAILABLE:
+            logger.warning("Anthropic library not installed. Blog generation disabled.")
         elif not self.api_key:
-            logger.warning("OPENAI_API_KEY not set. Blog generation disabled.")
+            logger.warning("ANTHROPIC_API_KEY not set. Blog generation disabled.")
 
     def _build_prompt(self, entry: Any, extracted_text: Optional[str]) -> str:
         """Build the prompt for OpenAI API"""
@@ -505,17 +505,16 @@ Respond in JSON format:
 
             prompt = self._build_prompt(entry, extracted_text)
 
-            response = self.client.chat.completions.create(
+            response = self.client.messages.create(
                 model=self.model,
+                max_tokens=1500,
+                system="You are a helpful legal writer. Always respond with valid JSON.",
                 messages=[
-                    {"role": "system", "content": "You are a helpful legal writer. Always respond with valid JSON."},
                     {"role": "user", "content": prompt}
-                ],
-                temperature=0.7,
-                max_tokens=1500
+                ]
             )
 
-            content = response.choices[0].message.content.strip()
+            content = response.content[0].text.strip()
 
             # Parse JSON response
             # Handle potential markdown code blocks

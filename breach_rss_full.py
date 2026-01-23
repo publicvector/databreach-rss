@@ -1483,7 +1483,7 @@ class RSSFeedGenerator:
 def create_flask_app(
     collector: BreachDataCollector,
     enable_blogs: bool = False,
-    openai_key: Optional[str] = None,
+    anthropic_key: Optional[str] = None,
     blog_contact: Optional[str] = None,
     blog_cache_dir: str = "./blog_cache"
 ):
@@ -1501,7 +1501,7 @@ def create_flask_app(
     blog_generator = None
     if enable_blogs and BLOG_GENERATOR_AVAILABLE:
         blog_generator = BlogGenerator(
-            api_key=openai_key,
+            api_key=anthropic_key,
             contact_boilerplate=blog_contact,
             cache_dir=blog_cache_dir
         )
@@ -1677,10 +1677,10 @@ Examples:
   python breach_rss_full.py -o breaches.xml --no-selenium
 
   # Run with AI blog generation enabled
-  OPENAI_API_KEY=sk-... python breach_rss_full.py --serve --enable-blogs
+  ANTHROPIC_API_KEY=sk-ant-... python breach_rss_full.py --serve --enable-blogs
 
   # With custom contact boilerplate
-  python breach_rss_full.py --serve --enable-blogs --openai-key sk-... \\
+  python breach_rss_full.py --serve --enable-blogs --anthropic-key sk-ant-... \\
     --blog-contact "Contact our team at 1-800-XXX-XXXX for a free consultation."
         """
     )
@@ -1697,8 +1697,8 @@ Examples:
     # Blog generation options
     parser.add_argument('--enable-blogs', action='store_true',
                         help='Enable AI-powered blog generation endpoint (/blogs)')
-    parser.add_argument('--openai-key', type=str, default=None,
-                        help='OpenAI API key (or set OPENAI_API_KEY env var)')
+    parser.add_argument('--anthropic-key', type=str, default=None,
+                        help='Anthropic API key (or set ANTHROPIC_API_KEY env var)')
     parser.add_argument('--blog-contact', type=str, default=None,
                         help='Custom contact boilerplate for blog posts (or set BLOG_CONTACT_BOILERPLATE env var)')
     parser.add_argument('--blog-cache-dir', type=str, default='./blog_cache',
@@ -1714,7 +1714,7 @@ Examples:
         app = create_flask_app(
             collector,
             enable_blogs=args.enable_blogs,
-            openai_key=args.openai_key,
+            anthropic_key=args.anthropic_key,
             blog_contact=args.blog_contact,
             blog_cache_dir=args.blog_cache_dir
         )
