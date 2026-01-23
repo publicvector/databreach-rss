@@ -13,3 +13,8 @@ flask>=3.0.0
 # Selenium for state registry scraping
 selenium>=4.15.0
 webdriver-manager>=4.0.0
+
+# Blog generation (optional)
+openai>=1.0.0
+newspaper3k>=0.2.8
+readability-lxml>=0.8.1

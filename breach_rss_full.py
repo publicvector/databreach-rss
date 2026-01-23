@@ -48,6 +48,13 @@ import logging
 import argparse
 import os
 
+# Blog generator import (optional)
+try:
+    from blog_generator import BlogGenerator, DataValidator
+    BLOG_GENERATOR_AVAILABLE = True
+except ImportError:
+    BLOG_GENERATOR_AVAILABLE = False
+
 # Selenium imports (optional)
 try:
     from selenium import webdriver
@@ -1473,61 +1480,168 @@ class RSSFeedGenerator:
 # FLASK SERVER (OPTIONAL)
 # =============================================================================
 
-def create_flask_app(collector: BreachDataCollector):
-    """Create Flask app to serve the RSS feed"""
+def create_flask_app(
+    collector: BreachDataCollector,
+    enable_blogs: bool = False,
+    openai_key: Optional[str] = None,
+    blog_contact: Optional[str] = None,
+    blog_cache_dir: str = "./blog_cache"
+):
+    """Create Flask app to serve the RSS feed and optional blog generator"""
     try:
-        from flask import Flask, Response, jsonify
+        from flask import Flask, Response, jsonify, request
     except ImportError:
         logger.error("Flask not installed. Run: pip install flask")
         return None
-    
+
     app = Flask(__name__)
     cache = {'entries': [], 'last_update': None}
-    
+
+    # Initialize blog generator if enabled
+    blog_generator = None
+    if enable_blogs and BLOG_GENERATOR_AVAILABLE:
+        blog_generator = BlogGenerator(
+            api_key=openai_key,
+            contact_boilerplate=blog_contact,
+            cache_dir=blog_cache_dir
+        )
+        logger.info("Blog generator enabled")
+    elif enable_blogs and not BLOG_GENERATOR_AVAILABLE:
+        logger.warning("Blog generator requested but module not available")
+
     def update_cache():
         cache['entries'] = collector.collect_all(include_selenium=False)
         cache['last_update'] = datetime.now(timezone.utc)
-    
+
     @app.route('/')
     def index():
-        return """
+        blog_link = '<li><a href="/blogs">Generated Blogs (JSON)</a></li>' if blog_generator else ''
+        return f"""
         <h1>Data Breach RSS Feed</h1>
         <ul>
             <li><a href="/rss">RSS Feed</a></li>
             <li><a href="/atom">Atom Feed</a></li>
             <li><a href="/json">JSON Data</a></li>
+            {blog_link}
             <li><a href="/refresh">Refresh Data</a></li>
         </ul>
         """
-    
+
     @app.route('/rss')
     def rss():
         if not cache['entries'] or not cache['last_update'] or \
            (datetime.now(timezone.utc) - cache['last_update']).total_seconds() > 3600:
             update_cache()
-        
+
         feed_gen = RSSFeedGenerator()
         feed_gen.add_entries(cache['entries'])
         return Response(feed_gen.generate_rss(), mimetype='application/rss+xml')
-    
+
     @app.route('/atom')
     def atom():
         if not cache['entries'] or not cache['last_update'] or \
            (datetime.now(timezone.utc) - cache['last_update']).total_seconds() > 3600:
             update_cache()
-        
+
         feed_gen = RSSFeedGenerator()
         feed_gen.add_entries(cache['entries'])
         return Response(feed_gen.generate_atom(), mimetype='application/atom+xml')
-    
+
     @app.route('/json')
     def json_data():
         if not cache['entries'] or not cache['last_update'] or \
            (datetime.now(timezone.utc) - cache['last_update']).total_seconds() > 3600:
             update_cache()
-        
+
         return jsonify([e.to_dict() for e in cache['entries']])
-    
+
+    @app.route('/blogs')
+    def blogs():
+        """Generate and return blog posts for breach entries"""
+        if not blog_generator:
+            return jsonify({'error': 'Blog generation not enabled. Use --enable-blogs flag.'}), 400
+
+        # Ensure we have entries
+        if not cache['entries'] or not cache['last_update'] or \
+           (datetime.now(timezone.utc) - cache['last_update']).total_seconds() > 3600:
+            update_cache()
+
+        # Get query parameters
+        limit = request.args.get('limit', default=50, type=int)
+        offset = request.args.get('offset', default=0, type=int)
+
+        # Get entries slice
+        entries_slice = cache['entries'][offset:offset + limit]
+
+        # Generate blogs
+        result = blog_generator.generate_batch(entries_slice, limit=limit)
+
+        return jsonify(result)
+
+    @app.route('/blogs/<blog_id>')
+    def get_blog(blog_id: str):
+        """Get a specific blog by case_id"""
+        if not blog_generator:
+            return jsonify({'error': 'Blog generation not enabled. Use --enable-blogs flag.'}), 400
+
+        # Check cache first
+        cached = blog_generator.cache.get(blog_id)
+        if cached:
+            return jsonify(cached.to_dict())
+
+        # Ensure we have entries
+        if not cache['entries'] or not cache['last_update'] or \
+           (datetime.now(timezone.utc) - cache['last_update']).total_seconds() > 3600:
+            update_cache()
+
+        # Find entry with matching case_id
+        matching_entry = None
+        for entry in cache['entries']:
+            if entry.case_id == blog_id:
+                matching_entry = entry
+                break
+
+        if not matching_entry:
+            return jsonify({'error': f'No entry found with id: {blog_id}'}), 404
+
+        # Generate blog for this entry
+        blog = blog_generator.generate(matching_entry)
+        if not blog:
+            return jsonify({'error': 'Failed to generate blog for this entry (validation failed or API error)'}), 400
+
+        return jsonify(blog.to_dict())
+
+    @app.route('/blogs/validate/<blog_id>')
+    def validate_entry(blog_id: str):
+        """Validate an entry for blog generation without generating"""
+        if not blog_generator:
+            return jsonify({'error': 'Blog generation not enabled. Use --enable-blogs flag.'}), 400
+
+        # Ensure we have entries
+        if not cache['entries'] or not cache['last_update'] or \
+           (datetime.now(timezone.utc) - cache['last_update']).total_seconds() > 3600:
+            update_cache()
+
+        # Find entry with matching case_id
+        matching_entry = None
+        for entry in cache['entries']:
+            if entry.case_id == blog_id:
+                matching_entry = entry
+                break
+
+        if not matching_entry:
+            return jsonify({'error': f'No entry found with id: {blog_id}'}), 404
+
+        # Validate
+        result = blog_generator.validate_entry(matching_entry)
+        return jsonify({
+            'id': blog_id,
+            'company_name': matching_entry.company_name,
+            'is_valid': result.is_valid,
+            'quality_score': result.quality_score,
+            'reasons': result.reasons
+        })
+
     @app.route('/refresh')
     def refresh():
         update_cache()
@@ -1536,7 +1650,7 @@ def create_flask_app(collector: BreachDataCollector):
             'entries': len(cache['entries']),
             'updated': cache['last_update'].isoformat()
         })
-    
+
     return app
 
 
@@ -1552,15 +1666,22 @@ def main():
 Examples:
   # Generate RSS feed
   python breach_rss_full.py -o breaches.xml
-  
+
   # Generate RSS + JSON + CSV
   python breach_rss_full.py -o breaches.xml --json breaches.json --csv breaches.csv
-  
+
   # Run as web server
   python breach_rss_full.py --serve --port 8080
-  
+
   # Skip Selenium-based sources
   python breach_rss_full.py -o breaches.xml --no-selenium
+
+  # Run with AI blog generation enabled
+  OPENAI_API_KEY=sk-... python breach_rss_full.py --serve --enable-blogs
+
+  # With custom contact boilerplate
+  python breach_rss_full.py --serve --enable-blogs --openai-key sk-... \\
+    --blog-contact "Contact our team at 1-800-XXX-XXXX for a free consultation."
         """
     )
     parser.add_argument('--output', '-o', default='breaches.xml', help='Output RSS file path')
@@ -1572,6 +1693,17 @@ Examples:
     parser.add_argument('--max-per-source', type=int, default=25, help='Max entries per source for balanced feed (0=unlimited)')
     parser.add_argument('--serve', action='store_true', help='Run as Flask web server')
     parser.add_argument('--port', type=int, default=5000, help='Port for Flask server')
+
+    # Blog generation options
+    parser.add_argument('--enable-blogs', action='store_true',
+                        help='Enable AI-powered blog generation endpoint (/blogs)')
+    parser.add_argument('--openai-key', type=str, default=None,
+                        help='OpenAI API key (or set OPENAI_API_KEY env var)')
+    parser.add_argument('--blog-contact', type=str, default=None,
+                        help='Custom contact boilerplate for blog posts (or set BLOG_CONTACT_BOILERPLATE env var)')
+    parser.add_argument('--blog-cache-dir', type=str, default='./blog_cache',
+                        help='Directory to cache generated blogs (default: ./blog_cache)')
+
     args = parser.parse_args()
     
     # Create collector
@@ -1579,12 +1711,20 @@ Examples:
     
     # Run as server
     if args.serve:
-        app = create_flask_app(collector)
+        app = create_flask_app(
+            collector,
+            enable_blogs=args.enable_blogs,
+            openai_key=args.openai_key,
+            blog_contact=args.blog_contact,
+            blog_cache_dir=args.blog_cache_dir
+        )
         if app:
             print(f"Starting server on http://localhost:{args.port}")
-            print(f"  RSS:  http://localhost:{args.port}/rss")
-            print(f"  Atom: http://localhost:{args.port}/atom")
-            print(f"  JSON: http://localhost:{args.port}/json")
+            print(f"  RSS:   http://localhost:{args.port}/rss")
+            print(f"  Atom:  http://localhost:{args.port}/atom")
+            print(f"  JSON:  http://localhost:{args.port}/json")
+            if args.enable_blogs:
+                print(f"  Blogs: http://localhost:{args.port}/blogs")
             app.run(host='0.0.0.0', port=args.port, debug=False)
         return
     
