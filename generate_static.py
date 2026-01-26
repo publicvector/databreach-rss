@@ -93,6 +93,10 @@ def generate_static_site(max_blogs: int = 50):
     print("Generating index.html...")
     generate_index_html(entries, result if api_key else None)
 
+    # Generate breaches.html
+    print("Generating breaches.html...")
+    generate_breaches_html([e.to_dict() for e in entries])
+
     # Generate timestamp
     with open(OUTPUT_DIR / "last_updated.json", "w") as f:
         json.dump({"timestamp": datetime.now(timezone.utc).isoformat()}, f)
@@ -163,7 +167,9 @@ def generate_index_html(entries, blog_result):
     <h1>Data Breach RSS Feed</h1>
 
     <div class="card">
-        <h2>Endpoints</h2>
+        <h2>Browse</h2>
+        <p><span class="endpoint"><a href="breaches.html">breaches.html</a></span> - All breaches (styled view with search)</p>
+        <h2>Data Feeds</h2>
         <p><span class="endpoint"><a href="rss.xml">rss.xml</a></span> - RSS Feed</p>
         <p><span class="endpoint"><a href="atom.xml">atom.xml</a></span> - Atom Feed</p>
         <p><span class="endpoint"><a href="data.json">data.json</a></span> - Raw breach data (JSON)</p>
@@ -212,6 +218,176 @@ def generate_index_html(entries, blog_result):
 """
 
     with open(OUTPUT_DIR / "index.html", "w") as f:
+        f.write(html)
+
+
+def generate_breaches_html(entries):
+    """Generate a styled HTML page showing all breach entries"""
+
+    html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Data Breaches</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 { color: #c0392b; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin-right: 15px;
+            padding: 8px 15px;
+            background: #3498db;
+            color: white;
+            border-radius: 4px;
+        }
+        .nav a:hover { background: #2980b9; text-decoration: none; }
+        .filters {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .filters input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .breach-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #c0392b;
+        }
+        .breach-card h3 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        .breach-card h3 a { color: #2c3e50; }
+        .breach-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .meta-item {
+            background: #ecf0f1;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+        .meta-item.source { background: #3498db; color: white; }
+        .meta-item.type { background: #9b59b6; color: white; }
+        .meta-item.actor { background: #e74c3c; color: white; }
+        .meta-item.records { background: #27ae60; color: white; }
+        .meta-item.location { background: #f39c12; color: white; }
+        .description {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .count {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="breaches.html">All Breaches</a>
+        <a href="rss.xml">RSS Feed</a>
+    </div>
+
+    <h1>All Data Breaches</h1>
+
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search breaches..." onkeyup="filterBreaches()">
+    </div>
+
+    <p class="count">Showing <span id="visible-count">""" + str(len(entries)) + """</span> of """ + str(len(entries)) + """ breaches</p>
+
+    <div id="breaches">
+"""
+
+    for entry in entries:
+        desc = entry.get('description', '')[:300]
+        if len(entry.get('description', '')) > 300:
+            desc += '...'
+
+        # Build meta tags
+        meta_html = f'<span class="meta-item source">{entry.get("source", "Unknown")}</span>'
+        meta_html += f'<span class="meta-item type">{entry.get("breach_type", "Data Breach")}</span>'
+
+        if entry.get('threat_actor'):
+            meta_html += f'<span class="meta-item actor">🎭 {entry["threat_actor"]}</span>'
+
+        if entry.get('records_affected') and entry['records_affected'] not in ['Unknown', 'N/A', '']:
+            meta_html += f'<span class="meta-item records">📊 {entry["records_affected"]}</span>'
+
+        if entry.get('location') and entry['location'] not in ['Unknown', 'N/A', '']:
+            meta_html += f'<span class="meta-item location">📍 {entry["location"]}</span>'
+
+        date_str = entry.get('date_reported', '')[:10] if entry.get('date_reported') else ''
+
+        url = entry.get('url', '#')
+        company = entry.get('company_name', 'Unknown')
+
+        html += f"""
+        <div class="breach-card" data-search="{company.lower()} {entry.get('source', '').lower()} {entry.get('threat_actor', '').lower()} {entry.get('breach_type', '').lower()}">
+            <h3><a href="{url}" target="_blank">{company}</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 {date_str}</span>
+                {meta_html}
+            </div>
+            <p class="description">{desc if desc else 'No description available.'}</p>
+        </div>
+"""
+
+    html += """
+    </div>
+
+    <script>
+        function filterBreaches() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.breach-card');
+            let visible = 0;
+
+            cards.forEach(card => {
+                const text = card.getAttribute('data-search');
+                if (text.includes(search)) {
+                    card.classList.remove('hidden');
+                    visible++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('visible-count').textContent = visible;
+        }
+    </script>
+</body>
+</html>
+"""
+
+    with open(OUTPUT_DIR / "breaches.html", "w") as f:
         f.write(html)
 
 
