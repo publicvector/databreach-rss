@@ -302,6 +302,20 @@ def generate_breaches_html(entries):
             line-height: 1.6;
             margin-top: 10px;
         }
+        .breach-details {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin: 12px 0;
+        }
+        .detail-row {
+            padding: 4px 0;
+            font-size: 0.95em;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
         .count {
             color: #666;
             margin-bottom: 15px;
@@ -339,23 +353,50 @@ def generate_breaches_html(entries):
         if entry.get('threat_actor'):
             meta_html += f'<span class="meta-item actor">🎭 {entry["threat_actor"]}</span>'
 
-        if entry.get('records_affected') and entry['records_affected'] not in ['Unknown', 'N/A', '']:
-            meta_html += f'<span class="meta-item records">📊 {entry["records_affected"]}</span>'
-
-        if entry.get('location') and entry['location'] not in ['Unknown', 'N/A', '']:
-            meta_html += f'<span class="meta-item location">📍 {entry["location"]}</span>'
-
         date_str = entry.get('date_reported', '')[:10] if entry.get('date_reported') else ''
 
         url = entry.get('url', '#')
         company = entry.get('company_name', 'Unknown')
 
+        # Build details section for location and records
+        details_html = ""
+
+        location = entry.get('location', '')
+        if location and location not in ['Unknown', 'N/A', '']:
+            details_html += f'<div class="detail-row"><span class="detail-label">📍 Location:</span> {location}</div>'
+
+        records = entry.get('records_affected', '')
+        if records and records not in ['Unknown', 'N/A', '']:
+            details_html += f'<div class="detail-row"><span class="detail-label">📊 Total Affected:</span> {records}</div>'
+
+        state_records = entry.get('state_records_affected', '')
+        if state_records and state_records not in ['Unknown', 'N/A', '']:
+            # Try to determine which state from source
+            state_name = ''
+            source = entry.get('source', '')
+            if 'Maine' in source:
+                state_name = 'Maine'
+            elif 'Texas' in source:
+                state_name = 'Texas'
+            elif 'Washington' in source:
+                state_name = 'Washington'
+            elif 'California' in source:
+                state_name = 'California'
+
+            if state_name:
+                details_html += f'<div class="detail-row"><span class="detail-label">🏛️ {state_name} Residents Affected:</span> {state_records}</div>'
+            else:
+                details_html += f'<div class="detail-row"><span class="detail-label">🏛️ State Residents Affected:</span> {state_records}</div>'
+
         html += f"""
-        <div class="breach-card" data-search="{company.lower()} {entry.get('source', '').lower()} {entry.get('threat_actor', '').lower()} {entry.get('breach_type', '').lower()}">
+        <div class="breach-card" data-search="{company.lower()} {entry.get('source', '').lower()} {entry.get('threat_actor', '').lower()} {entry.get('breach_type', '').lower()} {location.lower()}">
             <h3><a href="{url}" target="_blank">{company}</a></h3>
             <div class="breach-meta">
                 <span class="meta-item">📅 {date_str}</span>
                 {meta_html}
+            </div>
+            <div class="breach-details">
+                {details_html if details_html else '<div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>'}
             </div>
             <p class="description">{desc if desc else 'No description available.'}</p>
         </div>
