@@ -1,0 +1,2292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Data Breaches</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 { color: #c0392b; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin-right: 15px;
+            padding: 8px 15px;
+            background: #3498db;
+            color: white;
+            border-radius: 4px;
+        }
+        .nav a:hover { background: #2980b9; text-decoration: none; }
+        .filters {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .filters input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .breach-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #c0392b;
+        }
+        .breach-card h3 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        .breach-card h3 a { color: #2c3e50; }
+        .breach-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .meta-item {
+            background: #ecf0f1;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+        .meta-item.source { background: #3498db; color: white; }
+        .meta-item.type { background: #9b59b6; color: white; }
+        .meta-item.actor { background: #e74c3c; color: white; }
+        .meta-item.records { background: #27ae60; color: white; }
+        .meta-item.location { background: #f39c12; color: white; }
+        .description {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .breach-details {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin: 12px 0;
+        }
+        .detail-row {
+            padding: 4px 0;
+            font-size: 0.95em;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .count {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="breaches.html">All Breaches</a>
+        <a href="rss.xml">RSS Feed</a>
+    </div>
+
+    <h1>All Data Breaches</h1>
+
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search breaches..." onkeyup="filterBreaches()">
+    </div>
+
+    <p class="count">Showing <span id="visible-count">178</span> of 178 breaches</p>
+
+    <div id="breaches">
+
+        <div class="breach-card" data-search="orion legal partners ransomware.live 0apt ransomware us">
+            <h3><a href="https://www.ransomware.live/id/T3Jpb24gTGVnYWwgUGFydG5lcnNAMGFwdA==" target="_blank">Orion Legal Partners</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0apt</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Business Services</p>
+        </div>
+
+        <div class="breach-card" data-search="rapid food distributors ransomware.live 0apt ransomware us">
+            <h3><a href="https://www.ransomware.live/id/UmFwaWQgRm9vZCBEaXN0cmlidXRvcnNAMGFwdA==" target="_blank">Rapid Food Distributors</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0apt</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Transportation/Logistics</p>
+        </div>
+
+        <div class="breach-card" data-search="databank ransomware.live nightspire ransomware us">
+            <h3><a href="https://www.ransomware.live/id/RGF0YUJhbmtAbmlnaHRzcGlyZQ==" target="_blank">DataBank</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 nightspire</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Technology</p>
+        </div>
+
+        <div class="breach-card" data-search="derenzis & associates ransomware.live incransom ransomware us">
+            <h3><a href="https://www.ransomware.live/id/RGVSZW56aXMgJiBBc3NvY2lhdGVzQGluY3JhbnNvbQ==" target="_blank">DeRenzis & Associates</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="lgbtq center orange county ransomware.live incransom ransomware us">
+            <h3><a href="https://www.ransomware.live/id/TEdCVFEgQ2VudGVyIE9yYW5nZSBjb3VudHlAaW5jcmFuc29t" target="_blank">LGBTQ Center Orange county</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Public Sector</p>
+        </div>
+
+        <div class="breach-card" data-search="jlk rosenberger ransomware.live incransom ransomware us">
+            <h3><a href="https://www.ransomware.live/id/SkxLIFJvc2VuYmVyZ2VyQGluY3JhbnNvbQ==" target="_blank">JLK Rosenberger</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Financial Services</p>
+        </div>
+
+        <div class="breach-card" data-search="z*l*c.o*g ransomware.live devman ransomware us">
+            <h3><a href="https://www.ransomware.live/id/eipsKmMubypnQGRldm1hbg==" target="_blank">z*l*c.o*g</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 devman</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="tengu ransomware group strikes sky egypt tours dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/tengu-ransomware-group-strikes-sky-egypt-tours/" target="_blank">Tengu Ransomware Group Strikes Sky Egypt Tours</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="nitrogen ransomware targets connor co in cyberattack dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/nitrogen-ransomware-targets-connor-co-in-cyberattack/" target="_blank">Nitrogen Ransomware Targets Connor Co in Cyberattack</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="genesis ransomware group strikes goodmanagement dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/genesis-ransomware-group-strikes-goodmanagement/" target="_blank">Genesis Ransomware Group Strikes Goodmanagement</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="genesis ransomware attack on global parts & maintenance dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/genesis-ransomware-attack-on-global-parts-maintenance/" target="_blank">Genesis Ransomware Attack on Global Parts & Maintenance</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="qilin ransomware strikes sukhothai thammathirat open university dexpose qilin ransomware ">
+            <h3><a href="https://www.dexpose.io/qilin-ransomware-strikes-sukhothai-thammathirat-open-university/" target="_blank">Qilin Ransomware Strikes Sukhothai Thammathirat Open University</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 Qilin</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="nightspire ransomware attack on databank in nicaragua dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/nightspire-ransomware-attack-on-databank-in-nicaragua/" target="_blank">Nightspire Ransomware Attack on DataBank in Nicaragua</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="incransom targets jlk rosenberger llp in ransomware attack dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/incransom-targets-jlk-rosenberger-llp-in-ransomware-attack/" target="_blank">Incransom Targets JLK Rosenberger LLP in Ransomware Attack</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="incransom targets lgbtq center orange county dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/incransom-targets-lgbtq-center-orange-county/" target="_blank">Incransom Targets LGBTQ Center Orange County</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="incransom ransomware strikes derenzis & associates dexpose  ransomware ">
+            <h3><a href="https://www.dexpose.io/incransom-ransomware-strikes-derenzis-associates/" target="_blank">Incransom Ransomware Strikes DeRenzis & Associates</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">DeXpose</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="dr. smith dental clinics (jan-2026) hendry adrian 0apt ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-dr-smith-dental-clinics-jan-2026/" target="_blank">Dr. Smith Dental Clinics (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0apt</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Dr. Smith Dental Clinics reports a ransomware claim by threat actor 0apt, claiming access to 120GB of sensitive data including patient records, X-rays, and insurance claims. The message warns of a last chance to pay and threatens public release of the data if demands are not met. #Unknown</p>
+        </div>
+
+        <div class="breach-card" data-search="orion legal partners (jan-2026) hendry adrian 0apt ransomware us">
+            <h3><a href="https://www.hendryadrian.com/ransom-orion-legal-partners-jan-2026/" target="_blank">Orion Legal Partners (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0apt</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">A ransomware claim alleges that the threat actor 0apt breached Orion Legal Partners in the US and exfiltrated 50GB of sensitive data, including court case files, client settlements, and NDAs. The exposed data is described as highly sensitive and could carry significant legal and reputational risk fo...</p>
+        </div>
+
+        <div class="breach-card" data-search="affordable housing management overview metrics (jan-2026) hendry adrian sinobi ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-affordable-housing-management-overview-metrics-jan-2026/" target="_blank">Affordable Housing Management Overview Metrics (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 sinobi</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Sinobi claims a ransomware attack against Affordable Housing Management, Inc. (AHM, Inc.), a nonprofit organization dedicated to affordable housing. The attackers threaten to encrypt data or leak sensitive information unless a ransom is paid. #UnitedStates</p>
+        </div>
+
+        <div class="breach-card" data-search="impressico business solutions (jan-2026) hendry adrian sinobi ransomware in">
+            <h3><a href="https://www.hendryadrian.com/ransom-impressico-business-solutions-jan-2026/" target="_blank">Impressico Business Solutions (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-28</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 sinobi</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> IN</div>
+            </div>
+            <p class="description">Impressico Business Solutions in India reports a ransomware claim attributed to the threat actor Sinobi. Impressico Digital, based in Noida, UP, India, provides 360-degree IT solutions to startups and leading enterprises and says the incident was intended to keep clients a step ahead of competitors ...</p>
+        </div>
+
+        <div class="breach-card" data-search="twi-group.com ransomware.live devman ransomware us">
+            <h3><a href="https://www.ransomware.live/id/dHdpLWdyb3VwLmNvbUBkZXZtYW4=" target="_blank">twi-group.com</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 devman</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Transportation/Logistics</p>
+        </div>
+
+        <div class="breach-card" data-search="match group ransomware.live shinyhunters ransomware us">
+            <h3><a href="https://www.ransomware.live/id/TWF0Y2ggR3JvdXBAc2hpbnlodW50ZXJz" target="_blank">Match Group</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 shinyhunters</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Technology</p>
+        </div>
+
+        <div class="breach-card" data-search="jp research ransomware.live sinobi ransomware us">
+            <h3><a href="https://www.ransomware.live/id/SlAgUmVzZWFyY2hAc2lub2Jp" target="_blank">JP Research</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 sinobi</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="gallagher transport international ransomware.live sinobi ransomware us">
+            <h3><a href="https://www.ransomware.live/id/R2FsbGFnaGVyIFRyYW5zcG9ydCBJbnRlcm5hdGlvbmFsQHNpbm9iaQ==" target="_blank">Gallagher Transport International</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 sinobi</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Transportation/Logistics</p>
+        </div>
+
+        <div class="breach-card" data-search="qualichem metalworking ransomware.live nitrogen ransomware us">
+            <h3><a href="https://www.ransomware.live/id/UXVhbGlDaGVtIE1ldGFsd29ya2luZ0BuaXRyb2dlbg==" target="_blank">QualiChem Metalworking</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 nitrogen</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Manufacturing</p>
+        </div>
+
+        <div class="breach-card" data-search="nbccministries.org ransomware.live incransom ransomware us">
+            <h3><a href="https://www.ransomware.live/id/bmJjY21pbmlzdHJpZXMub3JnQGluY3JhbnNvbQ==" target="_blank">nbccministries.org</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Education</p>
+        </div>
+
+        <div class="breach-card" data-search="anagnosdoor.com ransomware.live incransom ransomware us">
+            <h3><a href="https://www.ransomware.live/id/YW5hZ25vc2Rvb3IuY29tQGluY3JhbnNvbQ==" target="_blank">anagnosdoor.com</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="newkirklaw.com ransomware.live incransom ransomware us">
+            <h3><a href="https://www.ransomware.live/id/bmV3a2lya2xhdy5jb21AaW5jcmFuc29t" target="_blank">newkirklaw.com</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="oec medical systems, inc ransomware.live nightspire ransomware us">
+            <h3><a href="https://www.ransomware.live/id/T0VDIE1lZGljYWwgU3lzdGVtcywgSW5jQG5pZ2h0c3BpcmU=" target="_blank">OEC Medical Systems, Inc</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 nightspire</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Healthcare</p>
+        </div>
+
+        <div class="breach-card" data-search="callagy law firm ransomware.live incransom ransomware us">
+            <h3><a href="https://www.ransomware.live/id/Q2FsbGFneSBMYXcgRmlybUBpbmNyYW5zb20=" target="_blank">Callagy Law Firm</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Business Services</p>
+        </div>
+
+        <div class="breach-card" data-search="ima diligence services (a division of ima financial group) ransomware.live genesis ransomware us">
+            <h3><a href="https://www.ransomware.live/id/SU1BIERpbGlnZW5jZSBTZXJ2aWNlcyAoQSBEaXZpc2lvbiBvZiBJTUEgRmluYW5jaWFsIEdyb3VwKUBnZW5lc2lz" target="_blank">IMA Diligence Services (A Division of IMA Financial Group)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 genesis</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Financial Services</p>
+        </div>
+
+        <div class="breach-card" data-search="ksp tlm indonesia (jan-2026) hendry adrian tengu ransomware id">
+            <h3><a href="https://www.hendryadrian.com/ransom-ksp-tlm-indonesia-jan-2026/" target="_blank">KSP TLM INDONESIA (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 tengu</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> ID</div>
+            </div>
+            <p class="description">Threat actor tengu claims to have compromised KSP TLM Indonesia, a large cooperative savings and loan association in Indonesia that focuses on empowering the community economy—especially small and medium-sized female entrepreneurs. The claim frames this as ransomware activity against the victim in I...</p>
+        </div>
+
+        <div class="breach-card" data-search="mmd insurance law advocates (jan-2026) hendry adrian pear ransomware us">
+            <h3><a href="https://www.hendryadrian.com/ransom-mmd-insurance-law-advocates-jan-2026/" target="_blank">MMD Insurance Law Advocates (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 pear</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">The ransomware claim alleges that the threat actor 'pear' compromised MMD Insurance Law Advocates in the United States, targeting the firm that represents homeowners, business owners, and condominium associations in insurance disputes. The incident is described as impacting clients nationwide and hi...</p>
+        </div>
+
+        <div class="breach-card" data-search="oec medical systems, inc (jan-2026) hendry adrian nightspire ransomware us">
+            <h3><a href="https://www.hendryadrian.com/ransom-oec-medical-systems-inc-jan-2026/" target="_blank">OEC Medical Systems, Inc (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 nightspire</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">According to the ransomware claim, the threat actor nightspire compromised OEC Medical Systems, Inc in the United States and encrypted multiple systems on their network. The claim also states that data was exfiltrated and a ransom was demanded for decryption and non-disclosure. #UnitedStates</p>
+        </div>
+
+        <div class="breach-card" data-search="the trevino group, inc (jan-2026) hendry adrian incransom ransomware us">
+            <h3><a href="https://www.hendryadrian.com/ransom-the-trevino-group-inc-jan-2026/" target="_blank">The Trevino Group, Inc (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-27</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">The Trevino Group, Inc., in the United States, reports a ransom claim by the actor incransom, who purports to have collected confidential documents, client data, NDA documents, financial data, operations information, corporate data, business agreements, drawings, and other highly sensitive materials...</p>
+        </div>
+
+        <div class="breach-card" data-search="freidarothman.com ransomware.live safepay ransomware us">
+            <h3><a href="https://www.ransomware.live/id/ZnJlaWRhcm90aG1hbi5jb21Ac2FmZXBheQ==" target="_blank">freidarothman.com</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 safepay</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Consumer Services</p>
+        </div>
+
+        <div class="breach-card" data-search="f&b mfg ransomware.live play ransomware us">
+            <h3><a href="https://www.ransomware.live/id/RiZCIE1mZ0BwbGF5" target="_blank">F&B Mfg</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 play</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Manufacturing</p>
+        </div>
+
+        <div class="breach-card" data-search="quantum fuel systems technologies ransomware.live play ransomware us">
+            <h3><a href="https://www.ransomware.live/id/UXVhbnR1bSBGdWVsIFN5c3RlbXMgVGVjaG5vbG9naWVzQHBsYXk=" target="_blank">Quantum Fuel Systems Technologies</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 play</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Energy</p>
+        </div>
+
+        <div class="breach-card" data-search="aquatic control ransomware.live play ransomware us">
+            <h3><a href="https://www.ransomware.live/id/QXF1YXRpYyBDb250cm9sQHBsYXk=" target="_blank">Aquatic Control</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 play</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="christine london ransomware.live play ransomware us">
+            <h3><a href="https://www.ransomware.live/id/Q2hyaXN0aW5lIExvbmRvbkBwbGF5" target="_blank">Christine London</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 play</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="joyva ransomware.live play ransomware us">
+            <h3><a href="https://www.ransomware.live/id/Sm95dmFAcGxheQ==" target="_blank">Joyva</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 play</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Manufacturing</p>
+        </div>
+
+        <div class="breach-card" data-search="prince & schmidt llp ransomware.live nightspire ransomware us">
+            <h3><a href="https://www.ransomware.live/id/UHJpbmNlICYgU2NobWlkdCBMTFBAbmlnaHRzcGlyZQ==" target="_blank">Prince & Schmidt LLP</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Ransomware.live</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 nightspire</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">Not Found</p>
+        </div>
+
+        <div class="breach-card" data-search="uniflex technology inc (jan-2026) hendry adrian incransom ransomware tw">
+            <h3><a href="https://www.hendryadrian.com/ransom-uniflex-technology-inc-jan-2026/" target="_blank">Uniflex Technology Inc (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 incransom</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> TW</div>
+            </div>
+            <p class="description">Uniflex Technology Inc. reports a ransomware incident attributed to the threat actor incransom, claiming 430GB of confidential data was exfiltrated and will be fully published within two weeks. The leaked material includes client data, agreements, drawings, contracts, and technical documentation fro...</p>
+        </div>
+
+        <div class="breach-card" data-search="disuelas jc sas (jan-2026) hendry adrian tengu ransomware co">
+            <h3><a href="https://www.hendryadrian.com/ransom-disuelas-jc-sas-jan-2026/" target="_blank">Disuelas JC SAS (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 tengu</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CO</div>
+            </div>
+            <p class="description">Un reclamo de ransomware atribuido al grupo tengu señala a Disuelas JC SAS en Colombia como víctima, alegando haber cifrado datos de la empresa. La dirección principal proporcionada es CALLE 26 SUR 29 49 en la ciudad de BOGOTA, BOGOTA, y el teléfono 6016296011; la empresa se dedica a la fabricación ...</p>
+        </div>
+
+        <div class="breach-card" data-search="mills products (jan-2026) hendry adrian qilin ransomware us">
+            <h3><a href="https://www.hendryadrian.com/ransom-mills-products-jan-2026/" target="_blank">Mills Products (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 qilin</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> US</div>
+            </div>
+            <p class="description">A ransomware claim lists Mills Products as the victim, attributed to the threat actor qilin in the United States. Details are sparse (N/A) regarding ransom demands, encryption method, or incident impact. #UnitedStates</p>
+        </div>
+
+        <div class="breach-card" data-search="langley twigg law (jan-2026) hendry adrian  ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-langley-twigg-law-jan-2026/" target="_blank">Langley Twigg Law (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-26</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="vitosha park hotel (jan-2026) hendry adrian anubis ransomware bg">
+            <h3><a href="https://www.hendryadrian.com/ransom-vitosha-park-hotel-jan-2026/" target="_blank">Vitosha Park Hotel (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 anubis</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> BG</div>
+            </div>
+            <p class="description">Vitosha Park Hotel in Bulgaria reports a ransomware incident attributed to the threat actor Anubis, resulting in an employee data breach. The incident is under investigation to determine the scope of data exposure and to implement containment measures. #Bulgaria</p>
+        </div>
+
+        <div class="breach-card" data-search="centrotherm international (jan-2026) hendry adrian qilin ransomware de">
+            <h3><a href="https://www.hendryadrian.com/ransom-centrotherm-international-jan-2026/" target="_blank">Centrotherm International (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 qilin</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> DE</div>
+            </div>
+            <p class="description">Qilin claims a ransomware incident against Centrotherm International in Germany. No additional details about the impact, methodology, or data exfiltration are provided (N/A). #Germany</p>
+        </div>
+
+        <div class="breach-card" data-search="wrenlawfirm.com (jan-2026) hendry adrian clop ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-wrenlawfirm-com-jan-2026/" target="_blank">WRENLAWFIRM.COM (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 clop</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The ransomware claim identifies WRENLAWFIRM.COM as the victim and attributes the incident to the clop group. The description notes standard ransomware behavior and potential data exposure, and is AI-generated 'N/A'. #Unknown</p>
+        </div>
+
+        <div class="breach-card" data-search="handala new account,– sunset of the lions (jan-2026) hendry adrian  ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-handala-new-account-sunset-of-the-lions-jan-2026/" target="_blank">Handala New Account,– Sunset of the lions (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="cytek biosciences (jan-2026) hendry adrian  ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-cytek-biosciences-jan-2026/" target="_blank">Cytek Biosciences (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="the successful match (jan-2026) hendry adrian  ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-the-successful-match-jan-2026/" target="_blank">The Successful Match (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="adifse.com.ar (jan-2026) hendry adrian  ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-adifse-com-ar-jan-2026/" target="_blank">adifse.com.ar (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="mbm (jan-2026) hendry adrian  ransomware ">
+            <h3><a href="https://www.hendryadrian.com/ransom-mbm-jan-2026/" target="_blank">MBM (JAN-2026)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 2026-01-25</span>
+                <span class="meta-item source">Hendry Adrian</span><span class="meta-item type">Ransomware</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="chp 11-99 foundation california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">CHP 11-99 Foundation</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/23/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="wisner baum llp california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Wisner Baum LLP</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/23/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="mact health board inc. california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">MACT Health Board Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/23/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="clawson honda of fresno california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Clawson Honda of Fresno</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/21/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="diversified benefit services insurance marketing, inc. california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Diversified Benefit Services Insurance Marketing, Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/21/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="petaluma health center california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Petaluma Health Center</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/20/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="winters healthcare california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Winters Healthcare</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/20/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="true rcm, a rapid care transcription, inc., company hhs ocr  hacking/it incident md">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">True RCM, a Rapid Care Transcription, Inc., Company</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/20/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> MD</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 1247</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="bay area community health california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Bay Area Community Health</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="santa cruz community health california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Santa Cruz Community Health</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="ingram micro, inc. california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Ingram Micro, Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="spcorp services, inc. california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">SPCorp Services, Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="insurance office of america ("ioa") california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Insurance Office of America ("IOA")</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="ole health (dba communicare + ole) california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">OLE Health (DBA CommuniCare + OLE)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="indian health center of santa clara valley california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Indian Health Center of Santa Clara Valley</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="sonoma county department of emergency management california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Sonoma County Department of Emergency Management</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="axis community health california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Axis Community Health</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="asian americans for community involvement california ag, hhs ocr  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Asian Americans for Community Involvement</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">California AG, HHS OCR</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 521</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="minnesota department of human services hhs ocr  unauthorized access/disclosure mn">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Minnesota Department of Human Services</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/16/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Unauthorized Access/Disclosure</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> MN</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 303965</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="la clinica de la raza, inc. california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">La Clinica de La Raza, Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/15/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="360 dental pc hhs ocr  hacking/it incident pa">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">360 Dental PC</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/15/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> PA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 11273</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="lifelong medical care california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">LifeLong Medical Care</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/14/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="gym management service, inc. california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Gym Management Service, Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/13/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="safe credit union california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">SAFE CREDIT UNION</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/13/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="monroe university california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Monroe University</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/13/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="county of santa barbara health department california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">County of Santa Barbara Health Department</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/12/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="chapman and associates, pc california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">Chapman and Associates, PC</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/12/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="gsplatformco inc california ag  data breach california">
+            <h3><a href="https://oag.ca.gov/privacy/databreach/list" target="_blank">GSPlatformCo Inc</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/12/2026</span>
+                <span class="meta-item source">California AG</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> California</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="valley family health care hhs ocr  unauthorized access/disclosure id">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Valley Family Health Care</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/12/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Unauthorized Access/Disclosure</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> ID</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 4300</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="avosina healthcare solutions hhs ocr  hacking/it incident va">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Avosina Healthcare Solutions</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/10/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> VA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 44425</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="foundation health partners hhs ocr  unauthorized access/disclosure ak">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Foundation Health Partners</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/09/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Unauthorized Access/Disclosure</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> AK</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 523</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="open door community health centers hhs ocr  hacking/it incident ca">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Open Door Community Health Centers</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/08/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 6633</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="methodist homes of alabama and northwest florida hhs ocr  hacking/it incident al">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Methodist Homes of Alabama and Northwest Florida</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/06/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> AL</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 1406</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="healthpoint family care hhs ocr  unauthorized access/disclosure ky">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">HealthPoint Family Care</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/05/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Unauthorized Access/Disclosure</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> KY</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 7990</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="mid michigan medical billing service, inc. hhs ocr  hacking/it incident mi">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Mid Michigan Medical Billing Service, Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/05/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> MI</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 28185</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="one community health hhs ocr  hacking/it incident ca">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">One Community Health</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 01/02/2026</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 4309</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="absentee shawnee tribal health authority, inc. hhs ocr  hacking/it incident ok">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Absentee Shawnee Tribal Health Authority, Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/31/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> OK</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 1112</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="andover eye associates hhs ocr  hacking/it incident ma">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Andover Eye Associates</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/31/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> MA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 1638</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="gold coast health plan hhs ocr  hacking/it incident ca">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Gold Coast Health Plan</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/30/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 540</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="associated radiologists of the finger lakes, p.c. hhs ocr  hacking/it incident ny">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Associated Radiologists of the Finger Lakes, P.C.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/29/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> NY</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 501</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="mendocino community health clinic inc. hhs ocr  hacking/it incident ca">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Mendocino Community Health Clinic Inc.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/29/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 3538</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="docs medical group, inc. dba pulse urgent care hhs ocr  hacking/it incident ca">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Docs Medical Group, Inc. dba Pulse Urgent Care</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/28/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 4035</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="share ourselves hhs ocr  hacking/it incident ca">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Share Ourselves</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/26/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 2864</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="careoregon hhs ocr  unauthorized access/disclosure or">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">CareOregon</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/26/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Unauthorized Access/Disclosure</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> OR</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 5473</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="glendale obstetrics & gynecology pca hhs ocr  hacking/it incident az">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Glendale Obstetrics & Gynecology PCA</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/24/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> AZ</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 501</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="allervie health hhs ocr  hacking/it incident tx">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">AllerVie Health</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/23/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> TX</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 80521</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="york hospital hhs ocr  unauthorized access/disclosure me">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">York Hospital</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/23/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Unauthorized Access/Disclosure</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> ME</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 1259</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="gardner health services hhs ocr  unauthorized access/disclosure ca">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">Gardner Health Services</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/22/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Unauthorized Access/Disclosure</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> CA</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 6197</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="hap (health alliance plan) hhs ocr  hacking/it incident mi">
+            <h3><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" target="_blank">HAP (Health Alliance Plan)</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 12/22/2025</span>
+                <span class="meta-item source">HHS OCR</span><span class="meta-item type">Hacking/IT Incident</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">📍 Location:</span> MI</div><div class="detail-row"><span class="detail-label">📊 Total Affected:</span> 1059</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="abu dhabi indian school branch 1 al wathba breachsense nightspire ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/abu-dhabi-indian-school-branch-1-al-wathba-data-breach/" target="_blank">Abu Dhabi Indian School Branch 1 Al Wathba</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 NightSpire</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="active green ross breachsense sinobi ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/active-green-ross-data-breach/" target="_blank">Active Green Ross</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 Sinobi</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="affordable housing management breachsense sinobi ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/affordable-housing-management-data-breach/" target="_blank">Affordable Housing Management</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 Sinobi</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="anagnos door breachsense inc_ransom ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/anagnos-door-data-breach/" target="_blank">Anagnos Door</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 INC_RANSOM</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="arkansas trial lawyers association breachsense cl0p ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/arkansas-trial-lawyers-association-data-breach/" target="_blank">Arkansas Trial Lawyers Association</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 CL0P</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="ashcraft breachsense sinobi ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/ashcraft-data-breach/" target="_blank">Ashcraft</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 Sinobi</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="callagy law breachsense inc_ransom ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/callagy-law-data-breach/" target="_blank">Callagy Law</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 INC_RANSOM</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="cobu architecture studio breachsense cl0p ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/cobu-architecture-studio-data-breach/" target="_blank">COBU Architecture Studio</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 CL0P</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="connor breachsense nitrogen ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/connor-data-breach/" target="_blank">Connor</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 Nitrogen</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="databank breachsense nightspire ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/databank-data-breach/" target="_blank">Databank</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 NightSpire</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="derenzis and associates breachsense inc_ransom ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/derenzis-and-associates-data-breach/" target="_blank">DeRenzis and Associates</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 INC_RANSOM</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="escali breachsense cl0p ransomware ">
+            <h3><a href="https://www.breachsense.com/breaches/escali-data-breach/" target="_blank">Escali</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Jan 28, 20</span>
+                <span class="meta-item source">BreachSense</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 CL0P</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">No description available.</p>
+        </div>
+
+        <div class="breach-card" data-search="hipaa training for it professionals hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/hipaa-training-for-it-professionals/" target="_blank">HIPAA Training for IT Professionals</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">HIPAA training for IT professionals is required for IT workforce members who support systems that create, receive, maintain, or transmit […]
+The post HIPAA Training for IT Professionals appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="four healthcare providers settle class action lawsuits over data breaches hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/four-healthcare-providers-class-action-data-brteach-settlements/" target="_blank">Four Healthcare Providers Settle Class Action Lawsuits Over Data Breaches</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Settlements have been agreed to resolve class action lawsuits over healthcare data breaches experienced by Alabama Cardiovascular Group, Carolina Arthritis […]
+The post Four Healthcare Providers Settle Class Action Lawsuits Over Data Breaches appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="blue cross blue shield of montana faces data breach probe hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/blue-cross-blue-shield-montana-data-breach-probe/" target="_blank">Blue Cross Blue Shield of Montana Faces Data Breach Probe</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Health Care Service Corporation, doing business as Blue Cross Blue Shield of Montana (BCBSMT), is facing a probe into whether […]
+The post Blue Cross Blue Shield of Montana Faces Data Breach Probe appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="mitchell county dept. social services; 360 dental; giacare announce data breaches hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/mitchell-county-social-services-360-dental-giacare-data-breaches/" target="_blank">Mitchell County Dept. Social Services; 360 Dental; GiaCare Announce Data Breaches</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Protected health information has been exposed in data security incidents at Mitchell County Department of Social Services in North Carolina, […]
+The post Mitchell County Dept. Social Services; 360 Dental; GiaCare Announce Data Breaches appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="texas & new jersey dermatology practices settle class action data breach lawsuits hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/texas-new-jersey-dermatology-practices-data-breach-settlements/" target="_blank">Texas & New Jersey Dermatology Practices Settle Class Action Data Breach Lawsuits</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Two U.S. dermatology practices have agreed to settle class action lawsuits stemming from cybersecurity incidents that exposed patient data. The […]
+The post Texas & New Jersey Dermatology Practices Settle Class Action Data Breach Lawsuits appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="mact health board patients affected by november 2025 ransomware attack hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/mact-health-board-data-breach/" target="_blank">MACT Health Board Patients Affected by November 2025 Ransomware Attack</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Mon, 26 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">MACT Health Board has confirmed that patient data was stolen in a November 2025 cyberattack, for which the INC Ransom […]
+The post MACT Health Board Patients Affected by November 2025 Ransomware Attack appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="more than 100k munson healthcare patient affected by cerner cyberattack hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/munson-healthcare-cerner-data-breach/" target="_blank">More than 100K Munson Healthcare Patient Affected by Cerner Cyberattack</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Mon, 26 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Munson Healthcare, the largest health system in Northern Michigan, has recently notified patients about unauthorized access to its electronic medical […]
+The post More than 100K Munson Healthcare Patient Affected by Cerner Cyberattack appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="numotion agrees to pay $4 million to settle litigation stemming from 2024 data breaches hipaa journal  healthcare breach ">
+            <h3><a href="https://www.hipaajournal.com/numotion-data-breach-settlement/" target="_blank">Numotion Agrees to Pay $4 Million to Settle Litigation Stemming from 2024 Data Breaches</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">HIPAA Journal</span><span class="meta-item type">Healthcare Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The mobility equipment provider United Seating and Mobility, doing business as Numotion, has agreed to settle class action litigation stemming […]
+The post Numotion Agrees to Pay $4 Million to Settle Litigation Stemming from 2024 Data Breaches appeared first on The HIPAA Journal.</p>
+        </div>
+
+        <div class="breach-card" data-search="treasury cancels $21 million in booz allen contracts, blaming a breach that happened years ago databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/27/treasury-cancels-21-million-in-booz-allen-contracts-blaming-a-breach-that-happened-years-ago/?pk_campaign=feed&pk_kwd=treasury-cancels-21-million-in-booz-allen-contracts-blaming-a-breach-that-happened-years-ago" target="_blank">Treasury cancels $21 million in Booz Allen contracts, blaming a breach that happened years ago</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">CNN reports: The Treasury Department cut ties with Booz Allen Hamilton on Monday and announced that it was canceling $21 million in federal contracts with the consulting giant because one of its ex-employees previously leaked President Donald Trump’s tax returns to the press. A statement from Treasu...</p>
+        </div>
+
+        <div class="breach-card" data-search="savannah best buy employee says ‘hacker group’ blackmailed him into theft ring scheme databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/27/savannah-best-buy-employee-says-hacker-group-blackmailed-him-into-theft-ring-scheme/?pk_campaign=feed&pk_kwd=savannah-best-buy-employee-says-hacker-group-blackmailed-him-into-theft-ring-scheme" target="_blank">Savannah Best Buy employee says ‘hacker group’ blackmailed him into theft ring scheme</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Lydia Blackstone reports: A 20-year-old Best Buy employee is jailed in Savannah after police said he helped a group of suspected shoplifters walk out of the store with more than $40,000 in merchandise, claiming he was pressured by online blackmail threats. Dorian Allen is charged with theft by takin...</p>
+        </div>
+
+        <div class="breach-card" data-search="hungarian and romanian police detain young hackers over fake threat calls databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/26/hungarian-and-romanian-police-detain-young-hackers-over-fake-threat-calls/?pk_campaign=feed&pk_kwd=hungarian-and-romanian-police-detain-young-hackers-over-fake-threat-calls" target="_blank">Hungarian and Romanian Police Detain Young Hackers over Fake Threat Calls</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Mon, 26 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Hungarian Conservative reports: Hungarian police, in cooperation with Romanian authorities, have taken action against four young hackers suspected of making false and intimidating phone calls, the National Bureau of Investigation of the Rapid Response Police announced on Monday. The investigation be...</p>
+        </div>
+
+        <div class="breach-card" data-search="call-on-doc allegedly had a breach affecting more than 1 million patients. they’ve yet to comment. databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/24/call-on-doc-allegedly-had-a-breach-affecting-more-than-1-million-patients-theyve-yet-to-comment/?pk_campaign=feed&pk_kwd=call-on-doc-allegedly-had-a-breach-affecting-more-than-1-million-patients-theyve-yet-to-comment" target="_blank">Call-On-Doc allegedly had a breach affecting more than 1 million patients. They’ve yet to comment.</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Sat, 24 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Telehealth provider Call-On-Doc, Inc., dba Call-On-Doc.com, advertises that it has 2 million active patients and treats 150+ medical conditions. It claims to be the most highly rated telehealth service, and it assures patients of “state-of-the-art” data security for their information. But if a post ...</p>
+        </div>
+
+        <div class="breach-card" data-search="shinyhunters claim to be behind sso-account data theft attacks databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/24/shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks/?pk_campaign=feed&pk_kwd=shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks" target="_blank">ShinyHunters claim to be behind SSO-account data theft attacks</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Sat, 24 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Lawrence Abrams reports: The ShinyHunters extortion gang claims it is behind a wave of ongoing voice phishing attacks targeting single sign-on (SSO) accounts at Okta, Microsoft, and Google, enabling threat actors to breach corporate SaaS platforms and steal company data for extortion. In these attac...</p>
+        </div>
+
+        <div class="breach-card" data-search="france’s waltio faces ransom threat from notorious hacker collective databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/24/frances-waltio-faces-ransom-threat-from-notorious-hacker-collective/?pk_campaign=feed&pk_kwd=frances-waltio-faces-ransom-threat-from-notorious-hacker-collective" target="_blank">France’s Waltio faces ransom threat from notorious hacker collective</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Sat, 24 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Caroline Alvarez reports: Waltio, a French crypto tax platform, is under siege from ShinyHunters, a notorious ransomware group claiming to hold the personal data of nearly 50,000 users. ShinyHunters, known for high-profile crypto and corporate hacks, is threatening to leak users’ 2024 tax reports un...</p>
+        </div>
+
+        <div class="breach-card" data-search="microsoft gave fbi keys to unlock encrypted data, exposing major privacy concern databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/23/microsoft-gave-fbi-keys-to-unlock-encrypted-data-exposing-major-privacy-concern/?pk_campaign=feed&pk_kwd=microsoft-gave-fbi-keys-to-unlock-encrypted-data-exposing-major-privacy-concern" target="_blank">Microsoft Gave FBI Keys To Unlock Encrypted Data, Exposing Major Privacy Concern</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Thomas Brewster reports: Early last year, the FBI served Microsoft with a search warrant, asking it to provide recovery keys to unlock encrypted data stored on three laptops. Federal investigators in Guam believed the devices held evidence that would help prove individuals handling the island’s Covi...</p>
+        </div>
+
+        <div class="breach-card" data-search="shinyhunters group opens new dark web leak site, claims responsibility for okta vishing campaign databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/23/shinyhunters-group-opens-new-dark-web-leak-site-claims-responsibility-for-okta-vishing-campaign/?pk_campaign=feed&pk_kwd=shinyhunters-group-opens-new-dark-web-leak-site-claims-responsibility-for-okta-vishing-campaign" target="_blank">ShinyHunters group opens new dark web leak site, claims responsibility for OKTA vishing campaign</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Over on LinkedIn, AlonGal of Hudson Rock wrote: BIG – ShinyHunters confirmed to me that they are behind the recent Okta vishing campaign and have published alleged data from three major victims (Crunchbase, SoundCloud, and Betterment) on their new blog, stating more are coming. 🔽 I was approached by...</p>
+        </div>
+
+        <div class="breach-card" data-search="inc ransomware opsec fail allowed data recovery for 12 us orgs databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/23/inc-ransomware-opsec-fail-allowed-data-recovery-for-12-us-orgs/?pk_campaign=feed&pk_kwd=inc-ransomware-opsec-fail-allowed-data-recovery-for-12-us-orgs" target="_blank">INC ransomware opsec fail allowed data recovery for 12 US orgs</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Bill Toulas reports: An operational security failure allowed researchers to recover data that the INC ransomware gang stole from a dozen U.S. organizations. A deep forensic examination of the artifacts left behind uncovered tooling that had not been used in the investigated attack, but exposed attac...</p>
+        </div>
+
+        <div class="breach-card" data-search="nl: police warned about security hole used by russian hackers in major theft of police data databreaches.net  data breach ">
+            <h3><a href="https://databreaches.net/2026/01/23/nl-police-warned-about-security-hole-used-by-russian-hackers-in-major-theft-of-police-data/?pk_campaign=feed&pk_kwd=nl-police-warned-about-security-hole-used-by-russian-hackers-in-major-theft-of-police-data" target="_blank">NL: Police warned about security hole used by Russian hackers in major theft of police data</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">DataBreaches.net</span><span class="meta-item type">Data Breach</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NL Times reports: The Dutch police knew about gaps in their cybersecurity before a Russian cyber group stole a large amount of police data in September 2024, according to research by Follow the Money. The hackers used vulnerabilities that the police had been warned about. The hackers gained access t...</p>
+        </div>
+
+        <div class="breach-card" data-search="hackers hijack exposed llm endpoints in bizarre bazaar operation bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/hackers-hijack-exposed-llm-endpoints-in-bizarre-bazaar-operation/" target="_blank">Hackers hijack exposed LLM endpoints in Bizarre Bazaar operation</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">A malicious campaign is actively targeting exposed LLM (Large Language Model) service endpoints to commercialize unauthorized access to AI infrastructure. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="new whatsapp lockdown feature protects high-risk users from hackers bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/whatsapp-gets-new-lockdown-feature-that-blocks-cyberattacks/" target="_blank">New WhatsApp lockdown feature protects high-risk users from hackers</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Meta has started rolling out a new WhatsApp lockdown-style security feature designed to protect journalists, public figures, and other high-risk individuals from sophisticated threats, including spyware attacks. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="chinese mustang panda hackers deploy infostealers via coolclient backdoor bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/chinese-mustang-panda-hackers-deploy-infostealers-via-coolclient-backdoor/" target="_blank">Chinese Mustang Panda hackers deploy infostealers via CoolClient backdoor</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The Chinese espionage threat group Mustang Panda has updated its CoolClient backdoor to a new variant that can steal login data from browsers and monitor the clipboard. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="winrar path traversal flaw still exploited by numerous hackers bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/winrar-path-traversal-flaw-still-exploited-by-numerous-hackers/" target="_blank">WinRAR path traversal flaw still exploited by numerous hackers</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Multiple threat actors, both state-sponsored and financially motivated, are exploiting the CVE-2025-8088 high-severity vulnerability in WinRAR for initial access and to deliver various malicious payloads. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="nike investigates data breach after extortion gang leaks files bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/nike-investigates-data-breach-after-extortion-gang-leaks-files/" target="_blank">Nike investigates data breach after extortion gang leaks files</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Nike is investigating what it described as a "potential cyber security incident" after the World Leaks ransomware gang leaked 1.4 TB of files allegedly stolen from the sportswear giant. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="us charges 31 more suspects linked to atm malware attacks bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/us-charges-31-more-suspects-linked-to-atm-malware-attacks/" target="_blank">US charges 31 more suspects linked to ATM malware attacks</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">A Nebraska federal grand jury charged 31 additional defendants for their involvement in an ATM jackpotting operation allegedly orchestrated by members of the Venezuelan gang Tren de Aragua. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="from cipher to fear: the psychology behind modern ransomware extortion bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/from-cipher-to-fear-the-psychology-behind-modern-ransomware-extortion/" target="_blank">From Cipher to Fear: The psychology behind modern ransomware extortion</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Modern ransomware has shifted from encryption to psychological extortion that exploits fear, liability, and exposure. Flare shows how today's ransomware groups weaponize stolen data and pressure tactics to force payment. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="over 6,000 smartermail servers exposed to automated hijacking attacks bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/over-6-000-smartermail-servers-exposed-to-automated-hijacking-attacks/" target="_blank">Over 6,000 SmarterMail servers exposed to automated hijacking attacks</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Nonprofit security organization Shadowserver has found over 6,000 SmarterMail servers exposed online and likely vulnerable to attacks exploiting a critical authentication bypass vulnerability. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="have i been pwned: soundcloud data breach impacts 29.8 million accounts bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/have-i-been-pwned-soundcloud-data-breach-impacts-298-million-accounts/" target="_blank">Have I Been Pwned: SoundCloud data breach impacts 29.8 million accounts</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Hackers have stolen the personal and contact information belonging to over 29.8 million SoundCloud user accounts after breaching the audio streaming platform's systems. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="new clickfix attacks abuse windows app-v scripts to push malware bleepingcomputer  security news ">
+            <h3><a href="https://www.bleepingcomputer.com/news/security/new-clickfix-attacks-abuse-windows-app-v-scripts-to-push-malware/" target="_blank">New ClickFix attacks abuse Windows App-V scripts to push malware</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Mon, 26 Ja</span>
+                <span class="meta-item source">BleepingComputer</span><span class="meta-item type">Security News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">A new malicious campaign mixes the ClickFix method with fake CAPTCHA and a signed Microsoft Application Virtualization (App-V) script to ultimately deliver the Amatera infostealing malware. [...]</p>
+        </div>
+
+        <div class="breach-card" data-search="apex logistics solutions red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-apex-logistics-solutions/" target="_blank">Apex Logistics Solutions</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="tiw-group[.]com red packet security devman ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/devman-ransomware-victim-tiw-group-com/" target="_blank">tiw-group[.]com</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 DEVMAN</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="technosoft it services red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-technosoft-it-services/" target="_blank">TechnoSoft IT Services</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="z*l*c[.]o*g red packet security devman ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/devman-ransomware-victim-z-l-c-o-g/" target="_blank">z*l*c[.]o*g</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 DEVMAN</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="rapid food distributors red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-rapid-food-distributors/" target="_blank">Rapid Food Distributors</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="metropolis city municipal red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-metropolis-city-municipal/" target="_blank">Metropolis City Municipal</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="orion legal partners red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-orion-legal-partners/" target="_blank">Orion Legal Partners</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="greenvalley regional college red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-greenvalley-regional-college/" target="_blank">GreenValley Regional College</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="dr[.] smith dental clinics red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-dr-smith-dental-clinics/" target="_blank">Dr[.] Smith Dental Clinics</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="sunrise manufacturing ltd[.] red packet security 0apt ransomware ">
+            <h3><a href="https://www.redpacketsecurity.com/0apt-ransomware-victim-sunrise-manufacturing-ltd/" target="_blank">Sunrise Manufacturing Ltd[.]</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Red Packet Security</span><span class="meta-item type">Ransomware</span><span class="meta-item actor">🎭 0APT</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">NOTE: No files or stolen information are exfiltrated, downloaded, taken, hosted, seen, reposted, or disclosed...</p>
+        </div>
+
+        <div class="breach-card" data-search="happy 16th birthday, krebsonsecurity.com! krebs on security  news ">
+            <h3><a href="https://krebsonsecurity.com/2025/12/happy-16th-birthday-krebsonsecurity-com/" target="_blank">Happy 16th Birthday, KrebsOnSecurity.com!</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Mon, 29 De</span>
+                <span class="meta-item source">Krebs on Security</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">KrebsOnSecurity.com celebrates its 16th anniversary today! A huge "thank you" to all of our readers -- newcomers, long-timers and drive-by critics alike. Your engagement this past year here has been tremendous and truly a salve on a handful of dark days. Happily, comeuppance was a strong theme runni...</p>
+        </div>
+
+        <div class="breach-card" data-search="dismantling defenses: trump 2.0 cyber year in review krebs on security  news ">
+            <h3><a href="https://krebsonsecurity.com/2025/12/dismantling-defenses-trump-2-0-cyber-year-in-review/" target="_blank">Dismantling Defenses: Trump 2.0 Cyber Year in Review</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 19 De</span>
+                <span class="meta-item source">Krebs on Security</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The Trump administration has pursued a staggering range of policy pivots this past year that threaten to weaken the nation’s ability and willingness to address a broad spectrum of technology challenges, from cybersecurity and privacy to countering disinformation, fraud and corruption. These shifts, ...</p>
+        </div>
+
+        <div class="breach-card" data-search="cyberattack on poland’s power grid hit around 30 energy facilities, new report says the record  news ">
+            <h3><a href="https://therecord.media/poland-electrical-grid-cyberattack-30-facilities-affected" target="_blank">Cyberattack on Poland’s power grid hit around 30 energy facilities, new report says</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">The Record</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Adding to previous research about an operation against Poland's electrical grid, analysts at Dragos say it affected dozens of facilities and disrupted operational technology.</p>
+        </div>
+
+        <div class="breach-card" data-search="uk leaders warned country risks 'absorbing' cyber and hybrid attacks without offensive deterrence the record  news ">
+            <h3><a href="https://therecord.media/uk-government-warned-cyber-hybrid-threats-offensive-operations" target="_blank">UK leaders warned country risks 'absorbing' cyber and hybrid attacks without offensive deterrence</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">The Record</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The government must do more to actively disrupt and deter foreign cyber and hybrid threats, U.K. ministers were told at at a parliamentary hearing.</p>
+        </div>
+
+        <div class="breach-card" data-search="why we can’t let ai take the wheel of cyber defense securityweek  news ">
+            <h3><a href="https://www.securityweek.com/why-we-cant-let-ai-take-the-wheel-of-cyber-defense/" target="_blank">Why We Can’t Let AI Take the Wheel of Cyber Defense</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The fastest way to squander the promise of AI is to mistake automation for assurance, and novelty for resilience.
+The post Why We Can’t Let AI Take the Wheel of Cyber Defense appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="rein security emerges from stealth with $8m, bringing inside-out appsec approach securityweek  news ">
+            <h3><a href="https://www.securityweek.com/rein-security-emerges-from-stealth-with-8m-bringing-inside-out-protection-to-appsec/" target="_blank">Rein Security Emerges From Stealth With $8M, Bringing Inside-Out AppSec Approach</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Rein aims to close the production visibility gap by stopping attacks inside the application runtime.
+The post Rein Security Emerges From Stealth With $8M, Bringing Inside-Out AppSec Approach appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="whatsapp boosts account security for at-risk individuals securityweek  news ">
+            <h3><a href="https://www.securityweek.com/whatsapp-boosts-account-security-for-at-risk-individuals/" target="_blank">WhatsApp Boosts Account Security for At-Risk Individuals</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">New Strict Account Settings allow users to block attachments and media and silence calls from unknown people.
+The post WhatsApp Boosts Account Security for At-Risk Individuals appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="us charges 31 more defendants in massive atm hacking probe securityweek  news ">
+            <h3><a href="https://www.securityweek.com/us-charges-31-more-defendants-in-massive-atm-hacking-probe/" target="_blank">US Charges 31 More Defendants in Massive ATM Hacking Probe</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">A total of 87 individuals, mostly Venezuelan nationals, have been charged for their role in the ATM jackpotting scheme.
+The post US Charges 31 More Defendants in Massive ATM Hacking Probe appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="apts, cybercriminals widely exploiting winrar vulnerability securityweek  news ">
+            <h3><a href="https://www.securityweek.com/apts-cybercriminals-widely-exploiting-winrar-vulnerability/" target="_blank">APTs, Cybercriminals Widely Exploiting WinRAR Vulnerability</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Russian and Chinese state-sponsored threat actors have been exploiting CVE-2025-8088 since July 2025.
+The post APTs, Cybercriminals Widely Exploiting WinRAR Vulnerability appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="indurex emerges from stealth to close security gap in cyber-physical systems securityweek  news ">
+            <h3><a href="https://www.securityweek.com/indurex-emerges-from-stealth-to-close-security-gap-in-cyber-physical-systems/" target="_blank">Indurex Emerges From Stealth to Close Security Gap in Cyber-Physical Systems</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Indurex was founded by Jalal Bouhdada, who previously led industrial cybersecurity company Applied Risk.
+The post Indurex Emerges From Stealth to Close Security Gap in Cyber-Physical Systems appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="fortinet patches exploited forticloud sso authentication bypass securityweek  news ">
+            <h3><a href="https://www.securityweek.com/fortinet-patches-exploited-forticloud-sso-authentication-bypass/" target="_blank">Fortinet Patches Exploited FortiCloud SSO Authentication Bypass</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Tracked as CVE-2026-24858, the bug allows attackers to log into devices registered to other FortiCloud accounts.
+The post Fortinet Patches Exploited FortiCloud SSO Authentication Bypass appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="high-severity remote code execution vulnerability patched in openssl securityweek  news ">
+            <h3><a href="https://www.securityweek.com/high-severity-remote-code-execution-vulnerability-patched-in-openssl/" target="_blank">High-Severity Remote Code Execution Vulnerability Patched in OpenSSL</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">A total of 12 vulnerabilities have been fixed in OpenSSL, all discovered by a single cybersecurity firm.
+The post High-Severity Remote Code Execution Vulnerability Patched in OpenSSL appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="over 100 organizations targeted in shinyhunters phishing campaign securityweek  news ">
+            <h3><a href="https://www.securityweek.com/over-100-organizations-targeted-in-shinyhunters-phishing-campaign/" target="_blank">Over 100 Organizations Targeted in ShinyHunters Phishing Campaign</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">SecurityWeek</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Domains set up by the threat actor suggest attacks aimed at Atlassian, Canva, Epic Games, HubSpot, Moderna, ZoomInfo, and WeWork.
+The post Over 100 Organizations Targeted in ShinyHunters Phishing Campaign appeared first on SecurityWeek.</p>
+        </div>
+
+        <div class="breach-card" data-search="surging cyberattacks boost latin america to riskiest region dark reading  news ">
+            <h3><a href="https://www.darkreading.com/cyber-risk/surging-cyberattacks-latin-america-riskiest-region" target="_blank">Surging Cyberattacks Boost Latin America to Riskiest Region</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Wed, 28 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The region is up against tactics like data-leak extortion, credential-stealing campaigns, edge-device exploitation, and attackers leveraging AI.</p>
+        </div>
+
+        <div class="breach-card" data-search="vibe-coded 'sicarii' ransomware can't be decrypted dark reading  news ">
+            <h3><a href="https://www.darkreading.com/endpoint-security/vibe-coded-sicarii-ransomware-decrypted" target="_blank">Vibe-Coded 'Sicarii' Ransomware Can't Be Decrypted</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">A new ransomware strain that entered the scene last year has poorly designed code and an odd "Hebrew" identity that might be a false flag.</p>
+        </div>
+
+        <div class="breach-card" data-search="critical telnet server flaw exposes forgotten attack surface dark reading  news ">
+            <h3><a href="https://www.darkreading.com/ics-ot-security/critical-telnet-server-flaw-forgotten-attack-surface" target="_blank">Critical Telnet Server Flaw Exposes Forgotten Attack Surface</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">While telnet is considered obsolete, the network protocol is still used by hundreds of thousands of legacy systems and IoT devices for remote access.</p>
+        </div>
+
+        <div class="breach-card" data-search="'stanley' toolkit turns chrome into undetectable phishing vector dark reading  news ">
+            <h3><a href="https://www.darkreading.com/remote-workforce/stanley-toolkit-chrome-undetectable-phishing" target="_blank">'Stanley' Toolkit Turns Chrome Into Undetectable Phishing Vector</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The malware-as-a-service kit enables malicious extensions to overlay pages on real websites without changing the visible URL, signaling a fresh challenge for enterprise security.</p>
+        </div>
+
+        <div class="breach-card" data-search="worldleaks extortion group claims it stole 1.4tb of nike data dark reading  news ">
+            <h3><a href="https://www.darkreading.com/cyberattacks-data-breaches/worldeaks-extortion-group-stole-1.4tb-nike-data" target="_blank">WorldLeaks Extortion Group Claims It Stole 1.4TB of Nike Data</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Tue, 27 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The sportswear brand is investigating an alleged breach of its network that exposed some 188,347 files of highly sensitive corporate data.</p>
+        </div>
+
+        <div class="breach-card" data-search="beauty in destruction: exploring malware's impact through art dark reading  news ">
+            <h3><a href="https://www.darkreading.com/vulnerabilities-threats/beauty-in-destruction-exploring-malware-impact-through-art" target="_blank">Beauty in Destruction: Exploring Malware's Impact Through Art</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Mon, 26 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Artistic initiatives turn cybersecurity into immersive exhibits at the Museum of Malware Art, transforming digital threats into thought-provoking experiences.</p>
+        </div>
+
+        <div class="breach-card" data-search="sandworm blamed for wiper attack on poland power grid dark reading  news ">
+            <h3><a href="https://www.darkreading.com/threat-intelligence/sandworm-wiper-attack-poland-power-grid" target="_blank">Sandworm Blamed for Wiper Attack on Poland Power Grid</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Mon, 26 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Researchers attributed the failed attempt to the infamous Russian APT Sandworm, which is notorious for wiper attacks on critical infrastructure organizations.</p>
+        </div>
+
+        <div class="breach-card" data-search="swipe, plug-in, pwned: researchers find new ways to hack vehicles dark reading  news ">
+            <h3><a href="https://www.darkreading.com/endpoint-security/researchers-find-new-ways-hack-vehicles" target="_blank">Swipe, Plug-in, Pwned: Researchers Find New Ways to Hack Vehicles</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Security researchers exploited dozens of vulnerabilities in vehicle infotainment systems and EV chargers during the latest Pwn2Own contest at Automotive World 2026.</p>
+        </div>
+
+        <div class="breach-card" data-search="exploited zero-day flaw in cisco uc could affect millions dark reading  news ">
+            <h3><a href="https://www.darkreading.com/endpoint-security/exploited-zero-day-flaw-cisco-uc-affect-millions" target="_blank">Exploited Zero-Day Flaw in Cisco UC Could Affect Millions</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Mass scanning is underway for CVE-2026-20045, which Cisco tagged as critical because successful exploitation could lead to a complete system takeover.</p>
+        </div>
+
+        <div class="breach-card" data-search="europe's gcve raises concerns over fragmentation in vulnerability databases dark reading  news ">
+            <h3><a href="https://www.darkreading.com/cyber-risk/gcve-raises-concerns-fragmentation-vulnerability-database" target="_blank">Europe's GCVE Raises Concerns Over Fragmentation in Vulnerability Databases</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">GCVE would enhance global collaboration, flexibility, and efficiency in tracking security flaws. Duplicate entries and a decentralization policy may create more chaos for defenders.</p>
+        </div>
+
+        <div class="breach-card" data-search="healthy security cultures want people to report risks dark reading  news ">
+            <h3><a href="https://www.darkreading.com/cyber-risk/healthy-security-cultures-thrive-on-risk-reporting" target="_blank">Healthy Security Cultures Want People to Report Risks</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Fri, 23 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">The signs of an effective security culture are shifting as companies call on CISOs and security teams to raise their hands unabashedly.</p>
+        </div>
+
+        <div class="breach-card" data-search="latin american orgs lack confidence in cyber defenses, skills dark reading  news ">
+            <h3><a href="https://www.darkreading.com/cyber-risk/latin-american-confidence-cyber-defenses-skills" target="_blank">Latin American Orgs Lack Confidence in Cyber Defenses, Skills</a></h3>
+            <div class="breach-meta">
+                <span class="meta-item">📅 Thu, 22 Ja</span>
+                <span class="meta-item source">Dark Reading</span><span class="meta-item type">News</span>
+            </div>
+            <div class="breach-details">
+                <div class="detail-row"><span class="detail-label">ℹ️</span> No additional details available</div>
+            </div>
+            <p class="description">Cybersecurity professionals in Latin America are least likely to have faith in their countries' preparedness for cyberattacks on critical infrastructure, the World Economic Forum says.</p>
+        </div>
+
+    </div>
+
+    <script>
+        function filterBreaches() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.breach-card');
+            let visible = 0;
+
+            cards.forEach(card => {
+                const text = card.getAttribute('data-search');
+                if (text.includes(search)) {
+                    card.classList.remove('hidden');
+                    visible++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('visible-count').textContent = visible;
+        }
+    </script>
+</body>
+</html>
