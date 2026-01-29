@@ -1191,6 +1191,7 @@ class RSSFeedGenerator:
                  link: str = "https://example.com/breaches",
                  description: str = "Aggregated data breach notifications"):
         self.fg = FeedGenerator()
+        self.fg.id(link)
         self.fg.title(title)
         self.fg.link(href=link, rel='alternate')
         self.fg.description(description)
