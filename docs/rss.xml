@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Breach RSS Generator</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 May 2026 08:20:19 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 08:29:08 +0000</lastBuildDate>
     <item>
       <title>Processes &amp;amp; Culture Top Reasons Behind Data Breaches</title>
       <link>https://www.darkreading.com/cyberattacks-data-breaches/processes-and-culture-top-reasons-behind-data-breaches</link>
@@ -95,18 +95,6 @@
       <category>News</category>
       <category>Dark Reading</category>
       <pubDate>Fri, 22 May 2026 13:17:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>Drupal Patches Highly Critical Vulnerability Exposing Websites to Hacking</title>
-      <link>https://www.securityweek.com/drupal-patches-highly-critical-vulnerability-exposing-websites-to-hacking/</link>
-      <description>CVE-2026-9082 can be exploited without authentication for information disclosure, privilege escalation, and remote code execution.
-The post Drupal Patches Highly Critical Vulnerability Exposing Websites to Hacking appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">995c84277fe20bc32f982f763d133c0b</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Thu, 21 May 2026 10:58:49 +0000</pubDate>
     </item>
     <item>
       <title>Apple Rejected 2 Million App Store Submissions in 2025 for Security and Fraud Prevention</title>
@@ -205,6 +193,18 @@ The post Drupal Vulnerability in Hacker Crosshairs Shortly After Disclosure appe
       <pubDate>Fri, 22 May 2026 17:15:26 +0000</pubDate>
     </item>
     <item>
+      <title>‘Underminr’ Vulnerability Lets Attackers Hide Malicious Connections Behind Trusted Domains</title>
+      <link>https://www.securityweek.com/underminr-vulnerability-lets-attackers-hide-malicious-connections-behind-trusted-domains/</link>
+      <description>The stealthy vulnerability impacts roughly 88 million domains and can be exploited to bypass DNS filtering and hide command-and-control traffic.
+The post ‘Underminr’ Vulnerability Lets Attackers Hide Malicious Connections Behind Trusted Domains appeared first on SecurityWeek.
+
+📰 Source: SecurityWeek | 🏷️ Type: News</description>
+      <guid isPermaLink="false">7e2fbddb08808f69353557eaf34597e7</guid>
+      <category>News</category>
+      <category>SecurityWeek</category>
+      <pubDate>Sat, 23 May 2026 11:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>FBI warns of Kali365 phishing-as-a-service after April Microsoft 365 attacks</title>
       <link>https://therecord.media/fbi-warns-of-kali365-phishing-attacks</link>
       <description>The law enforcement agency published an advisory on Thursday about Kali365 — a Telegram-based service for cybercriminals that allows them to capture legitimate "OAuth" tokens enabling widespread access to Microsoft 365 environments.
@@ -291,6 +291,126 @@ The post Drupal Vulnerability in Hacker Crosshairs Shortly After Disclosure appe
       <category>News</category>
       <category>Krebs on Security</category>
       <pubDate>Fri, 22 May 2026 16:34:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hugging Face Hiding Second-Stage Malware for npm Supply Chain Attack</title>
+      <link>https://databreaches.net/2026/05/22/hugging-face-hiding-second-stage-malware-for-npm-supply-chain-attack/?pk_campaign=feed&amp;pk_kwd=hugging-face-hiding-second-stage-malware-for-npm-supply-chain-attack</link>
+      <description>Tushar Subhra Dutta reports: Hackers have found a new and alarming way to weaponize one of the most trusted platforms in the AI world. A threat actor linked to North Korea has embedded second-stage malware inside Hugging Face, the widely used AI and machine learning hub, effectively turning it into a malware delivery channel and...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">42a9e114071b0adb15f3b99705cb409a</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Fri, 22 May 2026 13:52:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Verus Hacker Returns $8.5M After Bridge Exploit Deal</title>
+      <link>https://databreaches.net/2026/05/22/verus-hacker-returns-8-5m-after-bridge-exploit-deal/?pk_campaign=feed&amp;pk_kwd=verus-hacker-returns-8-5m-after-bridge-exploit-deal</link>
+      <description>Do those who say never to pay ransomware or hack-and-leak criminals because it encourages more crime also say never to pay those who hack crypto? If you negotiate with hackers to let them keep a percent of what they stole as a non-prosecutable “bounty,” aren’t you just creating more incentive for other criminals? Kenrodgers Fabian...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">7fc84fedde15d1a4f3e6616350aa38f3</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Fri, 22 May 2026 13:52:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hackers steal patient and billing data from German hospitals via third-party provider</title>
+      <link>https://databreaches.net/2026/05/22/hackers-steal-patient-and-billing-data-from-german-hospitals-via-third-party-provider/?pk_campaign=feed&amp;pk_kwd=hackers-steal-patient-and-billing-data-from-german-hospitals-via-third-party-provider</link>
+      <description>Daryna Antoniuk reports: German university hospitals are grappling with a large-scale patient data breach after unknown hackers targeted an external billing service provider used by medical centers across the country, according to statements from several affected medical institutions. The attack reportedly hit Unimed, a company that handles billing services for privately insured and self-paying patients on behalf...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">f8ad8b586d24d7e5e6d82b4393920cbf</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Fri, 22 May 2026 13:52:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>How a consultant and a concert pianist from the Netherlands were arrested on suspicion of aiding NoName057(16)</title>
+      <link>https://databreaches.net/2026/05/22/how-a-consultant-and-a-concert-pianist-from-the-netherlands-were-arrested-on-suspicion-of-aiding-noname05716/?pk_campaign=feed&amp;pk_kwd=how-a-consultant-and-a-concert-pianist-from-the-netherlands-were-arrested-on-suspicion-of-aiding-noname05716</link>
+      <description>Officials allege that WorkTitans and MIRhosting were used to facilitate pro-Russian hackers and evade EU sanctions. Huib Modderkolk and Henrik Moltke write: Youssef Z. may have seen trouble coming. The 57-year-old entrepreneur and organizational consultant from Amsterdam, arrested at his home in the early hours of Monday 18 May by agents of the Dutch fiscal investigation...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">74a1dee4de594f99573bbf5ba324457a</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Fri, 22 May 2026 13:52:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Proposed State Laws For Breach Notification Could Reshape Incident Response Plans</title>
+      <link>https://databreaches.net/2026/05/22/proposed-state-laws-for-breach-notification-could-reshape-incident-response-plans/?pk_campaign=feed&amp;pk_kwd=proposed-state-laws-for-breach-notification-could-reshape-incident-response-plans</link>
+      <description>Joseph Lazzarotti of JacksonLewis writes: State breach-notification laws continue to evolve, and legislatures are using 2026 sessions to tighten consumer protections and shift the civil liability landscape that often follows a cyber event. For businesses, the practical takeaway is that incident response planning increasingly needs to account not only for “whether notice is required,” but...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">56d16a93be8425a14fa3fe15923e0b6b</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Fri, 22 May 2026 13:53:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump Mobile confirms it exposed customers’ personal data, unclear whether it will notify those affected</title>
+      <link>https://databreaches.net/2026/05/22/trump-mobile-confirms-it-exposed-customers-personal-data-unclear-whether-it-will-notify-those-affected/?pk_campaign=feed&amp;pk_kwd=trump-mobile-confirms-it-exposed-customers-personal-data-unclear-whether-it-will-notify-those-affected</link>
+      <description>Lorenzo Franceschi-Bicchierai reports: Phone provider Trump Mobile has confirmed that it was exposing customers’ names, email addresses, mailing addresses, cell numbers, and order identifiers to the open internet. Chris Walker, a spokesperson for the Trump-branded phone maker, told TechCrunch that the company is investigating the exposure and has not found evidence that content or financial...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">320596029e540f4b7a0289ff9b60166f</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Fri, 22 May 2026 14:46:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Radiology Associates of Richmond discloses second data breach; 266k people affected</title>
+      <link>https://databreaches.net/2026/05/22/radiology-associates-of-richmond-discloses-second-data-breach-266k-people-affected/?pk_campaign=feed&amp;pk_kwd=radiology-associates-of-richmond-discloses-second-data-breach-266k-people-affected</link>
+      <description>On July 1, 2025,  Radiology Associates of Richmond (“RAR”) reported a breach to HHS that had occurred in April 2024 and affected more than 1.4 million patients. By the end of July 2025, the well-known radiology practice had experienced a second breach. The second breach, recently reported to the Maine Attorney General’s Office on May...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">947809f575e0b02b9ff7b949174edf20</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Fri, 22 May 2026 16:46:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>UK: Victims feel ‘violated’ after water firm’s data breach</title>
+      <link>https://databreaches.net/2026/05/23/uk-victims-feel-violated-after-water-firms-data-breach/?pk_campaign=feed&amp;pk_kwd=uk-victims-feel-violated-after-water-firms-data-breach</link>
+      <description>Oprah Flash reports: “Violated” and being “unable to trust” have been the feelings plaguing victims of a cyber attack on a Midlands-based water company. The personal data of 633,887 people was stolen and published on the dark web, after South Staffs Water was hacked in 2020. Customers said they faced a deluge of scam emails...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">258a2a716adce3e4e57663b5d489e694</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Sat, 23 May 2026 14:58:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rhode Island’s workers’ compensation notifies those affected by January data breach</title>
+      <link>https://databreaches.net/2026/05/23/rhode-islands-workers-compensation-notifies-those-affected-by-january-data-breach/?pk_campaign=feed&amp;pk_kwd=rhode-islands-workers-compensation-notifies-those-affected-by-january-data-breach</link>
+      <description>Rhode Island residents may understandably wonder about the state’s vendor security monitoring. First, it was the Deloitte and the RIBridges data breach that affected more than 730,000 residents. Now the vendor that administers the state’s workers’ compensation insurance has disclosed a breach affecting 131,000 residents, including 4,500 former and current state employees. Alexander Castro reports:...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">14c6eb9b2d73f2c11fe467fec884adc5</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Sat, 23 May 2026 16:49:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>UK: £355,880.10 confiscation order secured following proceeds of crime hearing</title>
+      <link>https://databreaches.net/2026/05/23/uk-355880-10-confiscation-order-secured-following-proceeds-of-crime-hearing/?pk_campaign=feed&amp;pk_kwd=uk-355880-10-confiscation-order-secured-following-proceeds-of-crime-hearing</link>
+      <description>There’s a follow-up to the case of a  motor insurance worker who received a suspended prison sentence for unlawfully accessing personal information. On May 21, the Information Commissioner’s Office (ICO) announced that it had secured a £355,880.10 confiscation order against the former Manchester motor insurance worker, Rizwan Manjra. A statement by the ICO indicates that...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">d0453d80799343c1c7a514c43181a7bf</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Sat, 23 May 2026 23:22:38 +0000</pubDate>
     </item>
     <item>
       <title>Endue Software Agrees to $870,000 Data Breach Settlement</title>
@@ -389,17 +509,6 @@ The post HIPAA Certification for Business Associates appeared first on The HIPAA
       <pubDate>Fri, 22 May 2026 17:29:56 +0000</pubDate>
     </item>
     <item>
-      <title>Microsoft warns of new Defender zero-days exploited in attacks</title>
-      <link>https://www.bleepingcomputer.com/news/security/microsoft-warns-of-new-defender-zero-days-exploited-in-attacks/</link>
-      <description>On Wednesday, Microsoft started rolling out security patches for two Defender vulnerabilities that have been exploited in zero-day attacks. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">f86bd854e7262569d7648e65bf1e0cc3</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 21 May 2026 03:49:48 -0400</pubDate>
-    </item>
-    <item>
       <title>Police seize “First VPN” service used in ransomware, data theft attacks</title>
       <link>https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/</link>
       <description>A virtual private network service called 'First VPN,' used in ransomware and data theft attacks, has been taken offline in a joint international law enforcement operation. [...]
@@ -444,126 +553,6 @@ The post HIPAA Certification for Business Associates appeared first on The HIPAA
       <pubDate>Fri, 22 May 2026 13:24:52 -0400</pubDate>
     </item>
     <item>
-      <title>Murphy measure to protect Illinois consumers’ sensitive data advances in Senate</title>
-      <link>https://databreaches.net/2026/05/22/murphy-measure-to-protect-illinois-consumers-sensitive-data-advances-in-senate/?pk_campaign=feed&amp;pk_kwd=murphy-measure-to-protect-illinois-consumers-sensitive-data-advances-in-senate</link>
-      <description>From the Illinois Senate Democrats:  State Senator Laura Murphy is leading a comprehensive measure to protect consumers’ data and shield them from targeted advertisements. “By placing guardrails around consumers’ personal information, we eliminate companies’ ability to collect and sell the most sensitive data of Illinoisans,” said Murphy (D-Des Plaines). “We then put the power in...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">1392a3cee0ee504e3283a6d0edfda2f4</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:50:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>U.S. officials seeking extradition of Ottawa man accused of record cyberattack</title>
-      <link>https://databreaches.net/2026/05/22/u-s-officials-seeking-extradition-of-ottawa-man-accused-of-record-cyberattack/?pk_campaign=feed&amp;pk_kwd=u-s-officials-seeking-extradition-of-ottawa-man-accused-of-record-cyberattack</link>
-      <description>Jordan Ercit reports: Jacob Butler, 23, who was arrested Wednesday by OPP, also facing aiding and abetting computer intrusion charge in Alaska A 23-year-old Ottawa man is facing extradition to the United States after being accused of involvement in massive cyberattacks that affected more than a million devices worldwide. Ontario Provincial Police said their cybercrime...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">0d5f555f75cce6f4f2c48627ccc2f26d</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:51:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hackers breach two Vietnamese ministerial systems in major cyberattack</title>
-      <link>https://databreaches.net/2026/05/22/hackers-breach-two-vietnamese-ministerial-systems-in-major-cyberattack/?pk_campaign=feed&amp;pk_kwd=hackers-breach-two-vietnamese-ministerial-systems-in-major-cyberattack</link>
-      <description>Vietnamnet Global reports: Speaking at the Vietnam Security Summit 2026 on May 22, Lieutenant Colonel Tran Trung Hieu, Deputy Director of the National Cybersecurity Center and Director of VNCERT under the Ministry of Public Security’s Department of Cybersecurity and High-Tech Crime Prevention, said the agency is currently responding to two highly serious data breach incidents...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">7e1adda03da2b2dea77299339bb6de5f</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:52:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hugging Face Hiding Second-Stage Malware for npm Supply Chain Attack</title>
-      <link>https://databreaches.net/2026/05/22/hugging-face-hiding-second-stage-malware-for-npm-supply-chain-attack/?pk_campaign=feed&amp;pk_kwd=hugging-face-hiding-second-stage-malware-for-npm-supply-chain-attack</link>
-      <description>Tushar Subhra Dutta reports: Hackers have found a new and alarming way to weaponize one of the most trusted platforms in the AI world. A threat actor linked to North Korea has embedded second-stage malware inside Hugging Face, the widely used AI and machine learning hub, effectively turning it into a malware delivery channel and...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">42a9e114071b0adb15f3b99705cb409a</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:52:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Verus Hacker Returns $8.5M After Bridge Exploit Deal</title>
-      <link>https://databreaches.net/2026/05/22/verus-hacker-returns-8-5m-after-bridge-exploit-deal/?pk_campaign=feed&amp;pk_kwd=verus-hacker-returns-8-5m-after-bridge-exploit-deal</link>
-      <description>Do those who say never to pay ransomware or hack-and-leak criminals because it encourages more crime also say never to pay those who hack crypto? If you negotiate with hackers to let them keep a percent of what they stole as a non-prosecutable “bounty,” aren’t you just creating more incentive for other criminals? Kenrodgers Fabian...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">7fc84fedde15d1a4f3e6616350aa38f3</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:52:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hackers steal patient and billing data from German hospitals via third-party provider</title>
-      <link>https://databreaches.net/2026/05/22/hackers-steal-patient-and-billing-data-from-german-hospitals-via-third-party-provider/?pk_campaign=feed&amp;pk_kwd=hackers-steal-patient-and-billing-data-from-german-hospitals-via-third-party-provider</link>
-      <description>Daryna Antoniuk reports: German university hospitals are grappling with a large-scale patient data breach after unknown hackers targeted an external billing service provider used by medical centers across the country, according to statements from several affected medical institutions. The attack reportedly hit Unimed, a company that handles billing services for privately insured and self-paying patients on behalf...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">f8ad8b586d24d7e5e6d82b4393920cbf</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:52:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>How a consultant and a concert pianist from the Netherlands were arrested on suspicion of aiding NoName057(16)</title>
-      <link>https://databreaches.net/2026/05/22/how-a-consultant-and-a-concert-pianist-from-the-netherlands-were-arrested-on-suspicion-of-aiding-noname05716/?pk_campaign=feed&amp;pk_kwd=how-a-consultant-and-a-concert-pianist-from-the-netherlands-were-arrested-on-suspicion-of-aiding-noname05716</link>
-      <description>Officials allege that WorkTitans and MIRhosting were used to facilitate pro-Russian hackers and evade EU sanctions. Huib Modderkolk and Henrik Moltke write: Youssef Z. may have seen trouble coming. The 57-year-old entrepreneur and organizational consultant from Amsterdam, arrested at his home in the early hours of Monday 18 May by agents of the Dutch fiscal investigation...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">74a1dee4de594f99573bbf5ba324457a</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:52:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Proposed State Laws For Breach Notification Could Reshape Incident Response Plans</title>
-      <link>https://databreaches.net/2026/05/22/proposed-state-laws-for-breach-notification-could-reshape-incident-response-plans/?pk_campaign=feed&amp;pk_kwd=proposed-state-laws-for-breach-notification-could-reshape-incident-response-plans</link>
-      <description>Joseph Lazzarotti of JacksonLewis writes: State breach-notification laws continue to evolve, and legislatures are using 2026 sessions to tighten consumer protections and shift the civil liability landscape that often follows a cyber event. For businesses, the practical takeaway is that incident response planning increasingly needs to account not only for “whether notice is required,” but...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">56d16a93be8425a14fa3fe15923e0b6b</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 13:53:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump Mobile confirms it exposed customers’ personal data, unclear whether it will notify those affected</title>
-      <link>https://databreaches.net/2026/05/22/trump-mobile-confirms-it-exposed-customers-personal-data-unclear-whether-it-will-notify-those-affected/?pk_campaign=feed&amp;pk_kwd=trump-mobile-confirms-it-exposed-customers-personal-data-unclear-whether-it-will-notify-those-affected</link>
-      <description>Lorenzo Franceschi-Bicchierai reports: Phone provider Trump Mobile has confirmed that it was exposing customers’ names, email addresses, mailing addresses, cell numbers, and order identifiers to the open internet. Chris Walker, a spokesperson for the Trump-branded phone maker, told TechCrunch that the company is investigating the exposure and has not found evidence that content or financial...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">320596029e540f4b7a0289ff9b60166f</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 14:46:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Radiology Associates of Richmond discloses second data breach; 266k people affected</title>
-      <link>https://databreaches.net/2026/05/22/radiology-associates-of-richmond-discloses-second-data-breach-266k-people-affected/?pk_campaign=feed&amp;pk_kwd=radiology-associates-of-richmond-discloses-second-data-breach-266k-people-affected</link>
-      <description>On July 1, 2025,  Radiology Associates of Richmond (“RAR”) reported a breach to HHS that had occurred in April 2024 and affected more than 1.4 million patients. By the end of July 2025, the well-known radiology practice had experienced a second breach. The second breach, recently reported to the Maine Attorney General’s Office on May...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">947809f575e0b02b9ff7b949174edf20</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 22 May 2026 16:46:49 +0000</pubDate>
-    </item>
-    <item>
       <title>Unknown</title>
       <link>https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf</link>
       <description>Unknown reported a healthcare breach.
@@ -572,7 +561,7 @@ Source
       <guid isPermaLink="false">344d17850994629ad19bcc451738395f</guid>
       <category>Healthcare Breach</category>
       <category>HHS OCR</category>
-      <pubDate>Sat, 23 May 2026 08:20:19 +0000</pubDate>
+      <pubDate>Sun, 24 May 2026 08:29:08 +0000</pubDate>
     </item>
     <item>
       <title>Robinsons Report Victim robinsons.com.sg Threat Actor Payload Date Discovered May 22, 2026 Description Robinsons is a department store retail company based in Singapore that â¦May 22, 2026</title>
@@ -917,30 +906,6 @@ Source
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>cstindustries.com</title>
-      <link>https://www.ransomware.live/id/Y3N0aW5kdXN0cmllcy5jb21AY2hhb3M=</link>
-      <description>Manufacturing
-
-🎭 Threat Actor: chaos | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">4ae2875f9f3d378f81eda4236f1644cd</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: chaos</category>
-      <pubDate>Sun, 17 May 2026 19:51:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>challenge-mfg.com</title>
-      <link>https://www.ransomware.live/id/Y2hhbGxlbmdlLW1mZy5jb21AY2hhb3M=</link>
-      <description>Manufacturing
-
-🎭 Threat Actor: chaos | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">2e0ab8b06f8b702bc107f86f19b7a9f5</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: chaos</category>
-      <pubDate>Sun, 17 May 2026 19:52:02 +0000</pubDate>
-    </item>
-    <item>
       <title>The Beacon Mutual Insurance Company</title>
       <link>https://oag.ca.gov/privacy/databreach/list</link>
       <description>The Beacon Mutual Insurance Company reported a data breach in California.
@@ -1222,83 +1187,6 @@ Source
       <pubDate>Thu, 21 May 2026 18:54:49 +0000</pubDate>
     </item>
     <item>
-      <title>Grupo Pasquel (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-grupo-pasquel-may-2026/</link>
-      <description>Grupo Pasquel (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">8d4409b3038d23c5619d58e27d5bade0</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 22 May 2026 10:33:39 +0700</pubDate>
-    </item>
-    <item>
-      <title>MBM Corp (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-mbm-corp-may-2026/</link>
-      <description>MBM Corp (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">967e89b0b51f1aadf75a2bd071e9377d</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 22 May 2026 10:34:00 +0700</pubDate>
-    </item>
-    <item>
-      <title>Le Pain Quotidien US (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-le-pain-quotidien-us-may-2026/</link>
-      <description>Le Pain Quotidien US (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">5229f09a99654dc4d55b00347bbcf90b</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 22 May 2026 18:01:02 +0700</pubDate>
-    </item>
-    <item>
-      <title>tvnmedia.com (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-tvnmedia-com-may-2026/</link>
-      <description>tvnmedia.com (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">1b0d1e96cbf0bee2bae8793ae2f99c74</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 22 May 2026 18:01:36 +0700</pubDate>
-    </item>
-    <item>
-      <title>Buffalo Niagara Convention Center (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-buffalo-niagara-convention-center-may-2026/</link>
-      <description>Buffalo Niagara Convention Center (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">f64211ce347b61daf06850976631e041</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 22 May 2026 21:02:02 +0700</pubDate>
-    </item>
-    <item>
-      <title>Function Enterprises (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-function-enterprises-may-2026/</link>
-      <description>Function Enterprises (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">4e80cffca4262f4551796dd9c87545bf</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 22 May 2026 21:02:35 +0700</pubDate>
-    </item>
-    <item>
-      <title>threadinnovations (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-threadinnovations-may-2026/</link>
-      <description>threadinnovations (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">daa1c5a161756191f35118145c886fd0</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 22 May 2026 21:02:57 +0700</pubDate>
-    </item>
-    <item>
       <title>APT73/Bashe Strikes Panama’s TVN Media</title>
       <link>https://www.dexpose.io/apt73-bashe-strikes-panamas-tvn-media/</link>
       <description>APT73/Bashe Strikes Panama’s TVN Media reported a ransomware.
@@ -1330,6 +1218,30 @@ Source
       <category>Ransomware</category>
       <category>Ransomware.live</category>
       <category>Actor: akira</category>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Karlin Foods</title>
+      <link>https://www.ransomware.live/id/S2FybGluIEZvb2RzQGFraXJh</link>
+      <description>Agriculture and Food Production
+
+🎭 Threat Actor: akira | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">729b9e8cd9cf04687e616ecf9f62ba66</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: akira</category>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hoy Construction</title>
+      <link>https://www.ransomware.live/id/SG95IENvbnN0cnVjdGlvbkBub3Zh</link>
+      <description>Construction
+
+🎭 Threat Actor: nova | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">9ae3660299c5c79dc4169c3b80f6e94d</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: nova</category>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -1500,6 +1412,50 @@ Source
       <pubDate>Sat, 23 May 2026 13:31:49 +0700</pubDate>
     </item>
     <item>
+      <title>University of Valencia (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-university-of-valencia-may-2026/</link>
+      <description>University of Valencia (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">e8c36acf6a0bfdf679ab097aeadf706f</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 23 May 2026 20:30:13 +0700</pubDate>
+    </item>
+    <item>
+      <title>Mopas Online Supermarket (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-mopas-online-supermarket-may-2026/</link>
+      <description>Mopas Online Supermarket (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">aef91ae0d3f2a210da06faa174312277</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 23 May 2026 20:30:36 +0700</pubDate>
+    </item>
+    <item>
+      <title>bangkok.go.th (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-bangkok-go-th-may-2026/</link>
+      <description>bangkok.go.th (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">4fe4087fa3e82d4b83e054221ee48fbc</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 23 May 2026 23:30:49 +0700</pubDate>
+    </item>
+    <item>
+      <title>Mecanizados y Montajes Aeron,áuticos (mymgroup.es) (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-mecanizados-y-montajes-aeronauticos-mymgroup-es-may-2026/</link>
+      <description>Mecanizados y Montajes Aeron,áuticos (mymgroup.es) (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">9bf0cecd59485c1beb71b2dd1f9691ce</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 23 May 2026 23:31:11 +0700</pubDate>
+    </item>
+    <item>
       <title>APT73/Bashe Launches Ransomware Attack on Minsa</title>
       <link>https://www.dexpose.io/apt73-bashe-launches-ransomware-attack-on-minsa/</link>
       <description>APT73/Bashe Launches Ransomware Attack on Minsa reported a ransomware.
@@ -1615,6 +1571,39 @@ Source
       <category>Ransomware.live</category>
       <category>Actor: shinyhunters</category>
       <pubDate>Sat, 23 May 2026 00:24:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>vspsolutions.com.au FULL DATA DUMP (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-vspsolutions-com-au-full-data-dump-may-2026/</link>
+      <description>vspsolutions.com.au FULL DATA DUMP (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">422eb37d060c6bf40b094ceab5d8989e</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 24 May 2026 06:01:46 +0700</pubDate>
+    </item>
+    <item>
+      <title>Salvation Army (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-salvation-army-may-2026/</link>
+      <description>Salvation Army (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">5e2d4b27ad109c9fba30a1f83e8c0771</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 24 May 2026 06:02:11 +0700</pubDate>
+    </item>
+    <item>
+      <title>Emek Elektrik (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-emek-elektrik-may-2026/</link>
+      <description>Emek Elektrik (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">643a0a9e465e5358e0035f0fbf51efb6</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 24 May 2026 09:31:09 +0700</pubDate>
     </item>
   </channel>
 </rss>
