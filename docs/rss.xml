@@ -7,7 +7,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Breach RSS Generator</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2026 08:27:45 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 08:44:53 +0000</lastBuildDate>
+    <item>
+      <title>AI-Assisted Exploit Development Outpaces Scanner Detection</title>
+      <link>https://www.darkreading.com/threat-intelligence/ai-assisted-exploit-development-scanner-detection</link>
+      <description>Attackers are using AI to dramatically reduce the time they need to develop a working exploit for a CVE, according to new research.
+
+📰 Source: Dark Reading | 🏷️ Type: News</description>
+      <guid isPermaLink="false">7e6b5da8b14f2f40a0d816f7173e0d63</guid>
+      <category>News</category>
+      <category>Dark Reading</category>
+      <pubDate>Wed, 27 May 2026 16:11:19 +0000</pubDate>
+    </item>
     <item>
       <title>Latin American Cybercriminals Hoover Up Government Data</title>
       <link>https://www.darkreading.com/cyberattacks-data-breaches/latin-american-cybercriminals-government-data</link>
@@ -108,30 +119,6 @@
       <pubDate>Fri, 29 May 2026 20:22:04 +0000</pubDate>
     </item>
     <item>
-      <title>New BTMOB Android Malware Enables Full Device Takeover</title>
-      <link>https://www.securityweek.com/new-btmob-android-malware-enables-full-device-takeover/</link>
-      <description>Delivered via phishing lures, the malware combines financial theft with data exfiltration and remote access.
-The post New BTMOB Android Malware Enables Full Device Takeover appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">172b2d1ccb88498fadc59a282d67ca8a</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Thu, 28 May 2026 13:05:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Carnival Data Breach Exposed 6 Million People</title>
-      <link>https://www.securityweek.com/carnival-data-breach-exposed-6-million-people/</link>
-      <description>Data breach leaves nearly 6 million Carnival customers navigating identity theft risks.
-The post Carnival Data Breach Exposed 6 Million People appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">ddf07cb09698bad6f3c1f9882cec5381</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Thu, 28 May 2026 14:45:28 +0000</pubDate>
-    </item>
-    <item>
       <title>Geordie Raises $30 Million for AI Security and Governance Platform</title>
       <link>https://www.securityweek.com/geordie-raises-30-million-for-ai-security-and-governance-platform/</link>
       <description>The funding round was led by Balderton Capital, with additional support from Crosspoint Capital and previous investors General Catalyst and Ten Eleven Ventures.
@@ -190,6 +177,18 @@ The post In Other News: Trump Mobile Data Breach, FIFA World Cup Phishing, CISA 
       <category>News</category>
       <category>SecurityWeek</category>
       <pubDate>Fri, 29 May 2026 16:20:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Exploit Code Published for Critical Flowise RCE Vulnerability</title>
+      <link>https://www.securityweek.com/exploit-code-published-for-critical-flowise-rce-vulnerability/</link>
+      <description>The one-click vulnerability allows attackers to execute arbitrary code on self-hosted Flowise servers by tricking users into importing a malicious chatflow.
+The post Exploit Code Published for Critical Flowise RCE Vulnerability appeared first on SecurityWeek.
+
+📰 Source: SecurityWeek | 🏷️ Type: News</description>
+      <guid isPermaLink="false">2b5f7490eb97af1d77d74f4a9fe2d109</guid>
+      <category>News</category>
+      <category>SecurityWeek</category>
+      <pubDate>Sat, 30 May 2026 15:55:59 +0000</pubDate>
     </item>
     <item>
       <title>Russia conducting daily attacks on UK 'from seabed to cyberspace,' spy chief warns</title>
@@ -387,84 +386,6 @@ The post California AG Files Lawsuit Over 23andMe Data Breach appeared first on 
       <pubDate>Fri, 29 May 2026 10:37:01 +0000</pubDate>
     </item>
     <item>
-      <title>New Gogs zero-day flaw lets hackers get remote code execution</title>
-      <link>https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/</link>
-      <description>An unpatched zero-day vulnerability in the Gogs self-hosted Git service can allow attackers to gain remote code execution (RCE) on Internet-facing instances. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">5e9cf982ba33b8a6fc2f720e8fb57cb9</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 28 May 2026 10:25:43 -0400</pubDate>
-    </item>
-    <item>
-      <title>Hackers exploit FortiClient EMS flaw to push infostealer malware</title>
-      <link>https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/</link>
-      <description>Hackers are exploiting an authentication bypass vulnerability (CVE-2026-35616) in FortiClient Enterprise Management Server (EMS) to deliver an undocumented credential stealer called EKZ. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">6e1656eb1082b9d8f8da0ac0e7df276a</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 28 May 2026 13:25:43 -0400</pubDate>
-    </item>
-    <item>
-      <title>GreyVibe hackers use ChatGPT, Gemini to power cyberattacks</title>
-      <link>https://www.bleepingcomputer.com/news/security/greyvibe-hackers-use-chatgpt-gemini-to-power-cyberattacks/</link>
-      <description>A likely Russian threat cluster tracked as GreyVibe has been targeting Ukrainian entities with AI-generated lures and a rich set of custom malware tools. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">64a2bf87ddc97eeff7142eea4dd749a1</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 28 May 2026 18:24:49 -0400</pubDate>
-    </item>
-    <item>
-      <title>Charter Communications data breach affects 4.9 million accounts</title>
-      <link>https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/</link>
-      <description>The ShinyHunters extortion gang stole personal information from 4.9 million accounts after hacking the U.S. telecom giant Charter Communications in early April, according to data breach notification service Have I Been Pwned. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">62dd8248e1703e17d438be08b1ea55c2</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Fri, 29 May 2026 04:29:40 -0400</pubDate>
-    </item>
-    <item>
-      <title>From $5 Attacks to Botnet-Powered Platforms: Inside the DDoS-as-a- Service Market</title>
-      <link>https://www.bleepingcomputer.com/news/security/from-5-attacks-to-botnet-powered-platforms-inside-the-ddos-as-a-service-market/</link>
-      <description>DDoS attacks are increasingly being sold like subscription services, complete with pricing tiers, support, and reseller programs. Flare explores how the DDoS-as-a-Service market has evolved from scattered tools into polished attack platforms. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">0567fa87a30cf18410d58dab1ddc0b87</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Fri, 29 May 2026 10:32:02 -0400</pubDate>
-    </item>
-    <item>
-      <title>California AG sues 23andMe over 2023 breach exposing health data</title>
-      <link>https://www.bleepingcomputer.com/news/security/california-ag-sues-23andme-over-2023-breach-exposing-health-data/</link>
-      <description>California Attorney General Rob Bonta filed a lawsuit against 23andMe, now Chrome Holding Co., over the company's failure to protect sensitive customer genetic and personal information. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">68e059aefb60c964241684b078bfc070</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Fri, 29 May 2026 14:08:47 -0400</pubDate>
-    </item>
-    <item>
-      <title>PowerSchool’s $17.25 Million Settlement Exposes Years of Student Data Tracking</title>
-      <link>https://databreaches.net/2026/05/25/powerschools-17-25-million-settlement-exposes-years-of-student-data-tracking/?pk_campaign=feed&amp;pk_kwd=powerschools-17-25-million-settlement-exposes-years-of-student-data-tracking</link>
-      <description>If you ask most people what breach PowerSchool experienced, their first response might be the 2024 hacking incident that affected tens of millions of students. But even before that breach, there was another significant breach involving PowerSchool that began in 2021. Colin Lee and Koji Edmunds report: In early April, many students across the world...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">14c06c98286a608f0c4359165eaf189e</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Mon, 25 May 2026 12:59:21 +0000</pubDate>
-    </item>
-    <item>
       <title>Lithuania investigates theft of 600,000 state registry records</title>
       <link>https://databreaches.net/2026/05/27/lithuania-investigates-theft-of-600000-state-registry-records/?pk_campaign=feed&amp;pk_kwd=lithuania-investigates-theft-of-600000-state-registry-records</link>
       <description>Daryna Antoniuk reports: The Lithuanian Prosecutor General’s Office said Friday that attackers gained unauthorized access to more than 600,000 records managed by the Centre of Registers, the state agency responsible for handling property and legal entity records. Prosecutors said the breach involved the misuse of login credentials assigned to institutions authorized to access the databases, and likely...
@@ -573,6 +494,84 @@ Source
       <pubDate>Fri, 29 May 2026 23:16:35 +0000</pubDate>
     </item>
     <item>
+      <title>Microsoft’s incident response is getting a failing grade from researchers</title>
+      <link>https://databreaches.net/2026/05/30/microsofts-incident-response-is-getting-a-failing-grade-from-researchers/?pk_campaign=feed&amp;pk_kwd=microsofts-incident-response-is-getting-a-failing-grade-from-researchers</link>
+      <description>Microsoft is ticking off a lot of researchers this week by claiming that those who dump proof-of-concept exploits for vulnerabilities they have not responsibly disclosed are enabling criminal activity, and that Microsoft will track them and bring cases against them. Whoever advised them to issue that statement may want to walk it back. Kevin Beaumont,...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">8a532c20115262217a8b9aec7521ae45</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Sat, 30 May 2026 11:57:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hackers exploit FortiClient EMS flaw to push infostealer malware</title>
+      <link>https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/</link>
+      <description>Hackers are exploiting an authentication bypass vulnerability (CVE-2026-35616) in FortiClient Enterprise Management Server (EMS) to deliver an undocumented credential stealer called EKZ. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">6e1656eb1082b9d8f8da0ac0e7df276a</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Thu, 28 May 2026 13:25:43 -0400</pubDate>
+    </item>
+    <item>
+      <title>GreyVibe hackers use ChatGPT, Gemini to power cyberattacks</title>
+      <link>https://www.bleepingcomputer.com/news/security/greyvibe-hackers-use-chatgpt-gemini-to-power-cyberattacks/</link>
+      <description>A likely Russian threat cluster tracked as GreyVibe has been targeting Ukrainian entities with AI-generated lures and a rich set of custom malware tools. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">64a2bf87ddc97eeff7142eea4dd749a1</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Thu, 28 May 2026 18:24:49 -0400</pubDate>
+    </item>
+    <item>
+      <title>Charter Communications data breach affects 4.9 million accounts</title>
+      <link>https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/</link>
+      <description>The ShinyHunters extortion gang stole personal information from 4.9 million accounts after hacking the U.S. telecom giant Charter Communications in early April, according to data breach notification service Have I Been Pwned. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">62dd8248e1703e17d438be08b1ea55c2</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Fri, 29 May 2026 04:29:40 -0400</pubDate>
+    </item>
+    <item>
+      <title>From $5 Attacks to Botnet-Powered Platforms: Inside the DDoS-as-a- Service Market</title>
+      <link>https://www.bleepingcomputer.com/news/security/from-5-attacks-to-botnet-powered-platforms-inside-the-ddos-as-a-service-market/</link>
+      <description>DDoS attacks are increasingly being sold like subscription services, complete with pricing tiers, support, and reseller programs. Flare explores how the DDoS-as-a-Service market has evolved from scattered tools into polished attack platforms. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">0567fa87a30cf18410d58dab1ddc0b87</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Fri, 29 May 2026 10:32:02 -0400</pubDate>
+    </item>
+    <item>
+      <title>California AG sues 23andMe over 2023 breach exposing health data</title>
+      <link>https://www.bleepingcomputer.com/news/security/california-ag-sues-23andme-over-2023-breach-exposing-health-data/</link>
+      <description>California Attorney General Rob Bonta filed a lawsuit against 23andMe, now Chrome Holding Co., over the company's failure to protect sensitive customer genetic and personal information. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">68e059aefb60c964241684b078bfc070</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Fri, 29 May 2026 14:08:47 -0400</pubDate>
+    </item>
+    <item>
+      <title>Palo Alto GlobalProtect VPN auth bypass flaw now exploited in attacks</title>
+      <link>https://www.bleepingcomputer.com/news/security/palo-alto-globalprotect-vpn-auth-bypass-flaw-now-exploited-in-attacks/</link>
+      <description>Palo Alto Networks is warning that hackers are now exploiting a PAN-OS GlobalProtect authentication bypass flaw, tracked as CVE-2026-0257, in attacks attempting to breach corporate networks. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">ad5f47923fcfb0e95697f1cdabbb57a8</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Sat, 30 May 2026 14:02:51 -0400</pubDate>
+    </item>
+    <item>
       <title>Unknown</title>
       <link>https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf</link>
       <description>Unknown reported a healthcare breach.
@@ -581,7 +580,7 @@ Source
       <guid isPermaLink="false">344d17850994629ad19bcc451738395f</guid>
       <category>Healthcare Breach</category>
       <category>HHS OCR</category>
-      <pubDate>Sat, 30 May 2026 08:27:45 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 08:44:53 +0000</pubDate>
     </item>
     <item>
       <title>GS Yuasa Lithium Power Report Victim gsyuasa-lp.com Threat Actor Akira Date Discovered May 29, 2026 Description GS Yuasa Lithium Power is a battery technology and energy storage company â¦May 29, 2026</title>
@@ -959,114 +958,6 @@ Source
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Hospice Savannah</title>
-      <link>https://www.ransomware.live/id/SG9zcGljZSBTYXZhbm5haEBjbWRvcmdhbml6YXRpb24=</link>
-      <description>Healthcare
-
-🎭 Threat Actor: cmdorganization | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">e235552582435b80e83373ca372f8f17</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: cmdorganization</category>
-      <pubDate>Thu, 28 May 2026 11:50:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>TransferZ</title>
-      <link>https://www.ransomware.live/id/VHJhbnNmZXJaQGV2ZXJlc3Q=</link>
-      <description>Transportation/Logistics
-
-🎭 Threat Actor: everest | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">ae5db7f07db0ab350f7fedf03dec69c6</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: everest</category>
-      <pubDate>Thu, 28 May 2026 13:21:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>Martinez &amp; Shanken</title>
-      <link>https://www.ransomware.live/id/TWFydGluZXogJiBTaGFua2VuQHFpbGlu</link>
-      <description>Not Found
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">bf7e31157d735193539dbfefbcca6582</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Thu, 28 May 2026 13:26:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Dillon Family Medicine</title>
-      <link>https://www.ransomware.live/id/RGlsbG9uIEZhbWlseSBNZWRpY2luZUBxaWxpbg==</link>
-      <description>Healthcare
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">3f693c4b262cdf4a7321e9b77a34415c</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Thu, 28 May 2026 13:29:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>Providence Medical Group</title>
-      <link>https://www.ransomware.live/id/UHJvdmlkZW5jZSBNZWRpY2FsIEdyb3VwQHFpbGlu</link>
-      <description>Healthcare
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">cf1a449ecf555cbc05587bd40cd0d216</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Thu, 28 May 2026 13:32:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>HumanEdge</title>
-      <link>https://www.ransomware.live/id/SHVtYW5FZGdlQHFpbGlu</link>
-      <description>Technology
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">5d147407aa387d402fa1439c63a38e6b</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Thu, 28 May 2026 13:33:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>Gallun Snow Associates</title>
-      <link>https://www.ransomware.live/id/R2FsbHVuIFNub3cgQXNzb2NpYXRlc0BxaWxpbg==</link>
-      <description>Business Services
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">1e4db2ef07dac074bffa2f6b94400614</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Thu, 28 May 2026 13:38:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Carton Craft Supply</title>
-      <link>https://www.ransomware.live/id/Q2FydG9uIENyYWZ0IFN1cHBseUBxaWxpbg==</link>
-      <description>Manufacturing
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">818b823f6515778a73940d6c299e1600</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Thu, 28 May 2026 13:38:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mindpath College Health</title>
-      <link>https://www.ransomware.live/id/TWluZHBhdGggQ29sbGVnZSBIZWFsdGhAcWlsaW4=</link>
-      <description>Healthcare
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">37429abff6dfa2c1dad07c07e94b808b</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Thu, 28 May 2026 13:40:05 +0000</pubDate>
-    </item>
-    <item>
       <title>Sinomax USA</title>
       <link>https://www.ransomware.live/id/U2lub21heCBVU0FAcWlsaW4=</link>
       <description>Manufacturing
@@ -1137,127 +1028,6 @@ Source
       <category>Ransomware.live</category>
       <category>Actor: chaos</category>
       <pubDate>Thu, 28 May 2026 21:20:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>American Battery Factory (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-american-battery-factory-may-2026/</link>
-      <description>American Battery Factory (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">0c81f7ca64ce76d8ce8501b64e02044d</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 01:00:21 +0700</pubDate>
-    </item>
-    <item>
-      <title>Paid Victim B35411691DDC2265 (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-paid-victim-b35411691ddc2265-may-2026/</link>
-      <description>Paid Victim B35411691DDC2265 (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">c40bf4fce305faecef71ad3a6c43d0e0</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 01:00:48 +0700</pubDate>
-    </item>
-    <item>
-      <title>Spedition Kern (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-spedition-kern-may-2026/</link>
-      <description>Spedition Kern (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">0abe4395e215d7bf1bf88783861c4894</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 01:01:12 +0700</pubDate>
-    </item>
-    <item>
-      <title>Pe,ña &amp; Bromberg (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-pena-bromberg-may-2026/</link>
-      <description>Pe,ña &amp; Bromberg (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">79a580a5d52e17c4ffc225afd58a6b4c</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 04:00:45 +0700</pubDate>
-    </item>
-    <item>
-      <title>Mayelia Automotive (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-mayelia-automotive-may-2026/</link>
-      <description>Mayelia Automotive (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">a21a0492945784c2c4e737695a63311d</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 04:01:18 +0700</pubDate>
-    </item>
-    <item>
-      <title>Techmar (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-techmar-may-2026/</link>
-      <description>Techmar (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">a994a5882c778de94a37b7619e0d646c</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 04:01:49 +0700</pubDate>
-    </item>
-    <item>
-      <title>powerhousenow.com (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-powerhousenow-com-may-2026/</link>
-      <description>powerhousenow.com (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">6b9f1b459be306a4659e9bbc4e29440d</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 07:01:05 +0700</pubDate>
-    </item>
-    <item>
-      <title>entransinternational.com (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-entransinternational-com-may-2026/</link>
-      <description>entransinternational.com (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">b451075b4941b0085a2fa1f5a0f614bd</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 07:01:40 +0700</pubDate>
-    </item>
-    <item>
-      <title>BCD Travel (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-bcd-travel-may-2026/</link>
-      <description>BCD Travel (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">ef23e74290e735cdbc4e198e5fc2093e</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 20:31:26 +0700</pubDate>
-    </item>
-    <item>
-      <title>Interstate Roofing (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-interstate-roofing-may-2026/</link>
-      <description>Interstate Roofing (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">c948bcc89c648d6065f652107a8768af</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 20:31:49 +0700</pubDate>
-    </item>
-    <item>
-      <title>SOMAFIX (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-somafix-may-2026/</link>
-      <description>SOMAFIX (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">6e7363facf93358f27c191b49f5ea25d</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 29 May 2026 20:32:11 +0700</pubDate>
     </item>
     <item>
       <title>Gunra Ransomware Strikes SOMAFIX in France</title>
@@ -1385,6 +1155,18 @@ Source
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>UEI College</title>
+      <link>https://www.ransomware.live/id/VUVJIENvbGxlZ2VAdGVybWl0ZQ==</link>
+      <description>Education
+
+🎭 Threat Actor: termite | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">759f0b44baf32d1923e0a3ccdd586e77</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: termite</category>
+      <pubDate>Fri, 29 May 2026 00:36:08 +0000</pubDate>
+    </item>
+    <item>
       <title>Restorative Therapies, Inc.</title>
       <link>https://www.ransomware.live/id/UmVzdG9yYXRpdmUgVGhlcmFwaWVzLCBJbmMuQEFpTG9jaw==</link>
       <description>Healthcare
@@ -1445,6 +1227,18 @@ Source
       <pubDate>Fri, 29 May 2026 20:58:43 +0000</pubDate>
     </item>
     <item>
+      <title>Indiana Mills and Manufacturing</title>
+      <link>https://www.ransomware.live/id/SW5kaWFuYSBNaWxscyBhbmQgTWFudWZhY3R1cmluZ0B0ZXJtaXRl</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: termite | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">f3ce6e2e8cf607677006ff645b95e384</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: termite</category>
+      <pubDate>Fri, 29 May 2026 23:25:44 +0000</pubDate>
+    </item>
+    <item>
       <title>www.labexpress.com</title>
       <link>https://www.ransomware.live/id/d3d3LmxhYmV4cHJlc3MuY29tQGluY3JhbnNvbQ==</link>
       <description>Business Services
@@ -1455,17 +1249,6 @@ Source
       <category>Ransomware.live</category>
       <category>Actor: incransom</category>
       <pubDate>Fri, 29 May 2026 23:55:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Capital Family Physicians (MAY-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-capital-family-physicians-may-2026/</link>
-      <description>Capital Family Physicians (MAY-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">edebb0220f4de454642f505a15ce60b6</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sat, 30 May 2026 00:01:38 +0700</pubDate>
     </item>
     <item>
       <title>AcademyHealth (MAY-2026)</title>
@@ -1556,6 +1339,50 @@ Source
       <pubDate>Sat, 30 May 2026 13:02:27 +0700</pubDate>
     </item>
     <item>
+      <title>Plexsupply Inc (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-plexsupply-inc-may-2026/</link>
+      <description>Plexsupply Inc (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">02b027718e2f4f878e5a4d7ea017eab7</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 30 May 2026 16:01:47 +0700</pubDate>
+    </item>
+    <item>
+      <title>Siveco – (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-siveco-may-2026/</link>
+      <description>Siveco – (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">119aba1715f6900109cbece1756d6672</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 30 May 2026 22:30:36 +0700</pubDate>
+    </item>
+    <item>
+      <title>Openmind networks (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-openmind-networks-may-2026/</link>
+      <description>Openmind networks (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">fa41718301f6178622e88145a9aaa440</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 30 May 2026 22:30:55 +0700</pubDate>
+    </item>
+    <item>
+      <title>Pragmatic Solutions (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-pragmatic-solutions-may-2026/</link>
+      <description>Pragmatic Solutions (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">6d40de04ada57e3450370c6f2dd024db</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 30 May 2026 22:31:13 +0700</pubDate>
+    </item>
+    <item>
       <title>Qilin Ransomware Strikes Kennedy, McLaughlin &amp; Associates</title>
       <link>https://www.dexpose.io/qilin-ransomware-strikes-kennedy-mclaughlin-associates/</link>
       <description>Qilin Ransomware Strikes Kennedy, McLaughlin &amp; Associates reported a ransomware. Attributed to Qilin.
@@ -1612,6 +1439,78 @@ Source
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>LTI Services and Larick Towing</title>
+      <link>https://www.ransomware.live/id/TFRJIFNlcnZpY2VzIGFuZCBMYXJpY2sgVG93aW5nQG5vdmE=</link>
+      <description>Transportation/Logistics
+
+🎭 Threat Actor: nova | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">47b48f89bae87b8cc060eee0430cd6e6</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: nova</category>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>A Roettgers</title>
+      <link>https://www.ransomware.live/id/QSBSb2V0dGdlcnNAZ2VuZXNpcw==</link>
+      <description>Business Services
+
+🎭 Threat Actor: genesis | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">6a5ec7128807bed3cc9b72eca62cb434</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: genesis</category>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cedar Street Capital (A part of a Cynvestors Limited Partnership)</title>
+      <link>https://www.ransomware.live/id/Q2VkYXIgU3RyZWV0IENhcGl0YWwgKEEgcGFydCBvZiBhIEN5bnZlc3RvcnMgTGltaXRlZCBQYXJ0bmVyc2hpcClAZ2VuZXNpcw==</link>
+      <description>Financial Services
+
+🎭 Threat Actor: genesis | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">53bb45442a62ef77a181a75bcfa5d3ff</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: genesis</category>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Green Resource</title>
+      <link>https://www.ransomware.live/id/R3JlZW4gUmVzb3VyY2VAZ2VuZXNpcw==</link>
+      <description>Energy
+
+🎭 Threat Actor: genesis | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">3468e4a3837e018161c8305f2929282f</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: genesis</category>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Wentworth</title>
+      <link>https://www.ransomware.live/id/V2VudHdvcnRoQGdlbmVzaXM=</link>
+      <description>Not Found
+
+🎭 Threat Actor: genesis | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">161f9e91950908afd4fc299305261146</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: genesis</category>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cavalier Flooring Systems Inc.</title>
+      <link>https://www.ransomware.live/id/Q2F2YWxpZXIgRmxvb3JpbmcgU3lzdGVtcyBJbmMuQGdlbmVzaXM=</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: genesis | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">669976a86569fbfebda5de32ad5255a4</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: genesis</category>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>DentaQuest, LLC.</title>
       <link>https://www.ransomware.live/id/RGVudGFRdWVzdCwgTExDLkBzaGlueWh1bnRlcnM=</link>
       <description>Healthcare
@@ -1622,6 +1521,106 @@ Source
       <category>Ransomware.live</category>
       <category>Actor: shinyhunters</category>
       <pubDate>Sat, 30 May 2026 02:05:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lee Law Offices</title>
+      <link>https://www.ransomware.live/id/TGVlIExhdyBPZmZpY2VzQGNtZG9yZ2FuaXphdGlvbg==</link>
+      <description>Business Services
+
+🎭 Threat Actor: cmdorganization | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">c024272915a1e4260fb3a01254aa0b76</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: cmdorganization</category>
+      <pubDate>Sat, 30 May 2026 12:50:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>tulipmediworld.com (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-tulipmediworld-com-may-2026/</link>
+      <description>tulipmediworld.com (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">4ee789600bba91d08bf620fabc783a6a</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 05:30:34 +0700</pubDate>
+    </item>
+    <item>
+      <title>Cavalier Flooring Systems Inc. (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-cavalier-flooring-systems-inc-may-2026/</link>
+      <description>Cavalier Flooring Systems Inc. (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">ac8bc1f053032deabbacca711dde16bb</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 05:30:51 +0700</pubDate>
+    </item>
+    <item>
+      <title>Wentworth (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-wentworth-may-2026/</link>
+      <description>Wentworth (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">e66e600d1476878898a6711e4862b665</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 05:31:09 +0700</pubDate>
+    </item>
+    <item>
+      <title>Green Resource (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-green-resource-may-2026/</link>
+      <description>Green Resource (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">b6e19efb52419420c559bc5e2d16abfb</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 08:30:52 +0700</pubDate>
+    </item>
+    <item>
+      <title>Cedar Street Capital (A part of a Cynvestors Limited Partnership) (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-cedar-street-capital-a-part-of-a-cynvestors-limited-partnership-may-2026/</link>
+      <description>Cedar Street Capital (A part of a Cynvestors Limited Partnership) (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">2b5c2aa2870b50da91019ef43ae8767d</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 08:31:11 +0700</pubDate>
+    </item>
+    <item>
+      <title>Indiana Mills and Manufacturing (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-indiana-mills-and-manufacturing-may-2026/</link>
+      <description>Indiana Mills and Manufacturing (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">c7b321ca86bc04183a340c56c64e843a</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 08:31:39 +0700</pubDate>
+    </item>
+    <item>
+      <title>UEI College (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-uei-college-may-2026/</link>
+      <description>UEI College (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">aceb1ec59cadba5adafd5610ed964180</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 12:01:31 +0700</pubDate>
+    </item>
+    <item>
+      <title>STAREMPIRE (MAY-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-starempire-may-2026/</link>
+      <description>STAREMPIRE (MAY-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">cfeac156dff826d3887e794a974cc5ed</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 31 May 2026 12:01:53 +0700</pubDate>
     </item>
   </channel>
 </rss>
