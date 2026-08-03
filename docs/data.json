@@ -1,5 +1,41 @@
 [
   {
+    "company_name": "Freedom Claims Management",
+    "date_reported": "2026-08-03T03:56:07",
+    "source": "Ransomware.live",
+    "url": "https://www.ransomware.live/id/RnJlZWRvbSBDbGFpbXMgTWFuYWdlbWVudEBxaWxpbg==",
+    "description": "Financial Services",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "US",
+    "threat_actor": "qilin",
+    "breach_type": "Ransomware"
+  },
+  {
+    "company_name": "Moses & Singer",
+    "date_reported": "2026-08-02T13:50:38",
+    "source": "Ransomware.live",
+    "url": "https://www.ransomware.live/id/TW9zZXMgJiBTaW5nZXJAU2lsZW50UmFuc29tR3JvdXA=",
+    "description": "Professional Services",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "US",
+    "threat_actor": "SilentRansomGroup",
+    "breach_type": "Ransomware"
+  },
+  {
+    "company_name": "Wire Products",
+    "date_reported": "2026-08-02T12:30:09",
+    "source": "Ransomware.live",
+    "url": "https://www.ransomware.live/id/V2lyZSBQcm9kdWN0c0BxaWxpbg==",
+    "description": "Manufacturing",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "US",
+    "threat_actor": "qilin",
+    "breach_type": "Ransomware"
+  },
+  {
     "company_name": "Encore Enterprises, Inc.",
     "date_reported": "2026-08-02T03:50:22",
     "source": "Ransomware.live",
@@ -9,6 +45,18 @@
     "state_records_affected": "",
     "location": "US",
     "threat_actor": "CRPxO",
+    "breach_type": "Ransomware"
+  },
+  {
+    "company_name": "ecfa.org",
+    "date_reported": "2026-08-02T00:01:00+00:00",
+    "source": "Ransomware.live",
+    "url": "https://www.ransomware.live/id/ZWNmYS5vcmdAaW5jcmFuc29t",
+    "description": "Professional Services",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "US",
+    "threat_actor": "incransom",
     "breach_type": "Ransomware"
   },
   {
@@ -384,54 +432,6 @@
     "breach_type": "Ransomware"
   },
   {
-    "company_name": "Hutch Paving",
-    "date_reported": "2026-07-31T12:01:29+00:00",
-    "source": "Ransomware.live",
-    "url": "https://www.ransomware.live/id/SHV0Y2ggUGF2aW5nQHRoZWdlbnRsZW1lbg==",
-    "description": "Transportation",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "US",
-    "threat_actor": "thegentlemen",
-    "breach_type": "Ransomware"
-  },
-  {
-    "company_name": "CFS",
-    "date_reported": "2026-07-31T11:55:17+00:00",
-    "source": "Ransomware.live",
-    "url": "https://www.ransomware.live/id/Q0ZTQHRoZWdlbnRsZW1lbg==",
-    "description": "Financial Services",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "US",
-    "threat_actor": "thegentlemen",
-    "breach_type": "Ransomware"
-  },
-  {
-    "company_name": "Acosta Sons",
-    "date_reported": "2026-07-31T11:47:43+00:00",
-    "source": "Ransomware.live",
-    "url": "https://www.ransomware.live/id/QWNvc3RhIFNvbnNAdGhlZ2VudGxlbWVu",
-    "description": "Agriculture and Food Production",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "US",
-    "threat_actor": "thegentlemen",
-    "breach_type": "Ransomware"
-  },
-  {
-    "company_name": "Additive Manufacturing",
-    "date_reported": "2026-07-31T11:24:41+00:00",
-    "source": "Ransomware.live",
-    "url": "https://www.ransomware.live/id/QWRkaXRpdmUgTWFudWZhY3R1cmluZ0B0aGVnZW50bGVtZW4=",
-    "description": "Manufacturing",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "US",
-    "threat_actor": "thegentlemen",
-    "breach_type": "Ransomware"
-  },
-  {
     "company_name": "SM Energy Company",
     "date_reported": "07/30/2026",
     "source": "California AG",
@@ -696,6 +696,42 @@
     "breach_type": "Data Breach"
   },
   {
+    "company_name": "A \u201cNo-Logs\u201d VPN That Kept 58 Million Connection Logs: Inside the NotVPN / SplitVPN Breach",
+    "date_reported": "Sun, 02 Aug 2026 14:03:09 +0000",
+    "source": "DataBreaches.net",
+    "url": "https://databreaches.net/2026/08/02/a-no-logs-vpn-that-kept-58-million-connection-logs-inside-the-notvpn-splitvpn-breach/",
+    "description": "They advertised and pinky swore \u201cno logs.\u201d But according to research by MysteriumVPN, they logged. Key takeaways from MysteriumVPN: A threat actor on the Altenen cybercrime forum is distributing a 17 GB SQL database they claim was stolen from SplitVPN (formerly NotVPN), a Russian VPN used to bypass internet blocks. The Mysterium research team obtained...\nSource",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "Data Breach"
+  },
+  {
+    "company_name": "Brinks Home Confirms Data Breach Following ShinyHunters Claim",
+    "date_reported": "Sun, 02 Aug 2026 14:03:06 +0000",
+    "source": "DataBreaches.net",
+    "url": "https://databreaches.net/2026/08/02/brinks-home-confirms-data-breach-following-shinyhunters-claim/",
+    "description": "Guru Baran reports: Brinks Home, one of North America\u2019s largest residential security providers, has confirmed that hackers breached its IT systems after the notorious ShinyHunters extortion group claimed responsibility for stealing nearly five million records tied to the company\u2019s Salesforce environment. The confirmation comes after the threat actors listed \u201cBH Security, LLC (brinkshome.com)\u201d on their...\nSource",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "Data Breach"
+  },
+  {
+    "company_name": "TN: Sumner County Schools provides limited update on data breach",
+    "date_reported": "Sun, 02 Aug 2026 14:02:34 +0000",
+    "source": "DataBreaches.net",
+    "url": "https://databreaches.net/2026/08/02/tn-sumner-county-schools-provides-limited-update-on-data-breach/",
+    "description": "Abbey Nutter reports: Sumner County Schools is still working through a reported network breach that forced the district to delay the start of the 2026-27 school year, officials told Main Street Media. The district reported the data breach during a meeting of the Sumner County Board of Education on July 21, one day after the...\nSource",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "Data Breach"
+  },
+  {
     "company_name": "Sixth Circuit to Rehear Case on FCC Data Breach Rules Case",
     "date_reported": "Sat, 01 Aug 2026 14:32:00 +0000",
     "source": "DataBreaches.net",
@@ -773,42 +809,6 @@
     "source": "DataBreaches.net",
     "url": "https://databreaches.net/2026/08/01/system-announcement-maintenance/",
     "description": "DataBreaches.net will be undergoing some maintenance and upgrades this weekend and may be unavailable at times. We\u2019ll be back, though! Thank you for your patience.\nSource",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "Data Breach"
-  },
-  {
-    "company_name": "AMGEN reports breach to SEC",
-    "date_reported": "Sat, 01 Aug 2026 01:45:25 +0000",
-    "source": "DataBreaches.net",
-    "url": "https://databreaches.net/2026/07/31/amgen-reports-breach-to-sec/",
-    "description": "From Amgen\u2019s filing on July 29 to the Securities and Exchange Commission: Item 1.05 Material Cybersecurity Incidents. In July 2026, Amgen Inc. (the \u201cCompany\u201d) identified unauthorized activity involving data stored in cloud environments hosted by third-party cloud service providers. Upon detecting the activity, the Company activated its cybersecurity response plan, implemented containment measures, and engaged...\nSource",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "Data Breach"
-  },
-  {
-    "company_name": "RESOURCE: Thomson Reuters Foundation provides free resources and legal help for independent media around the world",
-    "date_reported": "Fri, 31 Jul 2026 17:18:51 +0000",
-    "source": "DataBreaches.net",
-    "url": "https://databreaches.net/2026/07/31/resource-thomson-reuters-foundation-provides-free-resources-and-legal-help-for-independent-media-around-the-world/",
-    "description": "From the Thomson Reuters Foundation, a welcome email describes the situation in South Africa and then turns to global support: I\u2019m\u00a0getting in touch\u00a0to share some new reports and resources to support media freedom work in\u00a0East and Southern Africa. Journalists who hold power to account are increasingly being targeted through \u201clawfare\u201d tactics that\u00a0silence, intimidate and financially...\nSource",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "Data Breach"
-  },
-  {
-    "company_name": "Weaponizing Exposed Data",
-    "date_reported": "Fri, 31 Jul 2026 16:48:04 +0000",
-    "source": "DataBreaches.net",
-    "url": "https://databreaches.net/2026/07/31/weaponizing-exposed-data/",
-    "description": "Lab-1 Dark-web Research Team Contributors:Alex Necula, Anastasia Sentasnova, Ellis Stannard, Jeffrey Bell, Manuel Boll, Val\u00e9ry Rie\u00df-Marchive Mannie W writes: Ransomware and data-extortion groups are moving beyond bulk dumps to analyze, index and price stolen data before it is published or sold \u2014 removing the \u201cweaponization tax\u201d and turning breaches into searchable, tranched and targetable assets....\nSource",
     "records_affected": "Unknown",
     "state_records_affected": "",
     "location": "",
@@ -1044,23 +1044,35 @@
     "breach_type": "Security News"
   },
   {
-    "company_name": "ShinyHunters claims Brinks Home breach, threatens to leak stolen data",
-    "date_reported": "Thu, 30 Jul 2026 12:46:15 -0400",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/",
-    "description": "Residential security company Brinks Home has disclosed that hackers breached some of its systems and are threatening to leak allegedly stolen data. [...]",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "Security News"
-  },
-  {
     "company_name": "Unknown",
     "date_reported": "",
     "source": "HHS OCR",
     "url": "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf",
     "description": "",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "Healthcare Breach"
+  },
+  {
+    "company_name": "CareCloud Notifies More Than 345,000 Patients About Cyberattack Data Theft",
+    "date_reported": "Mon, 03 Aug 2026 06:19:51 +0000",
+    "source": "HIPAA Journal",
+    "url": "https://www.hipaajournal.com/carecloud-data-breach/",
+    "description": "CareCloud Inc., a Somerset, New Jersey-based provider of cloud-based and AI-powered EHR, RCM, PM, and clinical documentation solutions, has determined [\u2026]\nThe post CareCloud Notifies More Than 345,000 Patients About Cyberattack Data Theft appeared first on The HIPAA Journal.",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "Healthcare Breach"
+  },
+  {
+    "company_name": "Patients Warned About AnMed Communications After Cyberattack Closes 83 Facilities",
+    "date_reported": "Mon, 03 Aug 2026 06:15:28 +0000",
+    "source": "HIPAA Journal",
+    "url": "https://www.hipaajournal.com/anmed-closes-almost-80-facilities-while-it-grapples-with-cyberattack/",
+    "description": "The Anderson, South Carolina-based nonprofit health system AnMed said it is continuing to make progress restoring its systems after a [\u2026]\nThe post Patients Warned About AnMed Communications After Cyberattack Closes 83 Facilities appeared first on The HIPAA Journal.",
     "records_affected": "Unknown",
     "state_records_affected": "",
     "location": "",
@@ -1133,30 +1145,6 @@
     "source": "HIPAA Journal",
     "url": "https://www.hipaajournal.com/soniva-dental-care-carecloud-optalis-management-data-breach/",
     "description": "Data breaches have been announced by Soniva Dental Care in Texas, Optalis Management Solutions in Michigan, and Hudson Valley Medical [\u2026]\nThe post Soniva Dental Care Data Breach Affects At Least 30,000 Patients appeared first on The HIPAA Journal.",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "Healthcare Breach"
-  },
-  {
-    "company_name": "Global Data Breach Cost Rises 12% to Almost $5 Million",
-    "date_reported": "Wed, 29 Jul 2026 11:13:16 +0000",
-    "source": "HIPAA Journal",
-    "url": "https://www.hipaajournal.com/2026-cost-data-breach-study-ibm/",
-    "description": "The IBM 2026 Cost of a Data Breach Study shows data breach costs have risen by 12% in a year [\u2026]\nThe post Global Data Breach Cost Rises 12% to Almost $5 Million appeared first on The HIPAA Journal.",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "Healthcare Breach"
-  },
-  {
-    "company_name": "What is a HIPAA Audit Checklist?",
-    "date_reported": "Wed, 29 Jul 2026 09:52:43 +0000",
-    "source": "HIPAA Journal",
-    "url": "https://www.hipaajournal.com/hipaa-audit-checklist/",
-    "description": "A HIPAA audit checklist is a document covered entities and business associates should use to audit compliance with the standards [\u2026]\nThe post What is a HIPAA Audit Checklist? appeared first on The HIPAA Journal.",
     "records_affected": "Unknown",
     "state_records_affected": "",
     "location": "",
@@ -1272,6 +1260,30 @@
     "breach_type": "News"
   },
   {
+    "company_name": "Russian State APT Linked to Recent Public Wi-Fi Gateway Hacking",
+    "date_reported": "Mon, 03 Aug 2026 09:17:37 +0000",
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/russian-state-apt-linked-to-recent-public-wi-fi-gateway-hacking/",
+    "description": "Midnight Blizzard has been stealing Microsoft account credentials via compromised Wi-Fi networks at hospitality organizations.\nThe post Russian State APT Linked to Recent Public Wi-Fi Gateway Hacking appeared first on SecurityWeek.",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "News"
+  },
+  {
+    "company_name": "US Water Cyberattacks Extend Beyond Minnesota to at Least 6 Other States",
+    "date_reported": "Mon, 03 Aug 2026 08:48:02 +0000",
+    "source": "SecurityWeek",
+    "url": "https://www.securityweek.com/us-water-cyberattacks-extend-beyond-minnesota-to-at-least-6-other-states/",
+    "description": "Michigan, South Dakota, and Georgia are reportedly on the list of states whose water systems have been targeted by Iran-linked hackers.\nThe post US Water Cyberattacks Extend Beyond Minnesota to at Least 6 Other States appeared first on SecurityWeek.",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "News"
+  },
+  {
     "company_name": "Balance Theory Raises $19 Million to Help Enterprises Manage Cybersecurity Investments",
     "date_reported": "Sat, 01 Aug 2026 12:30:00 +0000",
     "source": "SecurityWeek",
@@ -1344,30 +1356,6 @@
     "breach_type": "News"
   },
   {
-    "company_name": "CareCloud Data Breach Impacts Over 350,000",
-    "date_reported": "Fri, 31 Jul 2026 07:51:43 +0000",
-    "source": "SecurityWeek",
-    "url": "https://www.securityweek.com/carecloud-data-breach-impacts-over-350000/",
-    "description": "In March 2026, hackers stole personal, financial, and medical information from the company\u2019s AWS environment.\nThe post CareCloud Data Breach Impacts Over 350,000 appeared first on SecurityWeek.",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "News"
-  },
-  {
-    "company_name": "Critical Code Execution Vulnerability Patched in TeamCity",
-    "date_reported": "Fri, 31 Jul 2026 06:50:30 +0000",
-    "source": "SecurityWeek",
-    "url": "https://www.securityweek.com/critical-code-execution-vulnerability-patched-in-teamcity/",
-    "description": "Tracked as CVE-2026-63077, the security defect can be exploited without authentication via the agent polling protocol.\nThe post Critical Code Execution Vulnerability Patched in TeamCity\u00a0 appeared first on SecurityWeek.",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "News"
-  },
-  {
     "company_name": "Minnesota Water Utility Attacks Expose Sector's Cyber-Risks",
     "date_reported": "Thu, 30 Jul 2026 21:16:13 GMT",
     "source": "Dark Reading",
@@ -1416,6 +1404,18 @@
     "breach_type": "News"
   },
   {
+    "company_name": "Cybersecurity, Then &amp; Now",
+    "date_reported": "Wed, 29 Jul 2026 23:26:46 GMT",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/cybersecurity-then-now",
+    "description": "Since 2006, Dark Reading has been at the forefront of covering cybersecurity. The more things change, the more they stay the same.",
+    "records_affected": "Unknown",
+    "state_records_affected": "",
+    "location": "",
+    "threat_actor": "",
+    "breach_type": "News"
+  },
+  {
     "company_name": "Who's Liable When AI Agents Escape? Hugging Face Breach Raises Hard Questions",
     "date_reported": "Wed, 29 Jul 2026 17:43:38 GMT",
     "source": "Dark Reading",
@@ -1445,18 +1445,6 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/when-appsec-scanners-become-supply-chain-attack-vector",
     "description": "New research shows how security scanners embedded in the software supply chain can be attacked to serve as a foothold for downstream attacks.",
-    "records_affected": "Unknown",
-    "state_records_affected": "",
-    "location": "",
-    "threat_actor": "",
-    "breach_type": "News"
-  },
-  {
-    "company_name": "Thousands of Data Center Controllers Open to Takeover",
-    "date_reported": "Tue, 28 Jul 2026 21:07:55 GMT",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/cyber-risk/flaw-exposes-data-centers-server-takeover",
-    "description": "A host of Internet-exposed remote hardware management processors are subject to offline password-cracking attacks \u2014 and adversaries have taken note.",
     "records_affected": "Unknown",
     "state_records_affected": "",
     "location": "",
