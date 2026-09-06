@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Breach RSS Generator</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Sep 2026 10:00:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 10:19:58 +0000</lastBuildDate>
     <item>
       <title>ClickFix Campaign Compromises 31 Orgs, Abuses Polygon Blockchain</title>
       <link>https://www.darkreading.com/endpoint-security/clickfix-campaign-comprises-31-orgs-abuses-polygon-blockchain</link>
@@ -130,18 +130,6 @@
       <pubDate>Fri, 04 Sep 2026 15:57:31 +0000</pubDate>
     </item>
     <item>
-      <title>Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal</title>
-      <link>https://www.securityweek.com/manchester-airports-group-data-on-8-8-million-people-leaked-after-ransom-refusal/</link>
-      <description>Hacker group published roughly 550GB of data after MAG reportedly refused to pay a ransom demand; the group says it gained access via exposed admin keys.
-The post Manchester Airports Group Data on 8.8 Million People Leaked After Ransom Refusal appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">0ba08ddd9e6f51c8c93881bd6136ec67</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Thu, 03 Sep 2026 15:35:19 +0000</pubDate>
-    </item>
-    <item>
       <title>VMware Workstation and Fusion Updates Patch Critical Vulnerability</title>
       <link>https://www.securityweek.com/vmware-workstation-and-fusion-updates-patch-critical-vulnerability/</link>
       <description>The flaws could allow attackers with administrative access to a virtual machine to execute code on the host system.
@@ -188,6 +176,18 @@ The post In Other News: Microsoft’s Cloud Patches, Hacked Dropbox Accounts, Gu
       <category>News</category>
       <category>SecurityWeek</category>
       <pubDate>Fri, 04 Sep 2026 16:18:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Elementor Pro WordPress Plugin Vulnerability Exploited to Hack Sites</title>
+      <link>https://www.securityweek.com/elementor-pro-wordpress-plugin-vulnerability-exploited-to-hack-sites/</link>
+      <description>Tracked as CVE-2026-32475 (CVSS score of 9.8), the bug described as an arbitrary file upload issue in the function that handles form submissions.
+The post Elementor Pro WordPress Plugin Vulnerability Exploited to Hack Sites appeared first on SecurityWeek.
+
+📰 Source: SecurityWeek | 🏷️ Type: News</description>
+      <guid isPermaLink="false">c1336345dc36d7374141948f65cf5877</guid>
+      <category>News</category>
+      <category>SecurityWeek</category>
+      <pubDate>Sat, 05 Sep 2026 13:00:28 +0000</pubDate>
     </item>
     <item>
       <title>US offers $10 million for info on Iranian allegedly behind cyberattacks on critical infrastructure</title>
@@ -375,6 +375,126 @@ The post Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack 
       <pubDate>Fri, 04 Sep 2026 10:00:48 +0000</pubDate>
     </item>
     <item>
+      <title>Philippine Ports Authority</title>
+      <link>https://www.redpacketsecurity.com/qilin-ransomware-victim-philippine-ports-authority/</link>
+      <description>Verification alert Listings attributed to QILIN have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: QILIN | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">bf7d33a33c44bedb6a07e6d082ceb29e</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: QILIN</category>
+      <pubDate>Sat, 05 Sep 2026 15:15:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>CitizensPay</title>
+      <link>https://www.redpacketsecurity.com/dysphor1a-ransomware-victim-citizenspay/</link>
+      <description>Verification alert Listings attributed to DYSPHOR1A have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: DYSPHOR1A | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">ee831de1c7b8d00bf6c059f716eeee33</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: DYSPHOR1A</category>
+      <pubDate>Sat, 05 Sep 2026 17:14:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Leo Schachter Diamonds</title>
+      <link>https://www.redpacketsecurity.com/thegentlemen-ransomware-victim-leo-schachter-diamonds/</link>
+      <description>Verification alert Listings attributed to THEGENTLEMEN have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: THEGENTLEMEN | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">a88c394b021cc628f16f19c37322f92c</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: THEGENTLEMEN</category>
+      <pubDate>Sat, 05 Sep 2026 19:16:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lider Aviacao</title>
+      <link>https://www.redpacketsecurity.com/thegentlemen-ransomware-victim-lider-aviacao/</link>
+      <description>Verification alert Listings attributed to THEGENTLEMEN have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: THEGENTLEMEN | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">8689401db647d1e1d002cbeaa5aa9872</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: THEGENTLEMEN</category>
+      <pubDate>Sat, 05 Sep 2026 19:16:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>Veradigm</title>
+      <link>https://www.redpacketsecurity.com/thegentlemen-ransomware-victim-veradigm/</link>
+      <description>Verification alert Listings attributed to THEGENTLEMEN have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: THEGENTLEMEN | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">35987015dbafcd78d4bfd0544e6d9d30</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: THEGENTLEMEN</category>
+      <pubDate>Sat, 05 Sep 2026 19:16:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zdrowit</title>
+      <link>https://www.redpacketsecurity.com/thegentlemen-ransomware-victim-zdrowit/</link>
+      <description>Verification alert Listings attributed to THEGENTLEMEN have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: THEGENTLEMEN | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">cadf13192e7b2710d3017e2e1d580677</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: THEGENTLEMEN</category>
+      <pubDate>Sat, 05 Sep 2026 19:16:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mega Velocity</title>
+      <link>https://www.redpacketsecurity.com/vexy-ransomware-ransomware-victim-mega-velocity/</link>
+      <description>Verification alert Listings attributed to VEXY RANSOMWARE have been reported as including unverified or fabricated...
+
+🎭 Threat Actor: VEXY RANSOMWARE | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">624572fcab521af5205b4b5ce04cc4b8</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: VEXY RANSOMWARE</category>
+      <pubDate>Sat, 05 Sep 2026 19:16:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mission Pet Health</title>
+      <link>https://www.redpacketsecurity.com/direwolf-ransomware-victim-mission-pet-health/</link>
+      <description>Verification alert Listings attributed to DIREWOLF have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: DIREWOLF | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">7ac8b869f42b9df75f48895fc3217a78</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: DIREWOLF</category>
+      <pubDate>Sat, 05 Sep 2026 23:14:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>Spirit Cultural Exchange – US</title>
+      <link>https://www.redpacketsecurity.com/kazu-ransomware-victim-spirit-cultural-exchange-us/</link>
+      <description>Verification alert Listings attributed to KAZU have been reported as including unverified or fabricated victim...
+
+🎭 Threat Actor: KAZU | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">1544743d64932adad5909f9aad70b275</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: KAZU</category>
+      <pubDate>Sat, 05 Sep 2026 23:14:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>McDonalds Ecuador</title>
+      <link>https://www.redpacketsecurity.com/vexy-ransomware-ransomware-victim-mcdonalds-ecuador/</link>
+      <description>Verification alert Listings attributed to VEXY RANSOMWARE have been reported as including unverified or fabricated...
+
+🎭 Threat Actor: VEXY RANSOMWARE | 📰 Source: Red Packet Security | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">48c7eb6e198eff9293bc92559e75c82d</guid>
+      <category>Ransomware</category>
+      <category>Red Packet Security</category>
+      <category>Actor: VEXY RANSOMWARE</category>
+      <pubDate>Sun, 06 Sep 2026 09:15:26 +0000</pubDate>
+    </item>
+    <item>
       <title>Unknown</title>
       <link>https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf</link>
       <description>Unknown reported a healthcare breach.
@@ -383,7 +503,7 @@ The post Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack 
       <guid isPermaLink="false">344d17850994629ad19bcc451738395f</guid>
       <category>Healthcare Breach</category>
       <category>HHS OCR</category>
-      <pubDate>Sat, 05 Sep 2026 10:00:54 +0000</pubDate>
+      <pubDate>Sun, 06 Sep 2026 10:19:58 +0000</pubDate>
     </item>
     <item>
       <title>Coder's registry infrastructure compromised to push malicious modules</title>
@@ -439,6 +559,17 @@ The post Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack 
       <category>Security News</category>
       <category>BleepingComputer</category>
       <pubDate>Fri, 04 Sep 2026 12:56:45 -0400</pubDate>
+    </item>
+    <item>
+      <title>Over 5,400 hacked sites serve ClickFix payloads stored on the blockchain</title>
+      <link>https://www.bleepingcomputer.com/news/security/over-5-400-hacked-sites-serve-clickfix-payloads-stored-on-the-blockchain/</link>
+      <description>A massive cybercriminal operation is leveraging thousands of compromised small-business websites to deliver ClickFix payloads stored in smart contracts on the BNB Smart Chain (BSC). [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">2d92a676d100041404841285ee9f886e</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Sat, 05 Sep 2026 10:29:13 -0400</pubDate>
     </item>
     <item>
       <title>Industrias Alegre Report Victim ialegre.com Threat Actor SETTRA Date Discovered Sep 04, 2026 Description Industrias Alegre is a full-service supplier and manufacturer based in Spain, â¦September 04, 2026</title>
@@ -585,30 +716,6 @@ The post Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack 
       <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Russian National Indicted For Exploiting Online Platform Used For Freelance Employment And Distributing Malware To Thousands Of Victims</title>
-      <link>https://databreaches.net/2026/09/03/russian-national-indicted-for-exploiting-online-platform-used-for-freelance-employment-and-distributing-malware-to-thousands-of-victims/</link>
-      <description>SAN FRANCISCO – A federal grand jury has indicted Searzhudin Tamirlanovich Aktulaev on charges of Conspiracy, Transmission of a Program, Information, Code, and Command to Cause Damage to a Protected Computer, and Aggravated Identity Theft, among other offenses.  Defendant was arrested in Cyprus in May 2025 and has been extradited to the United States.  Yesterday,...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">32e6c3975dfec7d785af4c7f49c3e5b1</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Thu, 03 Sep 2026 11:49:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Agentic Ransomware Took Down Enterprise in Ten Hours: AI Left 80-Page Audit</title>
-      <link>https://databreaches.net/2026/09/03/agentic-ransomware-took-down-enterprise-in-ten-hours-ai-left-80-page-audit/</link>
-      <description>Roger Satterfield reports: An attacker handed an unknown corporate victim a comprehensive, 80-page security audit on Wednesday — not as a service, but as a postscript to the ransomware attack that had just consumed the victim’s enterprise. According to Palo Alto Networks’ threat intelligence unit Unit 42, whose researchers documented the September 2 incident, the...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">e05bbf030d1f1b1bb96784b4c5fe0923</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Thu, 03 Sep 2026 16:51:35 +0000</pubDate>
-    </item>
-    <item>
       <title>The New School Safety Perimeter: Where Cybersecurity Meets Physical Security</title>
       <link>https://databreaches.net/2026/09/03/the-new-school-safety-perimeter-where-cybersecurity-meets-physical-security/</link>
       <description>Kumar Sokka reports: At many institutions, the student ID number exposed in a data breach is the same number that unlocks dorm doors, sits behind classroom badge readers, controls laboratory access, and authenticates into building automation systems. The badge in a student’s wallet is keyed to that database. When that database is compromised, every physical...
@@ -703,6 +810,30 @@ Source
       <category>Data Breach</category>
       <category>DataBreaches.net</category>
       <pubDate>Fri, 04 Sep 2026 12:39:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>FalconFlank Zero-Day Hits CrowdStrike Falcon Sensor</title>
+      <link>https://databreaches.net/2026/09/05/falconflank-zero-day-hits-crowdstrike-falcon-sensor/</link>
+      <description>CyberKendra reports: A security researcher known as Chaotic Eclipse has released FalconFlank, a proof-of-concept zero-day that escalates privileges on fully patched Windows machines running CrowdStrike Falcon. The researcher — who also uses the aliases Nightmare-Eclipse, MSNightmare, and INFINITE NIGHTMARE — published working exploit code to GitHub on September 3, 2026, without giving CrowdStrike advance notice. No CVE ID...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">af2a60747d968037ac3334d442135009</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Sat, 05 Sep 2026 15:41:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>French Police Arrest Suspected ZeroBytes Hacker Over Tax Data Theft</title>
+      <link>https://databreaches.net/2026/09/05/french-police-arrest-suspected-zerobytes-hacker-over-tax-data-theft/</link>
+      <description>Waqas reports: French authorities have detained an 18-year-old man suspected of belonging to ZeroBytes, a hacking group that claimed responsibility for several attacks targeting French government services and companies. The Paris prosecutor’s office disclosed the case on September 4, according to reports from French media. However, the suspect was arrested on August 18, formally placed...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">5110dae8277491884c618e20c2f3eb01</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Sat, 05 Sep 2026 18:10:06 +0000</pubDate>
     </item>
     <item>
       <title>ASOS US Sales LLC</title>
@@ -870,102 +1001,6 @@ Source
       <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>SCHMIDT</title>
-      <link>https://www.ransomware.live/id/U0NITUlEVEBicmF2b3g=</link>
-      <description>Not Found
-
-🎭 Threat Actor: bravox | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">01bf659e7f1978e271baa524a78d0af8</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: bravox</category>
-      <pubDate>Tue, 01 Sep 2026 12:53:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Honeycomb Programs Inc</title>
-      <link>https://www.ransomware.live/id/SG9uZXljb21iIFByb2dyYW1zIEluY0BkaXJld29sZg==</link>
-      <description>Other
-
-🎭 Threat Actor: direwolf | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">6b3276d67f16cec72b175009087305ce</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: direwolf</category>
-      <pubDate>Tue, 01 Sep 2026 15:41:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>SITES Medical</title>
-      <link>https://www.ransomware.live/id/U0lURVMgTWVkaWNhbEBTdG9ybQ==</link>
-      <description>Healthcare
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">0bad170b226af14e5c6bf73a776c636b</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Storm</category>
-      <pubDate>Tue, 01 Sep 2026 20:00:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Chicago Partners Wealth Advisors</title>
-      <link>https://www.ransomware.live/id/Q2hpY2FnbyBQYXJ0bmVycyBXZWFsdGggQWR2aXNvcnNAU3Rvcm0=</link>
-      <description>Financial Services
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">dff926c63bd613a6b82c974776a02659</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Storm</category>
-      <pubDate>Tue, 01 Sep 2026 20:04:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Superior Ag</title>
-      <link>https://www.ransomware.live/id/U3VwZXJpb3IgQWdAU3Rvcm0=</link>
-      <description>Agriculture and Food Production
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">2a1471d7129910b8081a74ed0d640595</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Storm</category>
-      <pubDate>Tue, 01 Sep 2026 20:07:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>GSAC</title>
-      <link>https://www.ransomware.live/id/R1NBQ0BTdG9ybQ==</link>
-      <description>Not Found
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">59d5349f67d81b692ae0aa7f72d9b343</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Storm</category>
-      <pubDate>Tue, 01 Sep 2026 20:16:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>Holland &amp; Knight</title>
-      <link>https://www.ransomware.live/id/SG9sbGFuZCAmIEtuaWdodEBTaWxlbnRSYW5zb21Hcm91cA==</link>
-      <description>Professional Services
-
-🎭 Threat Actor: SilentRansomGroup | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">9223ac187def25d3fb60f51c5bc02f9a</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: SilentRansomGroup</category>
-      <pubDate>Tue, 01 Sep 2026 21:22:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Quality Resource Pvt</title>
-      <link>https://www.ransomware.live/id/UXVhbGl0eSBSZXNvdXJjZSBQdnRAR2xvYmFsIFNlY3JldCBHcm91cA==</link>
-      <description>Other
-
-🎭 Threat Actor: Global Secret Group | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">59d707257347aaae7cba11f95ca6a3c0</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Global Secret Group</category>
-      <pubDate>Tue, 01 Sep 2026 22:20:58 +0000</pubDate>
-    </item>
-    <item>
       <title>Kaniksu Community Health</title>
       <link>https://oag.ca.gov/privacy/databreach/list</link>
       <description>Kaniksu Community Health reported a data breach in California.
@@ -986,114 +1021,6 @@ Source
       <category>Data Breach</category>
       <category>California AG</category>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Chip 1 Exchange</title>
-      <link>https://www.ransomware.live/id/Q2hpcCAxIEV4Y2hhbmdlQGF1cm9yYQ==</link>
-      <description>Technology
-
-🎭 Threat Actor: aurora | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">afa6d8caa4742e402461eddfe18c54d4</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: aurora</category>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>ScrubaDub Auto Wash Centers</title>
-      <link>https://www.ransomware.live/id/U2NydWJhRHViIEF1dG8gV2FzaCBDZW50ZXJzQGFraXJh</link>
-      <description>Retail &amp; E-Commerce
-
-🎭 Threat Actor: akira | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">013a18cb6a711384ae5554f186ee74b8</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: akira</category>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kovo Healthtech Corp</title>
-      <link>https://www.ransomware.live/id/S292byBIZWFsdGh0ZWNoIENvcnBAcGVhcg==</link>
-      <description>Healthcare
-
-🎭 Threat Actor: pear | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">e234ceff48ccc72a38c4bf5a30829a2e</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: pear</category>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Grayson Rural Electric Cooperative</title>
-      <link>https://www.ransomware.live/id/R3JheXNvbiBSdXJhbCBFbGVjdHJpYyBDb29wZXJhdGl2ZUBxaWxpbg==</link>
-      <description>Energy &amp; Utilities
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">8d37978bca052cb44d1cbf871f3f8e39</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Wed, 02 Sep 2026 05:01:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>N***************</title>
-      <link>https://www.ransomware.live/id/TioqKioqKioqKioqKioqKkBpbnNvbW5pYQ==</link>
-      <description>Not Found
-
-🎭 Threat Actor: insomnia | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">f386123234e1cd0a92607dff948a7c59</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: insomnia</category>
-      <pubDate>Wed, 02 Sep 2026 14:25:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Star Aviation, Inc</title>
-      <link>https://www.ransomware.live/id/U3RhciBBdmlhdGlvbiwgSW5jQFN0b3Jt</link>
-      <description>Transportation
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">d739017c9674bdc4c027d2a8310e8c09</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Storm</category>
-      <pubDate>Wed, 02 Sep 2026 15:25:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>GSAC Auto Financing</title>
-      <link>https://www.ransomware.live/id/R1NBQyBBdXRvIEZpbmFuY2luZ0BTdG9ybQ==</link>
-      <description>Financial Services
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">83f2a958e96213c125d2598823b8a795</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Storm</category>
-      <pubDate>Wed, 02 Sep 2026 15:41:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ormond Beach Florida</title>
-      <link>https://www.ransomware.live/id/T3Jtb25kIEJlYWNoIEZsb3JpZGFAV2FsbHN0cmVldA==</link>
-      <description>Not Found
-
-🎭 Threat Actor: Wallstreet | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">13f55b494cda24d2e78c960abbfd5767</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Wallstreet</category>
-      <pubDate>Wed, 02 Sep 2026 16:42:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Greenberg Traurig</title>
-      <link>https://www.ransomware.live/id/R3JlZW5iZXJnIFRyYXVyaWdAU2lsZW50UmFuc29tR3JvdXA=</link>
-      <description>Professional Services
-
-🎭 Threat Actor: SilentRansomGroup | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">68368c20f01ebd3d7dcacb2bf379d5c2</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: SilentRansomGroup</category>
-      <pubDate>Wed, 02 Sep 2026 23:21:08 +0000</pubDate>
     </item>
     <item>
       <title>Fishbrain AB</title>
@@ -1162,6 +1089,114 @@ Source
       <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>ScrubaDub Auto Wash Centers</title>
+      <link>https://www.ransomware.live/id/U2NydWJhRHViIEF1dG8gV2FzaCBDZW50ZXJzQGFraXJh</link>
+      <description>Retail &amp; E-Commerce
+
+🎭 Threat Actor: akira | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">013a18cb6a711384ae5554f186ee74b8</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: akira</category>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Kovo Healthtech Corp</title>
+      <link>https://www.ransomware.live/id/S292byBIZWFsdGh0ZWNoIENvcnBAcGVhcg==</link>
+      <description>Healthcare
+
+🎭 Threat Actor: pear | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">e234ceff48ccc72a38c4bf5a30829a2e</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: pear</category>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Grayson Rural Electric Cooperative</title>
+      <link>https://www.ransomware.live/id/R3JheXNvbiBSdXJhbCBFbGVjdHJpYyBDb29wZXJhdGl2ZUBxaWxpbg==</link>
+      <description>Energy &amp; Utilities
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">8d37978bca052cb44d1cbf871f3f8e39</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: qilin</category>
+      <pubDate>Wed, 02 Sep 2026 05:01:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>N***************</title>
+      <link>https://www.ransomware.live/id/TioqKioqKioqKioqKioqKkBpbnNvbW5pYQ==</link>
+      <description>Not Found
+
+🎭 Threat Actor: insomnia | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">f386123234e1cd0a92607dff948a7c59</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: insomnia</category>
+      <pubDate>Wed, 02 Sep 2026 14:25:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Leo Schachter Diamonds</title>
+      <link>https://www.ransomware.live/id/TGVvIFNjaGFjaHRlciBEaWFtb25kc0B0aGVnZW50bGVtZW4=</link>
+      <description>Retail &amp; E-Commerce
+
+🎭 Threat Actor: thegentlemen | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">9b5c1f8c972553591901eb54f9512524</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: thegentlemen</category>
+      <pubDate>Wed, 02 Sep 2026 15:11:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Star Aviation, Inc</title>
+      <link>https://www.ransomware.live/id/U3RhciBBdmlhdGlvbiwgSW5jQFN0b3Jt</link>
+      <description>Transportation
+
+🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">d739017c9674bdc4c027d2a8310e8c09</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: Storm</category>
+      <pubDate>Wed, 02 Sep 2026 15:25:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GSAC Auto Financing</title>
+      <link>https://www.ransomware.live/id/R1NBQyBBdXRvIEZpbmFuY2luZ0BTdG9ybQ==</link>
+      <description>Financial Services
+
+🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">83f2a958e96213c125d2598823b8a795</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: Storm</category>
+      <pubDate>Wed, 02 Sep 2026 15:41:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ormond Beach Florida</title>
+      <link>https://www.ransomware.live/id/T3Jtb25kIEJlYWNoIEZsb3JpZGFAV2FsbHN0cmVldA==</link>
+      <description>Not Found
+
+🎭 Threat Actor: Wallstreet | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">13f55b494cda24d2e78c960abbfd5767</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: Wallstreet</category>
+      <pubDate>Wed, 02 Sep 2026 16:42:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Greenberg Traurig</title>
+      <link>https://www.ransomware.live/id/R3JlZW5iZXJnIFRyYXVyaWdAU2lsZW50UmFuc29tR3JvdXA=</link>
+      <description>Professional Services
+
+🎭 Threat Actor: SilentRansomGroup | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">68368c20f01ebd3d7dcacb2bf379d5c2</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: SilentRansomGroup</category>
+      <pubDate>Wed, 02 Sep 2026 23:21:08 +0000</pubDate>
+    </item>
+    <item>
       <title>America’s Food Basket</title>
       <link>https://www.ransomware.live/id/QW1lcmljYeKAmXMgRm9vZCBCYXNrZXRAV2FsbHN0cmVldA==</link>
       <description>Retail &amp; E-Commerce
@@ -1186,103 +1221,26 @@ Source
       <pubDate>Thu, 03 Sep 2026 20:23:41 +0000</pubDate>
     </item>
     <item>
-      <title>verveportraits.com.au (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-verveportraits-com-au-sep-2026/</link>
-      <description>verveportraits.com.au (SEP-2026) reported a ransomware.
+      <title>Bimbo Bakeries USA</title>
+      <link>https://oag.ca.gov/privacy/databreach/list</link>
+      <description>Bimbo Bakeries USA reported a data breach in California.
 
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">f3d5ac4dc4a4c362a8c6ca8712999270</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 00:31:54 +0700</pubDate>
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">f410a6545599b141d5652519416ec31f</guid>
+      <category>Data Breach</category>
+      <category>California AG</category>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Studio Oculistico Ciraci (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-studio-oculistico-ciraci-sep-2026/</link>
-      <description>Studio Oculistico Ciraci (SEP-2026) reported a ransomware.
+      <title>Catalyst Brands LLC</title>
+      <link>https://oag.ca.gov/privacy/databreach/list</link>
+      <description>Catalyst Brands LLC reported a data breach in California.
 
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">adf9c21ab70b973feea2bd92ef55b057</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 07:01:18 +0700</pubDate>
-    </item>
-    <item>
-      <title>Katten Muchin Rosenman (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-katten-muchin-rosenman-sep-2026/</link>
-      <description>Katten Muchin Rosenman (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">f459c1f9e2dadcb548190c434dead160</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 07:01:47 +0700</pubDate>
-    </item>
-    <item>
-      <title>mansurovogroup (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-mansurovogroup-sep-2026/</link>
-      <description>mansurovogroup (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">3a253726a59a0ea67ecc2fd596f95baa</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 10:30:46 +0700</pubDate>
-    </item>
-    <item>
-      <title>PIT.local (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-pit-local-sep-2026/</link>
-      <description>PIT.local (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">328eed6418ab9314af468835db79b99c</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 10:31:17 +0700</pubDate>
-    </item>
-    <item>
-      <title>Blanco &amp; Etcheverry (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-blanco-etcheverry-sep-2026/</link>
-      <description>Blanco &amp; Etcheverry (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">09066becbd04619ffdab9bcae6f8d1e4</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 14:01:50 +0700</pubDate>
-    </item>
-    <item>
-      <title>Occidental (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-occidental-sep-2026/</link>
-      <description>Occidental (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">754aa7bb9045db0afd08716b58d081f8</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 17:30:24 +0700</pubDate>
-    </item>
-    <item>
-      <title>EDIF S.p.A. (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-edif-s-p-a-sep-2026/</link>
-      <description>EDIF S.p.A. (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">0e9791a46ed09979fcac816470efc30d</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 17:30:48 +0700</pubDate>
-    </item>
-    <item>
-      <title>Complete Packaging Solutions (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-complete-packaging-solutions-sep-2026-2/</link>
-      <description>Complete Packaging Solutions (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">aa12b969e74aaebebf79763520505ffc</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Fri, 04 Sep 2026 17:31:19 +0700</pubDate>
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">e76a80888c05ed34dd1f713aacf3e6e3</guid>
+      <category>Data Breach</category>
+      <category>California AG</category>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Schwartz, Giannini, Lantsberger &amp; Adamson (SGLA)</title>
@@ -1309,6 +1267,18 @@ Source
       <pubDate>Fri, 04 Sep 2026 10:27:00 +0000</pubDate>
     </item>
     <item>
+      <title>Veradigm</title>
+      <link>https://www.ransomware.live/id/VmVyYWRpZ21AdGhlZ2VudGxlbWVu</link>
+      <description>Healthcare
+
+🎭 Threat Actor: thegentlemen | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">4eec2c63af30dcea0f339e6cb261de41</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: thegentlemen</category>
+      <pubDate>Fri, 04 Sep 2026 17:26:38 +0000</pubDate>
+    </item>
+    <item>
       <title>Sports Endeavors</title>
       <link>https://www.ransomware.live/id/U3BvcnRzIEVuZGVhdm9yc0BzcGFjZWJlYXJz</link>
       <description>Retail &amp; E-Commerce
@@ -1331,72 +1301,6 @@ Source
       <category>Ransomware.live</category>
       <category>Actor: direwolf</category>
       <pubDate>Fri, 04 Sep 2026 17:34:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bimbo Bakeries USA</title>
-      <link>https://oag.ca.gov/privacy/databreach/list</link>
-      <description>Bimbo Bakeries USA reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">f410a6545599b141d5652519416ec31f</guid>
-      <category>Data Breach</category>
-      <category>California AG</category>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Catalyst Brands LLC</title>
-      <link>https://oag.ca.gov/privacy/databreach/list</link>
-      <description>Catalyst Brands LLC reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">e76a80888c05ed34dd1f713aacf3e6e3</guid>
-      <category>Data Breach</category>
-      <category>California AG</category>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>MBT Telecom (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-mbt-telecom-sep-2026/</link>
-      <description>MBT Telecom (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">7c72e33bff4be07121bbef8e49ab7ba5</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sat, 05 Sep 2026 00:31:30 +0700</pubDate>
-    </item>
-    <item>
-      <title>pscindustries.com (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-pscindustries-com-sep-2026/</link>
-      <description>pscindustries.com (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">a486abfe63316131800f2f283af72ba8</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sat, 05 Sep 2026 04:30:16 +0700</pubDate>
-    </item>
-    <item>
-      <title>kalahealth.eu (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-kalahealth-eu-sep-2026/</link>
-      <description>kalahealth.eu (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">6aadf2fbb9d0ea87a2f9b0354d0f3a8b</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sat, 05 Sep 2026 04:30:39 +0700</pubDate>
-    </item>
-    <item>
-      <title>huisartsencentrumkleiniterson.nl (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-huisartsencentrumkleiniterson-nl-sep-2026/</link>
-      <description>huisartsencentrumkleiniterson.nl (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">2b16ca935a7080ba1d25bf06fbe2a84a</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sat, 05 Sep 2026 04:31:06 +0700</pubDate>
     </item>
     <item>
       <title>H… C… (SEP-2026)</title>
@@ -1476,16 +1380,26 @@ Source
       <pubDate>Sat, 05 Sep 2026 14:31:46 +0700</pubDate>
     </item>
     <item>
-      <title>D-MAX Engineering, Inc</title>
-      <link>https://www.ransomware.live/id/RC1NQVggRW5naW5lZXJpbmcsIEluY0BzcGFjZWJlYXJz</link>
-      <description>Manufacturing
+      <title>Philippine Ports Authority (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-philippine-ports-authority-sep-2026/</link>
+      <description>Philippine Ports Authority (SEP-2026) reported a ransomware.
 
-🎭 Threat Actor: spacebears | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">31b7c622f213eade4a27a8702864cf2c</guid>
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">4d91d41973ef0b356b79e37b2250b160</guid>
       <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: spacebears</category>
-      <pubDate>Sat, 05 Sep 2026 04:28:40 +0000</pubDate>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 05 Sep 2026 21:31:04 +0700</pubDate>
+    </item>
+    <item>
+      <title>Bauman Law Group (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-bauman-law-group-sep-2026/</link>
+      <description>Bauman Law Group (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">8822013bc5b53f473de06c25f256b379</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sat, 05 Sep 2026 21:31:28 +0700</pubDate>
     </item>
     <item>
       <title>Vexy Ransomware Targets Annapurna Fashion</title>
@@ -1586,6 +1500,223 @@ Source
       <category>Ransomware</category>
       <category>DeXpose</category>
       <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Metrea LLC/Commuter Air Technology, Inc.</title>
+      <link>https://www.ransomware.live/id/TWV0cmVhIExMQy9Db21tdXRlciBBaXIgVGVjaG5vbG9neSwgSW5jLkBhdXJvcmE=</link>
+      <description>Transportation
+
+🎭 Threat Actor: aurora | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">3c65360f5f77d63143767a8cdd98b26b</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: aurora</category>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>D-MAX Engineering, Inc</title>
+      <link>https://www.ransomware.live/id/RC1NQVggRW5naW5lZXJpbmcsIEluY0BzcGFjZWJlYXJz</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: spacebears | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">31b7c622f213eade4a27a8702864cf2c</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: spacebears</category>
+      <pubDate>Sat, 05 Sep 2026 04:28:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Colonial Hyundai</title>
+      <link>https://www.ransomware.live/id/Q29sb25pYWwgSHl1bmRhaUBxaWxpbg==</link>
+      <description>Retail &amp; E-Commerce
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">62924e954cb7adce852d936f944f1ff5</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: qilin</category>
+      <pubDate>Sat, 05 Sep 2026 11:28:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nolan Consulting Group</title>
+      <link>https://www.ransomware.live/id/Tm9sYW4gQ29uc3VsdGluZyBHcm91cEBxaWxpbg==</link>
+      <description>Professional Services
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">649a863080aa14f82f5eb0510b16db5b</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: qilin</category>
+      <pubDate>Sat, 05 Sep 2026 11:29:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>G&amp;S Technologies</title>
+      <link>https://www.ransomware.live/id/RyZTIFRlY2hub2xvZ2llc0BxaWxpbg==</link>
+      <description>Technology
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">11a0b008f26d4e9d7132d7d1341beddc</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: qilin</category>
+      <pubDate>Sat, 05 Sep 2026 11:29:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bauman Law Group</title>
+      <link>https://www.ransomware.live/id/QmF1bWFuIExhdyBHcm91cEBxaWxpbg==</link>
+      <description>Professional Services
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">dddbc74632095dea9fece92d9bebb3e9</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: qilin</category>
+      <pubDate>Sat, 05 Sep 2026 13:45:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Spirit Cultural Exchange - US</title>
+      <link>https://www.ransomware.live/id/U3Bpcml0IEN1bHR1cmFsIEV4Y2hhbmdlIC0gVVNAa2F6dQ==</link>
+      <description>Education
+
+🎭 Threat Actor: kazu | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">68ef436a40dfc52751417817fff25a2d</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: kazu</category>
+      <pubDate>Sat, 05 Sep 2026 21:29:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mission Pet Health</title>
+      <link>https://www.ransomware.live/id/TWlzc2lvbiBQZXQgSGVhbHRoQGRpcmV3b2xm</link>
+      <description>Healthcare
+
+🎭 Threat Actor: direwolf | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">a4c9790f21dab39ba485b57a875741b1</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: direwolf</category>
+      <pubDate>Sat, 05 Sep 2026 21:44:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mega Velocity (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-mega-velocity-sep-2026/</link>
+      <description>Mega Velocity (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">02cd099e49040277e2e4b1bb0e7b80e8</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 01:00:59 +0700</pubDate>
+    </item>
+    <item>
+      <title>Leo Schachter Diamonds (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-leo-schachter-diamonds-sep-2026/</link>
+      <description>Leo Schachter Diamonds (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">0f1edd70725a91ffd0e5cfbda27758a1</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 04:01:31 +0700</pubDate>
+    </item>
+    <item>
+      <title>Zdrowit (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-zdrowit-sep-2026/</link>
+      <description>Zdrowit (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">d616272f0f20700edce4be52a1f50731</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 04:02:02 +0700</pubDate>
+    </item>
+    <item>
+      <title>Veradigm (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-veradigm-sep-2026/</link>
+      <description>Veradigm (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">7fb1c0735e5c8e81c030de574cb1b0a9</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 04:02:39 +0700</pubDate>
+    </item>
+    <item>
+      <title>Mission Pet Health (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-mission-pet-health-sep-2026/</link>
+      <description>Mission Pet Health (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">d6ca789c73d54d34f2d5753e532f5e0f</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 07:30:16 +0700</pubDate>
+    </item>
+    <item>
+      <title>Spirit Cultural Exchange – US (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-spirit-cultural-exchange-us-sep-2026/</link>
+      <description>Spirit Cultural Exchange – US (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">2ab207726166df52859a430700b52c1d</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 07:30:35 +0700</pubDate>
+    </item>
+    <item>
+      <title>Lider Aviacao (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-lider-aviacao-sep-2026/</link>
+      <description>Lider Aviacao (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">24425b3f10a48bc9f6bcd8e4791fef61</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 07:31:04 +0700</pubDate>
+    </item>
+    <item>
+      <title>CitizensPay (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-citizenspay-sep-2026/</link>
+      <description>CitizensPay (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">e04ce299d6a56fea9fb7470d8cc17221</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 10:30:49 +0700</pubDate>
+    </item>
+    <item>
+      <title>Jouvet SAS (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-jouvet-sas-sep-2026-2/</link>
+      <description>Jouvet SAS (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">2dd10820363e8fb7f1a8c39951cc9e8c</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 10:31:19 +0700</pubDate>
+    </item>
+    <item>
+      <title>G&amp;S Technologies (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-gs-technologies-sep-2026/</link>
+      <description>G&amp;S Technologies (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">3afceb84bc99a0232154f8eb6f967904</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 10:31:36 +0700</pubDate>
+    </item>
+    <item>
+      <title>Nolan Consulting Group (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-nolan-consulting-group-sep-2026/</link>
+      <description>Nolan Consulting Group (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">e82babecded9f7cea260e3dc5bb61c8e</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Sun, 06 Sep 2026 13:31:47 +0700</pubDate>
     </item>
     <item>
       <title>Paylogix</title>
