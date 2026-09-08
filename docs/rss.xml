@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Breach RSS Generator</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Sep 2026 11:39:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 10:39:03 +0000</lastBuildDate>
     <item>
       <title>ClickFix Campaign Compromises 31 Orgs, Abuses Polygon Blockchain</title>
       <link>https://www.darkreading.com/endpoint-security/clickfix-campaign-comprises-31-orgs-abuses-polygon-blockchain</link>
@@ -130,42 +130,6 @@
       <pubDate>Fri, 04 Sep 2026 15:57:31 +0000</pubDate>
     </item>
     <item>
-      <title>VMware Workstation and Fusion Updates Patch Critical Vulnerability</title>
-      <link>https://www.securityweek.com/vmware-workstation-and-fusion-updates-patch-critical-vulnerability/</link>
-      <description>The flaws could allow attackers with administrative access to a virtual machine to execute code on the host system.
-The post VMware Workstation and Fusion Updates Patch Critical Vulnerability appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">1479e0596fbf84c6d9a869485585255a</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Fri, 04 Sep 2026 11:42:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover</title>
-      <link>https://www.securityweek.com/12-year-old-postgresql-vulnerability-enables-database-server-takeover/</link>
-      <description>Dubbed PostGREShell, CVE-2026-6471 turns low-level replication access into code execution, permanent superuser privileges and a persistent database backdoor.
-The post 12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">2d86319631822e647f7c6778b818e2e0</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Fri, 04 Sep 2026 12:06:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sangoma Switchvox Vulnerabilities Exploited in the Wild</title>
-      <link>https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/</link>
-      <description>Tracked as CVE-2026-9586, the unauthenticated SQL injection flaw can be exploited remotely for arbitrary code execution.
-The post Sangoma Switchvox Vulnerabilities Exploited in the Wild appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">704bf8834fe81edbfddb63295286c1c8</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Fri, 04 Sep 2026 13:23:12 +0000</pubDate>
-    </item>
-    <item>
       <title>In Other News: Microsoft’s Cloud Patches, Hacked Dropbox Accounts, Guardio’s $1.1B Valuation</title>
       <link>https://www.securityweek.com/in-other-news-microsofts-cloud-patches-hacked-dropbox-accounts-guardios-1-1b-valuation/</link>
       <description>Noteworthy stories that might have slipped under the radar: Microsoft rolled out patches for cloud services, hackers compromised 5,000 Dropbox accounts, and Guardio is now valued at $1.1 billion. 
@@ -190,15 +154,40 @@ The post Elementor Pro WordPress Plugin Vulnerability Exploited to Hack Sites ap
       <pubDate>Sat, 05 Sep 2026 13:00:28 +0000</pubDate>
     </item>
     <item>
-      <title>US offers $10 million for info on Iranian allegedly behind cyberattacks on critical infrastructure</title>
-      <link>https://therecord.media/us-reward-amir-yaryab-iran-irgc-cyberattacks</link>
-      <description>Amir Yaryab is the leader of the IRGC's cyber unit and oversees hacker groups such as the CyberAv3ngers, the State Department said in posting a reward for information about him.
+      <title>Adobe Commerce Zero-Day Exploited to Backdoor Online Stores</title>
+      <link>https://www.securityweek.com/adobe-commerce-zero-day-exploited-to-backdoor-online-stores/</link>
+      <description>The StyleSmuggler zero-day allows attackers to execute code and deploy a stealthy backdoor on Adobe Commerce and Magento stores.
+The post Adobe Commerce Zero-Day Exploited to Backdoor Online Stores appeared first on SecurityWeek.
 
-📰 Source: The Record | 🏷️ Type: News</description>
-      <guid isPermaLink="false">2e85ee30d01170752ef79619f5ea191c</guid>
+📰 Source: SecurityWeek | 🏷️ Type: News</description>
+      <guid isPermaLink="false">d8e4171c4bf6a4022d741e38ba4a3e33</guid>
       <category>News</category>
-      <category>The Record</category>
-      <pubDate>Fri, 04 Sep 2026 04:00:00 +0000</pubDate>
+      <category>SecurityWeek</category>
+      <pubDate>Mon, 07 Sep 2026 11:58:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>North Korean Hackers Deploy New Linux Espionage Toolkit</title>
+      <link>https://www.securityweek.com/north-korean-hackers-deploy-new-linux-espionage-toolkit/</link>
+      <description>The stealthy toolkit embeds a backdoor in HAProxy and targets automotive and media organizations in South Korea for long-term surveillance.
+The post North Korean Hackers Deploy New Linux Espionage Toolkit appeared first on SecurityWeek.
+
+📰 Source: SecurityWeek | 🏷️ Type: News</description>
+      <guid isPermaLink="false">612e19c5daaa286159e97ccc5c3cf9e0</guid>
+      <category>News</category>
+      <category>SecurityWeek</category>
+      <pubDate>Mon, 07 Sep 2026 12:12:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day Exploits</title>
+      <link>https://www.securityweek.com/nightmare-eclipse-drops-crowdstrike-nvidia-avast-zero-day-exploits/</link>
+      <description>The proof-of-concept (PoC) exploits lead to privilege escalation, spawning a shell with System privileges.
+The post Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day Exploits appeared first on SecurityWeek.
+
+📰 Source: SecurityWeek | 🏷️ Type: News</description>
+      <guid isPermaLink="false">7a1ab20a6e2b6be5c472434f0cf77aa1</guid>
+      <category>News</category>
+      <category>SecurityWeek</category>
+      <pubDate>Mon, 07 Sep 2026 12:15:57 +0000</pubDate>
     </item>
     <item>
       <title>G7 urges organizations to prepare for quantum cyber threats</title>
@@ -232,6 +221,17 @@ The post Elementor Pro WordPress Plugin Vulnerability Exploited to Hack Sites ap
       <category>News</category>
       <category>The Record</category>
       <pubDate>Fri, 04 Sep 2026 14:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Berlin investigates new data leak after hackers publish stolen login credentials</title>
+      <link>https://therecord.media/germany-berlin-second-data-breach-city-agencies</link>
+      <description>Another trove of data from Berlin's government has appeared online, authorities said. Germany's information security agency separately warned about the Rhysida cybercrime group.
+
+📰 Source: The Record | 🏷️ Type: News</description>
+      <guid isPermaLink="false">b7fca0e4d0b9b8112c7e43ae6fbbd304</guid>
+      <category>News</category>
+      <category>The Record</category>
+      <pubDate>Mon, 07 Sep 2026 11:50:00 +0000</pubDate>
     </item>
     <item>
       <title>Felons, Fraudsters Flog Offensive Cybersecurity Startup</title>
@@ -291,54 +291,6 @@ In a statement released today, the Australian Federal Police (AFP) said two unna
       <pubDate>Thu, 27 Aug 2026 11:04:15 +0000</pubDate>
     </item>
     <item>
-      <title>Highland Oncology Group Settles Litigation Stemming From 2025 Ransomware Attack</title>
-      <link>https://www.hipaajournal.com/highland-oncology-group-data-breach-settlement/</link>
-      <description>Highlands Oncology Group, an Arkansas-based physician-owned community cancer care and research practice serving Northwest Arkansas, Southwest Missouri, and Southeast Oklahoma, […]
-The post Highland Oncology Group Settles Litigation Stemming From 2025 Ransomware Attack appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">26d6a675aba5a7120da9a2c37f8b6c07</guid>
-      <category>Healthcare Breach</category>
-      <category>HIPAA Journal</category>
-      <pubDate>Wed, 02 Sep 2026 10:00:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>Oncology Firm Novocure Announces Cyberattack and Data Breach</title>
-      <link>https://www.hipaajournal.com/novocure-data-breach/</link>
-      <description>The medical technology and oncology company Novocure has recently confirmed that patient and employee data were exposed in a recent […]
-The post Oncology Firm Novocure Announces Cyberattack and Data Breach appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">15b5db38ee1a70e95474dc8848649804</guid>
-      <category>Healthcare Breach</category>
-      <category>HIPAA Journal</category>
-      <pubDate>Wed, 02 Sep 2026 13:08:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Nutex Health Confirms Sensitive Data Stolen in August Cyberattack</title>
-      <link>https://www.hipaajournal.com/nutex-health-data-breach/</link>
-      <description>Nutex Health, a Houston, Texas-based healthcare management and operations company that delivers care through 27 micro-hospitals, specialty hospitals, and outpatient […]
-The post Nutex Health Confirms Sensitive Data Stolen in August Cyberattack appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">5cd54f1e6ea8bb9c200560dd10329b4e</guid>
-      <category>Healthcare Breach</category>
-      <category>HIPAA Journal</category>
-      <pubDate>Wed, 02 Sep 2026 13:19:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>Baylor Genetics: ePHI of 2.8M Patients Exposed in Cybersecurity Incident</title>
-      <link>https://www.hipaajournal.com/baylor-genetics-data-breach/</link>
-      <description>On August 19, 2026, we reported on a cybersecurity incident at the clinical genomics company Baylor Genetics. At the time, […]
-The post Baylor Genetics: ePHI of 2.8M Patients Exposed in Cybersecurity Incident appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">fb67967b4bbf814f02f83b420b296311</guid>
-      <category>Healthcare Breach</category>
-      <category>HIPAA Journal</category>
-      <pubDate>Wed, 02 Sep 2026 15:00:48 +0000</pubDate>
-    </item>
-    <item>
       <title>Multi-Million Settlement Resolves Managed Care of North America Data Breach Litigation</title>
       <link>https://www.hipaajournal.com/managed-care-of-north-america-data-breach-settlement/</link>
       <description>Managed Care of North America, Inc. (MCNA) has agreed to settle class action litigation stemming from a 2023 cybersecurity incident […]
@@ -363,6 +315,18 @@ The post Five Healthcare Providers Report Ransomware-Related Data Breaches appea
       <pubDate>Thu, 03 Sep 2026 14:19:07 +0000</pubDate>
     </item>
     <item>
+      <title>Healthcare Data Breach Statistics – Updated for 2026</title>
+      <link>https://www.hipaajournal.com/healthcare-data-breach-statistics/</link>
+      <description>The HIPAA Journal has compiled healthcare data breach statistics from October 2009, when the Department of Health and Human Services […]
+The post Healthcare Data Breach Statistics – Updated for 2026 appeared first on The HIPAA Journal.
+
+📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">844eb2129c423dd34b9d58a32c9692a4</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+      <pubDate>Fri, 04 Sep 2026 06:30:48 +0000</pubDate>
+    </item>
+    <item>
       <title>Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack</title>
       <link>https://www.hipaajournal.com/midwest-spine-brain-institute-3c-care-systems-breach/</link>
       <description>Data breaches have been announced by Midwest Spine and Brain Institute, Brookhaven ENT Allergy and Facial Surgery, Digestive Disease Center […]
@@ -375,15 +339,40 @@ The post Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack 
       <pubDate>Fri, 04 Sep 2026 10:00:48 +0000</pubDate>
     </item>
     <item>
-      <title>Google warns of new Chrome zero-day flaw exploited in attacks</title>
-      <link>https://www.bleepingcomputer.com/news/security/google-warns-of-new-chrome-zero-day-flaw-exploited-in-attacks/</link>
-      <description>Google has updated the Chrome browser to address an actively exploited high-severity zero-day flaw in the V8 engine and 11 other vulnerabilities. [...]
+      <title>June 2026 Healthcare Data Breach Report</title>
+      <link>https://www.hipaajournal.com/june-2026-healthcare-data-breach-report/</link>
+      <description>In June 2026, 66 large healthcare data breaches – data breaches involving the protected health information of 500 or more […]
+The post June 2026 Healthcare Data Breach Report appeared first on The HIPAA Journal.
 
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">3ace7d28f0313c9b5fabb5d9a1dd2b98</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Fri, 04 Sep 2026 07:48:17 -0400</pubDate>
+📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">17c23865bf0a07c64f92364d8e3091a2</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+      <pubDate>Mon, 07 Sep 2026 13:07:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Luminis Health Working to Restore Systems After Cyberattack</title>
+      <link>https://www.hipaajournal.com/luminis-health-jeffrey-reuben-well-child-horizon-eye-care-data-breaches/</link>
+      <description>Luminis Health in Maryland is investigating a cyberattack that has taken certain systems offline. Data breaches have been announced by […]
+The post Luminis Health Working to Restore Systems After Cyberattack appeared first on The HIPAA Journal.
+
+📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">8b73fcc1dc578cd91688b8472a7dd4b1</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+      <pubDate>Mon, 07 Sep 2026 15:23:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>NFI North Data Breach Affects Almost 50,000 Individuals</title>
+      <link>https://www.hipaajournal.com/nfi-north-nephrology-associates-data-breaches/</link>
+      <description>Data breaches have been announced by NFI North in New Hampshire, Nephrology Associates in Kansas, PAMCAH-UA Local 675 Health and […]
+The post NFI North Data Breach Affects Almost 50,000 Individuals appeared first on The HIPAA Journal.
+
+📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">b7a69ed792376ab9f84f222397d81da4</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+      <pubDate>Tue, 08 Sep 2026 10:00:53 +0000</pubDate>
     </item>
     <item>
       <title>Critical Citrix NetScaler auth bypass now leveraged in attacks</title>
@@ -452,6 +441,39 @@ The post Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack 
       <pubDate>Mon, 07 Sep 2026 06:32:40 -0400</pubDate>
     </item>
     <item>
+      <title>Trezor data breach impact now reaches 81,000 customers</title>
+      <link>https://www.bleepingcomputer.com/news/security/trezor-data-breach-impact-now-reaches-81-000-customers/</link>
+      <description>Cryptocurrency hardware wallet maker Trezor says an August data breach at its shipping and logistics provider, ShipMonk, affects an additional 67,000 U.S. customers. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">d56b381681d6d6d8c6a070cb1cd16ccc</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Mon, 07 Sep 2026 08:16:32 -0400</pubDate>
+    </item>
+    <item>
+      <title>Mathspace discloses data breach affecting over 1 million people</title>
+      <link>https://www.bleepingcomputer.com/news/security/mathspace-discloses-data-breach-affecting-over-1-million-people/</link>
+      <description>Online maths learning platform Mathspace disclosed over the weekend that attackers stole data from more than 1 million students, staff, and parents after breaching its Metabase internal reporting system. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">aacb0b72582be44fc2d049d43c70892c</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Mon, 07 Sep 2026 09:05:11 -0400</pubDate>
+    </item>
+    <item>
+      <title>220 million traveler records exposed in Vietnam-linked APIS leak</title>
+      <link>https://www.bleepingcomputer.com/news/security/220-million-traveler-records-exposed-in-vietnam-linked-apis-leak/</link>
+      <description>Exclusive: An exposed Advance Passenger Information System (APIS) database held 220 million passenger and crew records containing names, passport numbers, dates of birth, nationalities, and flight details spanning 2017 to 2026. Researchers accessed the Vietnam-linked system through a cloud-based path using default credentials. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">ded882ea9c64e3e05e8aa8754525da39</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Tue, 08 Sep 2026 03:35:50 -0400</pubDate>
+    </item>
+    <item>
       <title>Unknown</title>
       <link>https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf</link>
       <description>Unknown reported a healthcare breach.
@@ -460,235 +482,151 @@ The post Midwest Spine and Brain Institute Impacted by Vendor Ransomware Attack 
       <guid isPermaLink="false">344d17850994629ad19bcc451738395f</guid>
       <category>Healthcare Breach</category>
       <category>HHS OCR</category>
-      <pubDate>Mon, 07 Sep 2026 11:39:53 +0000</pubDate>
+      <pubDate>Tue, 08 Sep 2026 10:39:03 +0000</pubDate>
     </item>
     <item>
-      <title>G&amp;S Technologies Report Victim gstechnologies.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description G&amp;S Technologies is a technology company based in the USA (New â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/g-and-s-technologies-data-breach/</link>
-      <description>G&amp;S Technologies Report Victim gstechnologies.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description G&amp;S Technologies is a technology company based in the USA (New â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Domis Report Victim domis.dk Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Domis is a real estate company based in Denmark, specializing in property â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/domis-data-breach/</link>
+      <description>Domis Report Victim domis.dk Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Domis is a real estate company based in Denmark, specializing in property â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">876e35923dbc6a48ed6b3ab1b99fb4b0</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">8172ce5ef8644ccf2a18a46becd87881</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Evergen Report Victim evergenbio.com Threat Actor Chaos Date Discovered Sep 07, 2026 Description Evergen, formerly known as RTI Surgical, is a global contract development and â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/evergen-data-breach/</link>
-      <description>Evergen Report Victim evergenbio.com Threat Actor Chaos Date Discovered Sep 07, 2026 Description Evergen, formerly known as RTI Surgical, is a global contract development and â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Consultorio MOVIL Report Victim consultoriomovil.net Threat Actor Kazu Date Discovered Sep 08, 2026 Description Consultorio MOVIL is a digital health and telemedicine platform based in â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/consultorio-movil-data-breach/</link>
+      <description>Consultorio MOVIL Report Victim consultoriomovil.net Threat Actor Kazu Date Discovered Sep 08, 2026 Description Consultorio MOVIL is a digital health and telemedicine platform based in â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">5bf4d806d0c28b9af6b4d59265447fde</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">d6840dde4bbf440857008b86e8b26b7b</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Edacentrum Report Victim edacentrum.de Threat Actor Panzer Date Discovered Sep 07, 2026 Description Edacentrum is an independent network and institution based in Germany, â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/edacentrum-data-breach/</link>
-      <description>Edacentrum Report Victim edacentrum.de Threat Actor Panzer Date Discovered Sep 07, 2026 Description Edacentrum is an independent network and institution based in Germany, â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Community Wellness Partners Report Victim cwpinc.org Threat Actor INC_RANSOM Date Discovered Sep 08, 2026 Description Community Wellness Partners is a nonprofit network based in the USA (New â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/community-wellness-partners-data-breach/</link>
+      <description>Community Wellness Partners Report Victim cwpinc.org Threat Actor INC_RANSOM Date Discovered Sep 08, 2026 Description Community Wellness Partners is a nonprofit network based in the USA (New â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">37635ad906b9f7aec6ac92dc0b13986c</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">43edc8659fe9ee6da6f81a8b081ad4e2</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>eAssist Dental Solutions Report Victim dentalbilling.com Threat Actor DireWolf Date Discovered Sep 07, 2026 Description eAssist Dental Solutions is a dental billing and revenue cycle â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/eassist-dental-solutions-data-breach/</link>
-      <description>eAssist Dental Solutions Report Victim dentalbilling.com Threat Actor DireWolf Date Discovered Sep 07, 2026 Description eAssist Dental Solutions is a dental billing and revenue cycle â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Comin Sac Report Victim comin.pe Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Comin S.A.C. is a privately held mining and engineering company based in â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/comin-sac-data-breach/</link>
+      <description>Comin Sac Report Victim comin.pe Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Comin S.A.C. is a privately held mining and engineering company based in â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">7327d78083edb38483c9e31a300bd60c</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">1a7581258622173412754a944ae2730f</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>D-MAX Engineering Report Victim dmaxinc.com Threat Actor SpaceBears Date Discovered Sep 07, 2026 Description D-MAX Engineering, Inc. is a privately held environmental consulting firm â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/d-max-engineering-data-breach/</link>
-      <description>D-MAX Engineering Report Victim dmaxinc.com Threat Actor SpaceBears Date Discovered Sep 07, 2026 Description D-MAX Engineering, Inc. is a privately held environmental consulting firm â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Chip7 Report Victim chip7.pt Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Chip7 is a retail chain and online store based in Portugal, specializing in â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/chip7-data-breach/</link>
+      <description>Chip7 Report Victim chip7.pt Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Chip7 is a retail chain and online store based in Portugal, specializing in â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">9a7104fc84d0536eb502d04306de6ed0</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">a0867e80180c50493baa0c5790c3aaed</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>CTZPay Report Victim ctzpay.com Threat Actor DYSPHOR1A Date Discovered Sep 07, 2026 Description CTZPay is a financial services and fintech company based in Myanmar, providing â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/ctzpay-data-breach/</link>
-      <description>CTZPay Report Victim ctzpay.com Threat Actor DYSPHOR1A Date Discovered Sep 07, 2026 Description CTZPay is a financial services and fintech company based in Myanmar, providing â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Centro MÃ©dico Especializado Report Victim centromedicoosi.com Threat Actor Kazu Date Discovered Sep 08, 2026 Description Centro MÃ©dico Especializado is a specialized medical network based in â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/centro-medico-especializado-data-breach/</link>
+      <description>Centro MÃ©dico Especializado Report Victim centromedicoosi.com Threat Actor Kazu Date Discovered Sep 08, 2026 Description Centro MÃ©dico Especializado is a specialized medical network based in â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">a6d210c1601ed460a6a0863b30037809</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">d64aac759952e4e7e293052a2c068da2</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Colonial Hyundai Report Victim colonialhyundai.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description Colonial Hyundai is an automotive dealership based in the USA â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/colonial-hyundai-data-breach/</link>
-      <description>Colonial Hyundai Report Victim colonialhyundai.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description Colonial Hyundai is an automotive dealership based in the USA â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Benshaw Report Victim benshaw.com Threat Actor Aur0ra Date Discovered Sep 08, 2026 Description Benshaw, Inc. is a privately held global manufacturer based in the USA â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/benshaw-data-breach/</link>
+      <description>Benshaw Report Victim benshaw.com Threat Actor Aur0ra Date Discovered Sep 08, 2026 Description Benshaw, Inc. is a privately held global manufacturer based in the USA â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">fd0a61cce4eb4460d655fc5c1f3734f1</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">c43bfd8622c7f3096e32a2c55d5e8d87</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Blanco &amp; Etcheverry Report Victim blancoetcheverry.com Threat Actor Gunra Date Discovered Sep 07, 2026 Description Blanco &amp; Etcheverry is a law firm based in Uruguay, providing legal â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/blanco-and-etcheverry-data-breach/</link>
-      <description>Blanco &amp; Etcheverry Report Victim blancoetcheverry.com Threat Actor Gunra Date Discovered Sep 07, 2026 Description Blanco &amp; Etcheverry is a law firm based in Uruguay, providing legal â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Ben Leeds Properties Report Victim benleedsproperties.com Threat Actor ShadowByt3$ Date Discovered Sep 08, 2026 Description Ben Leeds Properties is a real estate and property management â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/ben-leeds-properties-data-breach/</link>
+      <description>Ben Leeds Properties Report Victim benleedsproperties.com Threat Actor ShadowByt3$ Date Discovered Sep 08, 2026 Description Ben Leeds Properties is a real estate and property management â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">3ba1f28aa1ba41eae970f121a85c095d</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">ba9289e6cdae18074139521fd6e5ab3d</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Big Table Group Report Victim bigtablegroup.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description Big Table Group is a hospitality and restaurant company based in the UK, â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/big-table-group-data-breach/</link>
-      <description>Big Table Group Report Victim bigtablegroup.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description Big Table Group is a hospitality and restaurant company based in the UK, â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Arepas El Carriel Report Victim elcarriel.com.co Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Arepas El Carriel is a food and beverage manufacturing company based â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/arepas-el-carriel-data-breach/</link>
+      <description>Arepas El Carriel Report Victim elcarriel.com.co Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Arepas El Carriel is a food and beverage manufacturing company based â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">63e0ff3371dba5f39cbc0c84e74deb95</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">87fcb82ec6a30eb32adbb2108880e507</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Bauman Law Group Report Victim baumanlawgroup.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description Bauman Law Group P.C. is a private law practice based in the USA (New â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/bauman-law-group-data-breach/</link>
-      <description>Bauman Law Group Report Victim baumanlawgroup.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description Bauman Law Group P.C. is a private law practice based in the USA (New â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>ALUR Walls Report Victim alurwalls.com Threat Actor DarkProject Date Discovered Sep 08, 2026 Description ALUR Walls is an architecture, planning, and interior design â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/alur-walls-data-breach/</link>
+      <description>ALUR Walls Report Victim alurwalls.com Threat Actor DarkProject Date Discovered Sep 08, 2026 Description ALUR Walls is an architecture, planning, and interior design â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">6438a5c92936880efeb60c44d45536a1</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">fb26bf569c365f108635ed3f699538c3</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AP Capital Partners Report Victim apcapitalpartners.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description AP Capital Partners is a private equity and investment group based in â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/ap-capital-partners-data-breach/</link>
-      <description>AP Capital Partners Report Victim apcapitalpartners.com Threat Actor Qilin Date Discovered Sep 07, 2026 Description AP Capital Partners is a private equity and investment group based in â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Akbar Niazi Teaching Hospital Report Victim anth.pk Threat Actor Kazu Date Discovered Sep 08, 2026 Description Akbar Niazi Teaching Hospital is a ISO-certified tertiary care teaching hospital based â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/akbar-niazi-teaching-hospital-data-breach/</link>
+      <description>Akbar Niazi Teaching Hospital Report Victim anth.pk Threat Actor Kazu Date Discovered Sep 08, 2026 Description Akbar Niazi Teaching Hospital is a ISO-certified tertiary care teaching hospital based â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">a23ed94785ec6b7d15a5519b6bf55e6e</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">7ce756fafd9bcf273e464a1316bd154e</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Annapurna Fashion Report Victim annapurnafashion.com Threat Actor Vexy Date Discovered Sep 07, 2026 Description Annapurna Fashion is a textile and apparel manufacturer, supplier, and â¦September 07, 2026</title>
-      <link>https://www.breachsense.com/breaches/annapurna-fashion-data-breach/</link>
-      <description>Annapurna Fashion Report Victim annapurnafashion.com Threat Actor Vexy Date Discovered Sep 07, 2026 Description Annapurna Fashion is a textile and apparel manufacturer, supplier, and â¦September 07, 2026 reported a ransomware. Attributed to Vexy.
+      <title>Abaco Viaggi Report Victim abacoviaggi.it Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Abaco Viaggi S.r.l. is a travel agency and tour operator based in â¦September 08, 2026</title>
+      <link>https://www.breachsense.com/breaches/abaco-viaggi-data-breach/</link>
+      <description>Abaco Viaggi Report Victim abacoviaggi.it Threat Actor TheGentlemen Date Discovered Sep 08, 2026 Description Abaco Viaggi S.r.l. is a travel agency and tour operator based in â¦September 08, 2026 reported a ransomware. Attributed to TheGentlemen.
 
-🎭 Threat Actor: Vexy | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">ec04c2619d2850253d493573565d7446</guid>
+🎭 Threat Actor: TheGentlemen | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">cef23e13edeb11933cc642a36e1e3c7b</guid>
       <category>Ransomware</category>
       <category>BreachSense</category>
-      <category>Actor: Vexy</category>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>TR: Fine for famous kebab chain that allowed theft of 500 thousand customers’ data</title>
-      <link>https://databreaches.net/2026/09/04/tr-fine-for-famous-kebab-chain-that-allowed-theft-of-500-thousand-customers-data/</link>
-      <description>The Turkish Data Protection Authority (KVKK) investigation into the data breach at the famous restaurant chain Baydöner, where the full names, phone numbers, emails, and city information of 505,337 customers were compromised, has been completed. The investigation found that there was no alarm mechanism to detect unusual system activity, and Baydöner was fined a total...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">7102a04382334c51f4821193d0239f40</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 04 Sep 2026 11:17:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>FBI probes suspected breach at IDScan.net after dark web service Nexus offered 153M+ US and Canadian driver’s license scans</title>
-      <link>https://databreaches.net/2026/09/04/fbi-probes-suspected-breach-at-idscan-net-after-dark-web-service-nexus-offered-153m-us-and-canadian-drivers-license-scans/</link>
-      <description>Pierluigi Paganini reports: A dark web identity theft service called Nexus appeared on September 1, 2026, offering searchable access to more than 153 million scanned driver’s licenses belonging to people in the United States and Canada. The FBI’s New Orleans field office opened a formal investigation the same day. Brian Krebs at KrebsOnSecurity, who broke the story, traced...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">fb241bc9473a83143d398a6875bf74f7</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 04 Sep 2026 11:17:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ledger faces $500 million class action over data breaches</title>
-      <link>https://databreaches.net/2026/09/04/ledger-faces-500-million-class-action-over-data-breaches/</link>
-      <description>Pavlo Kot reports: ​Hardware crypto wallet maker Ledger is facing a class action seeking at least $500 million over a series of customer data breaches. The plaintiff claims the company failed to adequately protect customers’ personal information and did not take sufficient measures following previous incidents. The lawsuit was filed on August 27 by Ledger user Douglas...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">4f94425d1ff4fdf4152e17248571db63</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 04 Sep 2026 11:17:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>DaVita settles ransomware attack lawsuit for $15M</title>
-      <link>https://databreaches.net/2026/09/04/davita-settles-ransomware-attack-lawsuit-for-15m/</link>
-      <description>Chad Van Alstin reports an update on a ransomware attack previously reported on DataBreaches.net: Nationwide kidney dialysis chain DaVita has agreed to pay $15 million to settle a class action lawsuit stemming from a 2025 ransomware attack that exposed sensitive patient data to hackers, the bulk of which was later leaked onto the dark web. The hack...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">4136c280a97ef58de4541707aa3c27c3</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 04 Sep 2026 12:20:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Honeywell Aerospace Inc. Agrees to Pay Over $2M to Settle False Claims Act Allegations of Failing to Comply with Cybersecurity Requirements in a U.S. Department of Defense Contract</title>
-      <link>https://databreaches.net/2026/09/04/honeywell-aerospace-inc-agrees-to-pay-over-2m-to-settle-false-claims-act-allegations-of-failing-to-comply-with-cybersecurity-requirements-in-a-u-s-department-of-defense-contract/</link>
-      <description>A DOJ press release on September 1: The Justice Department announced today that Honeywell Aerospace Inc. has agreed to pay $2,042,518 to resolve allegations that it is liable under the False Claims Act for failing to comply with cybersecurity requirements in a contract with the U.S. Department of Defense. Honeywell Aerospace, a corporation headquartered in...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">484edb080f96db0cb350034f95f5fa79</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 04 Sep 2026 12:39:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>FalconFlank Zero-Day Hits CrowdStrike Falcon Sensor (1)</title>
-      <link>https://databreaches.net/2026/09/05/falconflank-zero-day-hits-crowdstrike-falcon-sensor/</link>
-      <description>CyberKendra reports: A security researcher known as Chaotic Eclipse has released FalconFlank, a proof-of-concept zero-day that escalates privileges on fully patched Windows machines running CrowdStrike Falcon. The researcher — who also uses the aliases Nightmare-Eclipse, MSNightmare, and INFINITE NIGHTMARE — published working exploit code to GitHub on September 3, 2026, without giving CrowdStrike advance notice. No CVE ID...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">d8fa30a211e8ab7d431cc3a897199d2f</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Sat, 05 Sep 2026 15:41:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>French Police Arrest Suspected ZeroBytes Hacker Over Tax Data Theft</title>
-      <link>https://databreaches.net/2026/09/05/french-police-arrest-suspected-zerobytes-hacker-over-tax-data-theft/</link>
-      <description>Waqas reports: French authorities have detained an 18-year-old man suspected of belonging to ZeroBytes, a hacking group that claimed responsibility for several attacks targeting French government services and companies. The Paris prosecutor’s office disclosed the case on September 4, according to reports from French media. However, the suspect was arrested on August 18, formally placed...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">5110dae8277491884c618e20c2f3eb01</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Sat, 05 Sep 2026 18:10:06 +0000</pubDate>
+      <category>Actor: TheGentlemen</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>US offers $10 million for info on Iranian allegedly behind cyberattacks on critical infrastructure</title>
@@ -725,6 +663,90 @@ Source
       <category>Data Breach</category>
       <category>DataBreaches.net</category>
       <pubDate>Sun, 06 Sep 2026 11:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mathspace Breach Impacts More Than 1 Million Users in Australia, NZ</title>
+      <link>https://databreaches.net/2026/09/07/mathspace-breach-impacts-more-than-1-million-users-in-australia-nz/</link>
+      <description>Ashish Khaitan reports: The Mathspace data breach has affected 1,079,819 people in Australia and New Zealand after unauthorized parties accessed an internal reporting system and downloaded user information. Mathspace confirmed the security incident on September 3, 2026, and said the affected records involve students, parents or guardians, teachers, and Mathspace staff. The company said names,...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">4d9cdcf3881b3474928cd35fde5744df</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Mon, 07 Sep 2026 12:30:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>Weverse Data Leak Affects More Than 422,000 K-Pop Fan Accounts</title>
+      <link>https://databreaches.net/2026/09/07/weverse-data-leak-affects-more-than-422000-k-pop-fan-accounts/</link>
+      <description>kbizoom reports: Weverse, the fan platform operated by HYBE-affiliated Weverse Company, has confirmed a security incident that affected 422,584 user accounts. The company said the exposed information consisted mainly of internal identifiers that cannot be used outside the platform. “We received a notification from the Korea Internet &amp; Security Agency (KISA) on September 3 that...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">15f09c0f886f2b9699f888f17e40fbca</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Mon, 07 Sep 2026 12:30:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Personal Data of Approximately 220,000 Domestic and International Gangnam Unni Users Leaked</title>
+      <link>https://databreaches.net/2026/09/07/personal-data-of-approximately-220000-domestic-and-international-gangnam-unni-users-leaked/</link>
+      <description>Lee Seunghyeong reports: Personal information of approximately 220,000 domestic and international users has been leaked from Gangnam Unni, a beauty medical platform operated by Healing Paper. On September 7, Healing Paper announced through a public notice that on September 4, there was abnormal access to the integration feature (API) used to view consultation records, resulting...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">60929345386f06073f42df62fdd46ba8</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Mon, 07 Sep 2026 12:31:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Japan’s Health Ministry to Strengthen Cybersecurity Measures at Hospitals</title>
+      <link>https://databreaches.net/2026/09/07/japans-health-ministry-to-strengthen-cybersecurity-measures-at-hospitals/</link>
+      <description>The  Yomiuri Shimbun reports: The Health, Labor and Welfare Ministry is set to strengthen cybersecurity measures at hospitals to counter a surging number of cyberattacks on medical institutions. The ministry has included ¥13.7 billion in its budget request for fiscal 2027 to implement the measures for protecting networks and deploying cybersecurity specialists. The request will...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">919694f3868f94eff69cb3f65281a46b</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Mon, 07 Sep 2026 12:41:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hackers drain $320M in Bitcoin from Liquid Network, claim they’re the good guys</title>
+      <link>https://databreaches.net/2026/09/07/hackers-drain-320m-in-bitcoin-from-liquid-network-claim-theyre-the-good-guys/</link>
+      <description>Carly Page reports: Hackers have drained roughly $320 million in Bitcoin from the federation wallet backing the Liquid Network, while claiming to be the good guys. Liquid, a Bitcoin sidechain developed by Blockstream and used by exchanges and other financial institutions, said in a post on X on Sunday that around 4,000 BTC had been withdrawn from...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">42878f8023dfbc5b084c1d19d2793021</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Mon, 07 Sep 2026 16:37:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations</title>
+      <link>https://databreaches.net/2026/09/07/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/</link>
+      <description>Bill Toulas reports: A phishing-as-a-service framework called BigBear 2.0 has been used to bypass multi-factor authentication at 258 organizations and steal more than 5,000 Microsoft 365 credentials. Researchers at cybersecurity company CloudSEK gained administrator access to the control panel and found that the service managed 42 VPS nodes, all configured to target Microsoft 365 as...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">7fbe24633185cd427d48bddadcb64132</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Mon, 07 Sep 2026 17:24:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>MA: Springfield Public Schools will be closed Tuesday after a cyber incident</title>
+      <link>https://databreaches.net/2026/09/07/ma-springfield-public-schools-will-be-closed-tuesday-after-a-cyber-incident/</link>
+      <description>Carolyn Rodriguez reports: Springfield Public Schools will be closed Tuesday after a cyber incident disrupted systems necessary for essential school operations, Superintendent Dr. Sonia Dinnall announced Monday. According to the district, the closure will help the district continue its response efforts while investigators assess the extent of the incident. “We understand that an unexpected closure...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">c0ffec6bbcc7bbd210dcb9a096af777e</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Mon, 07 Sep 2026 21:17:02 +0000</pubDate>
     </item>
     <item>
       <title>ASOS US Sales LLC</title>
@@ -914,42 +936,6 @@ Source
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>GSAC Auto Financing</title>
-      <link>https://www.ransomware.live/id/R1NBQyBBdXRvIEZpbmFuY2luZ0BTdG9ybQ==</link>
-      <description>Financial Services
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">83f2a958e96213c125d2598823b8a795</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Storm</category>
-      <pubDate>Wed, 02 Sep 2026 15:41:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ormond Beach Florida</title>
-      <link>https://www.ransomware.live/id/T3Jtb25kIEJlYWNoIEZsb3JpZGFAV2FsbHN0cmVldA==</link>
-      <description>Not Found
-
-🎭 Threat Actor: Wallstreet | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">13f55b494cda24d2e78c960abbfd5767</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Wallstreet</category>
-      <pubDate>Wed, 02 Sep 2026 16:42:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Greenberg Traurig</title>
-      <link>https://www.ransomware.live/id/R3JlZW5iZXJnIFRyYXVyaWdAU2lsZW50UmFuc29tR3JvdXA=</link>
-      <description>Professional Services
-
-🎭 Threat Actor: SilentRansomGroup | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">68368c20f01ebd3d7dcacb2bf379d5c2</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: SilentRansomGroup</category>
-      <pubDate>Wed, 02 Sep 2026 23:21:08 +0000</pubDate>
-    </item>
-    <item>
       <title>Fishbrain AB</title>
       <link>https://oag.ca.gov/privacy/databreach/list</link>
       <description>Fishbrain AB reported a data breach in California.
@@ -1014,126 +1000,6 @@ Source
       <category>Data Breach</category>
       <category>California AG</category>
       <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>America’s Food Basket</title>
-      <link>https://www.ransomware.live/id/QW1lcmljYeKAmXMgRm9vZCBCYXNrZXRAV2FsbHN0cmVldA==</link>
-      <description>Retail &amp; E-Commerce
-
-🎭 Threat Actor: Wallstreet | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">7a10a06b776ec93af411f8f1b892ea09</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Wallstreet</category>
-      <pubDate>Thu, 03 Sep 2026 10:53:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Katten Muchin Rosenman</title>
-      <link>https://www.ransomware.live/id/S2F0dGVuIE11Y2hpbiBSb3Nlbm1hbkBTaWxlbnRSYW5zb21Hcm91cA==</link>
-      <description>Professional Services
-
-🎭 Threat Actor: SilentRansomGroup | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">0683e920208588c195edc1cdce746656</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: SilentRansomGroup</category>
-      <pubDate>Thu, 03 Sep 2026 20:23:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sancity Soft Touch</title>
-      <link>https://www.ransomware.live/id/U2FuY2l0eSBTb2Z0IFRvdWNoQFZleHkgUmFuc29td2FyZQ==</link>
-      <description>Technology
-
-🎭 Threat Actor: Vexy Ransomware | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">4489c9721d40179b9b4c57b35d8428fb</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Vexy Ransomware</category>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Schwartz, Giannini, Lantsberger &amp; Adamson (SGLA)</title>
-      <link>https://www.ransomware.live/id/U2Nod2FydHosIEdpYW5uaW5pLCBMYW50c2JlcmdlciAmIEFkYW1zb24gKFNHTEEpQHNwYWNlYmVhcnM=</link>
-      <description>Professional Services
-
-🎭 Threat Actor: spacebears | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">a472299af9f685135571747f99014ce7</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: spacebears</category>
-      <pubDate>Fri, 04 Sep 2026 00:02:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Homewood Sales</title>
-      <link>https://www.ransomware.live/id/SG9tZXdvb2QgU2FsZXNAZHJhZ29uZm9yY2U=</link>
-      <description>Retail &amp; E-Commerce
-
-🎭 Threat Actor: dragonforce | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">4abebaef22362779d937f90806f81bd2</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: dragonforce</category>
-      <pubDate>Fri, 04 Sep 2026 08:36:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>Norwood Law Firm</title>
-      <link>https://www.ransomware.live/id/Tm9yd29vZCBMYXcgRmlybUBkcmFnb25mb3JjZQ==</link>
-      <description>Professional Services
-
-🎭 Threat Actor: dragonforce | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">d8d0c2380e35d28b4d851be9d807aca5</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: dragonforce</category>
-      <pubDate>Fri, 04 Sep 2026 08:39:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>pscindustries.com</title>
-      <link>https://www.ransomware.live/id/cHNjaW5kdXN0cmllcy5jb21AbG9ja2JpdDU=</link>
-      <description>Manufacturing
-
-🎭 Threat Actor: lockbit5 | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">3aa8924053cf9902655704d774370fc0</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: lockbit5</category>
-      <pubDate>Fri, 04 Sep 2026 10:27:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Veradigm</title>
-      <link>https://www.ransomware.live/id/VmVyYWRpZ21AdGhlZ2VudGxlbWVu</link>
-      <description>Healthcare
-
-🎭 Threat Actor: thegentlemen | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">4eec2c63af30dcea0f339e6cb261de41</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: thegentlemen</category>
-      <pubDate>Fri, 04 Sep 2026 17:26:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sports Endeavors</title>
-      <link>https://www.ransomware.live/id/U3BvcnRzIEVuZGVhdm9yc0BzcGFjZWJlYXJz</link>
-      <description>Retail &amp; E-Commerce
-
-🎭 Threat Actor: spacebears | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">94523fbfb5f93bb3fe014762b8a003ee</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: spacebears</category>
-      <pubDate>Fri, 04 Sep 2026 17:33:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>Wolfram Research</title>
-      <link>https://www.ransomware.live/id/V29sZnJhbSBSZXNlYXJjaEBkaXJld29sZg==</link>
-      <description>Technology
-
-🎭 Threat Actor: direwolf | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">362c39c7905530a985480ee19a830b42</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: direwolf</category>
-      <pubDate>Fri, 04 Sep 2026 17:34:52 +0000</pubDate>
     </item>
     <item>
       <title>Bimbo Bakeries USA</title>
@@ -1354,127 +1220,6 @@ Source
       <pubDate>Sat, 05 Sep 2026 21:44:49 +0000</pubDate>
     </item>
     <item>
-      <title>Lider Aviacao (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-lider-aviacao-sep-2026/</link>
-      <description>Lider Aviacao (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">24425b3f10a48bc9f6bcd8e4791fef61</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 07:31:04 +0700</pubDate>
-    </item>
-    <item>
-      <title>CitizensPay (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-citizenspay-sep-2026/</link>
-      <description>CitizensPay (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">e04ce299d6a56fea9fb7470d8cc17221</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 10:30:49 +0700</pubDate>
-    </item>
-    <item>
-      <title>Jouvet SAS (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-jouvet-sas-sep-2026-2/</link>
-      <description>Jouvet SAS (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">2dd10820363e8fb7f1a8c39951cc9e8c</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 10:31:19 +0700</pubDate>
-    </item>
-    <item>
-      <title>G&amp;S Technologies (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-gs-technologies-sep-2026/</link>
-      <description>G&amp;S Technologies (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">3afceb84bc99a0232154f8eb6f967904</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 10:31:36 +0700</pubDate>
-    </item>
-    <item>
-      <title>Nolan Consulting Group (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-nolan-consulting-group-sep-2026/</link>
-      <description>Nolan Consulting Group (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">e82babecded9f7cea260e3dc5bb61c8e</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 13:31:47 +0700</pubDate>
-    </item>
-    <item>
-      <title>KHALED ALFAGIH ENGINEERING CONSULTANCY (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-khaled-alfagih-engineering-consultancy-sep-2026/</link>
-      <description>KHALED ALFAGIH ENGINEERING CONSULTANCY (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">5be670d085a2dca398236cd3ccdb291b</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 20:00:23 +0700</pubDate>
-    </item>
-    <item>
-      <title>myLaurel (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-mylaurel-sep-2026/</link>
-      <description>myLaurel (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">3260bca445f94dc7726b5a657a687524</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 20:00:49 +0700</pubDate>
-    </item>
-    <item>
-      <title>Edacentrum (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-edacentrum-sep-2026/</link>
-      <description>Edacentrum (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">bff0ea78b02b417af7d3b5a7a68e601c</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 20:01:17 +0700</pubDate>
-    </item>
-    <item>
-      <title>WHO IS NEXT? (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-who-is-next-sep-2026/</link>
-      <description>WHO IS NEXT? (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">9e36b9afcb8922cbaa5a493c1695290e</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 23:00:31 +0700</pubDate>
-    </item>
-    <item>
-      <title>Sancity (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-sancity-sep-2026/</link>
-      <description>Sancity (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">10fedeb646c936993c7811aa2184ae3e</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 23:00:54 +0700</pubDate>
-    </item>
-    <item>
-      <title>evergenbio.com (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-evergenbio-com-sep-2026/</link>
-      <description>evergenbio.com (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">f312ee265e96be8d3d09c653d5915d6e</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Sun, 06 Sep 2026 23:01:26 +0700</pubDate>
-    </item>
-    <item>
       <title>myLaurel</title>
       <link>https://www.ransomware.live/id/bXlMYXVyZWxAZGlyZXdvbGY=</link>
       <description>Healthcare
@@ -1509,28 +1254,6 @@ Source
       <category>Ransomware.live</category>
       <category>Actor: direwolf</category>
       <pubDate>Sun, 06 Sep 2026 16:13:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>rubbermill.com (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-rubbermill-com-sep-2026/</link>
-      <description>rubbermill.com (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">b2d2e0d068f4a6393e83cf7f6e2ae365</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Mon, 07 Sep 2026 05:30:24 +0700</pubDate>
-    </item>
-    <item>
-      <title>Homewood Sales (SEP-2026)</title>
-      <link>https://www.hendryadrian.com/ransom-homewood-sales-sep-2026/</link>
-      <description>Homewood Sales (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">07733781dc1d94d9815b49ca888e7168</guid>
-      <category>Ransomware</category>
-      <category>Hendry Adrian</category>
-      <pubDate>Mon, 07 Sep 2026 05:30:45 +0700</pubDate>
     </item>
     <item>
       <title>Norwood Law Firm (SEP-2026)</title>
@@ -1608,6 +1331,305 @@ Source
       <category>Ransomware</category>
       <category>Hendry Adrian</category>
       <pubDate>Mon, 07 Sep 2026 15:55:03 +0700</pubDate>
+    </item>
+    <item>
+      <title>Lightcast (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-lightcast-sep-2026/</link>
+      <description>Lightcast (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">2d401d58e1501b7854c1a96d72b0a1df</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Mon, 07 Sep 2026 21:30:52 +0700</pubDate>
+    </item>
+    <item>
+      <title>Jinny Beauty Supply (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-jinny-beauty-supply-sep-2026/</link>
+      <description>Jinny Beauty Supply (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">395edf63f13ae784361cbc83d2d95866</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Mon, 07 Sep 2026 21:31:17 +0700</pubDate>
+    </item>
+    <item>
+      <title>Benshaw, Inc. (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-benshaw-inc-sep-2026/</link>
+      <description>Benshaw, Inc. (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">4e4e9a19810e5c898dfcc4d6e3cd8f03</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Mon, 07 Sep 2026 21:31:35 +0700</pubDate>
+    </item>
+    <item>
+      <title>Jinny Beauty Supply</title>
+      <link>https://www.ransomware.live/id/SmlubnkgQmVhdXR5IFN1cHBseUBhdXJvcmE=</link>
+      <description>Retail &amp; E-Commerce
+
+🎭 Threat Actor: aurora | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">b83c0e847cbc6a1bb82d7d2d41a05bdc</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: aurora</category>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Wellness Partners network(combined revenue)</title>
+      <link>https://www.ransomware.live/id/V2VsbG5lc3MgUGFydG5lcnMgbmV0d29yayhjb21iaW5lZCByZXZlbnVlKUBpbmNyYW5zb20=</link>
+      <description>Healthcare
+
+🎭 Threat Actor: incransom | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">ea8cc0348cae5bda66a143be2c64893a</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: incransom</category>
+      <pubDate>Mon, 07 Sep 2026 08:50:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>State of Florida DMV</title>
+      <link>https://www.ransomware.live/id/U3RhdGUgb2YgRmxvcmlkYSBETVZAc2hpbnlodW50ZXJz</link>
+      <description>Government &amp; Defense
+
+🎭 Threat Actor: shinyhunters | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">1182b614f295e42d0a2d848b102e787a</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: shinyhunters</category>
+      <pubDate>Mon, 07 Sep 2026 11:10:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hologic, Inc.</title>
+      <link>https://www.ransomware.live/id/SG9sb2dpYywgSW5jLkBtZXRhZW5jcnlwdG9y</link>
+      <description>Healthcare
+
+🎭 Threat Actor: metaencryptor | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">563126eeea6f3fb87deda73990eb9214</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: metaencryptor</category>
+      <pubDate>Mon, 07 Sep 2026 12:01:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>SIFCO Industries INC.</title>
+      <link>https://www.ransomware.live/id/U0lGQ08gSW5kdXN0cmllcyBJTkMuQG1ldGFlbmNyeXB0b3I=</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: metaencryptor | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">d9393a1c0690617447e2c4dae4479d06</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: metaencryptor</category>
+      <pubDate>Mon, 07 Sep 2026 12:03:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lightcast</title>
+      <link>https://www.ransomware.live/id/TGlnaHRjYXN0QGRpcmV3b2xm</link>
+      <description>Professional Services
+
+🎭 Threat Actor: direwolf | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">0a92f7e3a421ec982d02e40551b89bb9</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: direwolf</category>
+      <pubDate>Mon, 07 Sep 2026 14:03:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>University of San Francisco</title>
+      <link>https://www.ransomware.live/id/VW5pdmVyc2l0eSBvZiBTYW4gRnJhbmNpc2NvQHRoZWdlbnRsZW1lbg==</link>
+      <description>Education
+
+🎭 Threat Actor: thegentlemen | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">91aface7565874d6281c067a9481aec3</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: thegentlemen</category>
+      <pubDate>Mon, 07 Sep 2026 14:16:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>NFM Lending</title>
+      <link>https://www.ransomware.live/id/TkZNIExlbmRpbmdAaW50ZXJsb2Nr</link>
+      <description>Financial Services
+
+🎭 Threat Actor: interlock | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">6e360b8f951902e738acaea5589fd58d</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: interlock</category>
+      <pubDate>Mon, 07 Sep 2026 15:31:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ritz Safety</title>
+      <link>https://www.ransomware.live/id/Uml0eiBTYWZldHlAdGhlZ2VudGxlbWVu</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: thegentlemen | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">5cc408e5e0b09522b5072edde8eef5ee</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: thegentlemen</category>
+      <pubDate>Mon, 07 Sep 2026 15:47:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rug &amp; Home</title>
+      <link>https://www.ransomware.live/id/UnVnICYgSG9tZUByaHlzaWRh</link>
+      <description>Retail &amp; E-Commerce
+
+🎭 Threat Actor: rhysida | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">5361d2734e083019245c7d103ceecdba</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: rhysida</category>
+      <pubDate>Mon, 07 Sep 2026 17:00:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Precision Vehicle Logistics</title>
+      <link>https://www.ransomware.live/id/UHJlY2lzaW9uIFZlaGljbGUgTG9naXN0aWNzQGRpcmV3b2xm</link>
+      <description>Transportation
+
+🎭 Threat Actor: direwolf | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">10608c7fba8a0e5bbb47e28d607a9452</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: direwolf</category>
+      <pubDate>Mon, 07 Sep 2026 17:11:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Master Manufacturing Co., Inc.</title>
+      <link>https://www.ransomware.live/id/TWFzdGVyIE1hbnVmYWN0dXJpbmcgQ28uLCBJbmMuQERhcmsgUHJvamVjdA==</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: Dark Project | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">22c50b35d491d5b6b85fc92bd8355ee4</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: Dark Project</category>
+      <pubDate>Mon, 07 Sep 2026 17:27:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>MEI Architects</title>
+      <link>https://www.ransomware.live/id/TUVJIEFyY2hpdGVjdHNARGFyayBQcm9qZWN0</link>
+      <description>Professional Services
+
+🎭 Threat Actor: Dark Project | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">914b3c8e717f5a4612fcfa85d62cb07a</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: Dark Project</category>
+      <pubDate>Mon, 07 Sep 2026 21:53:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Precision Vehicle Logistics (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-precision-vehicle-logistics-sep-2026/</link>
+      <description>Precision Vehicle Logistics (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">3a7df92a122adbc267c10f3d522b9792</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 00:31:02 +0700</pubDate>
+    </item>
+    <item>
+      <title>Rug &amp; Home (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-rug-home-sep-2026/</link>
+      <description>Rug &amp; Home (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">6e211661935c548c55009f989bf3c71e</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 00:31:22 +0700</pubDate>
+    </item>
+    <item>
+      <title>TrainMe (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-trainme-sep-2026/</link>
+      <description>TrainMe (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">016b5fa9f606eec815947686732808f1</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 00:31:43 +0700</pubDate>
+    </item>
+    <item>
+      <title>MEI Architects (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-mei-architects-sep-2026/</link>
+      <description>MEI Architects (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">6c027e26461b1aa36071623cc6aab477</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 08:30:28 +0700</pubDate>
+    </item>
+    <item>
+      <title>Hollard Insurance Group (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-hollard-insurance-group-sep-2026/</link>
+      <description>Hollard Insurance Group (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">bd4e4d063fb1d0182c399e29ee46ab8f</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 08:31:12 +0700</pubDate>
+    </item>
+    <item>
+      <title>pa***op (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-paop-sep-2026/</link>
+      <description>pa***op (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">edd2118faed8d8cb4402a6db0904bec5</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 12:30:56 +0700</pubDate>
+    </item>
+    <item>
+      <title>Drogueria Saporiti Sacifia (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-drogueria-saporiti-sacifia-sep-2026/</link>
+      <description>Drogueria Saporiti Sacifia (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">5f0cb5d6af90cf524851039d28d1a081</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 12:31:36 +0700</pubDate>
+    </item>
+    <item>
+      <title>Mefa Group www.mefagroup.com.tr / MEFA End,üstri www.mefaendustri.com / and (Efachem, Eco… (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-mefa-group-www-mefagroup-com-tr-mefa-endustri-www-mefaendustri-com-and-efachem-eco-sep-2026/</link>
+      <description>Mefa Group www.mefagroup.com.tr / MEFA End,üstri www.mefaendustri.com / and (Efachem, Eco… (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">3b13f3dfc29b69c9a04a059ed9f4d691</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 15:31:14 +0700</pubDate>
+    </item>
+    <item>
+      <title>SAD’S Interim (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-sads-interim-sep-2026/</link>
+      <description>SAD’S Interim (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">818f5c0e477400b57637836f1550b7b8</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 15:31:45 +0700</pubDate>
+    </item>
+    <item>
+      <title>Mutant (SEP-2026)</title>
+      <link>https://www.hendryadrian.com/ransom-mutant-sep-2026/</link>
+      <description>Mutant (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">de4fde527a9dc27615e90c4ff01f379d</guid>
+      <category>Ransomware</category>
+      <category>Hendry Adrian</category>
+      <pubDate>Tue, 08 Sep 2026 15:32:41 +0700</pubDate>
     </item>
     <item>
       <title>Paylogix</title>
