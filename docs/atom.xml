@@ -2,50 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://publicvector.github.io/databreach-rss/</id>
   <title>Data Breach &amp; Ransomware Feed</title>
-  <updated>2026-09-11T10:40:36.826355+00:00</updated>
+  <updated>2026-09-12T10:09:46.189093+00:00</updated>
   <link href="https://publicvector.github.io/databreach-rss/" rel="alternate"/>
   <generator>Breach RSS Generator</generator>
   <subtitle>Aggregated data breach notifications</subtitle>
   <entry>
-    <id>aede47acf9e6ffc1cbed1e35fd0b1a55</id>
-    <title>Cybercriminals Hack Brazilian Government Servers to Host Phishing Sites</title>
-    <updated>2026-09-11T10:40:36.839241+00:00</updated>
-    <content>A Chinese-language group is compromising government and education sites to create a reverse-proxy network with gambling-themed sites.
-
-📰 Source: Dark Reading | 🏷️ Type: News</content>
-    <link href="https://www.darkreading.com/threat-intelligence/cybercriminals-hack-brazilian-government-servers-host-phishing-sites"/>
-    <category term="News"/>
-    <category term="Dark Reading"/>
-    <published>2026-09-08T12:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>8eb59e1ee6ad2ce0dd68a850a7b9c425</id>
-    <title>OpenAI Agents Took Over Wiki Site Before Hugging Face Attack</title>
-    <updated>2026-09-11T10:40:36.839163+00:00</updated>
-    <content>Researchers and OpenAI disagree on whether an earlier incident involving DseWiki, which the company did not disclose, was a “hack."
-
-📰 Source: Dark Reading | 🏷️ Type: News</content>
-    <link href="https://www.darkreading.com/cyberattacks-data-breaches/openai-agents-wiki-site-hugging-face-attack"/>
-    <category term="News"/>
-    <category term="Dark Reading"/>
-    <published>2026-09-08T20:36:15+00:00</published>
-  </entry>
-  <entry>
-    <id>ab910134da07b105274c00065c97547b</id>
-    <title>Attackers Use Multi-Hop Google Redirects for Phishing Campaign</title>
-    <updated>2026-09-11T10:40:36.839085+00:00</updated>
-    <content>Threat actors are abusing multiple Google services to evade detection, ultimately harvesting credentials or installing ScreenConnect remote access.
-
-📰 Source: Dark Reading | 🏷️ Type: News</content>
-    <link href="https://www.darkreading.com/cyberattacks-data-breaches/attackers-multi-hop-google-redirects-phishing-campaign"/>
-    <category term="News"/>
-    <category term="Dark Reading"/>
-    <published>2026-09-08T21:03:46+00:00</published>
-  </entry>
-  <entry>
     <id>f55cf87d1b54cd76e4b7da6c358eb82b</id>
     <title>Identity-Based AI Attack Threatens Security of Enterprise Data</title>
-    <updated>2026-09-11T10:40:36.839008+00:00</updated>
+    <updated>2026-09-12T10:09:46.207259+00:00</updated>
     <content>"Workflow identity hijacking" can bypass standard security controls and hijack an organization's data by sending a basic request through an unauthenticated entry point.
 
 📰 Source: Dark Reading | 🏷️ Type: News</content>
@@ -57,7 +21,7 @@
   <entry>
     <id>f74bfbaed6d3836b812ebf6fbbc836ec</id>
     <title>Mythos Vulnerability Firehose Hits a Human Bottleneck</title>
-    <updated>2026-09-11T10:40:36.838931+00:00</updated>
+    <updated>2026-09-12T10:09:46.207146+00:00</updated>
     <content>An analysis of Project Glasswing findings shows only a fraction of the bugs it has discovered have reached disclosure, and an even smaller number have been fixed.
 
 📰 Source: Dark Reading | 🏷️ Type: News</content>
@@ -69,7 +33,7 @@
   <entry>
     <id>d5aef8a80c4de4c3282d8411dc592389</id>
     <title>EU Cyber Resilience Act to Enforce New Reporting Requirements</title>
-    <updated>2026-09-11T10:40:36.838851+00:00</updated>
+    <updated>2026-09-12T10:09:46.207021+00:00</updated>
     <content>Starting Friday, European organizations will have just 24 hours to notify the EU government any time they discover serious product security incidents.
 
 📰 Source: Dark Reading | 🏷️ Type: News</content>
@@ -81,7 +45,7 @@
   <entry>
     <id>839a647aa2c897a022017f2b0bdda290</id>
     <title>Nightmare-Eclipse Strikes Again With 'ShieldCrash' Windows Exploit</title>
-    <updated>2026-09-11T10:40:36.838773+00:00</updated>
+    <updated>2026-09-12T10:09:46.206907+00:00</updated>
     <content>The disgruntled researcher continued their vendetta against Microsoft by publishing yet another zero-day exploit for Windows Defender.
 
 📰 Source: Dark Reading | 🏷️ Type: News</content>
@@ -93,7 +57,7 @@
   <entry>
     <id>1c9d263bf7f8eee3158ed6534eaa0f41</id>
     <title>Voice Callers Exploit BYOD to Reach Microsoft 365, Corporate Data</title>
-    <updated>2026-09-11T10:40:36.838695+00:00</updated>
+    <updated>2026-09-12T10:09:46.206794+00:00</updated>
     <content>Threat actors are leveraging Microsoft's Graph API to identify lucrative targets, then passing their access to extortion groups like ShinyHunters.
 
 📰 Source: Dark Reading | 🏷️ Type: News</content>
@@ -103,74 +67,45 @@
     <published>2026-09-10T20:36:03+00:00</published>
   </entry>
   <entry>
-    <id>c3dd706d133b2bb9859fb6adaa75cbce</id>
-    <title>Critical NetScaler Vulnerability Exploited in Attacks</title>
-    <updated>2026-09-11T10:40:36.838627+00:00</updated>
-    <content>Tracked as CVE-2026-19490, the authentication bypass flaw has been exploited in the wild since at least September 3.
-The post Critical NetScaler Vulnerability Exploited in Attacks appeared first on SecurityWeek.
+    <id>858d2b94aee1cf7914fa2c15c101e128</id>
+    <title>Papercut AI Swarm Attack Heralds Changes for Cyber Kill Chain</title>
+    <updated>2026-09-12T10:09:46.206678+00:00</updated>
+    <content>From creating lab environments for staging and testing agentic attacks to reconnaissance to lateral movement and exfiltration, the most innovative attackers are widely incorporating AI.
 
-📰 Source: SecurityWeek | 🏷️ Type: News</content>
-    <link href="https://www.securityweek.com/critical-netscaler-vulnerability-exploited-in-attacks/"/>
+📰 Source: Dark Reading | 🏷️ Type: News</content>
+    <link href="https://www.darkreading.com/cyberattacks-data-breaches/papercut-ai-swarm-attack-cyber-kill-chain"/>
     <category term="News"/>
-    <category term="SecurityWeek"/>
-    <published>2026-09-10T12:20:21+00:00</published>
+    <category term="Dark Reading"/>
+    <published>2026-09-11T15:48:27+00:00</published>
   </entry>
   <entry>
-    <id>d1884c3cb74be1c29f3a2146ea94e081</id>
-    <title>Deceptive Android Apps Exploit Google Play Early Access to Evade Reviews</title>
-    <updated>2026-09-11T10:40:36.838558+00:00</updated>
-    <content>Deceptive apps in Early Access are being used by dishonest developers for their own benefit.
-The post Deceptive Android Apps Exploit Google Play Early Access to Evade Reviews appeared first on SecurityWeek.
+    <id>de2538858dbd64a7de43ceff75315574</id>
+    <title>CISA Calls for More Guidance, Less Spin, as Cyber Outages Escalate</title>
+    <updated>2026-09-12T10:09:46.206561+00:00</updated>
+    <content>A new joint government advisory signals a regulatory shift, pressing organizations to adopt more transparent breach notification and incident response protocols.
 
-📰 Source: SecurityWeek | 🏷️ Type: News</content>
-    <link href="https://www.securityweek.com/deceptive-android-apps-exploit-google-play-early-access-to-evade-reviews/"/>
+📰 Source: Dark Reading | 🏷️ Type: News</content>
+    <link href="https://www.darkreading.com/cyber-risk/cisa-calls-for-more-guidance-less-spin-as-cyber-outages-escalate"/>
     <category term="News"/>
-    <category term="SecurityWeek"/>
-    <published>2026-09-10T13:39:52+00:00</published>
+    <category term="Dark Reading"/>
+    <published>2026-09-11T18:44:03+00:00</published>
   </entry>
   <entry>
-    <id>1e3b353de64ccdef1a844ab81f4101f7</id>
-    <title>Hacker Conversations: Vinnie Liu, Performer Turned Ringmaster</title>
-    <updated>2026-09-11T10:40:36.838488+00:00</updated>
-    <content>Vinnie Liu was recruited by the NSA when he was just 17 years old. He is now the CEO of Bishop Fox.
-The post Hacker Conversations: Vinnie Liu, Performer Turned Ringmaster appeared first on SecurityWeek.
+    <id>79ae49de6efbf0f75fb282d4e25a1ff0</id>
+    <title>Threat Actor Generates 1M Personalized Fraud Emails in 3 Days</title>
+    <updated>2026-09-12T10:09:46.206447+00:00</updated>
+    <content>Cybercriminals behind malicious email campaigns no longer have to compromise volume for credibility, or vice versa, thanks to AI.
 
-📰 Source: SecurityWeek | 🏷️ Type: News</content>
-    <link href="https://www.securityweek.com/hacker-conversations-vinnie-liu-performer-turned-ringmaster/"/>
+📰 Source: Dark Reading | 🏷️ Type: News</content>
+    <link href="https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days"/>
     <category term="News"/>
-    <category term="SecurityWeek"/>
-    <published>2026-09-10T14:30:00+00:00</published>
-  </entry>
-  <entry>
-    <id>6faf674339b2c75ada1409737027ec92</id>
-    <title>Cybersecurity M&amp;A Roundup: 33 Deals Announced in August 2026</title>
-    <updated>2026-09-11T10:40:36.838408+00:00</updated>
-    <content>Significant cybersecurity M&amp;A deals announced by Brinqa, Cribl, Echo, Fortinet, Kiteworks, Palo Alto Networks, and Visa.
-The post Cybersecurity M&amp;A Roundup: 33 Deals Announced in August 2026 appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</content>
-    <link href="https://www.securityweek.com/cybersecurity-ma-roundup-33-deals-announced-in-august-2026/"/>
-    <category term="News"/>
-    <category term="SecurityWeek"/>
-    <published>2026-09-10T16:14:58+00:00</published>
-  </entry>
-  <entry>
-    <id>58bca8d708b5e47ab9a164bd17625559</id>
-    <title>PaperCut Flaws Exploited in AI-Powered Attacks</title>
-    <updated>2026-09-11T10:40:36.838338+00:00</updated>
-    <content>A Russian threat actor used AI to build, test, and deploy exploits against hundreds of organizations worldwide.
-The post PaperCut Flaws Exploited in AI-Powered Attacks appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</content>
-    <link href="https://www.securityweek.com/papercut-flaws-exploited-in-ai-powered-attacks/"/>
-    <category term="News"/>
-    <category term="SecurityWeek"/>
-    <published>2026-09-11T08:18:23+00:00</published>
+    <category term="Dark Reading"/>
+    <published>2026-09-11T19:21:08+00:00</published>
   </entry>
   <entry>
     <id>60d76df756ece527838f583cd86c0a7f</id>
     <title>Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasion</title>
-    <updated>2026-09-11T10:40:36.838262+00:00</updated>
+    <updated>2026-09-12T10:09:46.206343+00:00</updated>
     <content>Anthropic reveals how criminal groups are increasingly targeting AI vendors' own infrastructure, including to steal a pre-release Claude model.
 The post Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasion appeared first on SecurityWeek.
 
@@ -183,7 +118,7 @@ The post Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasi
   <entry>
     <id>2c189cbc99d835b2d33a4d35966b9b1c</id>
     <title>Surfshark Systems Targeted by Hackers</title>
-    <updated>2026-09-11T10:40:36.838189+00:00</updated>
+    <updated>2026-09-12T10:09:46.206239+00:00</updated>
     <content>A misconfigured test server containing engineering material, including internal configurations, was accessed by threat actors.
 The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek.
 
@@ -194,57 +129,87 @@ The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek.
     <published>2026-09-11T09:41:03+00:00</published>
   </entry>
   <entry>
-    <id>489c5527614dd7beb9aaffd516fc5d05</id>
-    <title>UK appoints new commander of National Cyber Force</title>
-    <updated>2026-09-11T10:40:36.838110+00:00</updated>
-    <content>The individual has not yet been avowed — the formal process in Britain by which an intelligence or security figure’s identity is publicly acknowledged — as routine security considerations are still being worked through.
+    <id>142c17e749f39466993a839c227dff54</id>
+    <title>Kiteworks Acquires Bonfy.AI to Fill the AI Gap in Data Governance</title>
+    <updated>2026-09-12T10:09:46.206135+00:00</updated>
+    <content>Financials have not been disclosed, but the estimated cost is in the tens of millions of dollars.
+The post Kiteworks Acquires Bonfy.AI to Fill the AI Gap in Data Governance appeared first on SecurityWeek.
 
-📰 Source: The Record | 🏷️ Type: News</content>
-    <link href="https://therecord.media/uk-appoints-new-commander-of-national-cyber-force"/>
+📰 Source: SecurityWeek | 🏷️ Type: News</content>
+    <link href="https://www.securityweek.com/kiteworks-acquires-bonfy-ai-to-fill-the-ai-gap-in-data-governance/"/>
     <category term="News"/>
-    <category term="The Record"/>
-    <published>2026-09-10T12:44:00+00:00</published>
+    <category term="SecurityWeek"/>
+    <published>2026-09-11T10:56:16+00:00</published>
   </entry>
   <entry>
-    <id>0274126e23c1511468eb66908c4d3902</id>
-    <title>Russian e-commerce giant Wildberries says DDoS attack delayed payments to sellers</title>
-    <updated>2026-09-11T10:40:36.838031+00:00</updated>
-    <content>Wildberries told several Russian media outlets earlier this week that payments to some sellers were delayed by security measures introduced after a distributed denial-of-service (DDoS) attack targeted systems used to track and withdraw their earnings.
+    <id>516efc1e46578ecb97d9c26ebc986417</id>
+    <title>Ukrainian Conti Ransomware Developer Sentenced to 4 Years in US Prison</title>
+    <updated>2026-09-12T10:09:46.206022+00:00</updated>
+    <content>Oleksii Oleksiyovych Lytvynenko has been sentenced to 4 years in prison after he was arrested in Ireland in 2023.
+The post Ukrainian Conti Ransomware Developer Sentenced to 4 Years in US Prison appeared first on SecurityWeek.
 
-📰 Source: The Record | 🏷️ Type: News</content>
-    <link href="https://therecord.media/russian-e-commerce-giant-wildberries-says-payments-disrupted"/>
+📰 Source: SecurityWeek | 🏷️ Type: News</content>
+    <link href="https://www.securityweek.com/ukrainian-conti-ransomware-developer-sentenced-to-4-years-in-us-prison/"/>
     <category term="News"/>
-    <category term="The Record"/>
-    <published>2026-09-10T13:31:00+00:00</published>
+    <category term="SecurityWeek"/>
+    <published>2026-09-11T11:29:09+00:00</published>
   </entry>
   <entry>
-    <id>90721fd7f651e8a34fc25554319c6ae7</id>
-    <title>Cyber Command turns to veteran of intelligence agencies for top AI role</title>
-    <updated>2026-09-11T10:40:36.837952+00:00</updated>
-    <content>Ronzelle Green, most recently a senior official at the National Geospatial-Intelligence Agency, will be U.S. Cyber Command's chief AI officer.
+    <id>3f2ce73dcd6b7e158bcde224acf7ebdd</id>
+    <title>Trezor Says 347,000 Users Received Phishing Emails After Brevo Hack</title>
+    <updated>2026-09-12T10:09:46.205918+00:00</updated>
+    <content>Hackers compromised the Brevo marketing platform and used that access to send phishing emails to users of Trezor, BitBox, and CoinTracking.
+The post Trezor Says 347,000 Users Received Phishing Emails After Brevo Hack appeared first on SecurityWeek.
 
-📰 Source: The Record | 🏷️ Type: News</content>
-    <link href="https://therecord.media/cyber-command-ai-leader-ronzelle-green"/>
+📰 Source: SecurityWeek | 🏷️ Type: News</content>
+    <link href="https://www.securityweek.com/trezor-says-347000-users-received-phishing-emails-after-brevo-hack/"/>
     <category term="News"/>
-    <category term="The Record"/>
-    <published>2026-09-10T18:25:00+00:00</published>
+    <category term="SecurityWeek"/>
+    <published>2026-09-11T12:48:04+00:00</published>
   </entry>
   <entry>
-    <id>e151c72461621a9da37cd277d9b085a6</id>
-    <title>IDScan confirms breach after hackers offer 153 million driver’s license scans for sale</title>
-    <updated>2026-09-11T10:40:36.837869+00:00</updated>
-    <content>A notice dated September 4 but not widely shared shows that IDScan acknowledged a data breach but did not specify how many people were affected.
+    <id>0f5c0405654489501763693082a4f438</id>
+    <title>In Other News: InjectEave Attack, SIM Swapper Sentenced, Glasswing Findings Review</title>
+    <updated>2026-09-12T10:09:46.205813+00:00</updated>
+    <content>Noteworthy stories that might have slipped under the radar: Invisible Unicode slips past phishing filters, US puts $10 million bounty on Iranian cyber official, military ties of Chinese hacking group QTFY.
+The post In Other News: InjectEave Attack, SIM Swapper Sentenced, Glasswing Findings Review appeared first on SecurityWeek.
 
-📰 Source: The Record | 🏷️ Type: News</content>
-    <link href="https://therecord.media/idscan-data-breach-notice-drivers-licenses"/>
+📰 Source: SecurityWeek | 🏷️ Type: News</content>
+    <link href="https://www.securityweek.com/in-other-news-injecteave-attack-sim-swapper-sentenced-glasswing-findings-review/"/>
     <category term="News"/>
-    <category term="The Record"/>
-    <published>2026-09-10T18:55:00+00:00</published>
+    <category term="SecurityWeek"/>
+    <published>2026-09-11T14:19:18+00:00</published>
+  </entry>
+  <entry>
+    <id>d2c86a19be01b2ae1cd176f2a3644972</id>
+    <title>GitLab Vulnerability Exploited One Day After Disclosure</title>
+    <updated>2026-09-12T10:09:46.205710+00:00</updated>
+    <content>The critical-severity path traversal flaw allows unauthenticated attackers to read arbitrary files from the GitLab server.
+The post GitLab Vulnerability Exploited One Day After Disclosure appeared first on SecurityWeek.
+
+📰 Source: SecurityWeek | 🏷️ Type: News</content>
+    <link href="https://www.securityweek.com/gitlab-vulnerability-exploited-one-day-after-disclosure/"/>
+    <category term="News"/>
+    <category term="SecurityWeek"/>
+    <published>2026-09-11T16:11:08+00:00</published>
+  </entry>
+  <entry>
+    <id>9784e8fa55c21206ec95c3624027bb43</id>
+    <title>Phishing Research Challenges Conventional Security Awareness Testing</title>
+    <updated>2026-09-12T10:09:46.205602+00:00</updated>
+    <content>Analysis of 2.47 million simulated attacks shows why organizations should measure credential leaks and reporting, not just clicks.
+The post Phishing Research Challenges Conventional Security Awareness Testing appeared first on SecurityWeek.
+
+📰 Source: SecurityWeek | 🏷️ Type: News</content>
+    <link href="https://www.securityweek.com/phishing-research-challenges-conventional-security-awareness-testing/"/>
+    <category term="News"/>
+    <category term="SecurityWeek"/>
+    <published>2026-09-11T17:23:36+00:00</published>
   </entry>
   <entry>
     <id>410a2a7542025e2ee250ad4984ba1531</id>
     <title>Treasury urges banks to file cyber scam reports, noting nearly $13 billion in losses since 2023</title>
-    <updated>2026-09-11T10:40:36.837785+00:00</updated>
+    <updated>2026-09-12T10:09:46.205488+00:00</updated>
     <content>As the cyber scam industry expands globally, the U.S. government wants banks to share more information about what's happening to their customers.
 
 📰 Source: The Record | 🏷️ Type: News</content>
@@ -254,9 +219,45 @@ The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek.
     <published>2026-09-10T21:15:00+00:00</published>
   </entry>
   <entry>
+    <id>6e9a2ec4e2f642a55b106f3673515530</id>
+    <title>Ukrainian hacker gets four years in US prison over Conti ransomware attacks</title>
+    <updated>2026-09-12T10:09:46.205376+00:00</updated>
+    <content>A Ukrainian national was sentenced to four years in a U.S. prison for his role in the notorious Conti ransomware operation, which targeted more than 1,000 victims worldwide before shutting down in 2022.
+
+📰 Source: The Record | 🏷️ Type: News</content>
+    <link href="https://therecord.media/conti-ransomware-ukraine-hacker"/>
+    <category term="News"/>
+    <category term="The Record"/>
+    <published>2026-09-11T12:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>c6265c14f86ec78f8cc6938f22f38ae2</id>
+    <title>Anthropic caught Russia-linked spies using Claude in hacking operations</title>
+    <updated>2026-09-12T10:09:46.205259+00:00</updated>
+    <content>Anthropic detected and disrupted a Russia-linked cyber-espionage group that used its AI tool Claude in a hacking campaign targeting more than 20 government, intelligence, diplomatic and defense organizations.
+
+📰 Source: The Record | 🏷️ Type: News</content>
+    <link href="https://therecord.media/anthropic-russia-hackers-claude"/>
+    <category term="News"/>
+    <category term="The Record"/>
+    <published>2026-09-11T12:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>d00294fb933b886e8d64b6f31726c078</id>
+    <title>Florida says motor vehicle data breach tied to credentials stolen from officer’s personal device</title>
+    <updated>2026-09-12T10:09:46.205137+00:00</updated>
+    <content>The Florida Department of Motor Vehicles confirmed a data breach claimed by the cybercrime group ShinyHunters, saying it originated with the theft of credentials stored on a police officer's personal device.
+
+📰 Source: The Record | 🏷️ Type: News</content>
+    <link href="https://therecord.media/florida-shiny-hunters-motor-vehicle"/>
+    <category term="News"/>
+    <category term="The Record"/>
+    <published>2026-09-11T20:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>196b876522cb5eb8dfb368856904f7f4</id>
     <title>Lessons Learned from CISA’s Recent GitHub Leak</title>
-    <updated>2026-09-11T10:40:36.837714+00:00</updated>
+    <updated>2026-09-12T10:09:46.205019+00:00</updated>
     <content>The Cybersecurity and Infrastructure Security Agency (CISA) has issued a postmortem on a data leak in which a contractor published dozens of internal CISA credentials -- including AWS Govcloud keys -- in a public GitHub repository for almost six months before being notified by KrebsOnSecurity. Experts say the gaps identified in the agency's initial response provide important lessons that all security teams should absorb.
 
 📰 Source: Krebs on Security | 🏷️ Type: News</content>
@@ -268,7 +269,7 @@ The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek.
   <entry>
     <id>1a043afeb4dc80f1f220d147e2f4ac4b</id>
     <title>Microsoft Patches a Record 570 Security Flaws</title>
-    <updated>2026-09-11T10:40:36.837644+00:00</updated>
+    <updated>2026-09-12T10:09:46.204916+00:00</updated>
     <content>Microsoft Corp. today released software updates to plug at least 570 security holes in its Windows operating systems and other software, almost triple the number of vulnerabilities the software giant fixed in its record-smashing Patch Tuesday release last month. Microsoft attributed the burgeoning patch counts to vulnerability discoveries aided by artificial intelligence.
 
 📰 Source: Krebs on Security | 🏷️ Type: News</content>
@@ -280,7 +281,7 @@ The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek.
   <entry>
     <id>40cbcfde8740fef631cafe82a31cfd73</id>
     <title>Microsoft Plugs Nearly 400 Security Holes</title>
-    <updated>2026-09-11T10:40:36.837575+00:00</updated>
+    <updated>2026-09-12T10:09:46.204812+00:00</updated>
     <content>Microsoft today released updates to remedy at least 398 security vulnerabilities in its Windows operating systems and supported software, including one weakness that is already being actively exploited and two others that were publicly detailed prior to today.
 
 📰 Source: Krebs on Security | 🏷️ Type: News</content>
@@ -292,7 +293,7 @@ The post Surfshark Systems Targeted by Hackers appeared first on SecurityWeek.
   <entry>
     <id>4aa9d662a49266b8a0e151f7217841f0</id>
     <title>Two Alleged ‘TeamPCP’ Hackers Arrested in Australia</title>
-    <updated>2026-09-11T10:40:36.837499+00:00</updated>
+    <updated>2026-09-12T10:09:46.204705+00:00</updated>
     <content>Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever.
 
 In a statement released today, the Australian Federal Police (AFP) said two unnamed suspects from Western Australia, aged 21 and 23, were arrested in connection with a "sophisticated cybercrime syndicate that allegedly created malicious open-source software to rob thousands of glo
@@ -306,7 +307,7 @@ In a statement released today, the Australian Federal Police (AFP) said two unna
   <entry>
     <id>2363692ba3f3ef15727c64901c87a7e9</id>
     <title>Microsoft Plugs Nearly 1,000 Security Holes</title>
-    <updated>2026-09-11T10:40:36.837408+00:00</updated>
+    <updated>2026-09-12T10:09:46.204598+00:00</updated>
     <content>Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and deploying so many fixes each month.
 
 📰 Source: Krebs on Security | 🏷️ Type: News</content>
@@ -316,48 +317,9 @@ In a statement released today, the Australian Federal Police (AFP) said two unna
     <published>2026-09-08T21:44:22+00:00</published>
   </entry>
   <entry>
-    <id>d46a23ba810bf5bf7467629cd6670cdc</id>
-    <title>OneTouchPoint Agrees to Multi-Million Dollar Data Breach Settlement</title>
-    <updated>2026-09-11T10:40:36.837337+00:00</updated>
-    <content>The Wisconsin mailing and printing vendor OneTouchPoint Corp. has agreed to settle class action litigation over a 2022 ransomware attack […]
-The post OneTouchPoint Agrees to Multi-Million Dollar Data Breach Settlement appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</content>
-    <link href="https://www.hipaajournal.com/onetouchpoint-data-breach-settlement/"/>
-    <category term="Healthcare Breach"/>
-    <category term="HIPAA Journal"/>
-    <published>2026-09-08T12:58:56+00:00</published>
-  </entry>
-  <entry>
-    <id>144ae7e504d13b0bb2649874e882b0f9</id>
-    <title>Boston Scientific Unlikely to Meet 2026 Sales and Profit Forecast Due to Cyberattack</title>
-    <updated>2026-09-11T10:40:36.837267+00:00</updated>
-    <content>It has been two weeks since a cyberattack on the Massachusetts-based medical device manufacturer Boston Scientific prevented access to critical […]
-The post Boston Scientific Unlikely to Meet 2026 Sales and Profit Forecast Due to Cyberattack appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</content>
-    <link href="https://www.hipaajournal.com/boston-scientific-cyberattack/"/>
-    <category term="Healthcare Breach"/>
-    <category term="HIPAA Journal"/>
-    <published>2026-09-09T07:00:12+00:00</published>
-  </entry>
-  <entry>
-    <id>e66149f725b2b9f99b8efe4d798df2be</id>
-    <title>Two Ransomware Groups Claim Attacks on Nationwide Home Healthcare Provider</title>
-    <updated>2026-09-11T10:40:36.837198+00:00</updated>
-    <content>Two ransomware groups have claimed attacks on the home health care provider Interim Healthcare. Data breaches have been announced by […]
-The post Two Ransomware Groups Claim Attacks on Nationwide Home Healthcare Provider appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</content>
-    <link href="https://www.hipaajournal.com/interim-healthcare-ransomware/"/>
-    <category term="Healthcare Breach"/>
-    <category term="HIPAA Journal"/>
-    <published>2026-09-09T10:00:20+00:00</published>
-  </entry>
-  <entry>
     <id>9f2f0860a3394fb7271a32acca359f72</id>
     <title>Medical Groups Settle Class Action Data Breach Lawsuits</title>
-    <updated>2026-09-11T10:40:36.837125+00:00</updated>
+    <updated>2026-09-12T10:09:46.204494+00:00</updated>
     <content>Settlements have been reached to resolve class action data breach lawsuits against Palomar Health Medical Group in California and Summit […]
 The post Medical Groups Settle Class Action Data Breach Lawsuits appeared first on The HIPAA Journal.
 
@@ -370,7 +332,7 @@ The post Medical Groups Settle Class Action Data Breach Lawsuits appeared first 
   <entry>
     <id>9c995770ed84b4c9a74b15a3c55fc812</id>
     <title>AdaptHealth Data Breach Affects 4.1 Million Individuals</title>
-    <updated>2026-09-11T10:40:36.837055+00:00</updated>
+    <updated>2026-09-12T10:09:46.204388+00:00</updated>
     <content>In early July, we reported that AdaptHealth had notified the U.S. Securities and Exchange Commission that it had experienced a […]
 The post AdaptHealth Data Breach Affects 4.1 Million Individuals appeared first on The HIPAA Journal.
 
@@ -383,7 +345,7 @@ The post AdaptHealth Data Breach Affects 4.1 Million Individuals appeared first 
   <entry>
     <id>d1c0fef9da67782beb570e3ece6bc243</id>
     <title>Veradigm Discloses Third Party Data Breach as Hackers Threaten to Publish Data</title>
-    <updated>2026-09-11T10:40:36.836984+00:00</updated>
+    <updated>2026-09-12T10:09:46.204284+00:00</updated>
     <content>The Chicago, Illinois-based practice management and electronic health record company Veradigm (formerly Allscripts Healthcare Solutions) has disclosed a cybersecurity incident in […]
 The post Veradigm Discloses Third Party Data Breach as Hackers Threaten to Publish Data appeared first on The HIPAA Journal.
 
@@ -396,7 +358,7 @@ The post Veradigm Discloses Third Party Data Breach as Hackers Threaten to Publi
   <entry>
     <id>db4933a778c0fee59c5d1b46784e92f4</id>
     <title>Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Settle Data Breach Lawsuits</title>
-    <updated>2026-09-11T10:40:36.836910+00:00</updated>
+    <updated>2026-09-12T10:09:46.204176+00:00</updated>
     <content>Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital have agreed to settle class action lawsuits stemming from data […]
 The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Settle Data Breach Lawsuits appeared first on The HIPAA Journal.
 
@@ -407,33 +369,21 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
     <published>2026-09-11T10:00:28+00:00</published>
   </entry>
   <entry>
-    <id>b7fce3abad2e8c14a8e502829064a751</id>
-    <title>CISA: WatchGuard RCE flaw now exploited in ransomware attacks</title>
-    <updated>2026-09-11T10:40:36.836808+00:00</updated>
-    <content>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has confirmed that ransomware gangs are also exploiting a critical WatchGuard Firebox firewall vulnerability, which it flagged as actively exploited in December. [...]
+    <id>344d17850994629ad19bcc451738395f</id>
+    <title>Unknown</title>
+    <updated>2026-09-12T10:09:46.204142+00:00</updated>
+    <content>Unknown reported a healthcare breach.
 
-📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
-    <link href="https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/"/>
-    <category term="Security News"/>
-    <category term="BleepingComputer"/>
-    <published>2026-09-10T05:10:20-04:00</published>
-  </entry>
-  <entry>
-    <id>88805b9ec561f4231593019aabaf1eff</id>
-    <title>IDScan confirms breach tied to 153 million stolen driver’s licenses</title>
-    <updated>2026-09-11T10:40:36.836736+00:00</updated>
-    <content>Identity verification company IDScan has confirmed that hackers accessed customer data stored in its cloud platform, days after reports linked the company to a massive database containing more than 153 million driver's license scans. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
-    <link href="https://www.bleepingcomputer.com/news/security/idscan-confirms-breach-tied-to-153-million-stolen-drivers-licenses/"/>
-    <category term="Security News"/>
-    <category term="BleepingComputer"/>
-    <published>2026-09-10T10:55:33-04:00</published>
+📰 Source: HHS OCR | 🏷️ Type: Healthcare Breach</content>
+    <link href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf"/>
+    <category term="Healthcare Breach"/>
+    <category term="HHS OCR"/>
+    <published>2026-09-12T10:09:46.204168+00:00</published>
   </entry>
   <entry>
     <id>836371d50a9a021a32efb7f8dc5731a0</id>
     <title>Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers</title>
-    <updated>2026-09-11T10:40:36.836664+00:00</updated>
+    <updated>2026-09-12T10:09:46.204025+00:00</updated>
     <content>Cisco Talos says two recently patched Secure Firewall Management Center (FMC) vulnerabilities have been exploited by three separate threat clusters linked to ransomware and state-sponsored attacks. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
@@ -445,7 +395,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>9a6ee9cf3089d4a33e8aa97ae2b37894</id>
     <title>AI-powered attack exploited PaperCut flaws to hack 395 organizations</title>
-    <updated>2026-09-11T10:40:36.836593+00:00</updated>
+    <updated>2026-09-12T10:09:46.203897+00:00</updated>
     <content>A threat actor, likely Russian-speaking, used hundreds of AI agents to develop and launch a global exploitation campaign targeting vulnerable PaperCut NG/MF servers. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
@@ -457,7 +407,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>de85ecdf536a4718a9e4c7baa95903a1</id>
     <title>Surfshark VPN says hackers breached internal testing, proxy servers</title>
-    <updated>2026-09-11T10:40:36.836513+00:00</updated>
+    <updated>2026-09-12T10:09:46.203793+00:00</updated>
     <content>Surfshark disclosed that hackers accessed one of its internal test servers after a configuration error exposed it to the internet. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
@@ -469,7 +419,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>a50e0b5af10584918b252209045867ba</id>
     <title>Conti ransomware gang member sentenced to 4 years in prison</title>
-    <updated>2026-09-11T10:40:36.836416+00:00</updated>
+    <updated>2026-09-12T10:09:46.203689+00:00</updated>
     <content>A Ukrainian national has been sentenced to four years in prison for his role in Conti ransomware attacks between 2021 and 2022. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
@@ -481,7 +431,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>8027e10b4c5a093e9b1f8bd732c6de76</id>
     <title>Trezor: 347,000 users targeted in phishing attacks after Brevo breach</title>
-    <updated>2026-09-11T10:40:36.836339+00:00</updated>
+    <updated>2026-09-12T10:09:46.203585+00:00</updated>
     <content>Trezor has revealed that phishing attacks against its customers earlier this week targeted 347,000 email addresses and affected 2,500 users who clicked an embedded malicious link. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
@@ -491,9 +441,69 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
     <published>2026-09-11T03:55:15-04:00</published>
   </entry>
   <entry>
+    <id>7e8482ad5f09da3c8e68d1ac1f677214</id>
+    <title>How Threat Actors Are Turning Trusted AI Platforms Into an Attack Surface</title>
+    <updated>2026-09-12T10:09:46.203481+00:00</updated>
+    <content>Threat actors are abusing trusted AI platforms to host malicious content, poison search results, and trick users into installing malware. Huntress examines campaigns targeting AI users through weaponized Claude Artifacts, shared AI conversations, sponsored search results, and ClickFix-style lures. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
+    <link href="https://www.bleepingcomputer.com/news/security/how-threat-actors-are-turning-trusted-ai-platforms-into-an-attack-surface/"/>
+    <category term="Security News"/>
+    <category term="BleepingComputer"/>
+    <published>2026-09-11T10:01:11-04:00</published>
+  </entry>
+  <entry>
+    <id>e095f6a103d9ef2eba62e88899f0db8a</id>
+    <title>Artifactory flaws chained in attacks deploying backdoor malware</title>
+    <updated>2026-09-12T10:09:46.203376+00:00</updated>
+    <content>Threat actors are exploiting critical and high-severity vulnerabilities in JFrog Artifactory to bypass authentication, gain administrative privileges, and deploy a Rust backdoor on vulnerable self-hosted servers. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
+    <link href="https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/"/>
+    <category term="Security News"/>
+    <category term="BleepingComputer"/>
+    <published>2026-09-11T12:29:44-04:00</published>
+  </entry>
+  <entry>
+    <id>8ef4677d9cec4b4ee31af3d285a8c84c</id>
+    <title>Passkey-themed phishing attacks lead to Microsoft 365 data theft</title>
+    <updated>2026-09-12T10:09:46.203271+00:00</updated>
+    <content>Microsoft says threat actors linked to ShinyHunters, Helix, and other extortion gangs are using passkey and single sign-on-themed social engineering attacks to compromise corporate Microsoft accounts and steal data from Microsoft 365 services. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
+    <link href="https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/"/>
+    <category term="Security News"/>
+    <category term="BleepingComputer"/>
+    <published>2026-09-11T13:26:50-04:00</published>
+  </entry>
+  <entry>
+    <id>f9f5fba58d1fdf5e53a6ee667f8f015c</id>
+    <title>Florida confirms DMV database breached via stolen police account</title>
+    <updated>2026-09-12T10:09:46.203162+00:00</updated>
+    <content>The Florida Department of Highway Safety and Motor Vehicles (FLHSMV) has confirmed that its DAVID driver database suffered a data breach, saying the attackers gained access using credentials belonging to a police department employee. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
+    <link href="https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/"/>
+    <category term="Security News"/>
+    <category term="BleepingComputer"/>
+    <published>2026-09-11T15:00:29-04:00</published>
+  </entry>
+  <entry>
+    <id>7093ed504cccbae31075d9930db56e34</id>
+    <title>Hackers abused Claude to extract secrets from 1.8M Android apps</title>
+    <updated>2026-09-12T10:09:46.203043+00:00</updated>
+    <content>Anthropic says multiple threat groups, including the financially motivated and state-sponsored espionage groups linked to Russia and China, tried to abuse its Claude AI model for malicious purposes. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</content>
+    <link href="https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/"/>
+    <category term="Security News"/>
+    <category term="BleepingComputer"/>
+    <published>2026-09-11T16:19:09-04:00</published>
+  </entry>
+  <entry>
     <id>9d8f8d65f98398108ad3cacd6dfe13c2</id>
     <title>India LEI Report Victim indialei.in Threat Actor GlobalSecretGroup Date Discovered Sep 11, 2026 Description India LEI is an official registration agent based in India, â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.836217+00:00</updated>
+    <updated>2026-09-12T10:09:46.202873+00:00</updated>
     <content>India LEI Report Victim indialei.in Threat Actor GlobalSecretGroup Date Discovered Sep 11, 2026 Description India LEI is an official registration agent based in India, â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -506,7 +516,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>b725684abce36dce8cf56310de0406de</id>
     <title>i2k2 Networks Report Victim i2k2.com Threat Actor Vexy Date Discovered Sep 11, 2026 Description i2k2 Networks is a technology company based in India, specializing in data centers, â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.836093+00:00</updated>
+    <updated>2026-09-12T10:09:46.202705+00:00</updated>
     <content>i2k2 Networks Report Victim i2k2.com Threat Actor Vexy Date Discovered Sep 11, 2026 Description i2k2 Networks is a technology company based in India, specializing in data centers, â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -519,7 +529,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>c4b2d4ad7b95374ab81062cfabe618e8</id>
     <title>Grunthal Welding &amp; Supplies Report Victim grunthalwelding.com Threat Actor Play Date Discovered Sep 11, 2026 Description Grunthal Welding &amp; Supplies Ltd. is a manufacturing and metal â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835971+00:00</updated>
+    <updated>2026-09-12T10:09:46.202536+00:00</updated>
     <content>Grunthal Welding &amp; Supplies Report Victim grunthalwelding.com Threat Actor Play Date Discovered Sep 11, 2026 Description Grunthal Welding &amp; Supplies Ltd. is a manufacturing and metal â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -532,7 +542,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>69bf9203e2acbd292e97f9677a455a5d</id>
     <title>Goldstone Oil &amp; Gas Report Victim goldstoneoilandgas.com Threat Actor Wallstreet Date Discovered Sep 11, 2026 Description Goldstone Oil &amp; Gas is an independent energy company based in â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835847+00:00</updated>
+    <updated>2026-09-12T10:09:46.202371+00:00</updated>
     <content>Goldstone Oil &amp; Gas Report Victim goldstoneoilandgas.com Threat Actor Wallstreet Date Discovered Sep 11, 2026 Description Goldstone Oil &amp; Gas is an independent energy company based in â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -545,7 +555,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>d79712ffa6c6c34662d896bf52d355dd</id>
     <title>George Cameron Nash Report Victim georgecameronnash.com Threat Actor Akira Date Discovered Sep 11, 2026 Description George Cameron Nash is a luxury trade showroom and manufacturing â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835726+00:00</updated>
+    <updated>2026-09-12T10:09:46.202205+00:00</updated>
     <content>George Cameron Nash Report Victim georgecameronnash.com Threat Actor Akira Date Discovered Sep 11, 2026 Description George Cameron Nash is a luxury trade showroom and manufacturing â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -558,7 +568,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>d9bda561f0a48a72eb8554aaa934b3e8</id>
     <title>General Santos Doctors Hospital Report Victim gensandoctors.com Threat Actor Rhysida Date Discovered Sep 11, 2026 Description General Santos Doctors Hospital is a 280-bed Level 3 tertiary hospital â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835600+00:00</updated>
+    <updated>2026-09-12T10:09:46.202031+00:00</updated>
     <content>General Santos Doctors Hospital Report Victim gensandoctors.com Threat Actor Rhysida Date Discovered Sep 11, 2026 Description General Santos Doctors Hospital is a 280-bed Level 3 tertiary hospital â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -571,7 +581,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>306f0d1c0527f05eb68316e9a632e5ba</id>
     <title>EJ Easy Job Report Victim easyjobsas.com Threat Actor EMPERADOR Date Discovered Sep 11, 2026 Description EJ Easy Job S.A.S. is a professional accounting, tax, and financial â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835475+00:00</updated>
+    <updated>2026-09-12T10:09:46.201864+00:00</updated>
     <content>EJ Easy Job Report Victim easyjobsas.com Threat Actor EMPERADOR Date Discovered Sep 11, 2026 Description EJ Easy Job S.A.S. is a professional accounting, tax, and financial â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -584,7 +594,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>9aa6bdd91b3c02e58af2a58bbc1aa3c7</id>
     <title>Eagle Construction Report Victim eagleofva.com Threat Actor Akira Date Discovered Sep 11, 2026 Description Eagle Construction is a homebuilding and real estate development company based â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835340+00:00</updated>
+    <updated>2026-09-12T10:09:46.201696+00:00</updated>
     <content>Eagle Construction Report Victim eagleofva.com Threat Actor Akira Date Discovered Sep 11, 2026 Description Eagle Construction is a homebuilding and real estate development company based â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -597,7 +607,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>9c98a0c6983e3fb160fafb242114df23</id>
     <title>California School Employees Association Report Victim csea.com Threat Actor RansomHouse Date Discovered Sep 11, 2026 Description California School Employees Association is a nonprofit, member-governed â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835212+00:00</updated>
+    <updated>2026-09-12T10:09:46.201527+00:00</updated>
     <content>California School Employees Association Report Victim csea.com Threat Actor RansomHouse Date Discovered Sep 11, 2026 Description California School Employees Association is a nonprofit, member-governed â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -610,7 +620,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>5bde85dba396d486fde9d84b646b8012</id>
     <title>ArtiFlex Manufacturing Report Victim artiflexmfg.com Threat Actor Chaos Date Discovered Sep 11, 2026 Description ArtiFlex Manufacturing is an advanced manufacturing company based in the USA â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.835086+00:00</updated>
+    <updated>2026-09-12T10:09:46.201354+00:00</updated>
     <content>ArtiFlex Manufacturing Report Victim artiflexmfg.com Threat Actor Chaos Date Discovered Sep 11, 2026 Description ArtiFlex Manufacturing is an advanced manufacturing company based in the USA â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -623,7 +633,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>2963eaab32b8647c14485afeba495e33</id>
     <title>Alpha Omega Engineering Report Victim alphaomega-eng.com Threat Actor LockBit Date Discovered Sep 11, 2026 Description Alpha Omega Engineering is a medical technology company based in Israel, â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.834949+00:00</updated>
+    <updated>2026-09-12T10:09:46.201172+00:00</updated>
     <content>Alpha Omega Engineering Report Victim alphaomega-eng.com Threat Actor LockBit Date Discovered Sep 11, 2026 Description Alpha Omega Engineering is a medical technology company based in Israel, â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -636,7 +646,7 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
   <entry>
     <id>3d40919c548ec45e12716a7dcc617388</id>
     <title>AK Stamping Report Victim akstamping.com Threat Actor Akira Date Discovered Sep 11, 2026 Description AK Stamping Company is a metal manufacturing company based in the USA (New â¦September 11, 2026</title>
-    <updated>2026-09-11T10:40:36.834546+00:00</updated>
+    <updated>2026-09-12T10:09:46.200629+00:00</updated>
     <content>AK Stamping Report Victim akstamping.com Threat Actor Akira Date Discovered Sep 11, 2026 Description AK Stamping Company is a metal manufacturing company based in the USA (New â¦September 11, 2026 reported a ransomware. Attributed to Akira.
 
 🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</content>
@@ -647,60 +657,9 @@ The post Central Maine Medical Center &amp; Susan B. Allen Memorial Hospital Set
     <published>2026-09-11T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>344d17850994629ad19bcc451738395f</id>
-    <title>Unknown</title>
-    <updated>2026-09-11T10:40:36.834524+00:00</updated>
-    <content>Unknown reported a healthcare breach.
-
-📰 Source: HHS OCR | 🏷️ Type: Healthcare Breach</content>
-    <link href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf"/>
-    <category term="Healthcare Breach"/>
-    <category term="HHS OCR"/>
-    <published>2026-09-11T10:40:36.834541+00:00</published>
-  </entry>
-  <entry>
-    <id>c0ffec6bbcc7bbd210dcb9a096af777e</id>
-    <title>MA: Springfield Public Schools will be closed Tuesday after a cyber incident</title>
-    <updated>2026-09-11T10:40:36.834447+00:00</updated>
-    <content>Carolyn Rodriguez reports: Springfield Public Schools will be closed Tuesday after a cyber incident disrupted systems necessary for essential school operations, Superintendent Dr. Sonia Dinnall announced Monday. According to the district, the closure will help the district continue its response efforts while investigators assess the extent of the incident. “We understand that an unexpected closure...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</content>
-    <link href="https://databreaches.net/2026/09/07/ma-springfield-public-schools-will-be-closed-tuesday-after-a-cyber-incident/"/>
-    <category term="Data Breach"/>
-    <category term="DataBreaches.net"/>
-    <published>2026-09-07T21:17:02+00:00</published>
-  </entry>
-  <entry>
-    <id>13feaaf0b1698456ce2db1b12a1f72cb</id>
-    <title>Party’s over for scammers who went on spending spree after $240M bitcoin theft</title>
-    <updated>2026-09-11T10:40:36.834356+00:00</updated>
-    <content>Michael Kunzelman of the AP reports: They pulled off one of the largest cryptocurrency thefts in U.S. history, duping a stranger out of bitcoin worth over $240 million. They tried to hide their digital fingerprints, carrying out a sophisticated scheme to launder the proceeds. And then the party started. The scammers — a network of young men...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</content>
-    <link href="https://databreaches.net/2026/09/08/partys-over-for-scammers-who-went-on-spending-spree-after-240m-bitcoin-theft/"/>
-    <category term="Data Breach"/>
-    <category term="DataBreaches.net"/>
-    <published>2026-09-08T11:32:13+00:00</published>
-  </entry>
-  <entry>
-    <id>f001f94073cf18675e29223550235334</id>
-    <title>Everett, Massachusetts, closes City Hall after cybersecurity incident</title>
-    <updated>2026-09-11T10:40:36.834285+00:00</updated>
-    <content>DysruptionHub reports: Everett, Massachusetts, closed City Hall to the public Tuesday after a cybersecurity incident affected its internal network and technology systems, shifting most essential employees to another municipal building. The city said in a Monday announcement that it discovered the incident Sunday evening and began working with its technology team and cybersecurity professionals. It did not...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</content>
-    <link href="https://databreaches.net/2026/09/08/everett-massachusetts-closes-city-hall-after-cybersecurity-incident/"/>
-    <category term="Data Breach"/>
-    <category term="DataBreaches.net"/>
-    <published>2026-09-08T13:51:57+00:00</published>
-  </entry>
-  <entry>
     <id>1592c521a415f13bdf64399f25699352</id>
     <title>Singaporean Ringleader of $245 Million Cryptocurrency Racketeering Enterprise Pleads Guilty in Washington D.C.</title>
-    <updated>2026-09-11T10:40:36.834211+00:00</updated>
+    <updated>2026-09-12T10:09:46.200521+00:00</updated>
     <content>WASHINGTON – Malone Lam, 22, a citizen of Singapore and recent resident of Miami, pleaded guilty today in U.S. District Court in Washington D.C. in connection with his role as ringleader of an international cybercrime conspiracy that used social engineering to steal and launder cryptocurrency valued at more than $245 million, announced U.S. Attorney Jeanine...
 Source
 
@@ -713,7 +672,7 @@ Source
   <entry>
     <id>07e2abaf740ff4b83532e497fbd09eaf</id>
     <title>Russian suspect in bank account takeovers is extradited to US</title>
-    <updated>2026-09-11T10:40:36.834140+00:00</updated>
+    <updated>2026-09-12T10:09:46.200417+00:00</updated>
     <content>Joe Warminsky reports: A Russian web developer who played a role in a multimillion-dollar bank account takeover scheme has been extradited to the U.S. to face an indictment in the case, federal authorities said Tuesday. Sergei Anatolyevich Filimonov, 36, appeared in an Atlanta federal court on September 4, pleading not guilty to charges of fraud...
 Source
 
@@ -726,7 +685,7 @@ Source
   <entry>
     <id>fd4306fee451d0180cc10bd51c315ffe</id>
     <title>“Network outage” disrupts Westfield Public Schools in New Jersey as ransomware group posts samples</title>
-    <updated>2026-09-11T10:40:36.834065+00:00</updated>
+    <updated>2026-09-12T10:09:46.200310+00:00</updated>
     <content>Joseph Topping reports: Westfield Public Schools in New Jersey kept classrooms open during a districtwide network outage that disrupted communications and digital instruction throughout the first week of school. The district initially attributed the outage to equipment failure. “We have confirmed that a networking hardware failure caused the disruption across all district schools and offices,”...
 Source
 
@@ -739,7 +698,7 @@ Source
   <entry>
     <id>31f99f981b53dfd5718b61ad39543bda</id>
     <title>CO: Cyberattack damages files at Salida School District in Colorado</title>
-    <updated>2026-09-11T10:40:36.833992+00:00</updated>
+    <updated>2026-09-12T10:09:46.200206+00:00</updated>
     <content>DysruptionHub reports: A cyberattack forced Salida School District in Colorado to shut down its network June 29, damaging locally stored files and disrupting administrative operations, the district said. The attack began about 6:30 a.m. and was detected two hours later, according to a July 2 district notice. Officials took all systems offline and brought in specialists...
 Source
 
@@ -752,7 +711,7 @@ Source
   <entry>
     <id>817646fb31e046c0d4deb39364271d05</id>
     <title>ShinyHunters expose 6.4M in attack on medical supplier McKesson</title>
-    <updated>2026-09-11T10:40:36.833917+00:00</updated>
+    <updated>2026-09-12T10:09:46.200094+00:00</updated>
     <content>Connor Jones reports: McKesson’s cyberattack last month affected roughly 6.4 million individuals, according to Have I Been Pwned (HIBP). The breach notification service added data leaked by serial extortionists ShinyHunters, revealing the scale of the attack for the first time. ShinyHunters initially claimed to have stolen 284 million documents from the medical and pharmaceutical supply...
 Source
 
@@ -765,7 +724,7 @@ Source
   <entry>
     <id>0d254eb75efd7c9152bd5e1f24b3b954</id>
     <title>Korea raises data breach fines to 10% of revenue</title>
-    <updated>2026-09-11T10:40:36.833842+00:00</updated>
+    <updated>2026-09-12T10:09:46.199992+00:00</updated>
     <content>Korea JoongAng Daily reports: Korea’s privacy regulator is sharply raising the cost of data breaches, aiming to push companies to treat data protection as a preventive investment rather than a routine cost of doing business. Starting Friday, companies found to have leaked the personal data of 10 million or more people through intent or gross negligence...
 Source
 
@@ -778,7 +737,7 @@ Source
   <entry>
     <id>c6dd306e1fd3e8860f05353418f4523f</id>
     <title>FTC Withdraws Obsolete Policy Statement</title>
-    <updated>2026-09-11T10:40:36.833764+00:00</updated>
+    <updated>2026-09-12T10:09:46.199890+00:00</updated>
     <content>From the Federal Trade Commission: The Federal Trade Commission rescinded the 2021 Policy Statement on Breaches by Health Apps and Other Connected Devices. This controversial policy statement purported to apply the FTC’s Health Breach Notification Rule to health apps and connected devices that collect consumer health information. In 2024, however, the Commission updated the Health Breach Notification...
 Source
 
@@ -789,9 +748,48 @@ Source
     <published>2026-09-10T13:40:00+00:00</published>
   </entry>
   <entry>
+    <id>79a68f41a89a553d7738307cd2c0040e</id>
+    <title>Personal Info Possibly Compromised at Japan’s Digital Agency</title>
+    <updated>2026-09-12T10:09:46.199784+00:00</updated>
+    <content>JiJi Press reports: Japan’s Digital Agency said Friday that about 246,000 sets of personal information, including the names and email addresses of government employees, may have been compromised through the unauthorized access of a network system operated by the agency. So far, no secondary damage such as the misuse of the possibly breached personal information...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</content>
+    <link href="https://databreaches.net/2026/09/11/personal-info-possibly-compromised-at-japans-digital-agency/"/>
+    <category term="Data Breach"/>
+    <category term="DataBreaches.net"/>
+    <published>2026-09-11T16:06:58+00:00</published>
+  </entry>
+  <entry>
+    <id>3a6fd4c4a9069f3d2465ae67199af3c1</id>
+    <title>Ukrainian National Sentenced to Four Years in Prison for Wire Fraud Conspiracy in Connection with Conti Ransomware</title>
+    <updated>2026-09-12T10:09:46.199678+00:00</updated>
+    <content>There’s an update to a previously reported case. From the Department of Justice, this press release: Oleksii Oleksiyovych Lytvynenko, 44, a Ukrainian national, was sentenced today to four years in prison for conspiracy to commit wire fraud in connection with a conspiracy to deploy Conti, a ransomware variant that infected the computers of more than 1,000...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</content>
+    <link href="https://databreaches.net/2026/09/11/ukrainian-national-sentenced-to-four-years-in-prison-for-wire-fraud-conspiracy-in-connection-with-conti-ransomware/"/>
+    <category term="Data Breach"/>
+    <category term="DataBreaches.net"/>
+    <published>2026-09-11T16:07:27+00:00</published>
+  </entry>
+  <entry>
+    <id>1b5830b2a1b78f284d2898e0b51ec67c</id>
+    <title>TX: Two Lamesa ISD employees arrested over security breach</title>
+    <updated>2026-09-12T10:09:46.199568+00:00</updated>
+    <content>Urijah Jaushlin reports: Two Lamesa ISD employees were arrested in connection with a law enforcement investigation involving allegations of a breach of computer security, according to a press release by the Lamesa Independent School District Friday morning. The Lamesa Police Department announced in a press release that authorities, along with the Texas Rangers, arrested 54-year-old...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</content>
+    <link href="https://databreaches.net/2026/09/11/tx-two-lamesa-isd-employees-arrested-over-security-breach/"/>
+    <category term="Data Breach"/>
+    <category term="DataBreaches.net"/>
+    <published>2026-09-11T18:53:51+00:00</published>
+  </entry>
+  <entry>
     <id>8a9b0c8ee4a35598bef1a73be20e9fb8</id>
     <title>Pan American Group LLC</title>
-    <updated>2026-09-11T10:40:36.833669+00:00</updated>
+    <updated>2026-09-12T10:09:46.199433+00:00</updated>
     <content>Pan American Group LLC reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -803,7 +801,7 @@ Source
   <entry>
     <id>4a379f5bbf4a8ac7d6b76ccac46b245a</id>
     <title>Museum Associates d/b/a Los Angeles Museum of Art (LACMA)</title>
-    <updated>2026-09-11T10:40:36.833571+00:00</updated>
+    <updated>2026-09-12T10:09:46.199298+00:00</updated>
     <content>Museum Associates d/b/a Los Angeles Museum of Art (LACMA) reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -815,7 +813,7 @@ Source
   <entry>
     <id>c4cc616c78c050781bbec9c306e426c7</id>
     <title>Allied Health</title>
-    <updated>2026-09-11T10:40:36.833475+00:00</updated>
+    <updated>2026-09-12T10:09:46.199165+00:00</updated>
     <content>Allied Health reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -827,7 +825,7 @@ Source
   <entry>
     <id>4caae54a4bd9c4dca20ff896ebfd00ef</id>
     <title>Livara Health Medical Group - dba SpineZone</title>
-    <updated>2026-09-11T10:40:36.833367+00:00</updated>
+    <updated>2026-09-12T10:09:46.199021+00:00</updated>
     <content>Livara Health Medical Group - dba SpineZone reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -839,7 +837,7 @@ Source
   <entry>
     <id>72a455dab05a7c89f230fe34f81e5915</id>
     <title>Together Women's Health LLC - Aesto</title>
-    <updated>2026-09-11T10:40:36.833273+00:00</updated>
+    <updated>2026-09-12T10:09:46.198884+00:00</updated>
     <content>Together Women's Health LLC - Aesto reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -851,7 +849,7 @@ Source
   <entry>
     <id>fc2241f6a837ff4b207971cacdb00655</id>
     <title>Murfreesboro Medical Clinic</title>
-    <updated>2026-09-11T10:40:36.833177+00:00</updated>
+    <updated>2026-09-12T10:09:46.198746+00:00</updated>
     <content>Murfreesboro Medical Clinic reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -863,7 +861,7 @@ Source
   <entry>
     <id>1cf5f4d674b93122c76cfdd38ce5bebb</id>
     <title>Integrated Specialty Coverages, LLC (“ISC”)</title>
-    <updated>2026-09-11T10:40:36.833077+00:00</updated>
+    <updated>2026-09-12T10:09:46.198608+00:00</updated>
     <content>Integrated Specialty Coverages, LLC (“ISC”) reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -875,7 +873,7 @@ Source
   <entry>
     <id>93ba6b62ba2b2bb19e79b7605cdb0d81</id>
     <title>Indico Data Solutions</title>
-    <updated>2026-09-11T10:40:36.832980+00:00</updated>
+    <updated>2026-09-12T10:09:46.198475+00:00</updated>
     <content>Indico Data Solutions reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -887,7 +885,7 @@ Source
   <entry>
     <id>f8abb3c8943c98b2a863c2df49d5e6c4</id>
     <title>Bennett College</title>
-    <updated>2026-09-11T10:40:36.832884+00:00</updated>
+    <updated>2026-09-12T10:09:46.198340+00:00</updated>
     <content>Bennett College reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -899,7 +897,7 @@ Source
   <entry>
     <id>928d433ba3e682f83762976e0a35a677</id>
     <title>Virta Health Corp. and Virta Medical, PC</title>
-    <updated>2026-09-11T10:40:36.832786+00:00</updated>
+    <updated>2026-09-12T10:09:46.198201+00:00</updated>
     <content>Virta Health Corp. and Virta Medical, PC reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -911,7 +909,7 @@ Source
   <entry>
     <id>fd16ae1ccf759ae04dfd5dea591fd581</id>
     <title>Berkeley Research Group, LLC</title>
-    <updated>2026-09-11T10:40:36.832690+00:00</updated>
+    <updated>2026-09-12T10:09:46.198057+00:00</updated>
     <content>Berkeley Research Group, LLC reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -923,7 +921,7 @@ Source
   <entry>
     <id>a4f2d94cca60fbcc693939cf95ac0657</id>
     <title>Kaniksu Community Health</title>
-    <updated>2026-09-11T10:40:36.832593+00:00</updated>
+    <updated>2026-09-12T10:09:46.197922+00:00</updated>
     <content>Kaniksu Community Health reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -935,7 +933,7 @@ Source
   <entry>
     <id>cd2a0e78253cb97562c572aba70add1e</id>
     <title>DeMera DeMera Cameron, LLP</title>
-    <updated>2026-09-11T10:40:36.832495+00:00</updated>
+    <updated>2026-09-12T10:09:46.197784+00:00</updated>
     <content>DeMera DeMera Cameron, LLP reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -947,7 +945,7 @@ Source
   <entry>
     <id>d72a2548e2f25a3b16214d1b45ecb9c9</id>
     <title>Fishbrain AB</title>
-    <updated>2026-09-11T10:40:36.832374+00:00</updated>
+    <updated>2026-09-12T10:09:46.197646+00:00</updated>
     <content>Fishbrain AB reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -959,7 +957,7 @@ Source
   <entry>
     <id>53a818d8e2a07a25a7f82adb93b8d6bf</id>
     <title>Knowledge Research Center</title>
-    <updated>2026-09-11T10:40:36.832279+00:00</updated>
+    <updated>2026-09-12T10:09:46.197510+00:00</updated>
     <content>Knowledge Research Center reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -971,7 +969,7 @@ Source
   <entry>
     <id>87001b2cc251dd8c9eccfbf95629e949</id>
     <title>YouLend US LLC</title>
-    <updated>2026-09-11T10:40:36.832184+00:00</updated>
+    <updated>2026-09-12T10:09:46.197376+00:00</updated>
     <content>YouLend US LLC reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -983,7 +981,7 @@ Source
   <entry>
     <id>77393d4491d561db2a98067e9bf72649</id>
     <title>HumanEdge, Inc.</title>
-    <updated>2026-09-11T10:40:36.832088+00:00</updated>
+    <updated>2026-09-12T10:09:46.197239+00:00</updated>
     <content>HumanEdge, Inc. reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -995,7 +993,7 @@ Source
   <entry>
     <id>a396df3ec398be0d4a204a103c44b5e1</id>
     <title>Fiesta Insurance Franchise Corporation</title>
-    <updated>2026-09-11T10:40:36.831990+00:00</updated>
+    <updated>2026-09-12T10:09:46.197067+00:00</updated>
     <content>Fiesta Insurance Franchise Corporation reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -1007,7 +1005,7 @@ Source
   <entry>
     <id>5f66b1efd5e14ec34c020302a02e1f54</id>
     <title>See’s Candies, Inc.</title>
-    <updated>2026-09-11T10:40:36.831891+00:00</updated>
+    <updated>2026-09-12T10:09:46.196928+00:00</updated>
     <content>See’s Candies, Inc. reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -1019,7 +1017,7 @@ Source
   <entry>
     <id>f410a6545599b141d5652519416ec31f</id>
     <title>Bimbo Bakeries USA</title>
-    <updated>2026-09-11T10:40:36.831796+00:00</updated>
+    <updated>2026-09-12T10:09:46.196795+00:00</updated>
     <content>Bimbo Bakeries USA reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -1031,7 +1029,7 @@ Source
   <entry>
     <id>e76a80888c05ed34dd1f713aacf3e6e3</id>
     <title>Catalyst Brands LLC</title>
-    <updated>2026-09-11T10:40:36.831697+00:00</updated>
+    <updated>2026-09-12T10:09:46.196661+00:00</updated>
     <content>Catalyst Brands LLC reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -1043,7 +1041,7 @@ Source
   <entry>
     <id>24ebcc68946ce9c449ed41bc0c1a76b6</id>
     <title>Elixir Medical Corporation</title>
-    <updated>2026-09-11T10:40:36.831596+00:00</updated>
+    <updated>2026-09-12T10:09:46.196554+00:00</updated>
     <content>Elixir Medical Corporation reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
@@ -1053,73 +1051,9 @@ Source
     <published>2026-09-04T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>08c702c420d6dc518c38ced3a9502b95</id>
-    <title>Hibbett Retail, Inc.</title>
-    <updated>2026-09-11T10:40:36.831493+00:00</updated>
-    <content>Hibbett Retail, Inc. reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
-    <link href="https://oag.ca.gov/privacy/databreach/list"/>
-    <category term="Data Breach"/>
-    <category term="California AG"/>
-    <published>2026-09-08T00:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>ddca3285496e7b3d761e17982f93d967</id>
-    <title>Brentwood Country Club</title>
-    <updated>2026-09-11T10:40:36.831406+00:00</updated>
-    <content>Hospitality
-
-🎭 Threat Actor: akira | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
-    <link href="https://www.ransomware.live/id/QnJlbnR3b29kIENvdW50cnkgQ2x1YkBha2lyYQ=="/>
-    <category term="Ransomware"/>
-    <category term="Ransomware.live"/>
-    <category term="Actor: akira"/>
-    <published>2026-09-08T00:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>c6f51b94607fd683d23d4953c5dac036</id>
-    <title>Technology Dynamics</title>
-    <updated>2026-09-11T10:40:36.831351+00:00</updated>
-    <content>Technology
-
-🎭 Threat Actor: Storm | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
-    <link href="https://www.ransomware.live/id/VGVjaG5vbG9neSBEeW5hbWljc0BTdG9ybQ=="/>
-    <category term="Ransomware"/>
-    <category term="Ransomware.live"/>
-    <category term="Actor: Storm"/>
-    <published>2026-09-08T09:41:29+00:00</published>
-  </entry>
-  <entry>
-    <id>f52f8b18e19150df01d13c46ef5dc28a</id>
-    <title>Alaska Electrical Apprenticeship</title>
-    <updated>2026-09-11T10:40:36.831327+00:00</updated>
-    <content>Education
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
-    <link href="https://www.ransomware.live/id/QWxhc2thIEVsZWN0cmljYWwgQXBwcmVudGljZXNoaXBAcWlsaW4="/>
-    <category term="Ransomware"/>
-    <category term="Ransomware.live"/>
-    <category term="Actor: qilin"/>
-    <published>2026-09-08T13:26:27+00:00</published>
-  </entry>
-  <entry>
-    <id>a00d6177850ec83cd306b37b8ef06876</id>
-    <title>EMS1R</title>
-    <updated>2026-09-11T10:40:36.831303+00:00</updated>
-    <content>Not Found
-
-🎭 Threat Actor: direwolf | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
-    <link href="https://www.ransomware.live/id/RU1TMVJAZGlyZXdvbGY="/>
-    <category term="Ransomware"/>
-    <category term="Ransomware.live"/>
-    <category term="Actor: direwolf"/>
-    <published>2026-09-08T15:30:04+00:00</published>
-  </entry>
-  <entry>
     <id>0eac4dd3bae80b124b51865d0feb551f</id>
     <title>Sales Boomerang</title>
-    <updated>2026-09-11T10:40:36.831278+00:00</updated>
+    <updated>2026-09-12T10:09:46.196518+00:00</updated>
     <content>Professional Services
 
 🎭 Threat Actor: direwolf | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1132,7 +1066,7 @@ Source
   <entry>
     <id>fc054e2e64d2e3fd0b95103626d9e54c</id>
     <title>recoverycafe.org</title>
-    <updated>2026-09-11T10:40:36.831250+00:00</updated>
+    <updated>2026-09-12T10:09:46.196478+00:00</updated>
     <content>Healthcare
 
 🎭 Threat Actor: safepay | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1145,7 +1079,7 @@ Source
   <entry>
     <id>dd455fc65af84503cff1cb46021043b2</id>
     <title>palmettoeyeinstitute.com</title>
-    <updated>2026-09-11T10:40:36.831210+00:00</updated>
+    <updated>2026-09-12T10:09:46.196390+00:00</updated>
     <content>Healthcare
 
 🎭 Threat Actor: safepay | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1158,7 +1092,7 @@ Source
   <entry>
     <id>bbfb3e04e96cf462f80c0454bd923be5</id>
     <title>GT Distributors</title>
-    <updated>2026-09-11T10:40:36.831154+00:00</updated>
+    <updated>2026-09-12T10:09:46.196316+00:00</updated>
     <content>Retail &amp; E-Commerce
 
 🎭 Threat Actor: play | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1169,33 +1103,21 @@ Source
     <published>2026-09-08T20:45:53+00:00</published>
   </entry>
   <entry>
-    <id>98106d22b089b3358995dd657b5d36ca</id>
-    <title>Quatrro Business Support Services, Inc.</title>
-    <updated>2026-09-11T10:40:36.831035+00:00</updated>
-    <content>Quatrro Business Support Services, Inc. reported a data breach in California.
+    <id>08c702c420d6dc518c38ced3a9502b95</id>
+    <title>Hibbett Retail, Inc.</title>
+    <updated>2026-09-12T10:09:46.196176+00:00</updated>
+    <content>Hibbett Retail, Inc. reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
     <link href="https://oag.ca.gov/privacy/databreach/list"/>
     <category term="Data Breach"/>
     <category term="California AG"/>
-    <published>2026-09-09T00:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>df2a7e31a8e2939cf7dfecfd40a837e7</id>
-    <title>Greenberg Traurig, LLP (“GT”)</title>
-    <updated>2026-09-11T10:40:36.829843+00:00</updated>
-    <content>Greenberg Traurig, LLP (“GT”) reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
-    <link href="https://oag.ca.gov/privacy/databreach/list"/>
-    <category term="Data Breach"/>
-    <category term="California AG"/>
-    <published>2026-09-09T00:00:00+00:00</published>
+    <published>2026-09-08T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>62957dfb385f33447574f7b341f6433d</id>
     <title>Kyodo USA</title>
-    <updated>2026-09-11T10:40:36.829780+00:00</updated>
+    <updated>2026-09-12T10:09:46.196068+00:00</updated>
     <content>Manufacturing
 
 🎭 Threat Actor: akira | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1208,7 +1130,7 @@ Source
   <entry>
     <id>cc440eaf548cbd7e6d725b70f0fe8b59</id>
     <title>cullottalaw.com</title>
-    <updated>2026-09-11T10:40:36.829738+00:00</updated>
+    <updated>2026-09-12T10:09:46.195968+00:00</updated>
     <content>Professional Services
 
 🎭 Threat Actor: incransom | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1219,9 +1141,22 @@ Source
     <published>2026-09-09T00:00:00+00:00</published>
   </entry>
   <entry>
+    <id>01c5a86b3463c8a07750c90630d50d58</id>
+    <title>Foss Inc.</title>
+    <updated>2026-09-12T10:09:46.195892+00:00</updated>
+    <content>Not Found
+
+🎭 Threat Actor: pear | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
+    <link href="https://www.ransomware.live/id/Rm9zcyBJbmMuQHBlYXI="/>
+    <category term="Ransomware"/>
+    <category term="Ransomware.live"/>
+    <category term="Actor: pear"/>
+    <published>2026-09-09T00:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>97d5a9193e9972d73da2ad6a48862399</id>
     <title>Jet Specialty</title>
-    <updated>2026-09-11T10:40:36.829715+00:00</updated>
+    <updated>2026-09-12T10:09:46.195855+00:00</updated>
     <content>Manufacturing
 
 🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1234,7 +1169,7 @@ Source
   <entry>
     <id>15bd12873262281b687f5bc8de37115a</id>
     <title>Specchem LLC</title>
-    <updated>2026-09-11T10:40:36.829690+00:00</updated>
+    <updated>2026-09-12T10:09:46.195818+00:00</updated>
     <content>Manufacturing
 
 🎭 Threat Actor: Dark Project | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1247,7 +1182,7 @@ Source
   <entry>
     <id>c7792fb53aca3fb3c06685be3f448395</id>
     <title>gardensalive.com, bitsandpieces.com, iselinursery.local, weeksroses.org, esm.local</title>
-    <updated>2026-09-11T10:40:36.829662+00:00</updated>
+    <updated>2026-09-12T10:09:46.195757+00:00</updated>
     <content>Agriculture and Food Production
 
 🎭 Threat Actor: embargo | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1260,7 +1195,7 @@ Source
   <entry>
     <id>2110d2266ecd4f76443797d8ebb13295</id>
     <title>Mesan USA</title>
-    <updated>2026-09-11T10:40:36.829612+00:00</updated>
+    <updated>2026-09-12T10:09:46.195683+00:00</updated>
     <content>Other
 
 🎭 Threat Actor: Global Secret Group | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1271,129 +1206,33 @@ Source
     <published>2026-09-09T23:51:55+00:00</published>
   </entry>
   <entry>
-    <id>a5ac3f51d4f5a31d2b5e5602a604864b</id>
-    <title>amorsaude.com.br (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829550+00:00</updated>
-    <content>amorsaude.com.br (SEP-2026) reported a ransomware.
+    <id>98106d22b089b3358995dd657b5d36ca</id>
+    <title>Quatrro Business Support Services, Inc.</title>
+    <updated>2026-09-12T10:09:46.195533+00:00</updated>
+    <content>Quatrro Business Support Services, Inc. reported a data breach in California.
 
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-amorsaude-com-br-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T05:00:50+07:00</published>
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
+    <link href="https://oag.ca.gov/privacy/databreach/list"/>
+    <category term="Data Breach"/>
+    <category term="California AG"/>
+    <published>2026-09-09T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>b66177c47e378ea2ddde998128227102</id>
-    <title>Aqualogus (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829487+00:00</updated>
-    <content>Aqualogus (SEP-2026) reported a ransomware.
+    <id>df2a7e31a8e2939cf7dfecfd40a837e7</id>
+    <title>Greenberg Traurig, LLP (“GT”)</title>
+    <updated>2026-09-12T10:09:46.194197+00:00</updated>
+    <content>Greenberg Traurig, LLP (“GT”) reported a data breach in California.
 
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-aqualogus-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T05:01:30+07:00</published>
-  </entry>
-  <entry>
-    <id>f2e41367624dbf8bbaede89d6447e00f</id>
-    <title>Mesan USA (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829403+00:00</updated>
-    <content>Mesan USA (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-mesan-usa-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T08:00:41+07:00</published>
-  </entry>
-  <entry>
-    <id>e88ddc7f69b9d0790b056ca125f1b055</id>
-    <title>PharmaEssentia Corporation (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829340+00:00</updated>
-    <content>PharmaEssentia Corporation (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-pharmaessentia-corporation-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T08:01:38+07:00</published>
-  </entry>
-  <entry>
-    <id>8f0ebc84fc1d5a45fa31da37a92ad6c0</id>
-    <title>Air Canada (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829275+00:00</updated>
-    <content>Air Canada (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-air-canada-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T11:30:53+07:00</published>
-  </entry>
-  <entry>
-    <id>02248af99d5ce654e578aa7807c9773d</id>
-    <title>Mitsuwa Trading Co., Ltd (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829207+00:00</updated>
-    <content>Mitsuwa Trading Co., Ltd (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-mitsuwa-trading-co-ltd-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T11:31:30+07:00</published>
-  </entry>
-  <entry>
-    <id>ac76591b46d61dd113c8e11b6bcaed87</id>
-    <title>John Engel Team (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829145+00:00</updated>
-    <content>John Engel Team (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-john-engel-team-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T15:31:04+07:00</published>
-  </entry>
-  <entry>
-    <id>13ec58f2efd58162b6afa5b374048b9a</id>
-    <title>EASY JOB S.A.S. (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829082+00:00</updated>
-    <content>EASY JOB S.A.S. (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-easy-job-s-a-s-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T19:00:36+07:00</published>
-  </entry>
-  <entry>
-    <id>395fae3c9a04c16007e782ead40d3b78</id>
-    <title>HENRYPRATT.COM (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.829020+00:00</updated>
-    <content>HENRYPRATT.COM (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-henrypratt-com-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T19:01:21+07:00</published>
-  </entry>
-  <entry>
-    <id>e4481040fe847e5564e42f7dc38da213</id>
-    <title>NcbChurch (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.828956+00:00</updated>
-    <content>NcbChurch (SEP-2026) reported a ransomware.
-
-📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
-    <link href="https://www.hendryadrian.com/ransom-ncbchurch-sep-2026/"/>
-    <category term="Ransomware"/>
-    <category term="Hendry Adrian"/>
-    <published>2026-09-10T22:30:19+07:00</published>
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</content>
+    <link href="https://oag.ca.gov/privacy/databreach/list"/>
+    <category term="Data Breach"/>
+    <category term="California AG"/>
+    <published>2026-09-09T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>c1522e71bf894aa860f17c9a8ca7421a</id>
     <title>On Demand Occupational Medicine (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.828892+00:00</updated>
+    <updated>2026-09-12T10:09:46.194068+00:00</updated>
     <content>On Demand Occupational Medicine (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1405,7 +1244,7 @@ Source
   <entry>
     <id>29c632f9ebefd96f453e72430f15acb3</id>
     <title>Goldston Oil Corporation (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.828848+00:00</updated>
+    <updated>2026-09-12T10:09:46.194003+00:00</updated>
     <content>Goldston Oil Corporation (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1417,7 +1256,7 @@ Source
   <entry>
     <id>d8ad56227255b4f43208bd3ed14665b5</id>
     <title>John Engel Team</title>
-    <updated>2026-09-11T10:40:36.828824+00:00</updated>
+    <updated>2026-09-12T10:09:46.193967+00:00</updated>
     <content>Professional Services
 
 🎭 Threat Actor: ShadowByt3$ | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1430,7 +1269,7 @@ Source
   <entry>
     <id>c47b42ea52048ecd5725a1766c97c7d8</id>
     <title>Medical Department Store</title>
-    <updated>2026-09-11T10:40:36.828799+00:00</updated>
+    <updated>2026-09-12T10:09:46.193930+00:00</updated>
     <content>Retail &amp; E-Commerce
 
 🎭 Threat Actor: dragonforce | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1443,7 +1282,7 @@ Source
   <entry>
     <id>b35a3237beb3430dafb852e7238388ab</id>
     <title>HARLEY-DAVIDSON.COM</title>
-    <updated>2026-09-11T10:40:36.828771+00:00</updated>
+    <updated>2026-09-12T10:09:46.193891+00:00</updated>
     <content>Manufacturing
 
 🎭 Threat Actor: clop | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1456,7 +1295,7 @@ Source
   <entry>
     <id>d27f8a1a72bdf1db10b44b3b3e933fb8</id>
     <title>HENRYPRATT.COM</title>
-    <updated>2026-09-11T10:40:36.828717+00:00</updated>
+    <updated>2026-09-12T10:09:46.193816+00:00</updated>
     <content>Manufacturing
 
 🎭 Threat Actor: clop | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1469,7 +1308,7 @@ Source
   <entry>
     <id>889f97f80424b57afff937a225e74597</id>
     <title>jms building corporation</title>
-    <updated>2026-09-11T10:40:36.828648+00:00</updated>
+    <updated>2026-09-12T10:09:46.193717+00:00</updated>
     <content>Manufacturing
 
 🎭 Threat Actor: incransom | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1482,7 +1321,7 @@ Source
   <entry>
     <id>d36fe4da414805a842567a9f42c7a1e5</id>
     <title>NcbChurch</title>
-    <updated>2026-09-11T10:40:36.828579+00:00</updated>
+    <updated>2026-09-12T10:09:46.193616+00:00</updated>
     <content>Other
 
 🎭 Threat Actor: Wallstreet | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1495,7 +1334,7 @@ Source
   <entry>
     <id>de935c32a4b9a2073fa287a598e4d286</id>
     <title>On Demand Occupational Medicine</title>
-    <updated>2026-09-11T10:40:36.828507+00:00</updated>
+    <updated>2026-09-12T10:09:46.193515+00:00</updated>
     <content>Healthcare
 
 🎭 Threat Actor: Wallstreet | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1508,7 +1347,7 @@ Source
   <entry>
     <id>145df826d377302bd9def160b3624a8f</id>
     <title>Goldston Oil Corporation</title>
-    <updated>2026-09-11T10:40:36.828456+00:00</updated>
+    <updated>2026-09-12T10:09:46.193448+00:00</updated>
     <content>Energy &amp; Utilities
 
 🎭 Threat Actor: Wallstreet | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1521,7 +1360,7 @@ Source
   <entry>
     <id>71c97d8983d91986b39408f635916747</id>
     <title>artiflexmfg.com</title>
-    <updated>2026-09-11T10:40:36.828384+00:00</updated>
+    <updated>2026-09-12T10:09:46.193407+00:00</updated>
     <content>Manufacturing
 
 🎭 Threat Actor: chaos | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1534,7 +1373,7 @@ Source
   <entry>
     <id>f26769d609ef24ea63caa7a076f17476</id>
     <title>mankatoclinic.com</title>
-    <updated>2026-09-11T10:40:36.828329+00:00</updated>
+    <updated>2026-09-12T10:09:46.193330+00:00</updated>
     <content>Healthcare
 
 🎭 Threat Actor: chaos | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
@@ -1547,7 +1386,7 @@ Source
   <entry>
     <id>5bac0f858457fb7757986b971bf11dc8</id>
     <title>California School Employees Association (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.828258+00:00</updated>
+    <updated>2026-09-12T10:09:46.193232+00:00</updated>
     <content>California School Employees Association (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1559,7 +1398,7 @@ Source
   <entry>
     <id>c43097eba3c549e618912d4dbca24661</id>
     <title>mankatoclinic.com (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.828180+00:00</updated>
+    <updated>2026-09-12T10:09:46.193132+00:00</updated>
     <content>mankatoclinic.com (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1571,7 +1410,7 @@ Source
   <entry>
     <id>a289ce754c7046c6c4a07aaa4ea66315</id>
     <title>Agencia Estatal de Meteorolog,ía (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.828100+00:00</updated>
+    <updated>2026-09-12T10:09:46.193020+00:00</updated>
     <content>Agencia Estatal de Meteorolog,ía (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1583,7 +1422,7 @@ Source
   <entry>
     <id>9aaa121448ec5a6ca6b8c6e2071cbee9</id>
     <title>CO-OP URBAN BANK LTD (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.828025+00:00</updated>
+    <updated>2026-09-12T10:09:46.192923+00:00</updated>
     <content>CO-OP URBAN BANK LTD (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1595,7 +1434,7 @@ Source
   <entry>
     <id>6731b338eb57f52dec5c5eb5b639f3e1</id>
     <title>i2k2 Networks (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.827951+00:00</updated>
+    <updated>2026-09-12T10:09:46.192824+00:00</updated>
     <content>i2k2 Networks (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1607,7 +1446,7 @@ Source
   <entry>
     <id>fc3da229cb53b5777e51e5f6431b8fe5</id>
     <title>Medical Department Store (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.827870+00:00</updated>
+    <updated>2026-09-12T10:09:46.192727+00:00</updated>
     <content>Medical Department Store (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1619,7 +1458,7 @@ Source
   <entry>
     <id>8fe931e175f6690a21bb616bbbdc3734</id>
     <title>M800 and CINNOX (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.827772+00:00</updated>
+    <updated>2026-09-12T10:09:46.192631+00:00</updated>
     <content>M800 and CINNOX (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1631,7 +1470,7 @@ Source
   <entry>
     <id>2374123130de3215db232ff92f194c90</id>
     <title>ki***jp (SEP-2026)</title>
-    <updated>2026-09-11T10:40:36.826874+00:00</updated>
+    <updated>2026-09-12T10:09:46.192530+00:00</updated>
     <content>ki***jp (SEP-2026) reported a ransomware.
 
 📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
@@ -1641,9 +1480,168 @@ Source
     <published>2026-09-11T16:39:29+07:00</published>
   </entry>
   <entry>
+    <id>b740f749ff8aeaacfb1a7e95930ca7ce</id>
+    <title>Dustin Group (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.192429+00:00</updated>
+    <content>Dustin Group (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-dustin-group-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-11T20:31:19+07:00</published>
+  </entry>
+  <entry>
+    <id>3c19b630991bccd7ade6fe608a7e1cbf</id>
+    <title>Imperial Healthcare Solutions</title>
+    <updated>2026-09-12T10:09:46.192334+00:00</updated>
+    <content>Healthcare
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
+    <link href="https://www.ransomware.live/id/SW1wZXJpYWwgSGVhbHRoY2FyZSBTb2x1dGlvbnNAcWlsaW4="/>
+    <category term="Ransomware"/>
+    <category term="Ransomware.live"/>
+    <category term="Actor: qilin"/>
+    <published>2026-09-11T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>607786546c75109f5daedc16c9cf1e53</id>
+    <title>compunnel.com</title>
+    <updated>2026-09-12T10:09:46.192251+00:00</updated>
+    <content>Technology
+
+🎭 Threat Actor: safepay | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
+    <link href="https://www.ransomware.live/id/Y29tcHVubmVsLmNvbUBzYWZlcGF5"/>
+    <category term="Ransomware"/>
+    <category term="Ransomware.live"/>
+    <category term="Actor: safepay"/>
+    <published>2026-09-11T22:04:26+00:00</published>
+  </entry>
+  <entry>
+    <id>99bc5b78642791a9475525757a80b846</id>
+    <title>Tuboa,ços da Amazônia Ltda. (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.192149+00:00</updated>
+    <content>Tuboa,ços da Amazônia Ltda. (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-tuboacos-da-amazonia-ltda-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T00:01:56+07:00</published>
+  </entry>
+  <entry>
+    <id>2b9ef57cb8c20a73b4a2563a681236d8</id>
+    <title>Port of Tanjung Pelepas (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.192030+00:00</updated>
+    <content>Port of Tanjung Pelepas (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-port-of-tanjung-pelepas-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T00:03:54+07:00</published>
+  </entry>
+  <entry>
+    <id>ab7e4bcc8aa021725bc64ac6eceda764</id>
+    <title>Foss Inc. (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.191932+00:00</updated>
+    <content>Foss Inc. (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-foss-inc-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T00:04:57+07:00</published>
+  </entry>
+  <entry>
+    <id>b287ccf995d3dc6ef3c55d4006352526</id>
+    <title>DiamondLease (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.191825+00:00</updated>
+    <content>DiamondLease (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-diamondlease-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T04:08:31+07:00</published>
+  </entry>
+  <entry>
+    <id>b43771cd21fbaf9b7582a37841f0b5b8</id>
+    <title>Perimetral Oriental de Bogot,á S.A.S. (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.191706+00:00</updated>
+    <content>Perimetral Oriental de Bogot,á S.A.S. (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-perimetral-oriental-de-bogota-s-a-s-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T04:09:16+07:00</published>
+  </entry>
+  <entry>
+    <id>fa0af39ed608fa4f28bbe7094800a9e3</id>
+    <title>Ozel &amp; Ozel Laws Office (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.191594+00:00</updated>
+    <content>Ozel &amp; Ozel Laws Office (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-ozel-ozel-laws-office-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T04:10:23+07:00</published>
+  </entry>
+  <entry>
+    <id>9dfd3a8608af8f734322691881eb8bd0</id>
+    <title>compunnel.com (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.191480+00:00</updated>
+    <content>compunnel.com (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-compunnel-com-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T07:30:20+07:00</published>
+  </entry>
+  <entry>
+    <id>366dd50ebe3465df716259d6f56061d2</id>
+    <title>Imperial Healthcare Solutions (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.191361+00:00</updated>
+    <content>Imperial Healthcare Solutions (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-imperial-healthcare-solutions-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T07:31:04+07:00</published>
+  </entry>
+  <entry>
+    <id>4703ca176627fde959e077c4cadcde66</id>
+    <title>Shelco Filters (SEP-2026)</title>
+    <updated>2026-09-12T10:09:46.191227+00:00</updated>
+    <content>Shelco Filters (SEP-2026) reported a ransomware.
+
+📰 Source: Hendry Adrian | 🏷️ Type: Ransomware</content>
+    <link href="https://www.hendryadrian.com/ransom-shelco-filters-sep-2026/"/>
+    <category term="Ransomware"/>
+    <category term="Hendry Adrian"/>
+    <published>2026-09-12T11:00:51+07:00</published>
+  </entry>
+  <entry>
+    <id>d775d35795e0697806b21dc1a9f1e00e</id>
+    <title>Shelco Filters</title>
+    <updated>2026-09-12T10:09:46.189871+00:00</updated>
+    <content>Manufacturing
+
+🎭 Threat Actor: securotrop | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
+    <link href="https://www.ransomware.live/id/U2hlbGNvIEZpbHRlcnNAc2VjdXJvdHJvcA=="/>
+    <category term="Ransomware"/>
+    <category term="Ransomware.live"/>
+    <category term="Actor: securotrop"/>
+    <published>2026-09-12T00:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>2398e61511a70851755d01dd92298d45</id>
     <title>Paylogix</title>
-    <updated>2026-09-11T10:40:36.826363+00:00</updated>
+    <updated>2026-09-12T10:09:46.189102+00:00</updated>
     <content>Financial Services
 
 🎭 Threat Actor: akira | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</content>
