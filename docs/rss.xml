@@ -7,17 +7,75 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Breach RSS Generator</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2026 13:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 11:15:23 +0000</lastBuildDate>
     <item>
-      <title>ClickFix Attacks Evolve to Better Hide Malicious Payloads</title>
-      <link>https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads</link>
-      <description>Threat actors are now hiding payloads by using DNS TXT records and browser cache pre-fetching, making it tougher to spot early attack stages.
+      <title>U.S. CISA adds Ivanti Connect Secure flaw to its Known Exploited Vulnerabilities catalog</title>
+      <link>https://securityaffairs.com/200887/security/u-s-cisa-adds-ivanti-connect-secure-flaw-to-its-known-exploited-vulnerabilities-catalog.html</link>
+      <description>U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Ivanti Connect Secure flaw to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added an Ivanti Connect Secure FortiMail flaw, tracked as CVE-2026-104935 (CVSS score of 8.6), to its Known Exploited Vulnerabilities (KEV) catalog. The vulnerability is an authentication bypass issue caused by […]
 
-📰 Source: Dark Reading | 🏷️ Type: News</description>
-      <guid isPermaLink="false">3dc50bfcea5873ad52e04abafaffb329</guid>
+📰 Source: Security Affairs | 🏷️ Type: News</description>
+      <guid isPermaLink="false">3401a8761940434c64908399f4db00ed</guid>
       <category>News</category>
-      <category>Dark Reading</category>
-      <pubDate>Tue, 06 Oct 2026 20:32:58 +0000</pubDate>
+      <category>Security Affairs</category>
+      <pubDate>Tue, 13 Oct 2026 18:14:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>How a leaked builder of XWorm turned a remote access trojan into a surveillance kit</title>
+      <link>https://securityaffairs.com/200910/malware/how-a-leaked-builder-of-xworm-turned-a-remote-access-trojan-into-a-surveillance-kit.html</link>
+      <description>Netskope tracks four XWorm versions in the wild, 46 plugins, and new tools for location, audio and live browser control, with detections up fourfold. Netskope Threat Labs has been following XWorm since September 2024, and its latest report shows the malware has changed a lot. Over the past year the team identified four distinct versions […]
+
+📰 Source: Security Affairs | 🏷️ Type: News</description>
+      <guid isPermaLink="false">d5d3db867d402857bc67084b7428c8ab</guid>
+      <category>News</category>
+      <category>Security Affairs</category>
+      <pubDate>Wed, 14 Oct 2026 05:46:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>Volexity Uncovers Stealthy Ivanti VPN Attack Using Three Zero-Day Vulnerabilities</title>
+      <link>https://securityaffairs.com/200895/hacking/volexity-uncovers-stealthy-ivanti-vpn-attack-using-three-zero-day-vulnerabilities.html</link>
+      <description>Ivanti VPN zero-days let attackers gain root access, steal credentials, evade detection, and prepare for wider network compromise. On October 5, Volexity started investigating suspicious activity at one of its monitoring customers and traced everything back to an Ivanti Connect Secure VPN appliance running version 22.8R2.4, the latest build available at the time. Three chained […]
+
+📰 Source: Security Affairs | 🏷️ Type: News</description>
+      <guid isPermaLink="false">be6f4007981f989b1123c1d27d42ae92</guid>
+      <category>News</category>
+      <category>Security Affairs</category>
+      <pubDate>Wed, 14 Oct 2026 10:15:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Canadian cybersecurity executive arrested in federal extortion case</title>
+      <link>https://cyberscoop.com/edward-dubrovsky-cypfer-arrested-fbi-extortion-charges/</link>
+      <description>Details of the case align with the investigation into ShinyHunters’ attack on FBI IT systems. 
+The post Canadian cybersecurity executive arrested in federal extortion case appeared first on CyberScoop.
+
+📰 Source: CyberScoop | 🏷️ Type: News</description>
+      <guid isPermaLink="false">2c8cbf1e9f0a7b6e3c7b9bacc3dd6859</guid>
+      <category>News</category>
+      <category>CyberScoop</category>
+      <pubDate>Sat, 10 Oct 2026 13:35:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion</title>
+      <link>https://cyberscoop.com/ionq-acquires-elisity-1-3-billion-quantum-security/</link>
+      <description>The acquisition pairs Elisity's zero-trust access controls with IonQ's post-quantum cryptography business as federal agencies and major companies accelerate timelines for quantum-ready encryption.
+The post IonQ to buy zero-trust security firm Elisity in deal valued at up to $1.3 billion appeared first on CyberScoop.
+
+📰 Source: CyberScoop | 🏷️ Type: News</description>
+      <guid isPermaLink="false">658ffa3df7ff199d28333bca42de1866</guid>
+      <category>News</category>
+      <category>CyberScoop</category>
+      <pubDate>Mon, 12 Oct 2026 18:12:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day</title>
+      <link>https://cyberscoop.com/ivanti-connect-secure-zero-day-actively-exploited/</link>
+      <description>The security vendor said it initially discovered a portion of the defect during internal security checks in June, but the company said it didn’t meet the threshold for an out-of-band release.
+The post Ivanti misses opportunity to fix vulnerability before attackers got to work and made it a zero-day appeared first on CyberScoop.
+
+📰 Source: CyberScoop | 🏷️ Type: News</description>
+      <guid isPermaLink="false">27c56dc05f1e7d2cd2621e2f1c792c42</guid>
+      <category>News</category>
+      <category>CyberScoop</category>
+      <pubDate>Tue, 13 Oct 2026 22:10:42 +0000</pubDate>
     </item>
     <item>
       <title>Russian Spies Give 'MatchBoil' Malware a Stealthy Facelift</title>
@@ -108,131 +166,62 @@
       <pubDate>Mon, 12 Oct 2026 21:42:42 +0000</pubDate>
     </item>
     <item>
-      <title>Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US</title>
-      <link>https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/</link>
-      <description>Oleg Korniev was a leader of YMCO, a sophisticated network of money mules that helped hackers move funds outside the US.
-The post Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US appeared first on SecurityWeek.
+      <title>Ransomware Gangs Embrace Physical Threats, Family Stalking?</title>
+      <link>https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking</link>
+      <description>Organizations are reporting that employees face threats to their families, stalking, physical violence, and abduction. But these alarming claims are hard to verify.
 
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">ba551d211ee8085eb077195ff6820e2a</guid>
+📰 Source: Dark Reading | 🏷️ Type: News</description>
+      <guid isPermaLink="false">9840c4119dd7866569f04171979022f4</guid>
       <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Mon, 12 Oct 2026 11:24:50 +0000</pubDate>
+      <category>Dark Reading</category>
+      <pubDate>Wed, 14 Oct 2026 05:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Canonical Websites Disrupted in Second DDoS Attack This Year</title>
-      <link>https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/</link>
-      <description>The outage hit the main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal.
-The post Canonical Websites Disrupted in Second DDoS Attack This Year appeared first on SecurityWeek.
+      <title>Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach</title>
+      <link>https://www.securityweek.com/meta-says-hackers-took-code-personal-data-of-1500-in-github-breach/</link>
+      <description>Most of the affected individuals are Meta employees in the United States and they are being offered credit monitoring services.
+The post Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach appeared first on SecurityWeek.
 
 📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">76ceea91849b2fa3a7c4a8616ad64a23</guid>
+      <guid isPermaLink="false">aef5f9873e3513e4cf59a60328482a6d</guid>
       <category>News</category>
       <category>SecurityWeek</category>
-      <pubDate>Mon, 12 Oct 2026 11:58:39 +0000</pubDate>
+      <pubDate>Tue, 13 Oct 2026 16:01:00 +0000</pubDate>
     </item>
     <item>
-      <title>Bricksforge WordPress Plugin Vulnerability Exploited in the Wild</title>
-      <link>https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/</link>
-      <description>The vulnerability tracked as CVE-2026-85097 can allow threat actors to take control of the targeted WordPress websites.
-The post Bricksforge WordPress Plugin Vulnerability Exploited in the Wild appeared first on SecurityWeek.
+      <title>Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN</title>
+      <link>https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/</link>
+      <description>CVE-2026-104935 affects Ivanti Connect Secure and it can be exploited for unauthenticated remote code execution with elevated privileges. 
+The post Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN appeared first on SecurityWeek.
 
 📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">3b4bc5f32d4f61ec35eb8e16322b8a0b</guid>
+      <guid isPermaLink="false">ced2844b1af4616c3c16f867f4c0466d</guid>
       <category>News</category>
       <category>SecurityWeek</category>
-      <pubDate>Mon, 12 Oct 2026 13:14:37 +0000</pubDate>
+      <pubDate>Tue, 13 Oct 2026 18:43:43 +0000</pubDate>
     </item>
     <item>
-      <title>Refrigeration Controller Hack Spoils Food Across European Supermarkets</title>
-      <link>https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/</link>
-      <description>A cyberattack targeted refrigeration controllers, setting refrigerators and freezers across hundreds of supermarkets to defrost.
-The post Refrigeration Controller Hack Spoils Food Across European Supermarkets appeared first on SecurityWeek.
+      <title>Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero-Day</title>
+      <link>https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/</link>
+      <description>The most important is CVE-2026-96951, a security feature bypass flaw in Windows that has been exploited in the wild.
+The post Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero-Day appeared first on SecurityWeek.
 
 📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">1816a7ce2b6bd636177c9ebc0f97711d</guid>
+      <guid isPermaLink="false">9b03acdab1aa56d6845fb3d42a21b7a0</guid>
       <category>News</category>
       <category>SecurityWeek</category>
-      <pubDate>Tue, 13 Oct 2026 08:28:51 +0000</pubDate>
+      <pubDate>Wed, 14 Oct 2026 07:16:12 +0000</pubDate>
     </item>
     <item>
-      <title>Cyberattack Prompts Grocery Giant Ahold Delhaize to Disconnect Systems</title>
-      <link>https://www.securityweek.com/cyberattack-prompts-ahold-delhaize-to-disconnect-systems/</link>
-      <description>The company says it took some of its systems offline to contain a security issue within its network.
-The post Cyberattack Prompts Grocery Giant Ahold Delhaize to Disconnect Systems appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">f55eb713f721435da3c7439d39945d0b</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Tue, 13 Oct 2026 09:37:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI Turns Familiar Cyberattacks Into a Race Against Time</title>
-      <link>https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time/</link>
-      <description>IBM’s Steve Wallin talks to SecurityWeek on the effect of AI-driven attacks on enterprise defenses.
-The post AI Turns Familiar Cyberattacks Into a Race Against Time appeared first on SecurityWeek.
-
-📰 Source: SecurityWeek | 🏷️ Type: News</description>
-      <guid isPermaLink="false">1f5bf09ac0b7e16e0f574ba351997205</guid>
-      <category>News</category>
-      <category>SecurityWeek</category>
-      <pubDate>Tue, 13 Oct 2026 11:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ukraine strikes third Yandex data center, disrupting digital services across Russia</title>
-      <link>https://therecord.media/ukraine-strikes-third-yandex-data-center</link>
-      <description>A third Yandex data center in Russia was hit by Ukrainian drones over the weekend, forcing it to shut down and causing further disruptions to cloud services, payments, deliveries and other online services across the country.
+      <title>Sandbox vulnerability gives rogue AI agents a path to escape and leak data, research says</title>
+      <link>https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out</link>
+      <description>The new research, published by AI security startup AIR, found that a network filtering flaw in Vercel Sandbox — a tool used to run code in isolated environments — could allow agents to exploit certificate validation processes to transmit data outside approved networks.
 
 📰 Source: The Record | 🏷️ Type: News</description>
-      <guid isPermaLink="false">4ab1d6964fbee2700a709ffe03362d54</guid>
+      <guid isPermaLink="false">917384413f084e7006f62af50e0fb0b9</guid>
       <category>News</category>
       <category>The Record</category>
-      <pubDate>Mon, 12 Oct 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cyber incident hits grocery stores in US, Netherlands and Belgium</title>
-      <link>https://therecord.media/cyberattack-groceru-ahold-delhaize</link>
-      <description>Ahold Delhaize, the Dutch multinational retailer, announced it was taking precautionary measures following a cybersecurity incident, with stores in the U.S., Netherlands and Belgium reportedly impacted.
-
-📰 Source: The Record | 🏷️ Type: News</description>
-      <guid isPermaLink="false">d2dcab71037cde3598aff4dde3b8aa26</guid>
-      <category>News</category>
-      <category>The Record</category>
-      <pubDate>Tue, 13 Oct 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>South African clothing retailer Foschini Group investigating cyberattack on British fashion brands</title>
-      <link>https://therecord.media/foschini-group-south-africa-cyber</link>
-      <description>The South African retail giant The Foschini Group (TFG) disclosed a cyberattack that disrupted IT systems at three of its British fashion brands, leaving some services unavailable.
-
-📰 Source: The Record | 🏷️ Type: News</description>
-      <guid isPermaLink="false">3496df7040bc6d864e0ac04882254efe</guid>
-      <category>News</category>
-      <category>The Record</category>
-      <pubDate>Tue, 13 Oct 2026 13:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Russian internet provider SkyNet reports outages after cyberattack claimed by Ukrainian hackers</title>
-      <link>https://therecord.media/russian-internet-provider-skynet-reports-outages-ddos</link>
-      <description>One of St. Petersburg's major internet providers said its network had been under a distributed denial-of-service (DDoS) attack since October 6, affecting services including online gaming, voice calls and video conferencing.
-
-📰 Source: The Record | 🏷️ Type: News</description>
-      <guid isPermaLink="false">f1b62c0eb32003c61c230ef060f4c6fe</guid>
-      <category>News</category>
-      <category>The Record</category>
-      <pubDate>Tue, 13 Oct 2026 13:20:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Microsoft Plugs Nearly 400 Security Holes</title>
-      <link>https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/</link>
-      <description>Microsoft today released updates to remedy at least 398 security vulnerabilities in its Windows operating systems and supported software, including one weakness that is already being actively exploited and two others that were publicly detailed prior to today.
-
-📰 Source: Krebs on Security | 🏷️ Type: News</description>
-      <guid isPermaLink="false">40cbcfde8740fef631cafe82a31cfd73</guid>
-      <category>News</category>
-      <category>Krebs on Security</category>
-      <pubDate>Tue, 11 Aug 2026 21:28:35 +0000</pubDate>
+      <pubDate>Tue, 13 Oct 2026 16:18:00 +0000</pubDate>
     </item>
     <item>
       <title>Two Alleged ‘TeamPCP’ Hackers Arrested in Australia</title>
@@ -292,40 +281,15 @@ In a statement released today, the Australian Federal Police (AFP) said two unna
       <pubDate>Sat, 10 Oct 2026 00:17:42 +0000</pubDate>
     </item>
     <item>
-      <title>Laboratory Services Cooperative Agrees to Pay $6.1 Million to Settle Data Breach Litigation</title>
-      <link>https://www.hipaajournal.com/laboratory-services-cooperative-data-breach-settlement/</link>
-      <description>Laboratory Services Cooperative, a Seattle, Washington-based nonprofit clinical laboratory that provides diagnostic and analytical testing services for Planned Parenthood affiliates […]
-The post Laboratory Services Cooperative Agrees to Pay $6.1 Million to Settle Data Breach Litigation appeared first on The HIPAA Journal.
+      <title>Microsoft Patches More Than 1,400 Security Flaws</title>
+      <link>https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/</link>
+      <description>Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.
 
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">afc45680c4724303caf7579f8d7b7a04</guid>
-      <category>Healthcare Breach</category>
-      <category>HIPAA Journal</category>
-      <pubDate>Thu, 08 Oct 2026 14:15:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>Casper Orthopedic Associates; Atlantic Digestive Specialists Announce Data Breaches</title>
-      <link>https://www.hipaajournal.com/casper-orthopedic-associates-atlantic-digestive-specialists-data-breaches/</link>
-      <description>Data breaches have been announced by Casper Orthopedic Associates in Wyoming and Atlantic Digestive Specialists in New Hampshire. Casper Orthopedic […]
-The post Casper Orthopedic Associates; Atlantic Digestive Specialists Announce Data Breaches appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">3634fb876377c52b50a57fc7e0cb0dd9</guid>
-      <category>Healthcare Breach</category>
-      <category>HIPAA Journal</category>
-      <pubDate>Thu, 08 Oct 2026 15:32:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>Free Webinar:  A Practical Guide to a HIPAA Security Risk Assessment</title>
-      <link>https://www.hipaajournal.com/a-practical-guide-to-a-hipaa-security-risk-assessment/</link>
-      <description>A missing or inadequate HIPAA Security Risk Assessment can leave a major gap in your HIPAA compliance program. Yet many practices remain uncertain about what an SRA should cover, how often it should be updated.
-The post Free Webinar:  A Practical Guide to a HIPAA Security Risk Assessment appeared first on The HIPAA Journal.
-
-📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">3c7b6a5c26765102acdfe3f1b3cbd2da</guid>
-      <category>Healthcare Breach</category>
-      <category>HIPAA Journal</category>
-      <pubDate>Thu, 08 Oct 2026 16:11:13 +0000</pubDate>
+📰 Source: Krebs on Security | 🏷️ Type: News</description>
+      <guid isPermaLink="false">51c7c22e27bcbba549e0b1ebbedf7d07</guid>
+      <category>News</category>
+      <category>Krebs on Security</category>
+      <pubDate>Tue, 13 Oct 2026 23:24:53 +0000</pubDate>
     </item>
     <item>
       <title>iRhythm Notifies Individuals Affected by June 2026 Hacking Incident</title>
@@ -400,225 +364,239 @@ The post Roseland Community Hospital Association Settles Data Breach Lawsuit for
       <pubDate>Tue, 13 Oct 2026 10:00:44 +0000</pubDate>
     </item>
     <item>
-      <title>CFG Serramenti Report Victim cfgserramenti.com Threat Actor MAJINAHANASHI Date Discovered Oct 13, 2026 Description CFG Serramenti is a building products manufacturer based in Italy, â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/cfg-serramenti-data-breach/</link>
-      <description>CFG Serramenti Report Victim cfgserramenti.com Threat Actor MAJINAHANASHI Date Discovered Oct 13, 2026 Description CFG Serramenti is a building products manufacturer based in Italy, â¦October 13, 2026 reported a ransomware. Attributed to Play.
+      <title>Photon Health; Healthcare Highways Announce Data Security Incidents</title>
+      <link>https://www.hipaajournal.com/photon-health-healthcare-highways-data-breaches/</link>
+      <description>Data breaches have been announced by the New York-based healthcare technology company Photon Health, the Texas-based medical provider network company […]
+The post Photon Health; Healthcare Highways Announce Data Security Incidents appeared first on The HIPAA Journal.
 
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">27507ba888d8732d063e75ff15d21296</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">96ee8a04d15262e53813acee14e89b3f</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+      <pubDate>Tue, 13 Oct 2026 15:06:21 +0000</pubDate>
     </item>
     <item>
-      <title>Canadian Mennonite University Report Victim cmu.ca Threat Actor DragonForce Date Discovered Oct 13, 2026 Description Canadian Mennonite University is a private Christian university based in Canada, â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/canadian-mennonite-university-data-breach/</link>
-      <description>Canadian Mennonite University Report Victim cmu.ca Threat Actor DragonForce Date Discovered Oct 13, 2026 Description Canadian Mennonite University is a private Christian university based in Canada, â¦October 13, 2026 reported a ransomware. Attributed to Play.
+      <title>Twin Cities Pain Clinic Settles Data Breach Litigation</title>
+      <link>https://www.hipaajournal.com/twin-cities-pain-clinic-data-breach-settlement/</link>
+      <description>Twin Cities Pain Clinic, an Edina, Minnesota-based pain management center, has settled class action litigation arising from a July 2025 […]
+The post Twin Cities Pain Clinic Settles Data Breach Litigation appeared first on The HIPAA Journal.
 
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">97e8bebec7a00b334c3d606a99f283ff</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">d9daf6a37f6f59154f544a845a7eeead</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+      <pubDate>Wed, 14 Oct 2026 10:00:04 +0000</pubDate>
     </item>
     <item>
-      <title>Camellia Line Report Victim camellia-line.co.jp Threat Actor n0n Date Discovered Oct 13, 2026 Description Camellia Line Co., Ltd. is a marine transportation company based in Japan, â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/camellia-line-data-breach/</link>
-      <description>Camellia Line Report Victim camellia-line.co.jp Threat Actor n0n Date Discovered Oct 13, 2026 Description Camellia Line Co., Ltd. is a marine transportation company based in Japan, â¦October 13, 2026 reported a ransomware. Attributed to Play.
+      <title>Ivanti Connect Secure Zero Day Exploited in Attacks</title>
+      <link>https://www.hipaajournal.com/ivanti-connect-secure-zero-day-2026/</link>
+      <description>A high-severity authentication bypass vulnerability has been identified in the Ivanti Connect Secure (Pulse Connect Secure) enterprise-grade SSL VPN that […]
+The post Ivanti Connect Secure Zero Day Exploited in Attacks appeared first on The HIPAA Journal.
 
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">1f7d4566231da5d8493b1cf154966363</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+📰 Source: HIPAA Journal | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">cd90856d3031de33a21c1361e5b76365</guid>
+      <category>Healthcare Breach</category>
+      <category>HIPAA Journal</category>
+      <pubDate>Wed, 14 Oct 2026 11:05:37 +0000</pubDate>
     </item>
     <item>
-      <title>Bukit Kayu Hitam ICD Report Victim bkhicd.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Bukit Kayu Hitam ICD Sdn Bhd is an integrated logistics company based in Malaysia, â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/bukit-kayu-hitam-icd-data-breach/</link>
-      <description>Bukit Kayu Hitam ICD Report Victim bkhicd.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Bukit Kayu Hitam ICD Sdn Bhd is an integrated logistics company based in Malaysia, â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">bbc80cc2e5f548c1f36c255f234acc95</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Brooks Law Firm Report Victim brookslawfirm.com Threat Actor INC_RANSOM Date Discovered Oct 13, 2026 Description Brooks Law Firm is a legal services company based in the USA â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/brooks-law-firm-data-breach/</link>
-      <description>Brooks Law Firm Report Victim brookslawfirm.com Threat Actor INC_RANSOM Date Discovered Oct 13, 2026 Description Brooks Law Firm is a legal services company based in the USA â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">6940d769ce2137197c47591eff0565d1</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Basra Multi-Purpose Terminal Report Victim bmtiq.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Basra Multi-Purpose Terminal is a port operations company based in Iraq, specializing â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/basra-multi-purpose-terminal-data-breach/</link>
-      <description>Basra Multi-Purpose Terminal Report Victim bmtiq.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Basra Multi-Purpose Terminal is a port operations company based in Iraq, specializing â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">9032ca85ce43beea84cf6834593d4a30</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Asyaport Liman Report Victim asyaport.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Asyaport Liman A.Å. is a container terminal and port logistics company based in â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/asyaport-liman-data-breach/</link>
-      <description>Asyaport Liman Report Victim asyaport.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Asyaport Liman A.Å. is a container terminal and port logistics company based in â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">b68b443aacfffe36499e96e58138950d</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>April Group Report Victim aprilasia.com Threat Actor n0n Date Discovered Oct 13, 2026 Description April Group is a pulp and paper manufacturing company based in Indonesia, â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/april-group-data-breach/</link>
-      <description>April Group Report Victim aprilasia.com Threat Actor n0n Date Discovered Oct 13, 2026 Description April Group is a pulp and paper manufacturing company based in Indonesia, â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">f7f5bbad392a2f0393e8846cf6bfa582</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Apical Group Report Victim apicalgroup.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Apical Group is a vegetable oil processing company based in Singapore, â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/apical-group-data-breach/</link>
-      <description>Apical Group Report Victim apicalgroup.com Threat Actor n0n Date Discovered Oct 13, 2026 Description Apical Group is a vegetable oil processing company based in Singapore, â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">4f2fb4cde6e0254adb88c6338276b72e</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Amantya Technologies Report Victim amantyatech.com Threat Actor OROVA Date Discovered Oct 13, 2026 Description Amantya Technologies is a product engineering and technology services company â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/amantya-technologies-data-breach/</link>
-      <description>Amantya Technologies Report Victim amantyatech.com Threat Actor OROVA Date Discovered Oct 13, 2026 Description Amantya Technologies is a product engineering and technology services company â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">e4ec5d70a646a1e3a98730af7f046bf3</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Albertin Alcide &amp; Figli Report Victim albertin-cliches.it Threat Actor MAJINAHANASHI Date Discovered Oct 13, 2026 Description Albertin Alcide &amp; Figli S.n.c. is a manufacturing company â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/albertin-alcide-and-figli-data-breach/</link>
-      <description>Albertin Alcide &amp; Figli Report Victim albertin-cliches.it Threat Actor MAJINAHANASHI Date Discovered Oct 13, 2026 Description Albertin Alcide &amp; Figli S.n.c. is a manufacturing company â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">56aeefa11c28e4fe460fe8d2e16a4256</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Advanced Imaging Solutions Report Victim ais-mn.com Threat Actor Play Date Discovered Oct 13, 2026 Description Advanced Imaging Solutions is a business technology company based in the USA â¦October 13, 2026</title>
-      <link>https://www.breachsense.com/breaches/advanced-imaging-solutions-data-breach/</link>
-      <description>Advanced Imaging Solutions Report Victim ais-mn.com Threat Actor Play Date Discovered Oct 13, 2026 Description Advanced Imaging Solutions is a business technology company based in the USA â¦October 13, 2026 reported a ransomware. Attributed to Play.
-
-🎭 Threat Actor: Play | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">40ea0f3c28b4004c5f57d46adf49d680</guid>
-      <category>Ransomware</category>
-      <category>BreachSense</category>
-      <category>Actor: Play</category>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks</title>
-      <link>https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/</link>
-      <description>Hackers are abusing legitimate Bing search-result redirects as click URLs in Google search ads to direct users to fake Claude installers that deliver ClickFix attacks. [...]
+      <title>The MFA Gaps Attackers are Still Exploiting</title>
+      <link>https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/</link>
+      <description>Attackers continue exploiting gaps in MFA coverage, using stolen credentials to access VPNs, RDP, and Windows systems that still rely on passwords alone. Specops explains why protecting cloud applications isn't enough and how organizations can close these authentication gaps. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">8bfbb86cad997b3d5d2d69c57cd835de</guid>
+      <guid isPermaLink="false">e06390fbdfdb0853861fe4c7fee7559a</guid>
       <category>Security News</category>
       <category>BleepingComputer</category>
-      <pubDate>Fri, 09 Oct 2026 16:31:37 -0400</pubDate>
+      <pubDate>Tue, 13 Oct 2026 10:01:11 -0400</pubDate>
     </item>
     <item>
-      <title>Criminal IP Introduces AITEM as the Next Evolution of Attack Surface Management</title>
-      <link>https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/</link>
-      <description>Traditional attack surface management helps organizations discover exposed assets, but visibility alone is not enough to address threats. Criminal IP introduces AITEM, an AI-powered approach that connects exposure discovery with investigation, risk prioritization, and response. [...]
+      <title>Docker Hub flaw let attackers impersonate users, tamper with images</title>
+      <link>https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/</link>
+      <description>Docker has disclosed a critical vulnerability (CVE-2026-105445) in Docker Hub that let attackers access another user's container repositories using a personal access token (PAT). [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">ad3d60a727a2633de4b725ccdbebb6e7</guid>
+      <guid isPermaLink="false">f06c1a47b12074aebbafce8fe30c9dbb</guid>
       <category>Security News</category>
       <category>BleepingComputer</category>
-      <pubDate>Sat, 10 Oct 2026 08:30:39 -0400</pubDate>
+      <pubDate>Tue, 13 Oct 2026 11:20:20 -0400</pubDate>
     </item>
     <item>
-      <title>ARTEX AI, Claude agents used in cyberattacks on South Korean banks</title>
-      <link>https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/</link>
-      <description>The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese hacker using the ARTEX AI penetration testing suite and Claude agents. [...]
+      <title>Ivanti warns of Connect Secure zero-day exploited in attacks</title>
+      <link>https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/</link>
+      <description>Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">f7f8fb8a8ab26f1b814b3778dbdce4d4</guid>
+      <guid isPermaLink="false">214020f6553583e5bed98896c535a963</guid>
       <category>Security News</category>
       <category>BleepingComputer</category>
-      <pubDate>Sat, 10 Oct 2026 10:16:17 -0400</pubDate>
+      <pubDate>Tue, 13 Oct 2026 11:45:50 -0400</pubDate>
     </item>
     <item>
-      <title>Cyber exec arrested in case allegedly tied to ShinyHunters hackers</title>
-      <link>https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/</link>
-      <description>Canadian cybersecurity executive Edward Dubrovsky has been arrested in Pennsylvania in connection with alleged extortion activity that multiple reports have linked to the FBI's ongoing crackdown on the ShinyHunters hacking group. [...]
+      <title>TFG London cyberattack disrupts systems at Hobbs and Whistles retailers</title>
+      <link>https://www.bleepingcomputer.com/news/security/tfg-london-cyberattack-disrupts-systems-at-hobbs-and-whistles-retailers/</link>
+      <description>TFG London detected a cybersecurity incident that impacted IT systems used by the Phase Eight, Hobbs, and Whistles premium fashion brands. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">6acca16fd180152a40b92ae65180c85c</guid>
+      <guid isPermaLink="false">5b81725a3082b5996702bfe506b99415</guid>
       <category>Security News</category>
       <category>BleepingComputer</category>
-      <pubDate>Sat, 10 Oct 2026 11:07:54 -0400</pubDate>
+      <pubDate>Tue, 13 Oct 2026 12:44:18 -0400</pubDate>
     </item>
     <item>
-      <title>Retail giant Ahold Delhaize takes systems offline after cyberattack</title>
-      <link>https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/</link>
-      <description>Retail giant Ahold Delhaize, one of the world's largest food retail chains, confirmed today that it had to take some systems offline in response to a "cybersecurity incident" affecting its network. [...]
+      <title>Ghostscript flaw lets hackers hijack servers via PDF uploads</title>
+      <link>https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/</link>
+      <description>A critical heap buffer overflow vulnerability (CVE-2026-39919) in the Ghostscript interpreter and rendering engine could allow remote code execution through specially crafted PDF files. [...]
 
 📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">fd605372018125361a1452567d4fc2ce</guid>
+      <guid isPermaLink="false">c70d06b283d8c69aaf5f8af67d8c4eed</guid>
       <category>Security News</category>
       <category>BleepingComputer</category>
-      <pubDate>Mon, 12 Oct 2026 09:51:07 -0400</pubDate>
+      <pubDate>Tue, 13 Oct 2026 17:33:26 -0400</pubDate>
     </item>
     <item>
-      <title>Cyberattack shuts down refrigerators at French supermarkets</title>
-      <link>https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/</link>
-      <description>Attackers remotely defrosted refrigerators at multiple French supermarket chains overnight in a cyberattack that reportedly targeted Danfoss refrigeration controllers. [...]
+      <title>Cooper Tec Solutions Report Victim coopertecs.com.br Threat Actor HYFLOCK Date Discovered Oct 14, 2026 Description Cooper Tec Solutions is an industrial engineering company based in â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/cooper-tec-solutions-data-breach/</link>
+      <description>Cooper Tec Solutions Report Victim coopertecs.com.br Threat Actor HYFLOCK Date Discovered Oct 14, 2026 Description Cooper Tec Solutions is an industrial engineering company based in â¦October 14, 2026 reported a ransomware. Attributed to Akira.
 
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">4b8b04c83eae68ff1ffed6060be02d1c</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Mon, 12 Oct 2026 11:23:34 -0400</pubDate>
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">0c498c16e4dfc60f80991dae2919dabb</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Anthropic takes risky AI tests offline after models breach govt sites</title>
-      <link>https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/</link>
-      <description>Anthropic announced that its internal AI models undergoing "high-risk and cybersecurity evaluations" no longer have internet access following incidents involving U.S. government websites at the federal, state, and local levels. [...]
+      <title>COMAPA Victoria Report Victim comapavictoria.gob.mx Threat Actor Qilin Date Discovered Oct 14, 2026 Description COMAPA Victoria is a public water utility based in Mexico, managing â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/comapa-victoria-data-breach/</link>
+      <description>COMAPA Victoria Report Victim comapavictoria.gob.mx Threat Actor Qilin Date Discovered Oct 14, 2026 Description COMAPA Victoria is a public water utility based in Mexico, managing â¦October 14, 2026 reported a ransomware. Attributed to Akira.
 
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">791c79cb3012503d56f8329e0390ae05</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Mon, 12 Oct 2026 14:51:59 -0400</pubDate>
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">c37e788bde8b5030a6d7f514aab23a4a</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codar Report Victim codar.com.sg Threat Actor OROVA Date Discovered Oct 14, 2026 Description Codar (Pte) Ltd is a maritime electronics company based in Singapore, providing â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/codar-data-breach/</link>
+      <description>Codar Report Victim codar.com.sg Threat Actor OROVA Date Discovered Oct 14, 2026 Description Codar (Pte) Ltd is a maritime electronics company based in Singapore, providing â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">d811d11e3b5c511f6e79e46dd9f02e9b</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CMC Report Victim cmc.com.ar Threat Actor EMPERADOR Date Discovered Oct 14, 2026 Description CMC is an accounting, tax, and legal advisory firm based in Argentina, â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/cmc-2026-10-data-breach/</link>
+      <description>CMC Report Victim cmc.com.ar Threat Actor EMPERADOR Date Discovered Oct 14, 2026 Description CMC is an accounting, tax, and legal advisory firm based in Argentina, â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">19c2bbaf012e46546d55b34bda870a84</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>City Chain Stores Report Victim citychain.com.sg Threat Actor OROVA Date Discovered Oct 14, 2026 Description City Chain Stores (S) Pte Ltd is a watch retail company based in Singapore, â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/city-chain-stores-data-breach/</link>
+      <description>City Chain Stores Report Victim citychain.com.sg Threat Actor OROVA Date Discovered Oct 14, 2026 Description City Chain Stores (S) Pte Ltd is a watch retail company based in Singapore, â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">3a272f230364de1424a64b7633cd6270</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Brunnberg &amp; Forshed Arkitektkontor Report Victim brunnbergoforshed.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description Brunnberg &amp; Forshed Arkitektkontor AB is an architecture firm â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/brunnberg-and-forshed-arkitektkontor-data-breach/</link>
+      <description>Brunnberg &amp; Forshed Arkitektkontor Report Victim brunnbergoforshed.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description Brunnberg &amp; Forshed Arkitektkontor AB is an architecture firm â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">62cbc455a5be7cd9cdd1deb7eac386a9</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Briab Report Victim briab.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description Briab is a risk and safety consulting firm based in Sweden, specializing in â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/briab-data-breach/</link>
+      <description>Briab Report Victim briab.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description Briab is a risk and safety consulting firm based in Sweden, specializing in â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">00c0866d5a005335e49be22b4d1d23ca</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>BAU Report Victim bau.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description BAU is an architecture and urban design practice based in Sweden, specializing in â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/bau-data-breach/</link>
+      <description>BAU Report Victim bau.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description BAU is an architecture and urban design practice based in Sweden, specializing in â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">35d7fc47fb9f7569bc7b144f9b54d6ac</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Alfameli Group Report Victim alfameli.com Threat Actor OROVA Date Discovered Oct 14, 2026 Description Alfameli Group is an industrial solutions company based in Malaysia, serving the â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/alfameli-group-data-breach/</link>
+      <description>Alfameli Group Report Victim alfameli.com Threat Actor OROVA Date Discovered Oct 14, 2026 Description Alfameli Group is an industrial solutions company based in Malaysia, serving the â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">a08d5fefd42b18ccaffbb9a298c14f9a</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ahlqvist &amp; Almqvist Arkitekter Report Victim ahlqvist-almqvist.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description Ahlqvist &amp; Almqvist Arkitekter is an architecture and urban â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/ahlqvist-and-almqvist-arkitekter-data-breach/</link>
+      <description>Ahlqvist &amp; Almqvist Arkitekter Report Victim ahlqvist-almqvist.se Threat Actor Wallstreet Date Discovered Oct 14, 2026 Description Ahlqvist &amp; Almqvist Arkitekter is an architecture and urban â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">fc271c21b293167ec2cd6d8e567cfe8a</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Admirals Trading Report Victim admirals.ae Threat Actor AuditTeam Date Discovered Oct 14, 2026 Description Admirals Trading LLC is a food and beverage distribution and manufacturing â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/admirals-trading-data-breach/</link>
+      <description>Admirals Trading Report Victim admirals.ae Threat Actor AuditTeam Date Discovered Oct 14, 2026 Description Admirals Trading LLC is a food and beverage distribution and manufacturing â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">a9fd411eee2b8d5e1526b231e9a8c263</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AAA Architectural Hardware Report Victim aaahardware.com Threat Actor Akira Date Discovered Oct 14, 2026 Description AAA Architectural Hardware Co. is a commercial architectural hardware â¦October 14, 2026</title>
+      <link>https://www.breachsense.com/breaches/aaa-architectural-hardware-data-breach/</link>
+      <description>AAA Architectural Hardware Report Victim aaahardware.com Threat Actor Akira Date Discovered Oct 14, 2026 Description AAA Architectural Hardware Co. is a commercial architectural hardware â¦October 14, 2026 reported a ransomware. Attributed to Akira.
+
+🎭 Threat Actor: Akira | 📰 Source: BreachSense | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">2e00c7b918a44a8be8065f1f2523598d</guid>
+      <category>Ransomware</category>
+      <category>BreachSense</category>
+      <category>Actor: Akira</category>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Unknown</title>
@@ -629,19 +607,7 @@ The post Roseland Community Hospital Association Settles Data Breach Lawsuit for
       <guid isPermaLink="false">344d17850994629ad19bcc451738395f</guid>
       <category>Healthcare Breach</category>
       <category>HHS OCR</category>
-      <pubDate>Tue, 13 Oct 2026 13:38:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Silent Ransom Group claims “Luna Moth Files” are fake. The data suggest otherwise.</title>
-      <link>https://databreaches.net/2026/10/09/silent-ransom-group-claims-luna-moth-files-are-fake-the-data-suggest-otherwise/</link>
-      <description>On Tuesday, cybersecurity professionals began investigating an onion site that appeared to contain internal chat files from Silent Ransom Group. On Thursday, Silent Ransom Group said the leak was fake, but is it?  A bespoke site called “Luna Moth Files” appeared Tuesday morning. The identity of the person who published the data is unknown, as...
-Source
-
-📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">2822add677f0cfb284bac7ab033b7257</guid>
-      <category>Data Breach</category>
-      <category>DataBreaches.net</category>
-      <pubDate>Fri, 09 Oct 2026 13:50:55 +0000</pubDate>
+      <pubDate>Wed, 14 Oct 2026 11:15:23 +0000</pubDate>
     </item>
     <item>
       <title>Anthropic AI agent gives fake murder tip to US cops in global breach</title>
@@ -750,6 +716,18 @@ Source
       <category>Data Breach</category>
       <category>DataBreaches.net</category>
       <pubDate>Tue, 13 Oct 2026 13:00:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Attackers claim to have stolen 80 million South African patient records in massive Ampath Laboratories data breach</title>
+      <link>https://databreaches.net/2026/10/13/attackers-claim-to-have-stolen-80-million-south-african-patient-records-in-massive-ampath-laboratories-data-breach/</link>
+      <description>Luis Monzon reports: Ampath Laboratories, one of South Africa’s largest pathology service providers, has been hit by a cyberattack, with the attacker claiming that more than 80 million patient records have been exfiltrated. Threat actor ByteToBreach, which has attacked other major entities across Africa, including major targets in Nigeria, claimed responsibility for the breach. The...
+Source
+
+📰 Source: DataBreaches.net | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">811159b58e6d6c5ed5c2869c0e29c3d9</guid>
+      <category>Data Breach</category>
+      <category>DataBreaches.net</category>
+      <pubDate>Tue, 13 Oct 2026 20:49:32 +0000</pubDate>
     </item>
     <item>
       <title>Kings United Way</title>
@@ -1093,102 +1071,6 @@ Source
       <pubDate>Sun, 11 Oct 2026 21:00:43 +0700</pubDate>
     </item>
     <item>
-      <title>Company #25</title>
-      <link>https://www.ransomware.live/id/Q29tcGFueSAjMjVATjBu</link>
-      <description>Healthcare
-
-🎭 Threat Actor: N0n | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">5dc494a0f7b9b051252c6fd2a5aa8406</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: N0n</category>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Company #26</title>
-      <link>https://www.ransomware.live/id/Q29tcGFueSAjMjZATjBu</link>
-      <description>Healthcare
-
-🎭 Threat Actor: N0n | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">2aad809a1bafea0ae66128993f457d48</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: N0n</category>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Company #28</title>
-      <link>https://www.ransomware.live/id/Q29tcGFueSAjMjhATjBu</link>
-      <description>Professional Services
-
-🎭 Threat Actor: N0n | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">78266da994d5ff405fdf6973a1e17cfa</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: N0n</category>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Company #29</title>
-      <link>https://www.ransomware.live/id/Q29tcGFueSAjMjlATjBu</link>
-      <description>Technology
-
-🎭 Threat Actor: N0n | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">669c62c7f4bd3a641dad15ccab234898</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: N0n</category>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Charles E. Tabor AAL LLC</title>
-      <link>https://www.ransomware.live/id/Q2hhcmxlcyBFLiBUYWJvciBBQUwgTExDQHJoeXNpZGE=</link>
-      <description>Other
-
-🎭 Threat Actor: rhysida | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">eed6f699a6f4c10e414b2484fe57b25c</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: rhysida</category>
-      <pubDate>Sun, 11 Oct 2026 06:31:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>Friendship Christian School</title>
-      <link>https://www.ransomware.live/id/RnJpZW5kc2hpcCBDaHJpc3RpYW4gU2Nob29sQHFpbGlu</link>
-      <description>Education
-
-🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">af5cea2f7c711c497e47abe6bc129ec7</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: qilin</category>
-      <pubDate>Sun, 11 Oct 2026 12:02:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>Reed &amp; Giordano PA</title>
-      <link>https://www.ransomware.live/id/UmVlZCAmIEdpb3JkYW5vIFBBQHJoeXNpZGE=</link>
-      <description>Professional Services
-
-🎭 Threat Actor: rhysida | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">673ef395e06d701b57e457a88898ac0d</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: rhysida</category>
-      <pubDate>Sun, 11 Oct 2026 15:27:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>huntcompanies.com</title>
-      <link>https://www.ransomware.live/id/aHVudGNvbXBhbmllcy5jb21AQnJhaW5DaXBoZXI=</link>
-      <description>Not Found
-
-🎭 Threat Actor: BrainCipher | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">1196f9fca09fe46dc7a23b37aff4e341</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: BrainCipher</category>
-      <pubDate>Sun, 11 Oct 2026 20:20:58 +0000</pubDate>
-    </item>
-    <item>
       <title>Reed &amp; Giordano PA (OCT-2026)</title>
       <link>https://www.hendryadrian.com/ransom-reed-giordano-pa-oct-2026/</link>
       <description>Reed &amp; Giordano PA (OCT-2026) reported a ransomware.
@@ -1330,30 +1212,6 @@ Source
       <category>Ransomware</category>
       <category>Hendry Adrian</category>
       <pubDate>Mon, 12 Oct 2026 10:48:14 +0700</pubDate>
-    </item>
-    <item>
-      <title>PIC GROUP, INC</title>
-      <link>https://www.ransomware.live/id/UElDIEdST1VQLCBJTkNAYWtpcmE=</link>
-      <description>Other
-
-🎭 Threat Actor: akira | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">64fd101feb51067ab9385d504d1f9b8d</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: akira</category>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Eversource Energy</title>
-      <link>https://www.ransomware.live/id/RXZlcnNvdXJjZSBFbmVyZ3lAUmVkYWN0</link>
-      <description>Energy &amp; Utilities
-
-🎭 Threat Actor: Redact | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">492362f9cb82a3fc801b59b28b42ff5f</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Redact</category>
-      <pubDate>Mon, 12 Oct 2026 03:22:54 +0000</pubDate>
     </item>
     <item>
       <title>brookslawfirm.com</title>
@@ -1512,6 +1370,18 @@ Source
       <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>Milstein Siegel, LLC</title>
+      <link>https://www.ransomware.live/id/TWlsc3RlaW4gU2llZ2VsLCBMTENAcWlsaW4=</link>
+      <description>Professional Services
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">f00ef2ffe6ced1c8c19018c572ce1dec</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: qilin</category>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Culinary Specialties</title>
       <link>https://www.ransomware.live/id/Q3VsaW5hcnkgU3BlY2lhbHRpZXNAcGxheQ==</link>
       <description>Agriculture and Food Production
@@ -1534,6 +1404,54 @@ Source
       <category>Ransomware.live</category>
       <category>Actor: play</category>
       <pubDate>Tue, 13 Oct 2026 01:34:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>MarieBelle New York</title>
+      <link>https://www.ransomware.live/id/TWFyaWVCZWxsZSBOZXcgWW9ya0BOMG4=</link>
+      <description>Retail &amp; E-Commerce
+
+🎭 Threat Actor: N0n | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">02cb24bb9747a1d82b7da233587dcf15</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: N0n</category>
+      <pubDate>Tue, 13 Oct 2026 10:55:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>Iliff, Meredith, Wildberger &amp; Brennan, P.C</title>
+      <link>https://www.ransomware.live/id/SWxpZmYsIE1lcmVkaXRoLCBXaWxkYmVyZ2VyICYgQnJlbm5hbiwgUC5DQHFpbGlu</link>
+      <description>Professional Services
+
+🎭 Threat Actor: qilin | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">f598072ae41a4f059c5c4964906fdff2</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: qilin</category>
+      <pubDate>Tue, 13 Oct 2026 15:15:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>KVH</title>
+      <link>https://www.ransomware.live/id/S1ZIQGV2ZXJlc3Q=</link>
+      <description>Technology
+
+🎭 Threat Actor: everest | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">c5086703409671fb66d2cb63ccd91a1f</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: everest</category>
+      <pubDate>Tue, 13 Oct 2026 16:03:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lane Equipment</title>
+      <link>https://www.ransomware.live/id/TGFuZSBFcXVpcG1lbnRAZHJhZ29uZm9yY2U=</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: dragonforce | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">2f28b8788180e3b98b9ad1d3ab2b43ec</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: dragonforce</category>
+      <pubDate>Wed, 14 Oct 2026 00:11:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
