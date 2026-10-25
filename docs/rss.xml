@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Breach RSS Generator</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Oct 2026 10:20:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 10:47:54 +0000</lastBuildDate>
     <item>
       <title>TiDB Breach Exposes Flawed Cloud Security Assumptions</title>
       <link>https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security</link>
@@ -413,94 +413,6 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <pubDate>Fri, 23 Oct 2026 12:34:45 +0000</pubDate>
     </item>
     <item>
-      <title>Unknown</title>
-      <link>https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf</link>
-      <description>Unknown reported a healthcare breach.
-
-📰 Source: HHS OCR | 🏷️ Type: Healthcare Breach</description>
-      <guid isPermaLink="false">344d17850994629ad19bcc451738395f</guid>
-      <category>Healthcare Breach</category>
-      <category>HHS OCR</category>
-      <pubDate>Sat, 24 Oct 2026 10:20:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Machine speed attacks require machine speed detection and response</title>
-      <link>https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/</link>
-      <description>Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are critical. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">396946046ba9f0a62d16d1ab0dd4e3f8</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 22 Oct 2026 10:02:12 -0400</pubDate>
-    </item>
-    <item>
-      <title>Arista patches new VeloCloud Orchestrator zero-day exploited in attacks</title>
-      <link>https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/</link>
-      <description>Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">b97c3bd82901d930e943e4bd1982e11f</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 22 Oct 2026 13:18:22 -0400</pubDate>
-    </item>
-    <item>
-      <title>LiteLLM release pipeline hacked to distribute info-stealer malware</title>
-      <link>https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/</link>
-      <description>Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">614cb35542a8516a392fce8e3932d057</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 22 Oct 2026 15:12:51 -0400</pubDate>
-    </item>
-    <item>
-      <title>Capcom confirms data breach affecting 11.7 million accounts</title>
-      <link>https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/</link>
-      <description>Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">0bdbf899c27bdd4924b5fb03355329b7</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 22 Oct 2026 16:22:45 -0400</pubDate>
-    </item>
-    <item>
-      <title>Railway warns devs to rotate secrets after potential breach</title>
-      <link>https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/</link>
-      <description>Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">4b7b109b6786a00ae6a7ddede3c05728</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Thu, 22 Oct 2026 17:25:31 -0400</pubDate>
-    </item>
-    <item>
-      <title>Quest Diagnostics confirms data breach exposed patient records</title>
-      <link>https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/</link>
-      <description>American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">401c5c50383cbfaa5c525c67b4fd28f1</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Fri, 23 Oct 2026 12:40:07 -0400</pubDate>
-    </item>
-    <item>
-      <title>Abandoned Popcorn Time app exposed millions of devices to RCE attacks</title>
-      <link>https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/</link>
-      <description>Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers. [...]
-
-📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
-      <guid isPermaLink="false">cf2dd9898351d5d1374aabd50838b478</guid>
-      <category>Security News</category>
-      <category>BleepingComputer</category>
-      <pubDate>Fri, 23 Oct 2026 16:55:05 -0400</pubDate>
-    </item>
-    <item>
       <title>Medienwerkstatt Report Victim medienwerkstatt-ag.ch Threat Actor Akira Date Discovered Oct 23, 2026 Description Medienwerkstatt AG is a communications and printing company based in â¦October 23, 2026</title>
       <link>https://www.breachsense.com/breaches/medienwerkstatt-data-breach/</link>
       <description>Medienwerkstatt Report Victim medienwerkstatt-ag.ch Threat Actor Akira Date Discovered Oct 23, 2026 Description Medienwerkstatt AG is a communications and printing company based in â¦October 23, 2026 reported a ransomware. Attributed to Qilin.
@@ -643,6 +555,94 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <category>BreachSense</category>
       <category>Actor: Qilin</category>
       <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Machine speed attacks require machine speed detection and response</title>
+      <link>https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/</link>
+      <description>Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are critical. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">396946046ba9f0a62d16d1ab0dd4e3f8</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Thu, 22 Oct 2026 10:02:12 -0400</pubDate>
+    </item>
+    <item>
+      <title>Arista patches new VeloCloud Orchestrator zero-day exploited in attacks</title>
+      <link>https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/</link>
+      <description>Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">b97c3bd82901d930e943e4bd1982e11f</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Thu, 22 Oct 2026 13:18:22 -0400</pubDate>
+    </item>
+    <item>
+      <title>LiteLLM release pipeline hacked to distribute info-stealer malware</title>
+      <link>https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/</link>
+      <description>Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">614cb35542a8516a392fce8e3932d057</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Thu, 22 Oct 2026 15:12:51 -0400</pubDate>
+    </item>
+    <item>
+      <title>Capcom confirms data breach affecting 11.7 million accounts</title>
+      <link>https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/</link>
+      <description>Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">0bdbf899c27bdd4924b5fb03355329b7</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Thu, 22 Oct 2026 16:22:45 -0400</pubDate>
+    </item>
+    <item>
+      <title>Railway warns devs to rotate secrets after potential breach</title>
+      <link>https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/</link>
+      <description>Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">4b7b109b6786a00ae6a7ddede3c05728</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Thu, 22 Oct 2026 17:25:31 -0400</pubDate>
+    </item>
+    <item>
+      <title>Quest Diagnostics confirms data breach exposed patient records</title>
+      <link>https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/</link>
+      <description>American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Quanum LSM system. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">401c5c50383cbfaa5c525c67b4fd28f1</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Fri, 23 Oct 2026 12:40:07 -0400</pubDate>
+    </item>
+    <item>
+      <title>Abandoned Popcorn Time app exposed millions of devices to RCE attacks</title>
+      <link>https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/</link>
+      <description>Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers. [...]
+
+📰 Source: BleepingComputer | 🏷️ Type: Security News</description>
+      <guid isPermaLink="false">cf2dd9898351d5d1374aabd50838b478</guid>
+      <category>Security News</category>
+      <category>BleepingComputer</category>
+      <pubDate>Fri, 23 Oct 2026 16:55:05 -0400</pubDate>
+    </item>
+    <item>
+      <title>Unknown</title>
+      <link>https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf</link>
+      <description>Unknown reported a healthcare breach.
+
+📰 Source: HHS OCR | 🏷️ Type: Healthcare Breach</description>
+      <guid isPermaLink="false">344d17850994629ad19bcc451738395f</guid>
+      <category>Healthcare Breach</category>
+      <category>HHS OCR</category>
+      <pubDate>Sun, 25 Oct 2026 10:47:54 +0000</pubDate>
     </item>
     <item>
       <title>Hack exposes data on millions of California students</title>
@@ -1195,112 +1195,15 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Adobe Insurance Brokers, LLC</title>
-      <link>https://www.ransomware.live/id/QWRvYmUgSW5zdXJhbmNlIEJyb2tlcnMsIExMQ0BwZWFy</link>
-      <description>Financial Services
+      <title>Dorsata, Inc.</title>
+      <link>https://oag.ca.gov/privacy/databreach/list</link>
+      <description>Dorsata, Inc. reported a data breach in California.
 
-🎭 Threat Actor: pear | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">0614ea9da41835ce6c0f7432a5021dd5</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: pear</category>
-      <pubDate>Wed, 21 Oct 2026 12:33:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hypertherm</title>
-      <link>https://www.ransomware.live/id/SHlwZXJ0aGVybUBIZWxpeA==</link>
-      <description>Manufacturing
-
-🎭 Threat Actor: Helix | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">f24eaa0b0956a66a953e6e4a48e2607b</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Helix</category>
-      <pubDate>Wed, 21 Oct 2026 13:52:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Westrock Coffee</title>
-      <link>https://www.ransomware.live/id/V2VzdHJvY2sgQ29mZmVlQEhlbGl4</link>
-      <description>Retail &amp; E-Commerce
-
-🎭 Threat Actor: Helix | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">e4b97f5d6d3a212c2e1c18a362f70a5a</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: Helix</category>
-      <pubDate>Wed, 21 Oct 2026 17:52:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Porter Hedges LLP</title>
-      <link>https://www.ransomware.live/id/UG9ydGVyIEhlZGdlcyBMTFBAU2lsZW50UmFuc29tR3JvdXA=</link>
-      <description>Professional Services
-
-🎭 Threat Actor: SilentRansomGroup | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">0351c68b153bc43cffc9520e2c9f020b</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: SilentRansomGroup</category>
-      <pubDate>Wed, 21 Oct 2026 19:03:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Coastal Alabama Community College</title>
-      <link>https://www.ransomware.live/id/Q29hc3RhbCBBbGFiYW1hIENvbW11bml0eSBDb2xsZWdlQGludGVybG9jaw==</link>
-      <description>Education
-
-🎭 Threat Actor: interlock | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">964ac5b8e564ba023a1764f3d987232c</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: interlock</category>
-      <pubDate>Wed, 21 Oct 2026 19:29:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>olyortho.com</title>
-      <link>https://www.ransomware.live/id/b2x5b3J0aG8uY29tQEJyYWluQ2lwaGVy</link>
-      <description>Healthcare
-
-🎭 Threat Actor: BrainCipher | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">893292d70193a5d4f309e65ce751e8f1</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: BrainCipher</category>
-      <pubDate>Wed, 21 Oct 2026 20:52:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>prosomnus.com</title>
-      <link>https://www.ransomware.live/id/cHJvc29tbnVzLmNvbUBCcmFpbkNpcGhlcg==</link>
-      <description>Healthcare
-
-🎭 Threat Actor: BrainCipher | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">04fcc6395740a6b8b4b0e76f10e04d70</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: BrainCipher</category>
-      <pubDate>Wed, 21 Oct 2026 20:52:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>srsnodgrass.com</title>
-      <link>https://www.ransomware.live/id/c3Jzbm9kZ3Jhc3MuY29tQEJyYWluQ2lwaGVy</link>
-      <description>Professional Services
-
-🎭 Threat Actor: BrainCipher | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">098abd3580d0f178b0c21a86d4ecbbdd</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: BrainCipher</category>
-      <pubDate>Wed, 21 Oct 2026 20:53:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>sodali.com</title>
-      <link>https://www.ransomware.live/id/c29kYWxpLmNvbUBCcmFpbkNpcGhlcg==</link>
-      <description>Professional Services
-
-🎭 Threat Actor: BrainCipher | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
-      <guid isPermaLink="false">5d4b228c950ee2106f4867c610d3d15a</guid>
-      <category>Ransomware</category>
-      <category>Ransomware.live</category>
-      <category>Actor: BrainCipher</category>
-      <pubDate>Wed, 21 Oct 2026 20:53:48 +0000</pubDate>
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">982c41b01127da6f78aa38eafb993aaa</guid>
+      <category>Data Breach</category>
+      <category>California AG</category>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Whirlpool</title>
@@ -1327,15 +1230,48 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <pubDate>Wed, 21 Oct 2026 23:56:12 +0000</pubDate>
     </item>
     <item>
-      <title>Dorsata, Inc.</title>
+      <title>Deposition Solutions, LLC (d/b/a Lexitas)</title>
       <link>https://oag.ca.gov/privacy/databreach/list</link>
-      <description>Dorsata, Inc. reported a data breach in California.
+      <description>Deposition Solutions, LLC (d/b/a Lexitas) reported a data breach in California.
 
 📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">982c41b01127da6f78aa38eafb993aaa</guid>
+      <guid isPermaLink="false">27fe85bc74ef1fcaa335c9f26e3d217a</guid>
       <category>Data Breach</category>
       <category>California AG</category>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Opportune LLP</title>
+      <link>https://oag.ca.gov/privacy/databreach/list</link>
+      <description>Opportune LLP reported a data breach in California.
+
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">e3f1bc72dc6f36ff1e7d03f38c8c0178</guid>
+      <category>Data Breach</category>
+      <category>California AG</category>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dill Dill Carr Stonbraker &amp; Hutchings, P.C.</title>
+      <link>https://oag.ca.gov/privacy/databreach/list</link>
+      <description>Dill Dill Carr Stonbraker &amp; Hutchings, P.C. reported a data breach in California.
+
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">773f579d039e6cc0bb11478aaed07f9f</guid>
+      <category>Data Breach</category>
+      <category>California AG</category>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>BASS Medical Group</title>
+      <link>https://oag.ca.gov/privacy/databreach/list</link>
+      <description>BASS Medical Group reported a data breach in California.
+
+📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
+      <guid isPermaLink="false">7f21ef850640a7ff26351e8c2dfd9fe1</guid>
+      <category>Data Breach</category>
+      <category>California AG</category>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Linebarger Goggan Blair &amp; Sampson</title>
@@ -1410,50 +1346,6 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <pubDate>Thu, 22 Oct 2026 18:41:07 +0000</pubDate>
     </item>
     <item>
-      <title>Deposition Solutions, LLC (d/b/a Lexitas)</title>
-      <link>https://oag.ca.gov/privacy/databreach/list</link>
-      <description>Deposition Solutions, LLC (d/b/a Lexitas) reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">27fe85bc74ef1fcaa335c9f26e3d217a</guid>
-      <category>Data Breach</category>
-      <category>California AG</category>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Opportune LLP</title>
-      <link>https://oag.ca.gov/privacy/databreach/list</link>
-      <description>Opportune LLP reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">e3f1bc72dc6f36ff1e7d03f38c8c0178</guid>
-      <category>Data Breach</category>
-      <category>California AG</category>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Dill Dill Carr Stonbraker &amp; Hutchings, P.C.</title>
-      <link>https://oag.ca.gov/privacy/databreach/list</link>
-      <description>Dill Dill Carr Stonbraker &amp; Hutchings, P.C. reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">773f579d039e6cc0bb11478aaed07f9f</guid>
-      <category>Data Breach</category>
-      <category>California AG</category>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>BASS Medical Group</title>
-      <link>https://oag.ca.gov/privacy/databreach/list</link>
-      <description>BASS Medical Group reported a data breach in California.
-
-📍 Location: California | 📰 Source: California AG | 🏷️ Type: Data Breach</description>
-      <guid isPermaLink="false">7f21ef850640a7ff26351e8c2dfd9fe1</guid>
-      <category>Data Breach</category>
-      <category>California AG</category>
-      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>vinsolutions.com</title>
       <link>https://www.ransomware.live/id/dmluc29sdXRpb25zLmNvbUBTY2FybGV0dGdyb3Vw</link>
       <description>Professional Services
@@ -1490,6 +1382,18 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <pubDate>Fri, 23 Oct 2026 10:09:51 +0000</pubDate>
     </item>
     <item>
+      <title>Red Oak Technologies</title>
+      <link>https://www.ransomware.live/id/UmVkIE9hayBUZWNobm9sb2dpZXNAdGhlZ2VudGxlbWVu</link>
+      <description>Technology
+
+🎭 Threat Actor: thegentlemen | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">39e228f519a3021a5daf4658d8ff5d71</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: thegentlemen</category>
+      <pubDate>Fri, 23 Oct 2026 11:29:00 +0000</pubDate>
+    </item>
+    <item>
       <title>JB Hunt</title>
       <link>https://www.ransomware.live/id/SkIgSHVudEBXaGl0ZWFybW9y</link>
       <description>Transportation
@@ -1512,6 +1416,18 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <category>Ransomware.live</category>
       <category>Actor: emperador</category>
       <pubDate>Fri, 23 Oct 2026 16:32:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Penco Products</title>
+      <link>https://www.ransomware.live/id/UGVuY28gUHJvZHVjdHNAdGhlZ2VudGxlbWVu</link>
+      <description>Manufacturing
+
+🎭 Threat Actor: thegentlemen | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">a76cecd25af34290f55e2ed05a9d112d</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: thegentlemen</category>
+      <pubDate>Fri, 23 Oct 2026 16:56:58 +0000</pubDate>
     </item>
     <item>
       <title>mickeybody.com</title>
@@ -1548,6 +1464,54 @@ The post Washington Gastroenterology Pays $4.6 Million to Settle Data Breach Law
       <category>Ransomware.live</category>
       <category>Actor: qilin</category>
       <pubDate>Sat, 24 Oct 2026 03:30:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Arthritis Center of Riverside</title>
+      <link>https://www.ransomware.live/id/QXJ0aHJpdGlzIENlbnRlciBvZiBSaXZlcnNpZGVATjBu</link>
+      <description>Healthcare
+
+🎭 Threat Actor: N0n | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">36e36694ef6439c61ee0790810239cd1</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: N0n</category>
+      <pubDate>Sat, 24 Oct 2026 09:52:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Adirondack Networks, Inc.</title>
+      <link>https://www.ransomware.live/id/QWRpcm9uZGFjayBOZXR3b3JrcywgSW5jLkBOMG4=</link>
+      <description>Technology
+
+🎭 Threat Actor: N0n | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">eaf0604b14c2a01f8c35d1a2736fd66d</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: N0n</category>
+      <pubDate>Sat, 24 Oct 2026 09:53:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>www.choicegoodwill.com</title>
+      <link>https://www.ransomware.live/id/d3d3LmNob2ljZWdvb2R3aWxsLmNvbUBrcnliaXQ=</link>
+      <description>Retail &amp; E-Commerce
+
+🎭 Threat Actor: krybit | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">8cda6b0e89cd0c72c57c9d58793a36e4</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: krybit</category>
+      <pubDate>Sat, 24 Oct 2026 11:22:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>Newcomer Cremations, Funerals &amp; Receptions</title>
+      <link>https://www.ransomware.live/id/TmV3Y29tZXIgQ3JlbWF0aW9ucywgRnVuZXJhbHMgJiBSZWNlcHRpb25zQGFudWJpcw==</link>
+      <description>Healthcare
+
+🎭 Threat Actor: anubis | 📍 Location: US | 📰 Source: Ransomware.live | 🏷️ Type: Ransomware</description>
+      <guid isPermaLink="false">948770e708f3a0a0e9ef94d2c9dbe345</guid>
+      <category>Ransomware</category>
+      <category>Ransomware.live</category>
+      <category>Actor: anubis</category>
+      <pubDate>Sun, 25 Oct 2026 00:31:20 +0000</pubDate>
     </item>
   </channel>
 </rss>
